@@ -1,0 +1,60 @@
+http://activity.mgtvhd.com/webM/newWeb/list/activityList.html?activityId=200080&userId=141255&deviceNumber=869922026733969
+
+
+// 答题
+$('.answerPublicity_action1').click();
+$('.confirm').click();
+for(i=0;i<10;i++){
+$('.answersSubmit').click();
+$('.answersAgainBottom').click();
+http://activity.mgtvhd.com/webM/newWeb/answers/answersPublicity1.html?gameId=10447&userId=141255&deviceNumber=&answerType=1
+
+
+
+
+// 红包
+var t = setInterval(function(){
+var countDown = $('#Count_down').html();
+console.log(countDown);
+if(countDown == '00:00:00') {
+$('#openxsredbag').click();
+clearInterval(t);
+}
+}, 1000);
+
+第一个：10477		http://activity.mgtvhd.com/commonWebM/CommonGameRedbag_dealRedBag.do?userId=141255&gameId=10477&deviceNumber=869922026733969&payTypeUser=free
+第二个12点：10237	http://activity.mgtvhd.com/commonWebM/CommonGameRedbag_dealRedBag.do?userId=141255&gameId=10237&deviceNumber=869922026733969&payTypeUser=free
+第三个20点：10393	http://activity.mgtvhd.com/commonWebM/CommonGameRedbag_dealRedBag.do?userId=141255&gameId=10393&deviceNumber=869922026733969&payTypeUser=free
+
+http://activity.mgtvhd.com/webM/newWeb/redEnvelope/redEnvelope.html?userId=141255&deviceNumber=869922026733969
+
+
+
+
+http://activity.mgtvhd.com/commonWebM/CommonGameRedbag_dealRedBag.do?userId=141255&gameId=10228&deviceNumber=869922026733969&payTypeUser=free
+
+
+
+http://activity.mgtvhd.com/commonWebM/CommonGameIfWin_getUserGameRecordInfo.do?userId=141255&gameId=10228&deviceNumber=869922026733969&pageStart=0&pageSize=20
+
+
+
+
+// 转盘
+$('.Dial_DialB').click();
+$('.confirm').click();
+var i=0;
+var t = setTimeout(function(){
+$('.wealCpm_bottomCancel').click();
+clearTimeout(t);
+}, 10000);
+http://activity.mgtvhd.com/commonWebM/CommonGameIfWin_dealWheel.do?userId=141255&deviceNumber=869922026733969&gameId=10425&payTypeUser=dou
+
+
+
+
+"success": false
+"success": true
+
+
+http://activity.mgtvhd.com/commonM/CommonUserInfo_addShowByUserId.do?userId=141255

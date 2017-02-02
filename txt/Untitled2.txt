@@ -1,0 +1,131 @@
+<html style="font-size: 48px;"><head>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+		<meta charset="utf-8">
+		<meta name="format-detection" content="telephone=no">
+		<title>每日红包</title>
+		<script src="../../../appResource/js/webM/newWeb/Adaptive.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" href="../../../appResource/css/webM/newWeb/newredEnvelope/base.css">
+		<link rel="stylesheet" href="../../../appResource/css/webM/newWeb/redEnvelope/redEnvelope.css">
+		<script src="../../../appResource/js/webM/newWeb/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../../appResource/js/webM/common/common.js" type="text/javascript" charset="utf-8"></script><script language="javascript" src="../../../appResource/js/webM/common/common_alert.js"></script><script language="javascript" src="../../../appResource/js/webM/common/common_h5ToApp.js"></script>
+		<script src="../../../appResource/js/webM/newWeb/newredEnvelope/redEnvelope.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="../../../appResource/js/webM/newWeb/ajax.js"></script>
+		<script src="../../../appResource/js/webM/newWeb/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+		
+	</head>
+	<body style="background-color: #f3f3f3;">
+		<div class="loading" style="position: fixed; width: 100%; height: 100%; top: 0px; left: 0px; z-index: 1000; display: none;">
+			<div class="loadingMasking" style="width: 48%;height: 50px;margin-top:50%;margin-left:auto;margin-right:auto;padding:10px 40px 0px 40px;background-color:rgba(0,0,0,0.5);border-radius: 6px;">
+				<img src="../../../appResource/img/webM/newWeb/chrysanthemum.gif" style="display:block;float:left;width: 20%;max-width: 20%;height: auto;">
+				<span style="display: block; float: left; width: 70%;text-align:center; font-size: 16px; line-height: 34px; color: #ffffff; margin-left: 10%;">努力加载中...</span>
+				<div style="clear: both;"></div>
+			</div>
+			<div style="clear: both;"></div>
+		</div>
+		<div class="redEnvelope_list" style="">
+			<div class="hg">
+				<img src="http://mghd.oss-cn-hangzhou.aliyuncs.com/newredEnvelope/BF0EBBBF-4A8B-4711-A287-CB022E1F9781@1x.png" alt="积分福利抢不停" width="100%">
+			</div>
+			<div class="bg">
+				<!-- <div class="xinshouredbag">
+					<div class="tou">
+						<img src="../../../appResource/img/webM/newWeb/newredEnvelope/E68154DE-C3CA-4088-A958-1B4672337D55@1x.png" class="img1"/>
+						<img src="../../../appResource/img/webM/newWeb/newredEnvelope/181E379E-663B-4771-9615-8888B873BDEA@1x.png" class="img2"/>
+						<img src="../../../appResource/img/webM/newWeb/newredEnvelope/952A30C2-E8A3-43FF-B0DC-B360D4F02D18@1x.png" class="img3"/>
+						<img src="../../../appResource/img/webM/newWeb/newredEnvelope/13356AE0-BAB0-4E15-AA6E-5928228BF771@1x.png" class="img4"/>
+						<div id="openxsredbag" class="redbag_head" onclick="openxsred()">
+							<div id="redid" style="display: none;"></div>
+							<img src="../../../appResource/img/webM/newWeb/newredEnvelope/630124168536666693.png" class="img5"/>
+							<span id="Count_down"></span>
+						</div>
+					</div>
+					<div class="redbag_fool">
+						<img src="../../../appResource/img/webM/newWeb/newredEnvelope/640B46B4-85F9-4076-AC88-9C97EB0ED671@1x.png" class="img6"/>
+						<div>
+							<p class="canyu"></p>
+							<p class="beizhu"></p>
+						</div>
+					</div>
+				</div> -->
+				
+				<div class="redBag_content1NoviceRedBag">
+					<div class="redBag_content1NoviceRedBagT">
+						<div class="redBag_content1NoviceRedBagIco">
+							<img src="http://mghd.oss-cn-hangzhou.aliyuncs.com/newredEnvelope/952A30C2-E8A3-43FF-B0DC-B360D4F02D18@1x.png">
+						</div>
+						<div class="redBag_content1NoviceRedBagL">
+							<img src="http://mghd.oss-cn-hangzhou.aliyuncs.com/newredEnvelope/181E379E-663B-4771-9615-8888B873BDEA@1x.png">
+						</div>
+						<div class="redBag_content1NoviceRedBagC">
+							<img src="http://mghd.oss-cn-hangzhou.aliyuncs.com/newredEnvelope/630124168536666693.png" id="openxsredbag" onclick="openxsred()">
+						</div>
+						<div class="redBag_content1NoviceRedBagC_djs " id="Count_down">已经开抢了！</div>
+						<div class="redBag_content1NoviceRedBagR">
+							<img src="http://mghd.oss-cn-hangzhou.aliyuncs.com/newredEnvelope/13356AE0-BAB0-4E15-AA6E-5928228BF771@1x.png" "="">
+						</div>
+					</div>
+					<div class="redBag_content1NoviceRedBagB">
+						<div class="redBag_content1NoviceRedBagB1">
+							<img src="http://mghd.oss-cn-hangzhou.aliyuncs.com/newredEnvelope/640B46B4-85F9-4076-AC88-9C97EB0ED671@1x.png">
+						</div>
+						<div id="redid" style="display: none;">10477</div>
+						<div class="redBag_content1NoviceRedBagB2 canyu">31024人参与</div>
+						<div class="redBag_content1NoviceRedBagB3 beizhu">每次最多可抢价值0.5元积分红包</div>
+					</div>
+				</div>
+				<div class="dingshiredbag"><div class="redbag_list"><div class="bottom"><img src="http://mghd.oss-cn-hangzhou.aliyuncs.com/newredEnvelope/2B07FF92-C108-4CD2-8449-5D5FF759C3BA@1x.png" class="biaoshi"></div><div class="top"><div class="redbag"><div class="redbag_head" onclick="openred('10237','定时芒果币')"><img src="http://mghd.oss-cn-hangzhou.aliyuncs.com/newredEnvelope/630124168536666693.png"><img src="http://mghd.oss-cn-hangzhou.aliyuncs.com/newredEnvelope/02F5C56C-BD78-4C7A-A967-65B10F6E5C15@1x.png" class="biaozhi"><div class="neirong"><label class="zs">每天12:00开抢</label></div></div><div class="redbag_fool"><img src="http://mghd.oss-cn-hangzhou.aliyuncs.com/newredEnvelope/640B46B4-85F9-4076-AC88-9C97EB0ED671@1x.png"><div><p class="canyu">16766人参与</p><p class="beizhu">每次最多可抢价值1元芒果币</p></div></div><div style="clear:both;"></div></div><div class="redbag"><div class="redbag_head" onclick="openred('10393','定时芒果币')"><img src="http://mghd.oss-cn-hangzhou.aliyuncs.com/newredEnvelope/630124168536666693.png"><img src="http://mghd.oss-cn-hangzhou.aliyuncs.com/newredEnvelope/02F5C56C-BD78-4C7A-A967-65B10F6E5C15@1x.png" class="biaozhi"><div class="neirong"><label class="zs">每晚20:00开抢</label></div></div><div class="redbag_fool"><img src="http://mghd.oss-cn-hangzhou.aliyuncs.com/newredEnvelope/640B46B4-85F9-4076-AC88-9C97EB0ED671@1x.png"><div><p class="canyu">16065人参与</p><p class="beizhu">每次最多可抢价值3元芒果币</p></div></div><div style="clear:both;"></div></div></div></div></div>
+				<div class="xinyunredbag"><div class="redbag_list"><div class="bottom"><img src="http://mghd.oss-cn-hangzhou.aliyuncs.com/newredEnvelope/F6BFC09D-8E1C-4913-A47A-4C4A22B1D89D@1x.png" class="biaoshi"></div><div class="top"><div class="redbag"><div class="redbag_head" onclick="openred('10228','普通芒果币')"><img src="http://mghd.oss-cn-hangzhou.aliyuncs.com/newredEnvelope/630124168536666693.png"><img src="http://mghd.oss-cn-hangzhou.aliyuncs.com/newredEnvelope/9697F052-4B15-43F9-9DB7-B1331D0BEB66@1x.png" class="biaozhi"><div class="neirong"><label class="zs">幸运红包</label></div></div><div class="redbag_fool"><img src="http://mghd.oss-cn-hangzhou.aliyuncs.com/newredEnvelope/640B46B4-85F9-4076-AC88-9C97EB0ED671@1x.png"><div><p class="canyu">20035人参与</p><p class="beizhu">每次最多可抢价值3元芒果币</p></div></div><div style="clear:both;"></div></div><div class="redbag"><div class="redbag_head" onclick="openred('10220','普通芒果币')"><img src="http://mghd.oss-cn-hangzhou.aliyuncs.com/newredEnvelope/630124168536666693.png"><img src="http://mghd.oss-cn-hangzhou.aliyuncs.com/newredEnvelope/9697F052-4B15-43F9-9DB7-B1331D0BEB66@1x.png" class="biaozhi"><div class="neirong"><label class="zs">心跳红包</label></div></div><div class="redbag_fool"><img src="http://mghd.oss-cn-hangzhou.aliyuncs.com/newredEnvelope/640B46B4-85F9-4076-AC88-9C97EB0ED671@1x.png"><div><p class="canyu">16719人参与</p><p class="beizhu">每次最多可抢价值5元芒果币</p></div></div><div style="clear:both;"></div></div></div></div></div>
+			</div>
+		</div>
+		<!--open 红包-->
+		<div class="redEnvelope_masking" style="display: block;">
+			<div class="redEnvelope">
+				<div class="close"><img src="../../../appResource/img/webM/newWeb/close.png"></div>
+				<div style="clear: both;"></div>
+				<div class="redEnvelope_ico" style="text-align: center;"><img class="logo_img" src="http://mghd.oss-cn-hangzhou.aliyuncs.com/item/2016-12-27/ba7c81e5-b395-455b-8a61-2e4e9c7e89af.jpg" style="margin-left: auto; margin-right: auto;"></div>
+				<div class="redEnvelope_provider">
+					<span></span>
+					<center>新年红包</center>
+					<span></span>
+				</div>
+				<div style="clear: both;"></div>
+				<div class="redEnvelope_allTime">
+					<div class="redEnvelope_time">已经开抢了！</div>
+					<div class="excreteRedEnvelope_data">2017-01-23 17:00:00</div>
+				</div>
+				<div class="excrete"><img src="../../../appResource/img/webM/newWeb/redEnvelope/excreteRedEnvelop.png"></div>
+				<div id="toShopId" class="play_gain" style="margin-top: 0.7rem;">边玩边赚<span>&gt;</span></div>
+			</div>
+		</div>
+		<!-- 数据异常 -->
+		<div class="errorT" style="display: none;position: absolute;z-index: 100;width: 100%;height: 100%;left: 0;top: 0;background-color: #f3f3f3;">
+			<div class="errorT_ico" style="width: 20%;margin-left: auto;margin-right: auto;margin-top: 2.26rem;">
+				<!-- <div style="padding-top: 0.8rem;"> -->
+				<img src="../../../appResource/img/webM/newWeb/dataError.png" style="display:block;width: 100%;max-width: 100%;height: auto;margin-left: auto;margin-right: auto;">
+				<!-- </div> -->
+			</div>
+			<div class="errorT_text" style="width: 100%;font-size: 0.25rem;color: #333333;text-align: center;margin-top: 0.5rem;">接口数据返回异常</div>
+			<div class="errorT_text1" style="width: 100%;font-size: 0.25rem;line-height: 0.34rem;color: #333333;text-align: center;margin-top: 0.2rem;">数据请求异常，请重试！</div>
+			<div class="errorT_bottom" style="width: 29.6%;height: 0.64rem;line-height: 0.64rem;text-align: center;border: 1px solid #f82f32;color: #f82f32;border-radius: 0.06rem;margin-left: auto;margin-right: auto;font-size: 0.25rem;text-align: center;margin-top: 0.6rem;">重新加载</div>
+		</div>
+		<!-- 网络异常 -->
+		<div class="netErrorT" style="display: none;position: absolute;z-index: 100;width: 100%;height: 100%;left: 0;top: 0;background-color: #f3f3f3;">
+			<div class="netErrorT_ico" style="width: 20%;margin-left: auto;margin-right: auto;margin-top: 2.26rem;">
+				<!-- <div style="padding-top: 0.8rem;"> -->
+				<img src="../../../appResource/img/webM/newWeb/netError.png" style="display:block;width: 100%;max-width: 100%;height: auto;margin-left: auto;margin-right: auto;">
+				<!-- </div> -->
+			</div>
+			<div class="netErrorT_text" style="width: 100%;font-size: 0.25rem;color: #333333;text-align: center;margin-top: 0.5rem;">网络异常</div>
+			<div class="netErrorT_text1" style="width: 100%;font-size: 0.25rem;line-height: 0.34rem;color: #333333;text-align: center;margin-top: 0.2rem;">网络加载失败，请重试！</div>
+			<div class="netErrorT_bottom" style="width: 29.6%;height: 0.64rem;line-height: 0.64rem;text-align: center;border: 1px solid #f82f32;color: #f82f32;border-radius: 0.06rem;margin-left: auto;margin-right: auto;font-size: 0.25rem;text-align: center;margin-top: 0.6rem;">重新加载</div>
+		</div>
+		<!-- 加载红包时的效果 -->
+		<div class="loadred" style="display: none; position: fixed; left: 42%; top: 42%; width: 10%; padding: 0.1rem; border-radius: 0.08rem; margin-left: auto; margin-right: auto; z-index: 1000;">
+			<img src="../../../appResource/img/webM/newWeb/chrysanthemum.gif" style="width: 100%;max-width: 100%;height: auto;">
+		</div>
+		<div class="cnzz" style="display:none;">
+			<script src="https://s4.cnzz.com/z_stat.php?id=1260284005&amp;web_id=1260284005" language="JavaScript"></script><script src="https://c.cnzz.com/core.php?web_id=1260284005&amp;t=z" charset="utf-8" type="text/javascript"></script><a href="http://www.cnzz.com/stat/website.php?web_id=1260284005" target="_blank" title="站长统计">站长统计</a>
+		</div>
+		
+	
+<div class="CPMmasking" style="position: fixed;"><div class="CPM" style="margin-top: 40%;"><div class="CPM_title">温馨提示</div><div class="CPM_content" style="text-align: center;">恭喜您获得：5个积分</div><div class="CPM_bottom"><div class="cancel">取消</div><div class="confirm C_activit">确认</div><div style="clear: both;"></div></div></div></div></body></html>

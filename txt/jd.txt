@@ -1,0 +1,108 @@
+京东
+
+GET /SignAndGetBeans/signStart.action?sid=b8b85ab8846e1fccbc8592a861f7690w HTTP/1.1
+Host: ld.m.jd.com
+Connection: keep-alive
+Accept: application/json, text/javascript, */*; q=0.01
+X-Requested-With: XMLHttpRequest
+User-Agent: jdapp;android;5.7.0;5.1;869922026733969-a444d11db03d;network/wifi;osp/android;apv/5.7.0;osv/5.1;uid/869922026733969-a444d11db03d;pv/22.21;psn/869922026733969-a444d11db03d|24;psq/16;ref/;pap/JA2015_311210|5.7.0|ANDROID 5.1;usc/direct;ucp/-;umd/none;utr/-;adk/;ads/;jdv/0|direct|-|none|-|1485147682361|1485876864;Mozilla/5.0 (Linux; Android 5.1; m3 note Build/LMY47I; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/53.0.2785.49 Mobile MQQBrowser/6.2 TBS/043024 Safari/537.36
+Referer: https://ld.m.jd.com/userBeanHomePage/getLoginUserBean.action?lng=104.040576&lat=30.67672&un_area=22_1930_50946_0&sid=b8b85ab8846e1fccbc8592a861f7690w
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,en-US;q=0.8
+Cookie: JAMCookie=true; _jrda=1; __jdu=1008095101; pt_key=app_openAAFYkK2AADBD065jjjfUC0fzK4oGcwNtwWTQcPc_-DC48N6zqt53NAIm8ojccYiCpnXmhPiKNJU; pt_pin=jackdaifei_m; pwdt_id=jackdaifei_m; sid=b8b85ab8846e1fccbc8592a861f7690w; __jda=206979520.1008095101.1485017381438.1485780842379.1485876618915.10; __jdb=206979520.4.1008095101|10.1485876618915; __jdc=206979520; pre_session=869922026733969-a444d11db03d|24; pre_seq=16; __jdv=206979520|direct|-|none|-|1485147682361; mba_sid=22.22; mba_muid=1008095101.22.1485876923351
+
+
+
+https://ld.m.jd.com/SignAndGetBeans/signStart.action?sid=b8b85ab8846e1fccbc8592a861f7690w
+
+
+50元券
+
+GET /m/islogin.html?sid=b8b85ab8846e1fccbc8592a861f7690w&_=1485879672556&callback=jsonp12 HTTP/1.1
+Host: act-jshop.jd.com
+Connection: keep-alive
+User-Agent: jdapp;android;5.7.0;5.1;869922026733969-a444d11db03d;network/wifi;osp/android;apv/5.7.0;osv/5.1;uid/869922026733969-a444d11db03d;pv/25.29;psn/869922026733969-a444d11db03d|28;psq/28;ref/;pap/JA2015_311210|5.7.0|ANDROID 5.1;usc/direct;ucp/-;umd/none;utr/-;adk/;ads/;jdv/0|direct|-|none|-|1485147682361|1485879552;Mozilla/5.0 (Linux; Android 5.1; m3 note Build/LMY47I; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/53.0.2785.49 Mobile MQQBrowser/6.2 TBS/043024 Safari/537.36
+Accept: */*
+Referer: https://sale.jd.com/app/act/t7zUCgLiBYvfuh.html?client=android&clientVersion=5.7.0&networkType=wifi&un_area=22_1930_50946_0&sid=b8b85ab8846e1fccbc8592a861f7690w
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,en-US;q=0.8
+Cookie: _jrda=1; pt_key=app_openAAFYkK2AADBD065jjjfUC0fzK4oGcwNtwWTQcPc_-DC48N6zqt53NAIm8ojccYiCpnXmhPiKNJU; pt_pin=jackdaifei_m; pwdt_id=jackdaifei_m; sid=b8b85ab8846e1fccbc8592a861f7690w; __jda=206979520.1008095101.1485017381438.1485780842379.1485876618915.10; __jdb=206979520.11.1008095101|10.1485876618915; __jdc=206979520; pre_session=869922026733969-a444d11db03d|28; pre_seq=28; __jdv=206979520|direct|-|none|-|1485147682361; mba_sid=25.30; mba_muid=1008095101.25.1485879585251; __jdu=1008095101
+
+
+https://act-jshop.jd.com/m/islogin.html?sid=b8b85ab8846e1fccbc8592a861f7690w&_=1485879672556&callback=jsonp12
+
+
+
+https://sale.jd.com/app/act/t7zUCgLiBYvfuh.html?client=android&clientVersion=5.7.0&networkType=wifi&lng=104.040603&lat=30.676714&un_area=22_1930_50946_0&sid=fd3586312170d5de4dc5dc32383764aw
+
+GET /couponSend.html?roleId=5392491&key=a38d5ff825574ffd9b2e5177573887a9&sid=b8b85ab8846e1fccbc8592a861f7690w&_=1485910957804&callback=jsonp11 HTTP/1.1
+Host: act-jshop.jd.com
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 5.1.1; Nexus 6 Build/LYZ28E) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Mobile Safari/537.36
+Accept: */*
+Referer: https://sale.jd.com/app/act/t7zUCgLiBYvfuh.html?client=android&clientVersion=5.7.0&networkType=wifi&un_area=22_1930_50946_0&sid=b8b85ab8846e1fccbc8592a861f7690w
+Accept-Encoding: gzip, deflate, sdch, br
+Accept-Language: zh-CN,zh;q=0.8
+Cookie: JSESSIONID=0DCE9E866ED483D84820328205BC9300.s1; __jdv=122270672|direct|-|none|-|1485879870533; mobilev=html5; sid=be58eb2deb21337e23c432dd1925cb5f; shshshfpa=c1d28b8b-0bd3-a875-c800-72aa6b9f8967-1485880639; shshshfpb=18a840374bd4347468078a1a79a253fe03a432aa4e257edc75890bd44a; __jda=122270672.1357389905.1475674191.1485879870531.1485908745143.3; __jdb=122270672.5.1357389905|3.1485908745143; __jdc=122270672; mba_muid=1357389905; mba_sid=14859087451457710649929534990.5; __jdu=1357389905
+
+https://act-jshop.jd.com/couponSend.html?roleId=5392491&key=a38d5ff825574ffd9b2e5177573887a9&sid=b8b85ab8846e1fccbc8592a861f7690w&_=1485910957804&callback=jsonp11
+
+
+=============================================================================================================
+京东金融
+
+GET /gw/generic/hy/h5/m/signSendJPeas?rd=1485878750784&reqData=%7B%22sid%22%3A%22MKYAI8KIZJI0OVSSZ0ODKPSUZY%2FWDROH%22%7D&sid=MKYAI8KIZJI0OVSSZ0ODKPSUZY%2FWDROH&source=app HTTP/1.1
+Host: ms.jr.jd.com
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Linux; Android 5.1; m3 note Build/LMY47I) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/40.0.2214.127 Mobile Safari/537.36/application=JDJR-App&clientType=android&deviceId=869922026733969&src=meizu&version=3.9.7&clientVersion=3.9.7&osVersion=5.1&osName=m3 note&isUpdate=0&HiClVersion=3.9.7&netWork=1&sPoint=TSjkvJrlkZjkuK3lv4MpIyM%3D%0A&*#@jdPaySDK*#@jdPayChannel=jdFinance&jdPayChannelVersion=3.9.7&jdPaySdkVersion=2.6.1.0&jdPayClientName=Android*#@jdPaySDK*#@
+Origin: https://m.jr.jd.com
+Accept: */*
+Referer: https://m.jr.jd.com/spe/shake/checkin/index.html?sid=MKYAI8KIZJI0OVSSZ0ODKPSUZY/WDROH
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,en-US;q=0.8
+X-Requested-With: com.jd.jrapp
+
+
+https://ms.jr.jd.com/gw/generic/hy/h5/m/signSendJPeas?rd='+ 毫秒数 +'&reqData=%7B%22sid%22%3A%22MKYAI8KIZJI0OVSSZ0ODKPSUZY%2FWDROH%22%7D&sid=MKYAI8KIZJI0OVSSZ0ODKPSUZY%2FWDROH&source=app
+
+https://ms.jr.jd.com/gw/generic/hy/h5/m/signSendJPeas?rd=1485878798393&reqData=%7B%22sid%22%3A%22MKYAI8KIZJI0OVSSZ0ODKPSUZY%2FWDROH%22%7D&sid=MKYAI8KIZJI0OVSSZ0ODKPSUZY%2FWDROH&source=app
+
+
+====================================================================================================================
+百度阅读
+
+POST /nauser/checkin? HTTP/1.1
+Cache-Control: no-cache
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 314
+Host: appwk.baidu.com
+Connection: Keep-Alive
+Accept-Encoding: gzip
+Cookie: BDUSS=Gc5VkVpd21LUHZxaElqWEtlaFdiQnBhQjR-WWFQVE9aYk5XVEQwS0FSRDJ4WjlZSVFBQUFBJCQAAAAAAAAAAAEAAAD5pq0BamFja2RhaWZlaQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPY4eFj2OHhYM; path=httponly
+User-Agent: okhttp/3.4.1
+
+http://appwk.baidu.com/nauser/checkin?
+
+fr	3
+pid	1
+screen	1920_1080
+app_ver	3.9.7
+optk	*
+check_version	2
+bid	2
+from	3_wandjread
+checkin	1
+opid	wk_na
+Bdi_bear	WIFI
+cuid	3FA18E58420913C771D760B43AF611C1|969337620229968
+qaclienttime	20170201
+app_ua	m3note
+ua	bd_1080_1920_m3note_3.9.7_5.1
+sys_ver	5.1
+uid	abd_969337620229968_mo_a4:44:d1:1d:b0:3d
+
+
+=============================================================================================================
+

@@ -1,0 +1,145 @@
+
+
+http://activity.mgtvhd.com//webM/newWeb/ethnicChineseSpring/ethnicChineseSpring_noTitle.html?userId=141255&deviceNumber=869922026733969
+
+http://activity.mgtvhd.com/gameWebM/GameChineseEgg_afterPayChineseClickEgg.do?userId=141255&money=6&clickCount=6&payOrderId=20170130224532675441156
+
+http://activity.mgtvhd.com/gameWebM/GameNewyearAnswer_insertNewyearAnswer.do?userId=141252&answerNum=2109&answerValue=8304&payCount=0&payOrderId=141252&answerType=%E5%8D%8E%E4%BA%BA%E6%98%A5%E6%99%9A
+=========================
+
+
+http://activity.mgtvhd.com/commonWebM/CommonGameIfWin_getUserGameRecordInfo.do?userId=141252&deviceNumber=&gameId=10447&pageStart=0&pageSize=20
+
+
+http://activity.mgtvhd.com/gameWebM/GameQuestionOperateTotal_dealQuestion.do?userId=141252&deviceNumber=&gameId=10447&payTypeUser=dou
+
+
+http://activity.mgtvhd.com/gameWebM/GameQuestionOperateTotal_getQuestionsByHanyu.do?propertyType=%E6%98%8E%E6%98%9F%E5%85%AB%E5%8D%A6&gameId=10447
+
+
+http://activity.mgtvhd.com/gameWebM/GameQuestionOperateTotal_updateAnswerRecord.do?question=2163_0,2159_0,2155_0,528_0,505_0,493_0,313_0,312_0,306_0,296_0&totalId=29829&gameId=10447&userId=141252
+
+
+
+
+http://activity.mgtvhd.com/gameWebM/GameQuestionOperateTotal_updateAnswerRecord.do?question=2163_8412,2126_0,2125_0,711_1942,527_1306,524_0,514_0,506_0,323_0,310_0&totalId=29833&gameId=10447&userId=141252
+
+
+// 生成totalId
+http://activity.mgtvhd.com/gameWebM/GameQuestionOperateTotal_dealQuestion.do?userId=141252&deviceNumber=&gameId=10447&payTypeUser=dou
+
+
+// 获取题目
+http://activity.mgtvhd.com/gameWebM/GameQuestionOperateTotal_getQuestionsByHanyu.do?propertyType=%E6%98%8E%E6%98%9F%E5%85%AB%E5%8D%A6&gameId=10447
+
+
+// 提交答案
+http://activity.mgtvhd.com/gameWebM/GameQuestionOperateTotal_updateAnswerRecord.do?question=2163_8412,2126_0,2125_0,711_1942,527_1306,524_0,514_0,506_0,323_0,310_0&totalId=29833&gameId=10447&userId=141252
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+===================================================================================
+// 下单  POST
+http://shop.mgtvhd.com/shopM/ShopOrderInfoPay_toSucessOurMoneyNew.do 
+
+参数
+isAllBuy	n
+payType		dou
+payCount	10
+itemId		10715
+userId		141255
+
+====================================================================================
+
+
+
+
+
+
+
+
+
+http://activity.mgtvhd.com/webM/newWeb/list/activityList.html?activityId=200080&userId=141255&deviceNumber=869922026733969
+
+
+// 答题
+$('.answerPublicity_action1').click();
+$('.confirm').click();
+for(i=0;i<10;i++){
+$('.answersSubmit').click();
+$('.answersAgainBottom').click();
+http://activity.mgtvhd.com/webM/newWeb/answers/answersPublicity1.html?gameId=10447&userId=141255&deviceNumber=&answerType=1
+
+
+
+
+http://activity.mgtvhd.com/commonWebM/CommonGameInfo_queryRedbagGameInfo.do?pageStart=0&pageSize=20&userId=141255
+
+// 红包
+var t = setInterval(function(){
+var countDown = $('#Count_down').html();
+console.log(countDown);
+if(countDown == '00:00:00') {
+$('#openxsredbag').click();
+clearInterval(t);
+}
+}, 1000);
+
+第一个：10477		http://activity.mgtvhd.com/commonWebM/CommonGameRedbag_dealRedBag.do?userId=141255&gameId=10477&deviceNumber=869922026733969&payTypeUser=free
+第二个12点：10237	http://activity.mgtvhd.com/commonWebM/CommonGameRedbag_dealRedBag.do?userId=141255&gameId=10237&deviceNumber=869922026733969&payTypeUser=free
+第三个20点：10393	http://activity.mgtvhd.com/commonWebM/CommonGameRedbag_dealRedBag.do?userId=141255&gameId=10393&deviceNumber=869922026733969&payTypeUser=free
+
+http://activity.mgtvhd.com/webM/newWeb/redEnvelope/redEnvelope.html?userId=141255&deviceNumber=869922026733969
+
+
+
+
+http://activity.mgtvhd.com/commonWebM/CommonGameRedbag_dealRedBag.do?userId=141255&gameId=10228&deviceNumber=869922026733969&payTypeUser=free
+
+
+
+http://activity.mgtvhd.com/commonWebM/CommonGameIfWin_getUserGameRecordInfo.do?userId=141255&gameId=10228&deviceNumber=869922026733969&pageStart=0&pageSize=20
+
+
+
+
+// 转盘
+$('.Dial_DialB').click();
+$('.confirm').click();
+var i=0;
+var t = setTimeout(function(){
+$('.wealCpm_bottomCancel').click();
+clearTimeout(t);
+}, 10000);
+http://activity.mgtvhd.com/commonWebM/CommonGameIfWin_dealWheel.do?userId=141255&deviceNumber=869922026733969&gameId=10425&payTypeUser=dou
+
+
+
+
+"success": false
+"success": true
+
+
+http://activity.mgtvhd.com/commonM/CommonUserInfo_addShowByUserId.do?userId=141255
+
+
+
+http://activity.mgtvhd.com/commonM/CommonUserInfo_userSignIn.do
+
+userId	141255
