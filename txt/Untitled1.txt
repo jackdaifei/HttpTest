@@ -1,7 +1,7 @@
 http://activity.mgtvhd.com/webM/newWeb/list/activityList.html?activityId=200080&userId=141255&deviceNumber=869922026733969
 
 
-// ´ðÌâ
+// ç­”é¢˜
 $('.answerPublicity_action1').click();
 $('.confirm').click();
 for(i=0;i<10;i++){
@@ -12,7 +12,7 @@ http://activity.mgtvhd.com/webM/newWeb/answers/answersPublicity1.html?gameId=104
 
 
 
-// ºì°ü
+// çº¢åŒ…
 var t = setInterval(function(){
 var countDown = $('#Count_down').html();
 console.log(countDown);
@@ -22,9 +22,9 @@ clearInterval(t);
 }
 }, 1000);
 
-µÚÒ»¸ö£º10477		http://activity.mgtvhd.com/commonWebM/CommonGameRedbag_dealRedBag.do?userId=141255&gameId=10477&deviceNumber=869922026733969&payTypeUser=free
-µÚ¶þ¸ö12µã£º10237	http://activity.mgtvhd.com/commonWebM/CommonGameRedbag_dealRedBag.do?userId=141255&gameId=10237&deviceNumber=869922026733969&payTypeUser=free
-µÚÈý¸ö20µã£º10393	http://activity.mgtvhd.com/commonWebM/CommonGameRedbag_dealRedBag.do?userId=141255&gameId=10393&deviceNumber=869922026733969&payTypeUser=free
+ç¬¬ä¸€ä¸ªï¼š10477		http://activity.mgtvhd.com/commonWebM/CommonGameRedbag_dealRedBag.do?userId=141255&gameId=10477&deviceNumber=869922026733969&payTypeUser=free
+ç¬¬äºŒä¸ª12ç‚¹ï¼š10237	http://activity.mgtvhd.com/commonWebM/CommonGameRedbag_dealRedBag.do?userId=141255&gameId=10237&deviceNumber=869922026733969&payTypeUser=free
+ç¬¬ä¸‰ä¸ª20ç‚¹ï¼š10393	http://activity.mgtvhd.com/commonWebM/CommonGameRedbag_dealRedBag.do?userId=141255&gameId=10393&deviceNumber=869922026733969&payTypeUser=free
 
 http://activity.mgtvhd.com/webM/newWeb/redEnvelope/redEnvelope.html?userId=141255&deviceNumber=869922026733969
 
@@ -40,7 +40,7 @@ http://activity.mgtvhd.com/commonWebM/CommonGameIfWin_getUserGameRecordInfo.do?u
 
 
 
-// ×ªÅÌ
+// è½¬ç›˜
 $('.Dial_DialB').click();
 $('.confirm').click();
 var i=0;

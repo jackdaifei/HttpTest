@@ -1,4 +1,4 @@
-æ©∂´
+‰∫¨‰∏ú
 
 GET /SignAndGetBeans/signStart.action?sid=b8b85ab8846e1fccbc8592a861f7690w HTTP/1.1
 Host: ld.m.jd.com
@@ -16,7 +16,7 @@ Cookie: JAMCookie=true; _jrda=1; __jdu=1008095101; pt_key=app_openAAFYkK2AADBD06
 https://ld.m.jd.com/SignAndGetBeans/signStart.action?sid=b8b85ab8846e1fccbc8592a861f7690w
 
 
-50‘™»Ø
+50ÂÖÉÂà∏
 
 GET /m/islogin.html?sid=b8b85ab8846e1fccbc8592a861f7690w&_=1485879672556&callback=jsonp12 HTTP/1.1
 Host: act-jshop.jd.com
@@ -49,7 +49,7 @@ https://act-jshop.jd.com/couponSend.html?roleId=5392491&key=a38d5ff825574ffd9b2e
 
 
 =============================================================================================================
-æ©∂´Ω»⁄
+‰∫¨‰∏úÈáëËûç
 
 GET /gw/generic/hy/h5/m/signSendJPeas?rd=1485878750784&reqData=%7B%22sid%22%3A%22MKYAI8KIZJI0OVSSZ0ODKPSUZY%2FWDROH%22%7D&sid=MKYAI8KIZJI0OVSSZ0ODKPSUZY%2FWDROH&source=app HTTP/1.1
 Host: ms.jr.jd.com
@@ -65,13 +65,13 @@ Accept-Language: zh-CN,en-US;q=0.8
 X-Requested-With: com.jd.jrapp
 
 
-https://ms.jr.jd.com/gw/generic/hy/h5/m/signSendJPeas?rd='+ ∫¡√Î ˝ +'&reqData=%7B%22sid%22%3A%22MKYAI8KIZJI0OVSSZ0ODKPSUZY%2FWDROH%22%7D&sid=MKYAI8KIZJI0OVSSZ0ODKPSUZY%2FWDROH&source=app
+https://ms.jr.jd.com/gw/generic/hy/h5/m/signSendJPeas?rd='+ ÊØ´ÁßíÊï∞ +'&reqData=%7B%22sid%22%3A%22MKYAI8KIZJI0OVSSZ0ODKPSUZY%2FWDROH%22%7D&sid=MKYAI8KIZJI0OVSSZ0ODKPSUZY%2FWDROH&source=app
 
 https://ms.jr.jd.com/gw/generic/hy/h5/m/signSendJPeas?rd=1485878798393&reqData=%7B%22sid%22%3A%22MKYAI8KIZJI0OVSSZ0ODKPSUZY%2FWDROH%22%7D&sid=MKYAI8KIZJI0OVSSZ0ODKPSUZY%2FWDROH&source=app
 
 
 ====================================================================================================================
-∞Ÿ∂»‘ƒ∂¡
+ÁôæÂ∫¶ÈòÖËØª
 
 POST /nauser/checkin? HTTP/1.1
 Cache-Control: no-cache

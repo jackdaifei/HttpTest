@@ -1,10 +1,13 @@
 package com.fly.httptest;
 
+import com.alibaba.fastjson.JSONObject;
 import com.fly.httptest.utils.HttpClientUtils;
+import org.apache.commons.lang3.time.DateUtils;
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.Random;
 
@@ -14,10 +17,10 @@ import java.util.Random;
 public class MGTV {
 
     public static void main(String[] args) throws Exception {
-       /* while (true){
+        /*while (true){
             Date now = new Date();
-            if (now.after(DateUtils.parseDate("2017-01-29 22:00:00", "yyyy-mm-dd HH:mm:dd"))) {
-                redBag1(10);
+            if (now.after(DateUtils.parseDate("2017-02-03 12:00:00", "yyyy-mm-dd HH:mm:ss"))) {
+                redBag2(5);
                 break;
             }
             Thread.sleep(1000);
@@ -34,7 +37,7 @@ public class MGTV {
             }
         }*/
 
-        /*for (int i=0;i<9;i++) {
+        /*for (int i=0;i<10;i++) {
             JSONObject totalJson = HttpClientUtils.getResponse("http://activity.mgtvhd.com/gameWebM/GameQuestionOperateTotal_dealQuestion.do?userId=141255&deviceNumber=&gameId=10447&payTypeUser=dou", null);
             String totalId = totalJson.getString("data").substring(1);
             JSONObject jsonObject = HttpClientUtils.getResponse("http://activity.mgtvhd.com/gameWebM/GameQuestionOperateTotal_updateAnswerRecord.do?question=295_492,290_473,310_540,316_556,505_1246,509_1257,515_1274,527_1305,729_1986,733_1994&totalId=" + totalId + "&gameId=10447&userId=141255", null);
@@ -46,10 +49,10 @@ public class MGTV {
 
 
 //        redBag1(5, "10477");
-//        redBag1(5, "10495");
-//        redBag1(5, "10492");
+        redBag1(5, "10495");
+        redBag1(5, "10492");
 
-        login();
+//        login();
 
 //        share();
     }
@@ -112,7 +115,7 @@ public class MGTV {
         String url = "http://activity.mgtvhd.com/commonWebM/CommonGameRedbag_dealRedBag.do?userId=141255&gameId=10237&deviceNumber=869922026733969&payTypeUser=dou";
         for (int i=0;i<times;i++) {
             HttpClientUtils.getResponse(url, null);
-            Thread.sleep(sleepMillisecond(1000, 2500));
+            Thread.sleep(sleepMillisecond(1200, 2500));
         }
     }
 

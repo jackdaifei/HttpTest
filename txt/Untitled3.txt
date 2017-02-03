@@ -24,13 +24,13 @@
 			<div class="answersTimeGrade">
 				<div class="answersTime">
 					<span></span>
-					<a class="second">Ãë</a><br/>
-					<a class="djsText">´ðÌâµ¹¼ÆÊ±</a>
+					<a class="second">ç§’</a><br/>
+					<a class="djsText">ç­”é¢˜å€’è®¡æ—¶</a>
 				</div>
 				<div class="answersGrade">
 					<span>000</span>
 					<div class="hen"></div>
-					<div class="grade">·ÖÊý</div>
+					<div class="grade">åˆ†æ•°</div>
 				</div>
 				<div style="clear: both;"></div>
 			</div>
@@ -38,18 +38,18 @@
 				<img src="http://mghd.oss-cn-hangzhou.aliyuncs.com/imgH5/answers/actionAnswers.png"/>
 			</div>
 			<div class="topicState"></div>
-			<div class="topicStateContent">´ðÌâÊý&nbsp;<a></a>/<span></span></div>
+			<div class="topicStateContent">ç­”é¢˜æ•°&nbsp;<a></a>/<span></span></div>
 			<div class="answersContent">
 				
 			</div>
-			<div class="answersSubmit">Ìá½»</div>
+			<div class="answersSubmit">æäº¤</div>
 		</div>
 	</div>
 	<div class="nullT1" style="display:none;position: absolute;z-index: 100;width: 100%;height: 100%;left: 0;background-color: #f3f3f3;">
 		<div class="nullT1_ico" style="width: 20%;margin-left: auto;margin-right: auto;margin-top: 2.26rem;">
 			<img src="../../../appResource/img/webM/newWeb/nullError.png" style="display:block;width: 100%;max-width: 100%;height: auto;margin-left: auto;margin-right: auto;"/>
 		</div>
-		<div class="nullT1_text" style="width: 100%;font-size: 0.25rem;color: #888888;text-align: center;margin-top: 0.5rem;">ºóÌ¨ÅäÖÃÒì³£</div>
+		<div class="nullT1_text" style="width: 100%;font-size: 0.25rem;color: #888888;text-align: center;margin-top: 0.5rem;">åŽå°é…ç½®å¼‚å¸¸</div>
 	</div>
 	<div class="errorT" style="display: none;position: absolute;z-index: 100;width: 100%;height: 100%;left: 0;top: 0;background-color: #f3f3f3;">
 		<div class="errorT_ico" style="width: 20%;margin-left: auto;margin-right: auto;margin-top: 2.26rem;">
@@ -57,9 +57,9 @@
 				<img src="../../../appResource/img/webM/newWeb/dataError.png" style="display:block;width: 100%;max-width: 100%;height: auto;margin-left: auto;margin-right: auto;"/>
 			<!-- </div> -->
 		</div>
-		<div class="errorT_text" style="width: 100%;font-size: 0.25rem;color: #333333;text-align: center;margin-top: 0.5rem;">½Ó¿ÚÊý¾Ý·µ»ØÒì³£</div>
-		<div class="errorT_text1" style="width: 100%;font-size: 0.25rem;line-height: 0.34rem;color: #333333;text-align: center;margin-top: 0.2rem;">Êý¾ÝÇëÇóÒì³££¬ÇëÖØÊÔ£¡</div>
-		<div class="errorT_bottom" style="width: 29.6%;height: 0.64rem;line-height: 0.64rem;text-align: center;border: 1px solid #f82f32;color: #f82f32;border-radius: 0.06rem;margin-left: auto;margin-right: auto;font-size: 0.25rem;text-align: center;margin-top: 0.6rem;">ÖØÐÂ¼ÓÔØ</div>
+		<div class="errorT_text" style="width: 100%;font-size: 0.25rem;color: #333333;text-align: center;margin-top: 0.5rem;">æŽ¥å£æ•°æ®è¿”å›žå¼‚å¸¸</div>
+		<div class="errorT_text1" style="width: 100%;font-size: 0.25rem;line-height: 0.34rem;color: #333333;text-align: center;margin-top: 0.2rem;">æ•°æ®è¯·æ±‚å¼‚å¸¸ï¼Œè¯·é‡è¯•ï¼</div>
+		<div class="errorT_bottom" style="width: 29.6%;height: 0.64rem;line-height: 0.64rem;text-align: center;border: 1px solid #f82f32;color: #f82f32;border-radius: 0.06rem;margin-left: auto;margin-right: auto;font-size: 0.25rem;text-align: center;margin-top: 0.6rem;">é‡æ–°åŠ è½½</div>
 	</div>
 	<div class="netErrorT" style="display: none;position: absolute;z-index: 100;width: 100%;height: 100%;left: 0;top: 0;background-color: #f3f3f3;">
 		<div class="netErrorT_ico" style="width: 20%;margin-left: auto;margin-right: auto;margin-top: 2.26rem;">
@@ -67,9 +67,9 @@
 				<img src="../../../appResource/img/webM/newWeb/netError.png" style="display:block;width: 100%;max-width: 100%;height: auto;margin-left: auto;margin-right: auto;"/>
 			<!-- </div> -->
 		</div>
-		<div class="netErrorT_text" style="width: 100%;font-size: 0.25rem;color: #333333;text-align: center;margin-top: 0.5rem;">ÍøÂçÒì³£</div>
-		<div class="netErrorT_text1" style="width: 100%;font-size: 0.25rem;line-height: 0.34rem;color: #333333;text-align: center;margin-top: 0.2rem;">ÍøÂç¼ÓÔØÊ§°Ü£¬ÇëÖØÊÔ£¡</div>
-		<div class="netErrorT_bottom" style="width: 29.6%;height: 0.64rem;line-height: 0.64rem;text-align: center;border: 1px solid #f82f32;color: #f82f32;border-radius: 0.06rem;margin-left: auto;margin-right: auto;font-size: 0.25rem;text-align: center;margin-top: 0.6rem;">ÖØÐÂ¼ÓÔØ</div>
+		<div class="netErrorT_text" style="width: 100%;font-size: 0.25rem;color: #333333;text-align: center;margin-top: 0.5rem;">ç½‘ç»œå¼‚å¸¸</div>
+		<div class="netErrorT_text1" style="width: 100%;font-size: 0.25rem;line-height: 0.34rem;color: #333333;text-align: center;margin-top: 0.2rem;">ç½‘ç»œåŠ è½½å¤±è´¥ï¼Œè¯·é‡è¯•ï¼</div>
+		<div class="netErrorT_bottom" style="width: 29.6%;height: 0.64rem;line-height: 0.64rem;text-align: center;border: 1px solid #f82f32;color: #f82f32;border-radius: 0.06rem;margin-left: auto;margin-right: auto;font-size: 0.25rem;text-align: center;margin-top: 0.6rem;">é‡æ–°åŠ è½½</div>
 	</div>
 	<div class="loadred" style="display: none;position: fixed;left: 42%;top: 42%;width: 10%;padding: 0.1rem; border-radius: 0.08rem;background-color: rgba(0,0,0,0.1);margin-left: auto;margin-right: auto;z-index: 1000;">
 		<img src="../../../appResource/img/webM/newWeb/chrysanthemum.gif" style="width: 100%;max-width: 100%;height: auto;"/>

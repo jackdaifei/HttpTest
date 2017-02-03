@@ -43,7 +43,7 @@ public class HttpClientUtils {
         String responseStr = EntityUtils.toString(response.getEntity());
         System.out.println(responseStr);
         response.close();
-        return null;
+        return JSONObject.parseObject(responseStr);
     }
 
 }
