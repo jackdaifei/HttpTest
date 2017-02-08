@@ -20,7 +20,7 @@ import java.util.List;
  */
 public class HttpClientUtils {
 
-    public static void postResponse(String url, List<NameValuePair> paramList) throws Exception {
+    public static JSONObject postResponse(String url, List<NameValuePair> paramList) throws Exception {
         HttpPost httpPost = new HttpPost(url);
         if (CollectionUtils.isNotEmpty(paramList)) {
             httpPost.setEntity(new UrlEncodedFormEntity(paramList));
@@ -31,6 +31,7 @@ public class HttpClientUtils {
         String responseStr = EntityUtils.toString(response.getEntity());
         System.out.println(responseStr);
         response.close();
+        return JSONObject.parseObject(responseStr);
     }
 
     public static void postResponse(String url, List<NameValuePair> paramList, Header[] headers) throws Exception {

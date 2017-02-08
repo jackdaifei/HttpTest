@@ -52,7 +52,7 @@ public class MGTV {
             }
         }*/
 
-//        redBag1(5, "10477");
+        redBag1(1, "10477");
 //        redBag1(5, "10495");
 //        redBag1(5, "10492");
 
@@ -114,7 +114,13 @@ public class MGTV {
     private static void redBag1(int times, String gameId) throws Exception {
         String checkUrl = "http://activity.mgtvhd.com/commonWebM/CommonGameIfWin_getUserGameRecordInfo.do?userId=141255&gameId=" + gameId + "&deviceNumber=869922026733969&pageStart=0&pageSize=20";
 
-        HttpClientUtils.postResponse(checkUrl, null);
+        JSONObject checkResult = HttpClientUtils.postResponse(checkUrl, null);
+        boolean canPlay = checkResult.getBooleanValue("canPlay");
+        boolean noRedBag = checkResult.getBooleanValue("noRedBag");
+        if (!canPlay || noRedBag) {
+            System.out.println("红包[" + gameId + "]不能玩");
+            return;
+        }
 
         String url = "http://activity.mgtvhd.com/commonWebM/CommonGameRedbag_dealRedBag.do?userId=141255&gameId=" + gameId + "&deviceNumber=869922026733969&payTypeUser=free";
         for (int i=0;i<times;i++) {
