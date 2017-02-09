@@ -23,7 +23,8 @@ public class JD {
             }
         }*/
 //        huafeiquan();
-        singStart("32e8b0761aa9f0f06cb9672902c4079w");
+//        singStart("429ed9de25531fc27684e843b6482821");
+        singStart("a074661b4c00f2b8b9ebc7a2556206cw");
     }
 
     private static void huafeiquan() throws Exception {
@@ -47,6 +48,10 @@ public class JD {
      */
     private static void singStart(String sid) throws Exception {
         String url = "https://ld.m.jd.com/SignAndGetBeans/signStart.action?sid=" + sid;
-        HttpClientUtils.getResponse(url, null);
+        HttpClientUtils.getResponseString(url, null);
+    }
+
+    private static void receiveCoupon(String sid) throws Exception {
+        String url = "";
     }
 }
