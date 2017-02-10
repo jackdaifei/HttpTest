@@ -33,14 +33,17 @@ public class MGTV {
 
         submitOrder(10);*/
 
-//        login();
+        login();
 
         /*while (true){
             Date now = new Date();
-            if (now.after(DateUtils.parseDate("2017-02-08 12:00:00", "yyyy-MM-dd HH:mm:ss"))) {
+            if (now.after(DateUtils.parseDate("2017-02-10 12:00:00", "yyyy-MM-dd HH:mm:ss"))) {
                 redBag2(5);
                 break;
             }
+            *//*if (now.after(DateUtils.parseDate("2017-02-9 12:00:05", "yyyy-MM-dd HH:mm:ss"))) {
+                break;
+            }*//*
             Thread.sleep(1000);
         }*/
 
@@ -52,9 +55,9 @@ public class MGTV {
             }
         }*/
 
-        redBag1(1, "10477");
-//        redBag1(5, "10495");
-//        redBag1(5, "10492");
+//        redBag1(5, "10477"); // 每日红包
+//        redBag1(5, "10495"); // 张杰
+//        redBag1(5, "10492"); // 何炅
 
 
     }
@@ -112,7 +115,7 @@ public class MGTV {
      * @throws Exception
      */
     private static void redBag1(int times, String gameId) throws Exception {
-        String checkUrl = "http://activity.mgtvhd.com/commonWebM/CommonGameIfWin_getUserGameRecordInfo.do?userId=141255&gameId=" + gameId + "&deviceNumber=869922026733969&pageStart=0&pageSize=20";
+        /*String checkUrl = "http://activity.mgtvhd.com/commonWebM/CommonGameIfWin_getUserGameRecordInfo.do?userId=141255&gameId=" + gameId + "&deviceNumber=869922026733969&pageStart=0&pageSize=20";
 
         JSONObject checkResult = HttpClientUtils.postResponse(checkUrl, null);
         boolean canPlay = checkResult.getBooleanValue("canPlay");
@@ -120,7 +123,7 @@ public class MGTV {
         if (!canPlay || noRedBag) {
             System.out.println("红包[" + gameId + "]不能玩");
             return;
-        }
+        }*/
 
         String url = "http://activity.mgtvhd.com/commonWebM/CommonGameRedbag_dealRedBag.do?userId=141255&gameId=" + gameId + "&deviceNumber=869922026733969&payTypeUser=free";
         for (int i=0;i<times;i++) {
