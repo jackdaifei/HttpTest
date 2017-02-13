@@ -1,0 +1,15 @@
+http://act.vip.iqiyi.com/marketing/sign/exeSignIn.action?_=1486741547189&callback=Zepto1486741483622
+
+GET /marketing/sign/exeSignIn.action?_=1486741547189&callback=Zepto1486741483622 HTTP/1.1
+Host: act.vip.iqiyi.com
+Connection: keep-alive
+Accept: */*
+User-Agent: Mozilla/5.0 (Linux; Android 5.1; m3 note Build/LMY47I) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/40.0.2214.127 Mobile Safari/537.36 IqiyiApp/iqiyi IqiyiVersion/8.1
+Referer: http://vip.iqiyi.com/level.html?deviceId=739dc0002fb8d6f824bd398ea30884f7&platform=GPhone&network=1&ov=5.1&location=104.046921,30.682920&src=android
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,en-US;q=0.8
+Cookie: P00004=-1411977786.1482155061.a9809f58c1; QC005=3b45b9340faaffdb58758eb026372666; QC008=1483714855.1483714855.1483714855.4; QC001=1; QC007=DIRECT; QC142=be9bc4896c09bcdc310b3b05946f0c48; QC006=u1483714854978; QC010=102452609; gateWay=vp%3Avp01; cityid=1400249693; t_cityname=%E6%88%90%E9%83%BD; QC112=weid1486740209079; P00001=3edalGtl2IM00wRtBKm2TRhoSZXDQ79XslBWqUqWlv7kHqQohJKpBGHDt8vAVtcm15Iee7; P00003=1235757923; P00010=1235757923; P01010=1486742400; P00007=3edalGtl2IM00wRtBKm2TRhoSZXDQ79XslBWqUqWlv7kHqQohJKpBGHDt8vAVtcm15Iee7; P00PRU=1235757923; P00002=%7B%22uid%22%3A%221235757923%22%2C%22user_name%22%3A%2218780117488%22%2C%22email%22%3A%22%22%2C%22nickname%22%3A%22187****7488_m2958%22%2C%22pru%22%3A1235757923%2C%22type%22%3A11%2C%22pnickname%22%3A%22187****7488_m2958%22%7D; P000email=18780117488; h5_call_from_platform=qiyi
+X-Requested-With: com.qiyi.video
+
+
+try{window.Zepto1486741483622({"code":"A00000","data":{"data":{"continueSignCount":1,"gifts":[{"pic":"http://pic1.qiyipic.com/common/20160531/55d28ddbdfc347fcb7deb4749a869f0e.png","name":"抽奖机会*1","day":1},{"pic":"http://pic1.qiyipic.com/common/20160531/55d28ddbdfc347fcb7deb4749a869f0e.png","name":"抽奖机会*1","day":2},{"pic":"http://pic1.qiyipic.com/common/20160531/55d28ddbdfc347fcb7deb4749a869f0e.png","name":"抽奖机会*2","day":3},{"pic":"http://pic1.qiyipic.com/common/20160531/55d28ddbdfc347fcb7deb4749a869f0e.png","name":"抽奖机会*2","day":4},{"pic":"http://pic1.qiyipic.com/common/20160531/55d28ddbdfc347fcb7deb4749a869f0e.png","name":"抽奖机会*3","day":5},{"pic":"http://pic1.qiyipic.com/common/20160531/55d28ddbdfc347fcb7deb4749a869f0e.png","name":"抽奖机会*3","day":6},{"pic":"http://pic1.qiyipic.com/common/20160531/2639be3351794dc6918b2ff4ff31a599.png","name":"奖池升级*3","day":7}],"acquireGiftsType":"2,1,","acquireGifts":"成长值*5,抽奖机会*1"},"code":"A00000","msg":"签到成功，领奖品"}});}catch(e){};

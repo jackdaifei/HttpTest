@@ -1,5 +1,6 @@
 package com.fly.httptest;
 
+import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.fly.httptest.utils.HttpClientUtils;
 import org.apache.commons.lang3.time.DateUtils;
@@ -17,7 +18,7 @@ import java.util.Random;
 public class MGTV {
 
     public static void main(String[] args) throws Exception {
-        /*login();
+      /*  login();
 
         share();
 
@@ -33,7 +34,7 @@ public class MGTV {
 
         submitOrder(10);*/
 
-        login();
+//        login();
 
         /*while (true){
             Date now = new Date();
@@ -55,9 +56,9 @@ public class MGTV {
             }
         }*/
 
-//        redBag1(5, "10477"); // 每日红包
-//        redBag1(5, "10495"); // 张杰
-//        redBag1(5, "10492"); // 何炅
+        redBag1(1, "10477"); // 每日红包
+        redBag1(5, "10495"); // 张杰
+        redBag1(5, "10492"); // 何炅
 
 
     }
@@ -108,6 +109,22 @@ public class MGTV {
         return "";
     }
 
+    private static boolean isRedBagCanPlay(String gameId) throws Exception {
+        String url = "http://activity.mgtvhd.com/commonWebM/CommonGameIfWin_getUserGameRecordInfo.do?userId=141255&gameId=" + gameId + "&deviceNumber=869922026733969&pageStart=0&pageSize=20";
+        JSONObject baseInfoJSON = HttpClientUtils.postResponse(url, null);
+        JSONObject baseInfo = baseInfoJSON.getJSONObject("data");
+        if (baseInfo.getIntValue("redbagCountdown") > 0) {
+            System.out.println("红包游戏[" + baseInfo.getJSONObject("gameInfo").getIntValue("id") + "]还没到时间，开始时间[" + baseInfo.getJSONObject("redbagGameInfo").getString("startTime") + "]");
+            return false;
+        }
+
+        if (baseInfo.getBooleanValue("noRedBag")) {
+            System.out.println("红包游戏[" + baseInfo.getJSONObject("gameInfo").getIntValue("id") + "]已经没有红包");
+            return false;
+        }
+        return true;
+    }
+
     /**
      * 红包游戏1
      * 10477,10495,10492
@@ -115,16 +132,9 @@ public class MGTV {
      * @throws Exception
      */
     private static void redBag1(int times, String gameId) throws Exception {
-        /*String checkUrl = "http://activity.mgtvhd.com/commonWebM/CommonGameIfWin_getUserGameRecordInfo.do?userId=141255&gameId=" + gameId + "&deviceNumber=869922026733969&pageStart=0&pageSize=20";
-
-        JSONObject checkResult = HttpClientUtils.postResponse(checkUrl, null);
-        boolean canPlay = checkResult.getBooleanValue("canPlay");
-        boolean noRedBag = checkResult.getBooleanValue("noRedBag");
-        if (!canPlay || noRedBag) {
-            System.out.println("红包[" + gameId + "]不能玩");
+        if (!isRedBagCanPlay(gameId)) {
             return;
-        }*/
-
+        }
         String url = "http://activity.mgtvhd.com/commonWebM/CommonGameRedbag_dealRedBag.do?userId=141255&gameId=" + gameId + "&deviceNumber=869922026733969&payTypeUser=free";
         for (int i=0;i<times;i++) {
             HttpClientUtils.getResponse(url, null);
