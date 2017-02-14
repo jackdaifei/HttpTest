@@ -38,13 +38,10 @@ public class MGTV {
 
         /*while (true){
             Date now = new Date();
-            if (now.after(DateUtils.parseDate("2017-02-10 12:00:00", "yyyy-MM-dd HH:mm:ss"))) {
+            if (now.after(DateUtils.parseDate("2017-02-14 12:00:00", "yyyy-MM-dd HH:mm:ss"))) {
                 redBag2(5);
                 break;
             }
-            *//*if (now.after(DateUtils.parseDate("2017-02-9 12:00:05", "yyyy-MM-dd HH:mm:ss"))) {
-                break;
-            }*//*
             Thread.sleep(1000);
         }*/
 
@@ -56,9 +53,9 @@ public class MGTV {
             }
         }*/
 
-        redBag1(1, "10477"); // 每日红包
-        redBag1(5, "10495"); // 张杰
-        redBag1(5, "10492"); // 何炅
+//        redBag1(5, "10477"); // 每日红包
+//        redBag1(5, "10495"); // 张杰
+//        redBag1(5, "10492"); // 何炅
 
 
     }

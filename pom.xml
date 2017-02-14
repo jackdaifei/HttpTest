@@ -32,6 +32,12 @@
             <artifactId>fastjson</artifactId>
             <version>1.2.4</version>
         </dependency>
+
+        <dependency>
+            <groupId>com.asprise.ocr</groupId>
+            <artifactId>java-ocr-api</artifactId>
+            <version>[15,)</version>
+        </dependency>
     </dependencies>
 
 
