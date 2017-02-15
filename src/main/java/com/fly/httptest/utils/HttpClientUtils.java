@@ -1,5 +1,6 @@
 package com.fly.httptest.utils;
 
+import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.lang3.ArrayUtils;
@@ -32,6 +33,20 @@ public class HttpClientUtils {
         System.out.println(responseStr);
         response.close();
         return JSONObject.parseObject(responseStr);
+    }
+
+    public static JSONArray postResponseArray(String url, List<NameValuePair> paramList) throws Exception {
+        HttpPost httpPost = new HttpPost(url);
+        if (CollectionUtils.isNotEmpty(paramList)) {
+            httpPost.setEntity(new UrlEncodedFormEntity(paramList));
+        }
+        CloseableHttpClient client = HttpClients.createDefault();
+        CloseableHttpResponse response = client.execute(httpPost);
+
+        String responseStr = EntityUtils.toString(response.getEntity());
+        System.out.println(responseStr);
+        response.close();
+        return JSONObject.parseArray(responseStr);
     }
 
     public static void postResponse(String url, List<NameValuePair> paramList, Header[] headers) throws Exception {

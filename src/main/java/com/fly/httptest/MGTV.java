@@ -18,7 +18,7 @@ import java.util.Random;
 public class MGTV {
 
     public static void main(String[] args) throws Exception {
-      /*  login();
+        /*login();
 
         share();
 
@@ -36,14 +36,17 @@ public class MGTV {
 
 //        login();
 
-        /*while (true){
+        /*while (true) {
             Date now = new Date();
-            if (now.after(DateUtils.parseDate("2017-02-14 12:00:00", "yyyy-MM-dd HH:mm:ss"))) {
-                redBag2(5);
-                break;
+            if (now.after(DateUtils.parseDate("2017-02-15 11:59:55", "yyyy-MM-dd HH:mm:ss"))) {
+                if (isRedBagCanPlay("10237")) {
+                    break;
+                }
             }
             Thread.sleep(1000);
-        }*/
+        }
+        redBag2(5);*/
+
 
         /*while (true) {
             Date now = new Date();
@@ -57,6 +60,9 @@ public class MGTV {
 //        redBag1(5, "10495"); // 张杰
 //        redBag1(5, "10492"); // 何炅
 
+        /*redBag2(1);
+        Thread.sleep(1000);
+        redBag2(1);*/
 
     }
 
@@ -80,17 +86,16 @@ public class MGTV {
         paramList.add(new BasicNameValuePair("payCount", "10"));
         paramList.add(new BasicNameValuePair("itemId", "10715"));
         paramList.add(new BasicNameValuePair("userId", "141255"));
-        for (int i=0;i<times;i++) {
+        for (int i = 0; i < times; i++) {
             HttpClientUtils.postResponse(url, paramList);
             Thread.sleep(sleepMillisecond(1000, 3000));
         }
 
 
-
     }
 
     private static void answer(int times) throws Exception {
-        for (int i=0; i< times; i++) {
+        for (int i = 0; i < times; i++) {
             String totalIdUrl = "http://activity.mgtvhd.com/gameWebM/GameQuestionOperateTotal_dealQuestion.do?userId=141255&deviceNumber=&gameId=10447&payTypeUser=dou";
             JSONObject totalJson = HttpClientUtils.getResponse(totalIdUrl, null);
             String totalId = totalJson.getString("data").substring(1);
@@ -111,7 +116,7 @@ public class MGTV {
         JSONObject baseInfoJSON = HttpClientUtils.postResponse(url, null);
         JSONObject baseInfo = baseInfoJSON.getJSONObject("data");
         if (baseInfo.getIntValue("redbagCountdown") > 0) {
-            System.out.println("红包游戏[" + baseInfo.getJSONObject("gameInfo").getIntValue("id") + "]还没到时间，开始时间[" + baseInfo.getJSONObject("redbagGameInfo").getString("startTime") + "]");
+            System.out.println("红包游戏[" + baseInfo.getJSONObject("gameInfo").getIntValue("id") + "]还没到时间，开始时间[" + baseInfo.getJSONObject("redbagGameInfo").getString("startTime") + "], 剩余[" + baseInfo.getString("redbagCountdown") + "秒]");
             return false;
         }
 
@@ -125,6 +130,7 @@ public class MGTV {
     /**
      * 红包游戏1
      * 10477,10495,10492
+     *
      * @param times
      * @throws Exception
      */
@@ -133,46 +139,61 @@ public class MGTV {
             return;
         }
         String url = "http://activity.mgtvhd.com/commonWebM/CommonGameRedbag_dealRedBag.do?userId=141255&gameId=" + gameId + "&deviceNumber=869922026733969&payTypeUser=free";
-        for (int i=0;i<times;i++) {
-            HttpClientUtils.getResponse(url, null);
+        for (int i = 0; i < times; i++) {
+            JSONObject result = HttpClientUtils.getResponse(url, null);
+            if ("您今天的游戏次数已用完！".equals(result.getString("data"))) {
+                break;
+            }
             Thread.sleep(sleepMillisecond(1200, 2500));
         }
     }
 
     /**
      * 红包游戏2--------12:00
+     *
      * @param times
      * @throws Exception
      */
     private static void redBag2(int times) throws Exception {
         String url = "http://activity.mgtvhd.com/commonWebM/CommonGameRedbag_dealRedBag.do?userId=141255&gameId=10237&deviceNumber=869922026733969&payTypeUser=dou";
-        for (int i=0;i<times;i++) {
-            HttpClientUtils.getResponse(url, null);
+        for (int i = 0; i < times; i++) {
+            JSONObject result = HttpClientUtils.getResponse(url, null);
+            if ("您今天的游戏次数已用完！".equals(result.getString("data"))) {
+                break;
+            }
             Thread.sleep(sleepMillisecond(1200, 2500));
         }
     }
 
     /**
      * 红包游戏3--------20:00
+     *
      * @param times
      * @throws Exception
      */
     private static void redBag3(int times) throws Exception {
+        if (!isRedBagCanPlay("10393")) {
+            return;
+        }
         String url = "http://activity.mgtvhd.com/commonWebM/CommonGameRedbag_dealRedBag.do?userId=141255&gameId=10393&deviceNumber=869922026733969&payTypeUser=dou";
-        for (int i=0;i<times;i++) {
-            HttpClientUtils.getResponse(url, null);
-            Thread.sleep(sleepMillisecond(1000,2500));
+        for (int i = 0; i < times; i++) {
+            JSONObject result = HttpClientUtils.getResponse(url, null);
+            if ("您今天的游戏次数已用完！".equals(result.getString("data"))) {
+                break;
+            }
+            Thread.sleep(sleepMillisecond(1000, 2500));
         }
     }
 
     /**
      * 转盘游戏
+     *
      * @param times
      * @throws Exception
      */
     private static void wheelGame(int times) throws Exception {
         String url = "http://activity.mgtvhd.com/commonWebM/CommonGameIfWin_dealWheel.do?userId=141255&deviceNumber=869922026733969&gameId=10425&payTypeUser=dou";
-        for (int i=0;i<times;i++) {
+        for (int i = 0; i < times; i++) {
             HttpClientUtils.getResponse(url, null);
             Thread.sleep(sleepMillisecond(2000, 4000));
         }
@@ -180,7 +201,7 @@ public class MGTV {
 
     private static int sleepMillisecond(int min, int max) {
         Random random = new Random();
-        return random.nextInt(max)%(max-min+1) + min;
+        return random.nextInt(max) % (max - min + 1) + min;
     }
 
 }
