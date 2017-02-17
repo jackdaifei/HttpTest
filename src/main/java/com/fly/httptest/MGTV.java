@@ -38,7 +38,7 @@ public class MGTV {
 
         /*while (true) {
             Date now = new Date();
-            if (now.after(DateUtils.parseDate("2017-02-15 11:59:55", "yyyy-MM-dd HH:mm:ss"))) {
+            if (now.after(DateUtils.parseDate("2017-02-17 11:59:55", "yyyy-MM-dd HH:mm:ss"))) {
                 if (isRedBagCanPlay("10237")) {
                     break;
                 }
@@ -158,7 +158,7 @@ public class MGTV {
         String url = "http://activity.mgtvhd.com/commonWebM/CommonGameRedbag_dealRedBag.do?userId=141255&gameId=10237&deviceNumber=869922026733969&payTypeUser=dou";
         for (int i = 0; i < times; i++) {
             JSONObject result = HttpClientUtils.getResponse(url, null);
-            if ("您今天的游戏次数已用完！".equals(result.getString("data"))) {
+            if ("您今天的游戏次数已用完！".equals(result.getString("data")) || "null".equals(result.getString("data"))) {
                 break;
             }
             Thread.sleep(sleepMillisecond(1200, 2500));

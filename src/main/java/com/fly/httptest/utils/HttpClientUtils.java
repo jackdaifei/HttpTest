@@ -49,7 +49,7 @@ public class HttpClientUtils {
         return JSONObject.parseArray(responseStr);
     }
 
-    public static void postResponse(String url, List<NameValuePair> paramList, Header[] headers) throws Exception {
+    public static JSONObject postResponse(String url, List<NameValuePair> paramList, Header[] headers) throws Exception {
         HttpPost httpPost = new HttpPost(url);
         if (CollectionUtils.isNotEmpty(paramList)) {
             httpPost.setEntity(new UrlEncodedFormEntity(paramList));
@@ -63,6 +63,7 @@ public class HttpClientUtils {
         String responseStr = EntityUtils.toString(response.getEntity());
         System.out.println(responseStr);
         response.close();
+        return JSONObject.parseObject(responseStr);
     }
 
     public static JSONObject getResponse(String url, Header[] headers) throws Exception {
