@@ -101,7 +101,7 @@ public class MGTV {
             String totalId = totalJson.getString("data").substring(1);
             JSONObject jsonObject = HttpClientUtils.getResponse("http://activity.mgtvhd.com/gameWebM/GameQuestionOperateTotal_updateAnswerRecord.do?question=295_492,290_473,310_540,316_556,505_1246,509_1257,515_1274,527_1305,729_1986,733_1994&totalId=" + totalId + "&gameId=10447&userId=141255", null);
             System.out.println(jsonObject);
-            Thread.sleep(sleepMillisecond(1200, 2500));
+            Thread.sleep(sleepMillisecond(1500, 2500));
         }
     }
 
@@ -144,7 +144,7 @@ public class MGTV {
             if ("您今天的游戏次数已用完！".equals(result.getString("data"))) {
                 break;
             }
-            Thread.sleep(sleepMillisecond(1200, 2500));
+            Thread.sleep(sleepMillisecond(1500, 2500));
         }
     }
 
@@ -161,7 +161,7 @@ public class MGTV {
             if ("您今天的游戏次数已用完！".equals(result.getString("data")) || "null".equals(result.getString("data"))) {
                 break;
             }
-            Thread.sleep(sleepMillisecond(1200, 2500));
+            Thread.sleep(sleepMillisecond(1500, 2500));
         }
     }
 
@@ -181,7 +181,7 @@ public class MGTV {
             if ("您今天的游戏次数已用完！".equals(result.getString("data"))) {
                 break;
             }
-            Thread.sleep(sleepMillisecond(1000, 2500));
+            Thread.sleep(sleepMillisecond(1500, 2500));
         }
     }
 
