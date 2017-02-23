@@ -32,13 +32,15 @@ public class MGTV {
             Thread.sleep(sleepMillisecond(1200,2500));
         }
 
+
+
         submitOrder(10);*/
 
 //        login();
 
         /*while (true) {
             Date now = new Date();
-            if (now.after(DateUtils.parseDate("2017-02-17 11:59:55", "yyyy-MM-dd HH:mm:ss"))) {
+            if (now.after(DateUtils.parseDate("2017-02-23 11:59:55", "yyyy-MM-dd HH:mm:ss"))) {
                 if (isRedBagCanPlay("10237")) {
                     break;
                 }
@@ -50,11 +52,14 @@ public class MGTV {
 
         /*while (true) {
             Date now = new Date();
-            if (now.after(DateUtils.parseDate("2017-02-07 20:00:00", "yyyy-MM-dd HH:mm:ss"))) {
-                redBag3(5);
-                break;
+            if (now.after(DateUtils.parseDate("2017-02-23 19:59:55", "yyyy-MM-dd HH:mm:ss"))) {
+                if (isRedBagCanPlay("10393")) {
+                    break;
+                }
             }
-        }*/
+            Thread.sleep(1000);
+        }
+        redBag3(5);*/
 
 //        redBag1(5, "10477"); // 每日红包
 //        redBag1(5, "10495"); // 张杰
@@ -90,7 +95,12 @@ public class MGTV {
             HttpClientUtils.postResponse(url, paramList);
             Thread.sleep(sleepMillisecond(1000, 3000));
         }
-
+//        http://shop.mgtvhd.com/shopM/ShopOrderInfoPay_toSucessOurMoneyNew.do
+//        isAllBuy	n
+//        payType	dou
+//        payCount	50
+//        itemId	19017
+//        userId	141255
 
     }
 
@@ -172,9 +182,6 @@ public class MGTV {
      * @throws Exception
      */
     private static void redBag3(int times) throws Exception {
-        if (!isRedBagCanPlay("10393")) {
-            return;
-        }
         String url = "http://activity.mgtvhd.com/commonWebM/CommonGameRedbag_dealRedBag.do?userId=141255&gameId=10393&deviceNumber=869922026733969&payTypeUser=dou";
         for (int i = 0; i < times; i++) {
             JSONObject result = HttpClientUtils.getResponse(url, null);
