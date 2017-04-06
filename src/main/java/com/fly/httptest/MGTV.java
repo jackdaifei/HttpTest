@@ -3,12 +3,10 @@ package com.fly.httptest;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.fly.httptest.utils.HttpClientUtils;
-import org.apache.commons.lang3.time.DateUtils;
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 import java.util.Random;
 
@@ -18,26 +16,71 @@ import java.util.Random;
 public class MGTV {
 
     public static void main(String[] args) throws Exception {
-        login();
+        Thread loginThread = new Thread(){
+            @Override
+            public void run() {
+                try {
+                    login();
+                    Thread.sleep(1000*60*60*5+sleepMillisecond(1000, 10000));
+                    login();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        };
+        loginThread.start();
 
         share();
 
         wheelGame(10);
 
         submitHuaFei(5);
-        if (isRedBagCanPlay("10237")) {
-            Thread.sleep(1000);
-            redBag2(3);
-        }
 
-        Thread.sleep(1000*60*60*5+sleepMillisecond(1000, 10000));
-        login();
-        redBag1(5, "10477"); // 每日红包
+        Thread redThread = new Thread() {
+            @Override
+            public void run() {
+                try {
+                    if (isRedBagCanPlay("10477")) {
+                        redBag1(5, "10477"); // 每日红包
+                    }
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        };
+        redThread.start();
 
-        if (isRedBagCanPlay("10393")) {
-            Thread.sleep(1000);
-            redBag3(3);
-        }
+        Thread red2Thread = new Thread() {
+            @Override
+            public void run() {
+                try {
+                    if (isRedBagCanPlay("10237")) {
+                        Thread.sleep(1000);
+                        redBag2(3);
+                    }
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        };
+        red2Thread.start();
+
+        Thread red3Thread = new Thread() {
+            @Override
+            public void run() {
+                try {
+                    if (isRedBagCanPlay("10393")) {
+                        Thread.sleep(1000);
+                        redBag3(3);
+                    }
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        };
+        red3Thread.start();
+
+//        System.out.println(111);
 
         /*for (int i=0;i<10;i++) {
             JSONObject totalJson = HttpClientUtils.getResponse("http://activity.mgtvhd.com/gameWebM/GameQuestionOperateTotal_dealQuestion.do?userId=141255&deviceNumber=&gameId=10447&payTypeUser=dou", null);
@@ -80,7 +123,7 @@ public class MGTV {
 
 
 
-        redBag1(5, "10477"); // 每日红包
+//        redBag1(5, "10477"); // 每日红包
 //        redBag1(5, "10495"); //
 //        redBag1(5, "10492"); //
 
@@ -171,7 +214,8 @@ public class MGTV {
 
         if (baseInfo.getBooleanValue("noRedBag")) {
             System.out.println("红包游戏[" + baseInfo.getJSONObject("gameInfo").getIntValue("id") + "]已经没有红包");
-            start = false;
+            Thread.sleep(1000 * 60 * 30);
+            start = isRedBagCanPlay(gameId);
         }
         if (!start) {
             Integer c = baseInfo.getInteger("redbagCountdown");
@@ -276,7 +320,10 @@ public class MGTV {
     private static void wheelGame(int times) throws Exception {
         String url = "http://activity.mgtvhd.com/commonWebM/CommonGameIfWin_dealWheel.do?userId=141255&deviceNumber=869922026733969&gameId=10425&payTypeUser=dou";
         for (int i = 0; i < times; i++) {
-            HttpClientUtils.getResponse(url, null);
+            JSONObject result = HttpClientUtils.getResponse(url, null);
+            if (result.getString("data").equals("您今天的游戏次数已用完！")) {
+                break;
+            }
             Thread.sleep(sleepMillisecond(2000, 4000));
         }
     }
