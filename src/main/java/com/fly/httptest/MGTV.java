@@ -21,6 +21,8 @@ public class MGTV {
             public void run() {
                 try {
                     login();
+                    share();
+                    wheelGame(10);
                     Thread.sleep(1000*60*60*5+sleepMillisecond(1000, 10000));
                     login();
                 } catch (Exception e) {
@@ -30,11 +32,17 @@ public class MGTV {
         };
         loginThread.start();
 
-        share();
-
-        wheelGame(10);
-
-        submitHuaFei(5);
+        Thread huafeiThread = new Thread() {
+            @Override
+            public void run() {
+                try {
+                    submitHuaFei(5);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        };
+        huafeiThread.start();
 
         Thread redThread = new Thread() {
             @Override
@@ -352,15 +360,12 @@ public class MGTV {
             String title = data.getString("title");
             if ("新手20元话费卡抢先体验".equals(title)) {
                 String itemId = data.getString("id");
-                for (int m=0;m<times;m++) {
-                    submit(itemId);
-                    Thread.sleep(sleepMillisecond(1000, 3000));
-                }
+                submit(itemId, times);
             }
         }
     }
 
-    private static void submit(String itemId) throws Exception {
+    private static void submit(String itemId, int times) throws Exception {
         String url = "http://shop.mgtvhd.com/shopM/ShopOrderInfoPay_toSucessOurMoneyNew.do";
         List<NameValuePair> paramList = new ArrayList<NameValuePair>();
         paramList.add(new BasicNameValuePair("isAllBuy", "n"));
@@ -368,7 +373,18 @@ public class MGTV {
         paramList.add(new BasicNameValuePair("payCount", "10"));
         paramList.add(new BasicNameValuePair("itemId", itemId));
         paramList.add(new BasicNameValuePair("userId", "141255"));
-        HttpClientUtils.postResponse(url, paramList);
+        int i = 0;
+        while (i < times) {
+            JSONObject response = HttpClientUtils.postResponse(url, paramList);
+            if (response.getString("data").equals("不能超过该商品50次的最大累计购买次数！")) {
+                Thread.sleep(1000*60*60);
+            } else {
+                Thread.sleep(sleepMillisecond(1000, 3000));
+                i++;
+            }
+        }
+
+
     }
 
 }
