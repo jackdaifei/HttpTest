@@ -78,7 +78,7 @@ public class MGTV {
             public void run() {
                 try {
                     if (isRedBagCanPlay("10393")) {
-                        Thread.sleep(1000);
+                        Thread.sleep(500);
                         redBag3(3);
                     }
                 } catch (Exception e) {
