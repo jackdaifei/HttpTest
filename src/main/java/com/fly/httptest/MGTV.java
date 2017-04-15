@@ -307,15 +307,21 @@ public class MGTV {
      */
     private static void redBag3(int times) throws Exception {
         String url = "http://activity.mgtvhd.com/commonWebM/CommonGameRedbag_dealRedBag.do?userId=141255&gameId=10393&deviceNumber=869922026733969&payTypeUser=dou";
-        for (int i = 0; i < times; i++) {
+        int i = 0;
+        while (i < times) {
             JSONObject result = HttpClientUtils.getResponse(url, null);
             if (result.getBooleanValue("success")) {
+                if (result.getString("data").equals("null")) {
+                    Thread.sleep(100);
+                    continue;
+                }
                 break;
             }
             if ("您今天的游戏次数已用完！".equals(result.getString("data"))) {
                 break;
             }
-            Thread.sleep(sleepMillisecond(1500, 2500));
+            Thread.sleep(sleepMillisecond(1000, 1500));
+            i++;
         }
     }
 
@@ -378,6 +384,8 @@ public class MGTV {
             JSONObject response = HttpClientUtils.postResponse(url, paramList);
             if (response.getString("data").equals("不能超过该商品50次的最大累计购买次数！")) {
                 Thread.sleep(1000*60*60);
+            } else if (response.getString("data").equals("不好意思，来晚了，本商品已经卖完！")){
+                Thread.sleep(1000*60*30);
             } else {
                 Thread.sleep(sleepMillisecond(1000, 3000));
                 i++;
