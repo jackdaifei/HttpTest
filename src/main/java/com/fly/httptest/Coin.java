@@ -21,62 +21,6 @@ import java.util.List;
  */
 public class Coin {
 
-    private final static String bterUrl = "https://apim.bter.com/apim/v1/marketDepth";
-    private final static NameValuePair[] sntBterParamArray = new NameValuePair[]{
-            new BasicNameValuePair("appKey", "1C843F4B-C351-4A9F-EB51-B722122341D5"),
-            new BasicNameValuePair("appLang", "cn"),
-            new BasicNameValuePair("currencyType", "SNT"),
-            new BasicNameValuePair("depth", "0.1"),
-            new BasicNameValuePair("exchangeType", "CNY"),
-            new BasicNameValuePair("length", "20"),
-            new BasicNameValuePair("sign", "bcb22a2897aeea31acd520fd28cad587"),
-            new BasicNameValuePair("token", "")
-    };
-
-    private final static NameValuePair[] eosBterParamArray = new NameValuePair[]{
-            new BasicNameValuePair("appKey", "1C843F4B-C351-4A9F-EB51-B722122341D5"),
-            new BasicNameValuePair("appLang", "cn"),
-            new BasicNameValuePair("currencyType", "EOS"),
-            new BasicNameValuePair("depth", "0.1"),
-            new BasicNameValuePair("exchangeType", "CNY"),
-            new BasicNameValuePair("length", "20"),
-            new BasicNameValuePair("sign", ""),
-            new BasicNameValuePair("token", "d9e1d0a0b724e0607b687b557c63e562")
-    };
-
-    private final static NameValuePair[] icoBterParamArray = new NameValuePair[]{
-            new BasicNameValuePair("appKey", "1C843F4B-C351-4A9F-EB51-B722122341D5"),
-            new BasicNameValuePair("appLang", "cn"),
-            new BasicNameValuePair("currencyType", "ICO"),
-            new BasicNameValuePair("depth", "0.1"),
-            new BasicNameValuePair("exchangeType", "CNY"),
-            new BasicNameValuePair("length", "20"),
-            new BasicNameValuePair("sign", "febd61790ac9c775a3a72545af7f95ee"),
-            new BasicNameValuePair("token", "")
-    };
-
-    private final static NameValuePair[] ethBterParamArray = new NameValuePair[]{
-            new BasicNameValuePair("appKey", "1C843F4B-C351-4A9F-EB51-B722122341D5"),
-            new BasicNameValuePair("appLang", "cn"),
-            new BasicNameValuePair("currencyType", "ETH"),
-            new BasicNameValuePair("depth", "0.1"),
-            new BasicNameValuePair("exchangeType", "CNY"),
-            new BasicNameValuePair("length", "20"),
-            new BasicNameValuePair("sign", "b9d073c4b4a2ad7dd4c4d20bc485c4af"),
-            new BasicNameValuePair("token", "")
-    };
-
-    private final static NameValuePair[] qtumBterParamArray = new NameValuePair[]{
-            new BasicNameValuePair("appKey", "1C843F4B-C351-4A9F-EB51-B722122341D5"),
-            new BasicNameValuePair("appLang", "cn"),
-            new BasicNameValuePair("currencyType", "QTUM"),
-            new BasicNameValuePair("depth", "0.1"),
-            new BasicNameValuePair("exchangeType", "CNY"),
-            new BasicNameValuePair("length", "20"),
-            new BasicNameValuePair("sign", "3ad1cd073496457f41f02383ea7145a4"),
-            new BasicNameValuePair("token", "")
-    };
-
     public static void main(String[] args) {
         /*String url = "https://yunbi.com//api/v2/tickers.json";
 
@@ -143,29 +87,42 @@ public class Coin {
         jFrame.setContentPane(mainPanel);
 
         JPanel sntPanel = new SelfPanel("SNT");
-        JLabel sntBterLabel = new SelfLabel(bterUrl, Arrays.asList(sntBterParamArray));
-        JLabel sntYunBiLabel = new SelfLabel();
+        SelfLabel sntBterLabel = new SelfLabel();
+        SelfLabel sntYunBiLabel = new SelfLabel();
         sntPanel.add(sntBterLabel);
         sntPanel.add(sntYunBiLabel);
         mainPanel.add(sntPanel);
 
         JPanel eosPanel = new SelfPanel("EOS");
+        SelfLabel eosBterLabel = new SelfLabel();
+        eosPanel.add(eosBterLabel);
         mainPanel.add(eosPanel);
 
         JPanel icoPanel = new SelfPanel("ICO");
+        SelfLabel icoBterLabel = new SelfLabel();
+        icoPanel.add(icoBterLabel);
         mainPanel.add(icoPanel);
 
         JPanel ethPanel = new SelfPanel("ETH");
+        SelfLabel ethBterLabel = new SelfLabel();
+        ethPanel.add(ethBterLabel);
         mainPanel.add(ethPanel);
 
         JPanel qtumPanel = new SelfPanel("QTUM 量子链");
+        SelfLabel qtumBterLabel = new SelfLabel();
+        qtumPanel.add(qtumBterLabel);
         mainPanel.add(qtumPanel);
 
         JPanel yunbiOther = new SelfPanel("云币Other");
+        SelfLabel otherBterLabel = new SelfLabel();
+        yunbiOther.add(otherBterLabel);
         mainPanel.add(yunbiOther);
 
         jFrame.setVisible(true);
 
+        SelfThread selfThread = new SelfThread(sntBterLabel, eosBterLabel, icoBterLabel, ethBterLabel, qtumBterLabel, otherBterLabel);
+        Thread thread = new Thread(selfThread);
+        thread.start();
     }
 
 }
@@ -183,7 +140,13 @@ class SelfLabel extends JLabel {
         this.setText("Bter");
     }
 
-    public SelfLabel(final String url, final List<NameValuePair> paramList) {
+    @Override
+    public void setText(String text) {
+        super.setText(text);
+        this.repaint();
+    }
+
+    /* public SelfLabel(final String url, final List<NameValuePair> paramList) {
         Thread thread = new Thread() {
             @Override
             public void run(){
@@ -204,5 +167,106 @@ class SelfLabel extends JLabel {
             }
         };
         thread.start();
+    }*/
+}
+
+class SelfThread implements Runnable {
+    private final static String bterUrl = "https://apim.bter.com/apim/v1/marketDepth";
+    private final static NameValuePair[] sntBterParamArray = new NameValuePair[]{
+            new BasicNameValuePair("appKey", "1C843F4B-C351-4A9F-EB51-B722122341D5"),
+            new BasicNameValuePair("appLang", "cn"),
+            new BasicNameValuePair("currencyType", "SNT"),
+            new BasicNameValuePair("depth", "0.1"),
+            new BasicNameValuePair("exchangeType", "CNY"),
+            new BasicNameValuePair("length", "20"),
+            new BasicNameValuePair("sign", "bcb22a2897aeea31acd520fd28cad587"),
+            new BasicNameValuePair("token", "")
+    };
+
+    private final static NameValuePair[] eosBterParamArray = new NameValuePair[]{
+            new BasicNameValuePair("appKey", "1C843F4B-C351-4A9F-EB51-B722122341D5"),
+            new BasicNameValuePair("appLang", "cn"),
+            new BasicNameValuePair("currencyType", "EOS"),
+            new BasicNameValuePair("depth", "0.1"),
+            new BasicNameValuePair("exchangeType", "CNY"),
+            new BasicNameValuePair("length", "20"),
+            new BasicNameValuePair("sign", ""),
+            new BasicNameValuePair("token", "d9e1d0a0b724e0607b687b557c63e562")
+    };
+
+    private final static NameValuePair[] icoBterParamArray = new NameValuePair[]{
+            new BasicNameValuePair("appKey", "1C843F4B-C351-4A9F-EB51-B722122341D5"),
+            new BasicNameValuePair("appLang", "cn"),
+            new BasicNameValuePair("currencyType", "ICO"),
+            new BasicNameValuePair("depth", "0.1"),
+            new BasicNameValuePair("exchangeType", "CNY"),
+            new BasicNameValuePair("length", "20"),
+            new BasicNameValuePair("sign", "febd61790ac9c775a3a72545af7f95ee"),
+            new BasicNameValuePair("token", "")
+    };
+
+    private final static NameValuePair[] ethBterParamArray = new NameValuePair[]{
+            new BasicNameValuePair("appKey", "1C843F4B-C351-4A9F-EB51-B722122341D5"),
+            new BasicNameValuePair("appLang", "cn"),
+            new BasicNameValuePair("currencyType", "ETH"),
+            new BasicNameValuePair("depth", "0.1"),
+            new BasicNameValuePair("exchangeType", "CNY"),
+            new BasicNameValuePair("length", "20"),
+            new BasicNameValuePair("sign", "b9d073c4b4a2ad7dd4c4d20bc485c4af"),
+            new BasicNameValuePair("token", "")
+    };
+
+    private final static NameValuePair[] qtumBterParamArray = new NameValuePair[]{
+            new BasicNameValuePair("appKey", "1C843F4B-C351-4A9F-EB51-B722122341D5"),
+            new BasicNameValuePair("appLang", "cn"),
+            new BasicNameValuePair("currencyType", "QTUM"),
+            new BasicNameValuePair("depth", "0.1"),
+            new BasicNameValuePair("exchangeType", "CNY"),
+            new BasicNameValuePair("length", "20"),
+            new BasicNameValuePair("sign", "3ad1cd073496457f41f02383ea7145a4"),
+            new BasicNameValuePair("token", "")
+    };
+
+    private SelfLabel sntLabel;
+    private SelfLabel eosLabel;
+    private SelfLabel icoLabel;
+    private SelfLabel ethLabel;
+    private SelfLabel qtumLabel;
+    private SelfLabel otherLabel;
+
+    public SelfThread(SelfLabel sntLabel, SelfLabel eosLabel, SelfLabel icoLabel, SelfLabel ethLabel, SelfLabel qtumLabel, SelfLabel otherLabel) {
+        this.sntLabel = sntLabel;
+        this.eosLabel = eosLabel;
+        this.icoLabel = icoLabel;
+        this.ethLabel = ethLabel;
+        this.qtumLabel = qtumLabel;
+        this.otherLabel = otherLabel;
     }
+
+    @Override
+    public void run(){
+        while (true) {
+            try {
+                Header[] headers = new Header[] {
+                        new BasicHeader("Content-Type", "application/x-www-form-urlencoded")
+                };
+                float sntBterPrice = HttpClientUtils.postResponse(bterUrl, Arrays.asList(sntBterParamArray), headers).getJSONObject("datas").getFloat("currentPrice");
+                float eosBterPrice = HttpClientUtils.postResponse(bterUrl, Arrays.asList(eosBterParamArray), headers).getJSONObject("datas").getFloat("currentPrice");
+                float icoBterPrice = HttpClientUtils.postResponse(bterUrl, Arrays.asList(icoBterParamArray), headers).getJSONObject("datas").getFloat("currentPrice");
+                float ethBterPrice = HttpClientUtils.postResponse(bterUrl, Arrays.asList(ethBterParamArray), headers).getJSONObject("datas").getFloat("currentPrice");
+                float qtumBterPrice = HttpClientUtils.postResponse(bterUrl, Arrays.asList(qtumBterParamArray), headers).getJSONObject("datas").getFloat("currentPrice");
+
+                sntLabel.setText("Bter: " + sntBterPrice);
+                eosLabel.setText("Bter: " + eosBterPrice);
+                icoLabel.setText("Bter: " + icoBterPrice);
+                ethLabel.setText("Bter: " + ethBterPrice);
+                qtumLabel.setText("Bter: " + qtumBterPrice);
+
+                Thread.sleep(5000);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
 }
