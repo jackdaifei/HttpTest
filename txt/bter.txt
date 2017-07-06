@@ -1,0 +1,53 @@
+https://apim.bter.com/apim/v1/marketDepth
+
+appKey	1C843F4B-C351-4A9F-EB51-B722122341D5
+appLang	cn
+currencyType	EOS
+depth	0.1
+exchangeType	CNY
+length	20
+sign	d9e1d0a0b724e0607b687b557c63e562
+token
+
+appKey	1C843F4B-C351-4A9F-EB51-B722122341D5
+appLang	cn
+currencyType	ICO
+depth	0.1
+exchangeType	CNY
+length	20
+sign	febd61790ac9c775a3a72545af7f95ee
+token
+
+
+appKey	1C843F4B-C351-4A9F-EB51-B722122341D5
+appLang	cn
+currencyType	SNT
+depth	0.1
+exchangeType	CNY
+length	20
+sign	bcb22a2897aeea31acd520fd28cad587
+token
+
+
+
+appKey	1C843F4B-C351-4A9F-EB51-B722122341D5
+appLang	cn
+currencyType	ETH
+depth	0.1
+exchangeType	CNY
+length	20
+sign	b9d073c4b4a2ad7dd4c4d20bc485c4af
+token
+
+
+
+
+appKey	1C843F4B-C351-4A9F-EB51-B722122341D5
+appLang	cn
+currencyType	QTUM
+depth	0.1
+exchangeType	CNY
+length	20
+sign	3ad1cd073496457f41f02383ea7145a4
+token
+

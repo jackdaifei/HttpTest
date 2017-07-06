@@ -35,6 +35,20 @@ public class HttpClientUtils {
         return JSONObject.parseObject(responseStr);
     }
 
+    public static String postResponseString(String url, List<NameValuePair> paramList) throws Exception {
+        HttpPost httpPost = new HttpPost(url);
+        if (CollectionUtils.isNotEmpty(paramList)) {
+            httpPost.setEntity(new UrlEncodedFormEntity(paramList));
+        }
+        CloseableHttpClient client = HttpClients.createDefault();
+        CloseableHttpResponse response = client.execute(httpPost);
+
+        String responseStr = EntityUtils.toString(response.getEntity(), "utf-8");
+        System.out.println(responseStr);
+        response.close();
+        return responseStr;
+    }
+
     public static JSONArray postResponseArray(String url, List<NameValuePair> paramList) throws Exception {
         HttpPost httpPost = new HttpPost(url);
         if (CollectionUtils.isNotEmpty(paramList)) {
@@ -60,10 +74,27 @@ public class HttpClientUtils {
         CloseableHttpClient client = HttpClients.createDefault();
         CloseableHttpResponse response = client.execute(httpPost);
 
-        String responseStr = EntityUtils.toString(response.getEntity());
+        String responseStr = EntityUtils.toString(response.getEntity(), "utf-8");
         System.out.println(responseStr);
         response.close();
         return JSONObject.parseObject(responseStr);
+    }
+
+    public static String postResponseString(String url, List<NameValuePair> paramList, Header[] headers) throws Exception {
+        HttpPost httpPost = new HttpPost(url);
+        if (CollectionUtils.isNotEmpty(paramList)) {
+            httpPost.setEntity(new UrlEncodedFormEntity(paramList));
+        }
+        if (ArrayUtils.isNotEmpty(headers)) {
+            httpPost.setHeaders(headers);
+        }
+        CloseableHttpClient client = HttpClients.createDefault();
+        CloseableHttpResponse response = client.execute(httpPost);
+
+        String responseStr = EntityUtils.toString(response.getEntity());
+        System.out.println(responseStr);
+        response.close();
+        return responseStr;
     }
 
     public static JSONObject getResponse(String url, Header[] headers) throws Exception {
@@ -92,4 +123,13 @@ public class HttpClientUtils {
         return responseStr;
     }
 
+    public static String getResponseCookie(String url) throws Exception {
+        HttpGet httpGet = new HttpGet(url);
+        CloseableHttpClient client = HttpClients.createDefault();
+        CloseableHttpResponse response = client.execute(httpGet);
+        String cookie = response.getHeaders("set-cookie")[1].getValue();
+//        System.out.println(JSON.toJSON(cookie));
+        response.close();
+        return cookie;
+    }
 }
