@@ -6,6 +6,7 @@ import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.lang3.ArrayUtils;
 import org.apache.http.Header;
 import org.apache.http.NameValuePair;
+import org.apache.http.client.config.RequestConfig;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
@@ -26,11 +27,18 @@ public class HttpClientUtils {
         if (CollectionUtils.isNotEmpty(paramList)) {
             httpPost.setEntity(new UrlEncodedFormEntity(paramList));
         }
-        CloseableHttpClient client = HttpClients.createDefault();
+        RequestConfig defaultRequestConfig = RequestConfig.custom()
+                .setSocketTimeout(5000)
+                .setConnectTimeout(5000)
+                .setConnectionRequestTimeout(5000)
+                .setStaleConnectionCheckEnabled(true)
+                .build();
+
+        CloseableHttpClient client = HttpClients.custom().setDefaultRequestConfig(defaultRequestConfig).build();
         CloseableHttpResponse response = client.execute(httpPost);
 
         String responseStr = EntityUtils.toString(response.getEntity());
-        System.out.println(responseStr);
+//        System.out.println(responseStr);
         response.close();
         return JSONObject.parseObject(responseStr);
     }
@@ -71,7 +79,14 @@ public class HttpClientUtils {
         if (ArrayUtils.isNotEmpty(headers)) {
             httpPost.setHeaders(headers);
         }
-        CloseableHttpClient client = HttpClients.createDefault();
+        RequestConfig defaultRequestConfig = RequestConfig.custom()
+                .setSocketTimeout(5000)
+                .setConnectTimeout(5000)
+                .setConnectionRequestTimeout(5000)
+                .setStaleConnectionCheckEnabled(true)
+                .build();
+
+        CloseableHttpClient client = HttpClients.custom().setDefaultRequestConfig(defaultRequestConfig).build();
         CloseableHttpResponse response = client.execute(httpPost);
 
         String responseStr = EntityUtils.toString(response.getEntity(), "utf-8");
@@ -102,10 +117,17 @@ public class HttpClientUtils {
         if (ArrayUtils.isNotEmpty(headers)) {
             httpGet.setHeaders(headers);
         }
-        CloseableHttpClient client = HttpClients.createDefault();
+        RequestConfig defaultRequestConfig = RequestConfig.custom()
+                .setSocketTimeout(5000)
+                .setConnectTimeout(5000)
+                .setConnectionRequestTimeout(5000)
+                .setStaleConnectionCheckEnabled(true)
+                .build();
+        CloseableHttpClient client = HttpClients.custom().setDefaultRequestConfig(defaultRequestConfig).build();
+
         CloseableHttpResponse response = client.execute(httpGet);
         String responseStr = EntityUtils.toString(response.getEntity());
-        System.out.println(responseStr);
+//        System.out.println(responseStr);
         response.close();
         return JSONObject.parseObject(responseStr);
     }

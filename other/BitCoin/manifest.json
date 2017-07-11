@@ -1,0 +1,26 @@
+{
+    "name": "虚拟货币实时价格",
+    "version": "1.0",
+	
+    "description": "虚拟货币实时价格",
+    "icons": {
+        "16": "resource/images/16.png",
+        "48": "resource/images/48.png",
+        "128": "resource/images/128.png"
+    },
+	
+    "browser_action": {
+        "default_icon": "resource/images/16.png",
+        "default_title": "虚拟货币实时价格",
+        "default_popup": "pages/index.html"
+    },
+
+    "background": {
+        "persistent": true,
+        "scripts": [
+            "resource/js/jquery-2.0.3.min.js",
+            "resource/js/bit-coin.js"
+        ]
+    },
+    "manifest_version": 2
+}
