@@ -1,0 +1,17 @@
+{
+  "SNT":{
+    "BTER":{
+      "url":"https://apim.bter.com/apim/v1/marketDepth",
+      "params" : {
+        "appKey":"1C843F4B-C351-4A9F-EB51-B722122341D5",
+        "appLang": "cn",
+        "currencyType": "SNT",
+        "depth": "0.1",
+        "exchangeType": "CNY",
+        "length": "20",
+        "sign": "bcb22a2897aeea31acd520fd28cad587",
+        "token": ""
+      }
+    }
+  }
+}

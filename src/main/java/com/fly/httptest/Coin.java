@@ -241,11 +241,15 @@ class SelfThread implements Runnable {
     };
 
     private final static String yunBiUrl = "https://yunbi.com//api/v2/tickers.json";
-    // https://yunbi.com//api/v2/tickers/eoscny.json
-    // https://yunbi.zendesk.com/hc/zh-cn/articles/115005892327-API-%E5%BC%80%E5%8F%91%E8%80%85%E6%8E%A5%E5%8F%A3
-    // https://bter.com/api2
-    // https://apim.bter.com/apim/v1/marketDepth
     // private final static String yunBiUrl = "https://yunbi.com//api/v2/markets.json"; // 种类
+    // https://apim.bter.com/apim/v1/marketDepth
+    // https://bter.com/api2
+    // https://yunbi.zendesk.com/hc/zh-cn/articles/115005892327-API-%E5%BC%80%E5%8F%91%E8%80%85%E6%8E%A5%E5%8F%A3
+    // https://yunbi.com//api/v2/tickers/eoscny.json
+
+
+
+    private final static String b8Url = "https://www.b8wang.com/index/markets";
 
     private SelfLabel sntLabel;
     private SelfLabel eosLabel;
@@ -276,9 +280,12 @@ class SelfThread implements Runnable {
 //                float ethBterPrice = HttpClientUtils.postResponse(bterUrl, Arrays.asList(ethBterParamArray), headers).getJSONObject("datas").getFloat("currentPrice");
 //                float qtumBterPrice = HttpClientUtils.postResponse(bterUrl, Arrays.asList(qtumBterParamArray), headers).getJSONObject("datas").getFloat("currentPrice");
                 JSONObject yunBiJson = HttpClientUtils.getResponse(yunBiUrl, headers);
-                String yunBiEos = "云币: " + yunBiJson.getJSONObject("eoscny").getJSONObject("ticker").getFloat("last");
-                String yunBiEth = "云币: " + yunBiJson.getJSONObject("ethcny").getJSONObject("ticker").getFloat("last");
-                String yunBiQtum = "云币: " + yunBiJson.getJSONObject("qtumcny").getJSONObject("ticker").getFloat("last");
+                JSONObject b8Json = HttpClientUtils.getResponse(b8Url + "?t=" + Math.random(), headers);
+                String otherSnt = "<span>" + "B8: " + b8Json.getJSONObject("data").getJSONArray("cny").getJSONObject(4).getFloat("current") + "</span><br>";
+                String otherEos = "<span>" + "云币: " + yunBiJson.getJSONObject("eoscny").getJSONObject("ticker").getFloat("last") + "</span><br>";
+                String otherEth = "<span>" + "云币: " + yunBiJson.getJSONObject("ethcny").getJSONObject("ticker").getFloat("last") + "</span><br>";
+                otherEth += "<span>" + "B8: " + b8Json.getJSONObject("data").getJSONArray("cny").getJSONObject(0).getFloat("current") + "</span><br>";
+                String otherQtum = "<span>" + "云币: " + yunBiJson.getJSONObject("qtumcny").getJSONObject("ticker").getFloat("last") + "</span><br>";
 
                 String yunBiOther = "<html>";
                 yunBiOther += "<span>" + "BTC: " + yunBiJson.getJSONObject("btccny").getJSONObject("ticker").getFloat("last") + "</span><br>";
@@ -290,11 +297,11 @@ class SelfThread implements Runnable {
                 yunBiOther += "</html>";
 
 
-                sntLabel.setText(bterUrl, "", Arrays.asList(sntBterParamArray), headers);
-                eosLabel.setText(bterUrl, yunBiEos, Arrays.asList(eosBterParamArray), headers);
+                sntLabel.setText(bterUrl, otherSnt, Arrays.asList(sntBterParamArray), headers);
+                eosLabel.setText(bterUrl, otherEos, Arrays.asList(eosBterParamArray), headers);
                 icoLabel.setText(bterUrl, "", Arrays.asList(icoBterParamArray), headers);
-                ethLabel.setText(bterUrl, yunBiEth, Arrays.asList(ethBterParamArray), headers);
-                qtumLabel.setText(bterUrl, yunBiQtum, Arrays.asList(qtumBterParamArray), headers);
+                ethLabel.setText(bterUrl, otherEth, Arrays.asList(ethBterParamArray), headers);
+                qtumLabel.setText(bterUrl, otherQtum, Arrays.asList(qtumBterParamArray), headers);
                 otherLabel.setText(null, yunBiOther, null, null);
 
                 Thread.sleep(5000);
