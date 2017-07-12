@@ -9,8 +9,15 @@
     <title>Document</title>
 </head>
 <style type="text/css">
-    td { width: 200px;}
-    div>span{display: inline-block; width: 25%; border-right: 1px solid #000;}
+    td {
+        width: 200px;
+    }
+
+    div > span {
+        display: inline-block;
+        width: 25%;
+        border-right: 1px solid #000;
+    }
 </style>
 <body>
 <div>
@@ -24,17 +31,17 @@
         </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>BTC</td>
-                <td>云币</td>
-                <td id="yunbi_btccny_buy"></td>
-                <td id="yunbi_btccny_sale"></td>
-            </tr>
-            <tr>
-                <td>比特儿</td>
-                <td id="bter_btc_cny_buy"></td>
-                <td id="bter_btc_cny_sale"></td>
-            </tr>
+        <tr>
+            <td>BTC</td>
+            <td>云币</td>
+            <td id="yunbi_btccny_buy"></td>
+            <td id="yunbi_btccny_sale"></td>
+        </tr>
+        <tr>
+            <td>比特儿</td>
+            <td id="bter_btc_cny_buy"></td>
+            <td id="bter_btc_cny_sale"></td>
+        </tr>
         </tbody>
 
     </table>
@@ -42,20 +49,7 @@
 </body>
 
 <script type="text/javascript">
-    function post( url, postData, valueId, callback) {
-        var xhr = new XMLHttpRequest();
-        xhr.open('POST', url, true);
-        xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
-        xhr.onreadystatechange = function(){
-            var XMLHttpReq = xhr;
-            if (XMLHttpReq.readyState == 4) {
-                if (XMLHttpReq.status == 200) {
-                    callback(valueId, XMLHttpReq.responseText);
-                }
-            }
-        };
-        xhr.send(postData);
-    }
+
 
     function bterJSON(valueId, text) {
         var json = text.parseJSON();
