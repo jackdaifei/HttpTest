@@ -1,5 +1,7 @@
 package com.fly.httptest;
 
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.fly.httptest.utils.HttpClientUtils;
 import org.apache.commons.lang3.time.DateFormatUtils;
@@ -87,19 +89,19 @@ public class Coin {
         JPanel mainPanel = new JPanel();
         jFrame.setContentPane(mainPanel);
 
-        JPanel sntPanel = new SelfPanel("SNT");
+        JPanel sntPanel = new SelfPanel("SNT", 120, 60);
         SelfLabel sntBterLabel = new SelfLabel();
         SelfLabel sntYunBiLabel = new SelfLabel();
         sntPanel.add(sntBterLabel);
         sntPanel.add(sntYunBiLabel);
         mainPanel.add(sntPanel);
 
-        JPanel eosPanel = new SelfPanel("EOS");
+        JPanel eosPanel = new SelfPanel("EOS", 120, 60);
         SelfLabel eosBterLabel = new SelfLabel();
         eosPanel.add(eosBterLabel);
         mainPanel.add(eosPanel);
 
-        JPanel icoPanel = new SelfPanel("ICO");
+        JPanel icoPanel = new SelfPanel("ICO", 120, 60);
         SelfLabel icoBterLabel = new SelfLabel();
         icoPanel.add(icoBterLabel);
         mainPanel.add(icoPanel);
@@ -115,13 +117,18 @@ public class Coin {
         mainPanel.add(qtumPanel);
 
         JPanel yunbiOther = new SelfPanel("云币Other");
-        SelfLabel otherBterLabel = new SelfLabel();
-        yunbiOther.add(otherBterLabel);
+        SelfLabel otherLabel = new SelfLabel();
+        yunbiOther.add(otherLabel);
         mainPanel.add(yunbiOther);
+
+        JPanel omgPanel = new SelfPanel("OMG", 120, 60);
+        SelfLabel omgLabel = new SelfLabel();
+        omgPanel.add(omgLabel);
+        mainPanel.add(omgPanel);
 
         jFrame.setVisible(true);
 
-        SelfThread selfThread = new SelfThread(sntBterLabel, eosBterLabel, icoBterLabel, ethBterLabel, qtumBterLabel, otherBterLabel);
+        SelfThread selfThread = new SelfThread(sntBterLabel, eosBterLabel, icoBterLabel, ethBterLabel, qtumBterLabel, otherLabel, omgLabel);
         Thread thread = new Thread(selfThread);
         thread.start();
     }
@@ -131,6 +138,12 @@ public class Coin {
 class SelfPanel extends JPanel {
     SelfPanel(String title) {
         this.setPreferredSize(new Dimension(120, 130));
+        this.setBorder(BorderFactory.createTitledBorder(title));
+        this.setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
+    }
+
+    SelfPanel(String title, int width, int height) {
+        this.setPreferredSize(new Dimension(width, height));
         this.setBorder(BorderFactory.createTitledBorder(title));
         this.setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
     }
@@ -251,20 +264,27 @@ class SelfThread implements Runnable {
 
     private final static String b8Url = "https://www.b8wang.com/index/markets";
 
+    private final static String b9Url = "https://www.btc9.com/Index/CurrencyList.html";
+    private final static NameValuePair[] b9ParamArray = new NameValuePair[]{
+            new BasicNameValuePair("k", "1")
+    };
+
     private SelfLabel sntLabel;
     private SelfLabel eosLabel;
     private SelfLabel icoLabel;
     private SelfLabel ethLabel;
     private SelfLabel qtumLabel;
     private SelfLabel otherLabel;
+    private SelfLabel omgLabel;
 
-    SelfThread(SelfLabel sntLabel, SelfLabel eosLabel, SelfLabel icoLabel, SelfLabel ethLabel, SelfLabel qtumLabel, SelfLabel otherLabel) {
+    SelfThread(SelfLabel sntLabel, SelfLabel eosLabel, SelfLabel icoLabel, SelfLabel ethLabel, SelfLabel qtumLabel, SelfLabel otherLabel, SelfLabel omgLabel) {
         this.sntLabel = sntLabel;
         this.eosLabel = eosLabel;
         this.icoLabel = icoLabel;
         this.ethLabel = ethLabel;
         this.qtumLabel = qtumLabel;
         this.otherLabel = otherLabel;
+        this.omgLabel = omgLabel;
     }
 
     public void run(){
@@ -285,24 +305,39 @@ class SelfThread implements Runnable {
                 String otherEos = "<span>" + "云币: " + yunBiJson.getJSONObject("eoscny").getJSONObject("ticker").getFloat("last") + "</span><br>";
                 String otherEth = "<span>" + "云币: " + yunBiJson.getJSONObject("ethcny").getJSONObject("ticker").getFloat("last") + "</span><br>";
                 otherEth += "<span>" + "B8: " + b8Json.getJSONObject("data").getJSONArray("cny").getJSONObject(0).getFloat("current") + "</span><br>";
-                String otherQtum = "<span>" + "云币: " + yunBiJson.getJSONObject("qtumcny").getJSONObject("ticker").getFloat("last") + "</span><br>";
+                StringBuilder otherQtum = new StringBuilder("<span>" + "云币: " + yunBiJson.getJSONObject("qtumcny").getJSONObject("ticker").getFloat("last") + "</span><br>");
 
-                String yunBiOther = "<html>";
-                yunBiOther += "<span>" + "BTC: " + yunBiJson.getJSONObject("btccny").getJSONObject("ticker").getFloat("last") + "</span><br>";
+                StringBuilder omgInfo = new StringBuilder("<span>" + "B8: " + b8Json.getJSONObject("data").getJSONArray("cny").getJSONObject(5).getFloat("current") + "</span><br>");
+
+                String yunBiOther = "<span>" + "BTC: " + yunBiJson.getJSONObject("btccny").getJSONObject("ticker").getFloat("last") + "</span><br>";
                 yunBiOther += "<span>" + "1ST: " + yunBiJson.getJSONObject("1stcny").getJSONObject("ticker").getFloat("last") + "</span><br>";
                 yunBiOther += "<span>" + "ANS: " + yunBiJson.getJSONObject("anscny").getJSONObject("ticker").getFloat("last") + "</span><br>";
                 yunBiOther += "<span>" + "BTS: " + yunBiJson.getJSONObject("btscny").getJSONObject("ticker").getFloat("last") + "</span><br>";
                 yunBiOther += "<span>" + "GXS: " + yunBiJson.getJSONObject("gxscny").getJSONObject("ticker").getFloat("last") + "</span><br>";
                 yunBiOther += "<span>" + "GNT: " + yunBiJson.getJSONObject("gntcny").getJSONObject("ticker").getFloat("last") + "</span><br>";
-                yunBiOther += "</html>";
+
+                StringBuilder icoInfo = new StringBuilder();
+                JSONArray b9JsonArray = HttpClientUtils.postResponseArray(b9Url, Arrays.asList(b9ParamArray), headers);
+                for (int i=0;i<b9JsonArray.size();i++) {
+                    JSONObject b9Json = b9JsonArray.getJSONObject(i);
+                    if (b9Json.getString("currency_mark").equals("Qtum")) {
+                        otherQtum.append("<span>" + "币久: ").append(b9Json.getFloat("new_price")).append("</span><br>");
+                    } else if (b9Json.getString("currency_mark").equals("ICO")) {
+                        icoInfo.append("<span>" + "币久: ").append(b9Json.getFloat("new_price")).append("</span><br>");
+                    } else if (b9Json.getString("currency_mark").equals("OMG")) {
+                        omgInfo.append("<span>" + "币久: ").append(b9Json.getFloat("new_price")).append("</span><br>");
+                    }
+                }
+
 
 
                 sntLabel.setText(bterUrl, otherSnt, Arrays.asList(sntBterParamArray), headers);
                 eosLabel.setText(bterUrl, otherEos, Arrays.asList(eosBterParamArray), headers);
-                icoLabel.setText(bterUrl, "", Arrays.asList(icoBterParamArray), headers);
+                icoLabel.setText(bterUrl, icoInfo.toString(), Arrays.asList(icoBterParamArray), headers);
                 ethLabel.setText(bterUrl, otherEth, Arrays.asList(ethBterParamArray), headers);
-                qtumLabel.setText(bterUrl, otherQtum, Arrays.asList(qtumBterParamArray), headers);
-                otherLabel.setText(null, yunBiOther, null, null);
+                qtumLabel.setText(bterUrl, otherQtum.toString(), Arrays.asList(qtumBterParamArray), headers);
+                otherLabel.setText(null, "<html>" + yunBiOther + "</html>", null, null);
+                omgLabel.setText(null, "<html>" + omgInfo + "</html>", null, null);
 
                 Thread.sleep(5000);
             } catch (Exception e) {
