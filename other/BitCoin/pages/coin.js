@@ -172,8 +172,8 @@ function post(url, postData, callback) {
     xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     xhr.onreadystatechange = function () {
         var XMLHttpReq = xhr;
-        if (XMLHttpReq.readyState == 4) {
-            if (XMLHttpReq.status == 200) {
+        if (XMLHttpReq.readyState === 4) {
+            if (XMLHttpReq.status === 200) {
                 callback(XMLHttpReq.responseText);
             }
         }
@@ -187,8 +187,8 @@ function get(url, callback) {
     xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     xhr.onreadystatechange = function () {
         var XMLHttpReq = xhr;
-        if (XMLHttpReq.readyState == 4) {
-            if (XMLHttpReq.status == 200) {
+        if (XMLHttpReq.readyState === 4) {
+            if (XMLHttpReq.status === 200) {
                 callback(XMLHttpReq.responseText);
             }
         }
@@ -196,13 +196,32 @@ function get(url, callback) {
     xhr.send(null);
 }
 
+function formatParam(params) { // 转成post需要的字符串.
+    var str = "";
+    for (var name in params) {
+        str += name + "=" + params[name] + "&"
+    }
+    return str;
+}
 
 function bterPost(url, postData, idName) {
-    post(url, postData, function(responseText){
+    var JSONP=document.createElement("script");
+    JSONP.type="text/javascript";
+    JSONP.src="http://crossdomain.com/services.php?callback=t";
+    document.getElementsByTagName("head")[0].appendChild(JSONP);
+
+
+    /*post(url, postData, function(responseText){
         var obj = document.getElementById(idName);
         var json = responseText.parseJSON();
         obj.innerHTML = json.datas.currentPrice;
-    });
+    });*/
+}
+
+function t(responseText){
+    var obj = document.getElementById(idName);
+    var json = responseText.parseJSON();
+    obj.innerHTML = json.datas.currentPrice;
 }
 
 function yunbiGet(url) {
