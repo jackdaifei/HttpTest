@@ -151,7 +151,7 @@ public class HttpClientUtils {
 
         CloseableHttpResponse response = client.execute(httpGet);
         String responseStr = EntityUtils.toString(response.getEntity());
-//        System.out.println(responseStr);
+        System.out.println(responseStr);
         response.close();
         return JSONObject.parseObject(responseStr);
     }
@@ -161,7 +161,14 @@ public class HttpClientUtils {
         if (ArrayUtils.isNotEmpty(headers)) {
             httpGet.setHeaders(headers);
         }
-        CloseableHttpClient client = HttpClients.createDefault();
+        RequestConfig defaultRequestConfig = RequestConfig.custom()
+                .setSocketTimeout(5000)
+                .setConnectTimeout(5000)
+                .setConnectionRequestTimeout(5000)
+                .setStaleConnectionCheckEnabled(true)
+                .build();
+        CloseableHttpClient client = HttpClients.custom().setDefaultRequestConfig(defaultRequestConfig).build();
+
         CloseableHttpResponse response = client.execute(httpGet);
         String responseStr = EntityUtils.toString(response.getEntity());
         System.out.println(responseStr);
