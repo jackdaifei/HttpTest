@@ -4,6 +4,7 @@ import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.fly.httptest.utils.HttpClientUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.time.DateFormatUtils;
 import org.apache.http.Header;
 import org.apache.http.NameValuePair;
@@ -299,34 +300,67 @@ class SelfThread implements Runnable {
 //                float icoBterPrice = HttpClientUtils.postResponse(bterUrl, Arrays.asList(icoBterParamArray), headers).getJSONObject("datas").getFloat("currentPrice");
 //                float ethBterPrice = HttpClientUtils.postResponse(bterUrl, Arrays.asList(ethBterParamArray), headers).getJSONObject("datas").getFloat("currentPrice");
 //                float qtumBterPrice = HttpClientUtils.postResponse(bterUrl, Arrays.asList(qtumBterParamArray), headers).getJSONObject("datas").getFloat("currentPrice");
-                JSONObject yunBiJson = HttpClientUtils.getResponse(yunBiUrl, headers);
-                JSONObject b8Json = HttpClientUtils.getResponse(b8Url + "?t=" + Math.random(), headers);
-                String otherSnt = "<span>" + "B8: " + b8Json.getJSONObject("data").getJSONArray("cny").getJSONObject(4).getFloat("current") + "</span><br>";
-                String otherEos = "<span>" + "云币: " + yunBiJson.getJSONObject("eoscny").getJSONObject("ticker").getFloat("last") + "</span><br>";
-                String otherEth = "<span>" + "云币: " + yunBiJson.getJSONObject("ethcny").getJSONObject("ticker").getFloat("last") + "</span><br>";
-                otherEth += "<span>" + "B8: " + b8Json.getJSONObject("data").getJSONArray("cny").getJSONObject(0).getFloat("current") + "</span><br>";
-                StringBuilder otherQtum = new StringBuilder("<span>" + "云币: " + yunBiJson.getJSONObject("qtumcny").getJSONObject("ticker").getFloat("last") + "</span><br>");
+                String yunBiOther = "";
+                String otherEos = "";
+                String otherEth = "";
+                StringBuilder otherQtum = new StringBuilder();
+                try {
+                    JSONObject yunBiJson = HttpClientUtils.getResponse(yunBiUrl, headers);
+                    float first = 0f;
+                    if (null != yunBiJson) {
+                        otherEos += "<span>" + "云币: " + yunBiJson.getJSONObject("eoscny").getJSONObject("ticker").getFloat("last") + "</span><br>";
+                        otherEth += "<span>" + "云币: " + yunBiJson.getJSONObject("ethcny").getJSONObject("ticker").getFloat("last") + "</span><br>";
+                        otherQtum.append("<span>" + "云币: ").append(yunBiJson.getJSONObject("qtumcny").getJSONObject("ticker").getFloat("last")).append("</span><br>");
+                        yunBiOther += "<span>" + "BTC: " + yunBiJson.getJSONObject("btccny").getJSONObject("ticker").getFloat("last") + "</span><br>";
+                        first = yunBiJson.getJSONObject("1stcny").getJSONObject("ticker").getFloat("last");
+                        yunBiOther += "<span>" + "1ST: " + first + "</span><br>";
+                        yunBiOther += "<span>" + "ANS: " + yunBiJson.getJSONObject("anscny").getJSONObject("ticker").getFloat("last") + "</span><br>";
+                        yunBiOther += "<span>" + "BTS: " + yunBiJson.getJSONObject("btscny").getJSONObject("ticker").getFloat("last") + "</span><br>";
+                        yunBiOther += "<span>" + "GXS: " + yunBiJson.getJSONObject("gxscny").getJSONObject("ticker").getFloat("last") + "</span><br>";
+                        yunBiOther += "<span>" + "GNT: " + yunBiJson.getJSONObject("gntcny").getJSONObject("ticker").getFloat("last") + "</span><br>";
+                    }
+                    if (first >= 8.0f) {
+                        JOptionPane.showMessageDialog(null, "一血8元", "警告",JOptionPane.WARNING_MESSAGE);
+                    }
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
 
-                StringBuilder omgInfo = new StringBuilder("<span>" + "B8: " + b8Json.getJSONObject("data").getJSONArray("cny").getJSONObject(5).getFloat("current") + "</span><br>");
+                String otherSnt = "";
+                StringBuilder omgInfo = new StringBuilder();
+                try {
+                    JSONObject b8Json = HttpClientUtils.getResponse(b8Url + "?t=" + Math.random(), headers);
+                    if (null != b8Json) {
+                        otherSnt += "<span>" + "B8: " + b8Json.getJSONObject("data").getJSONArray("cny").getJSONObject(4).getFloat("current") + "</span><br>";
+                        otherEth += "<span>" + "B8: " + b8Json.getJSONObject("data").getJSONArray("cny").getJSONObject(0).getFloat("current") + "</span><br>";
+                        omgInfo.append("<span>" + "B8: ").append(b8Json.getJSONObject("data").getJSONArray("cny").getJSONObject(5).getFloat("current")).append("</span><br>");
+                    }
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
 
-                String yunBiOther = "<span>" + "BTC: " + yunBiJson.getJSONObject("btccny").getJSONObject("ticker").getFloat("last") + "</span><br>";
-                yunBiOther += "<span>" + "1ST: " + yunBiJson.getJSONObject("1stcny").getJSONObject("ticker").getFloat("last") + "</span><br>";
-                yunBiOther += "<span>" + "ANS: " + yunBiJson.getJSONObject("anscny").getJSONObject("ticker").getFloat("last") + "</span><br>";
-                yunBiOther += "<span>" + "BTS: " + yunBiJson.getJSONObject("btscny").getJSONObject("ticker").getFloat("last") + "</span><br>";
-                yunBiOther += "<span>" + "GXS: " + yunBiJson.getJSONObject("gxscny").getJSONObject("ticker").getFloat("last") + "</span><br>";
-                yunBiOther += "<span>" + "GNT: " + yunBiJson.getJSONObject("gntcny").getJSONObject("ticker").getFloat("last") + "</span><br>";
+
 
                 StringBuilder icoInfo = new StringBuilder();
-                JSONArray b9JsonArray = HttpClientUtils.postResponseArray(b9Url, Arrays.asList(b9ParamArray), headers);
-                for (int i=0;i<b9JsonArray.size();i++) {
-                    JSONObject b9Json = b9JsonArray.getJSONObject(i);
-                    if (b9Json.getString("currency_mark").equals("Qtum")) {
-                        otherQtum.append("<span>" + "币久: ").append(b9Json.getFloat("new_price")).append("</span><br>");
-                    } else if (b9Json.getString("currency_mark").equals("ICO")) {
-                        icoInfo.append("<span>" + "币久: ").append(b9Json.getFloat("new_price")).append("</span><br>");
-                    } else if (b9Json.getString("currency_mark").equals("OMG")) {
-                        omgInfo.append("<span>" + "币久: ").append(b9Json.getFloat("new_price")).append("</span><br>");
+                try {
+                    JSONArray b9JsonArray = HttpClientUtils.postResponseArray(b9Url, Arrays.asList(b9ParamArray), headers);
+                    for (int i = 0; i < b9JsonArray.size(); i++) {
+                        JSONObject b9Json = b9JsonArray.getJSONObject(i);
+                        if (null != b9Json) {
+                            String flag = b9Json.getString("currency_mark");
+                            if (StringUtils.isNotBlank(flag)) {
+                                if (b9Json.getString("currency_mark").equals("Qtum")) {
+                                    otherQtum.append("<span>" + "币久: ").append(b9Json.getFloat("new_price")).append("</span><br>");
+                                } else if (b9Json.getString("currency_mark").equals("ICO")) {
+                                    icoInfo.append("<span>" + "币久: ").append(b9Json.getFloat("new_price")).append("</span><br>");
+                                } else if (b9Json.getString("currency_mark").equals("OMG")) {
+                                    omgInfo.append("<span>" + "币久: ").append(b9Json.getFloat("new_price")).append("</span><br>");
+                                }
+                            }
+                        }
                     }
+                } catch (Exception e) {
+                    e.printStackTrace();
                 }
 
 

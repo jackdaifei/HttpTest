@@ -1,27 +1,3 @@
-function toAddressQuery(value)
-{
-    Promise.resolve(1).then(function ()
-    {
-        return AntShares.Wallets.Wallet.getPrivateKeyFromWIF(value);
-    }).then(function (result)
-    {
-        var _this = new AntShares.Wallets.Wallet();
-        return _this.createAccount(new Uint8Array(result));
-    }).then(function (result)
-    {
-        return AntShares.Wallets.Contract.createSignatureRedeemScript(result.publicKey).toScriptHash().then(function (result)
-        {
-            return AntShares.Wallets.Wallet.toAddress(result);
-        })
-    }).then(function (results)
-    {
-        return results;
-    }, function (err)
-    {
-        return 'error';
-    });
-}
-
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -115,9 +91,8 @@ void function () {
     Uint16Array.prototype.fill = Uint16Array.prototype.fill || fillArray;
     Uint32Array.prototype.fill = Uint32Array.prototype.fill || fillArray;
 }();
-var Map;
-if (Map == null)
-    Map = (function () {
+if (window.Map == null)
+    window.Map = (function () {
         function class_1() {
             this._map = new Object();
             this._size = 0;
@@ -155,9 +130,8 @@ if (Map == null)
         };
         return class_1;
     }());
-var Promise;
-if (Promise == null)
-    Promise = (function () {
+if (window.Promise == null)
+    window.Promise = (function () {
         var PromiseState;
         (function (PromiseState) {
             PromiseState[PromiseState["pending"] = 0] = "pending";

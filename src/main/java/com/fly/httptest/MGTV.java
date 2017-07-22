@@ -31,8 +31,9 @@ public class MGTV {
             }
         };
         loginThread.start();
+        Thread.sleep(sleepMillisecond(1000, 5000));
 
-        Thread huafeiThread = new Thread() {
+        /*Thread huafeiThread = new Thread() {
             @Override
             public void run() {
                 try {
@@ -43,8 +44,9 @@ public class MGTV {
             }
         };
         huafeiThread.start();
+        Thread.sleep(sleepMillisecond(1000, 5000));*/
 
-        Thread redThread = new Thread() {
+        /*Thread redThread = new Thread() {
             @Override
             public void run() {
                 try {
@@ -63,7 +65,7 @@ public class MGTV {
             public void run() {
                 try {
                     if (isRedBagCanPlay("10237")) {
-                        Thread.sleep(1000);
+                        Thread.sleep(500);
                         redBag2(3);
                     }
                 } catch (Exception e) {
@@ -71,7 +73,7 @@ public class MGTV {
                 }
             }
         };
-        red2Thread.start();
+        red2Thread.start();*/
 
         Thread red3Thread = new Thread() {
             @Override
@@ -222,7 +224,8 @@ public class MGTV {
 
         if (baseInfo.getBooleanValue("noRedBag")) {
             System.out.println("红包游戏[" + baseInfo.getJSONObject("gameInfo").getIntValue("id") + "]已经没有红包");
-            Thread.sleep(1000 * 60 * 30);
+//            Thread.sleep(1000 * 60 * 30);
+            Thread.sleep(1000 * 30);
             start = isRedBagCanPlay(gameId);
         }
         if (!start) {

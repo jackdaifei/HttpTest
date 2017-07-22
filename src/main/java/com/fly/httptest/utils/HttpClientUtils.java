@@ -185,4 +185,30 @@ public class HttpClientUtils {
         response.close();
         return cookie;
     }
+
+    public static Header[] postResponseHeader(String url, List<NameValuePair> paramList, Header[] headers) throws Exception {
+        HttpPost httpPost = new HttpPost(url);
+        if (CollectionUtils.isNotEmpty(paramList)) {
+            httpPost.setEntity(new UrlEncodedFormEntity(paramList));
+        }
+        if (ArrayUtils.isNotEmpty(headers)) {
+            httpPost.setHeaders(headers);
+        }
+        RequestConfig defaultRequestConfig = RequestConfig.custom()
+                .setSocketTimeout(5000)
+                .setConnectTimeout(5000)
+                .setConnectionRequestTimeout(5000)
+                .setStaleConnectionCheckEnabled(true)
+                .build();
+
+        CloseableHttpClient client = HttpClients.custom().setDefaultRequestConfig(defaultRequestConfig).build();
+        CloseableHttpResponse response = client.execute(httpPost);
+        String responseStr = EntityUtils.toString(response.getEntity(), "utf-8");
+        System.out.println(responseStr);
+
+        Header[] allHeaders = response.getAllHeaders();
+        response.close();
+        return allHeaders;
+    }
+
 }
