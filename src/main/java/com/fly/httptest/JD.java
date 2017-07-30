@@ -39,117 +39,12 @@ import java.util.TimeZone;
 public class JD {
 
     public static void main(String[] args) throws Exception {
-        /*
-        ScriptEngineManager sem=new ScriptEngineManager();
-
-        ScriptEngine se=sem.getEngineByExtension("js");
-
-        se.eval(new FileReader("encrypt.js"));
-
-        String s=(String) se.eval("eval(\"encode32(bin216(Base32.encrypt('1111', 'ODQ5OTkw')))\")");
-
-        System.out.println(s);
-         */
-
-        // https://act-jshop.jd.com/couponSend.html?callback=jQuery1066087&roleId=7419085&key=2a150a5adccf434c807bbe4385c372b5&pin=jackdaifei_m&_=1500370913380
-
-
-
-
-
-//        Header[] headers = new Header[]{
-//                new BasicHeader("Host", "a.jd.com"),
-//                new BasicHeader("Connection", "keep-alive"),
-//                new BasicHeader("Accept", "text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01"),
-//                new BasicHeader("X-Requested-With", "XMLHttpRequest"),
-//                new BasicHeader("User-Agent", "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"),
-//                new BasicHeader("Referer", "https://a.jd.com/"),
-//                new BasicHeader("Accept-Encoding", "gzip, deflate, br"),
-//                new BasicHeader("Accept-Language", "zh-CN,zh;q=0.8"),
-//                new BasicHeader("Cookie", "user-key=b642681b-e342-4d37-8ef7-a66dda505f37; __jdv=122270672|androidapp|t_335139774|appshare|Wxfriends|1500517652592; sid=7a3cc9f39f6df65c6f29d07e9a217447; TrackID=1FMUNJrr0FVMRdgb3D80eetzUz9djxx4Uhke8BX6fJCZ-GRXllrV6PDaeQUO_hGA3GyFODCSEwykAHvpn9hXCuu1-uZAc__xavFSsOvqfM_k; pinId=6O_FVgd3tEus06L-EIuMwg; pin=jackdaifei_m; unick=jackdaifei; thor=D8DBF01315DA326BA7C015B57D4F6A3DCAA23665C460E0D67CF472EB0AA7236BB762590557299077B69A7245FA15FE7FCC014ACF581DD9E2C0B2C9D70E82BEB20FF84E120EA350A01AD52684DE291317C2417B6AE638873C1C95CDE69A4743FB30B39328F303E8A0164109057E65A0B86466F8E3F8C2E16C2A6E15044A6A3F45B0591EF06A9329D56CCE882730D632E0; _tp=CFyqN214%2FuJT47OHX%2BUStg%3D%3D; _pst=jackdaifei_m; ceshi3.com=000; JSESSIONID=6B10EF66800F18BFBC24141105D4E237.s1; ipLoc-djd=1-72-2799-0; __jda=122270672.15004435911171648131987.1500443591.1500517638.1500520210.4; __jdb=122270672.3.15004435911171648131987|4.1500520210; __jdc=122270672; cn=0; __jdu=15004435911171648131987; 3AB9D23F7A4B3C9B=NMI64G6NR6Q3T22OVMJMKLJSV6Z62LKYEU2L6XNUMP7DKC7XVYCODQYK2LCOWVCBSOSWPIWTYIEBWS7PZB23VX2QUQ")
-//        };
-//
-//        String urlTime = "https://a.jd.com";
-//        HttpGet httpGet = new HttpGet(urlTime);
-//        if (ArrayUtils.isNotEmpty(headers)) {
-//            httpGet.setHeaders(headers);
-//        }
-//        RequestConfig defaultRequestConfig = RequestConfig.custom()
-//                .setSocketTimeout(5000)
-//                .setConnectTimeout(5000)
-//                .setConnectionRequestTimeout(5000)
-//                .setStaleConnectionCheckEnabled(true)
-//                .setCookieSpec(CookieSpecs.BROWSER_COMPATIBILITY)
-//                .build();
-//        CloseableHttpClient client = HttpClients.custom().setDefaultRequestConfig(defaultRequestConfig).build();
-//
-//        long timeDiff = 1000;
-//        while (timeDiff > 0) {
-//            try {
-//                CloseableHttpResponse response = client.execute(httpGet);
-//                Header responseHeader = response.getHeaders("Date")[0];
-//                response.close();
-//
-//                SimpleDateFormat sdf = new SimpleDateFormat("EEE, d MMM yyyy HH:mm:ss 'GMT'", Locale.US);
-//                sdf.setTimeZone(TimeZone.getTimeZone("GMT"));
-//                Date jdServerDate = sdf.parse(responseHeader.getValue());
-//
-//                Date target = DateUtils.parseDate("2017-07-20 12:00:00", "yyyy-MM-dd HH:mm:ss");
-//                timeDiff = target.getTime() - jdServerDate.getTime();
-//                System.out.println(jdServerDate);
-//                System.out.println(target);
-//                System.out.println(timeDiff);
-//                if (timeDiff > 12000) {
-//                    Thread.sleep(10000);
-//                } else {
-//                    Thread.sleep(timeDiff - 1500);
-//                    break;
-//                }
-//            } catch (Exception e) {
-//                e.printStackTrace();
-//            }
-//        }
-//
-//        int i = 0;
-//        long maxTime = 1500523205000L;
-//        while (timeDiff > - 3000) {
-//            try {
-//                String url = "https://a.jd.com/indexAjax/getCoupon.html?key=031a66aeb841624b9e28771330bee4b1280ed54305bd50861ad25aca6804111b63505d545c250f9153b609dc672b411c&type=1&_=" + System.currentTimeMillis();
-//                final String res = HttpClientUtils.getResponseString(url, headers);
-//                final int index = i;
-//                Thread thread = new Thread() {
-//                    @Override
-//                    public void run() {
-//                        try {
-//                            FileUtils.writeStringToFile(new File("D:\\FLY\\HttpTest\\other\\a\\" + index + ".txt"), res, "utf-8");
-//                        } catch (Exception e) {
-//                            e.printStackTrace();
-//                        }
-//                    }
-//                };
-//                thread.start();
-//
-//                timeDiff = timeDiff - 50;
-//                Thread.sleep(50);
-//            } catch (Exception e) {
-//                e.printStackTrace();
-//            }
-//            i++;
-//            if (System.currentTimeMillis() > maxTime) {
-//                break;
-//            }
-//        }
-
-
-//        shouhuan("2017-07-21 20:00:00");
-//        quan20170722_12_00();
-
-
+//        huafei("2017-07-30 10:00:00");
+        quan20170722_12_00();
     }
 
     private static void quan20170722_12_00() throws Exception {
-        String url = "https://a.jd.com/indexAjax/getCoupon.html?callback=jQuery4666353&key=a581426bce04015ffc5b31714babf3a9a2daae16d0560a89bdee31725b95e6647f250e8104888e2ad7433d037c310e78&type=1&_=" + System.currentTimeMillis();
-        Header[] headers = new Header[]{
+        final Header[] headers = new Header[]{
                 new BasicHeader("Host", "a.jd.com"),
                 new BasicHeader("Connection", "keep-alive"),
                 new BasicHeader("Accept", "text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01"),
@@ -158,45 +53,51 @@ public class JD {
                 new BasicHeader("Referer", "https://a.jd.com/"),
                 new BasicHeader("Accept-Encoding", "gzip, deflate, br"),
                 new BasicHeader("Accept-Language", "zh-CN,zh;q=0.8"),
-                new BasicHeader("Cookie", "")
+                new BasicHeader("Cookie", "user-key=7c0572aa-22bc-47ae-8576-7be7064887e9; __jdv=122270672|baidu|-|organic|not set|1500650911150; areaId=22; ipLocation=%u56db%u5ddd; ipLoc-djd=22-1930-50949-52153.137915318; cn=0; _jrda=1; _jrdb=1501384136697; wlfstk_smdl=kvdoebob4pnu1pdhmlsquo4mxsm2lr35; TrackID=1Eb5MkompL1DMlx-vFoZLc3v5sks9opsLD2C_ODjOy_vA0f2Mp5n8nppMVxV62YjoheQhJWKc9YDvHfXKnVWlHg; pinId=6O_FVgd3tEus06L-EIuMwg; pin=jackdaifei_m; unick=jackdaifei; thor=F132F277DBCC1E00A05235113D72752A2D1FA7CCB9F50C5CBCEDCF4BD52704079962267216205E1535BCF24284324D1A153CC6075A41647C53DEED9A29601B9B458EA9227F5AABA9898EE61EC5ED04FBBFEBD03F589052433E4BC72CC7ED0FEA921515C13E035BA8E07B17BA119EE840C040E25F52FCCEB395CB5984731BB3F3AC66B37C26925A7D4F85E0C8D9FF0633; _tp=CFyqN214%2FuJT47OHX%2BUStg%3D%3D; _pst=jackdaifei_m; ceshi3.com=000; JSESSIONID=7C22044E5B2CAE50043243B3C940F666.s1; __jda=122270672.1500649820560365860572.1500649821.1501381238.1501383057.8; __jdb=122270672.6.1500649820560365860572|8.1501383057; __jdc=122270672; 3AB9D23F7A4B3C9B=LQFXPRWEG3LAJ42BSL2SROWYZTWICNQUUN4TYKHQMFU5WKRPZHPZHYQ4Q522RGXYYQQPHZ6KMCUHY6XBUPZEV4YFXI; __jdu=1500649820560365860572")
         };
 
         try {
-            Date targetDate = DateUtils.parseDate("2017-07-22 12:00:00", "yyyy-MM-dd HH:mm:ss");
-            String u = "https://a.jd.com/indexAjax/getCouponListByCatalogId.html?callback=jQuery2041991&catalogId=0&page=1&pageSize=12&_=" + System.currentTimeMillis();
-            while (true) {
-                try {
-                    String r = HttpClientUtils.getResponseString(u, headers);
-                    r = r.substring(14, r.length() - 1);
-                    JSONObject jsonObject = JSONObject.parseObject(r);
-                    JSONObject json = jsonObject.getJSONArray("couponList").getJSONObject(1);
-                    System.out.println(json.getString("limitStr"));
-                    System.out.println(json.getInteger("leftTime"));
-                    System.out.println(targetDate.getTime() - System.currentTimeMillis());
-                    long time = json.getLongValue("leftTime");
+            String dateUrl = "http://a.jd.com/ajax/queryServerData.html?r=" + Math.random();
+            Date targetDate = DateUtils.parseDate("2017-07-30 12:00:00", "yyyy-MM-dd HH:mm:ss");
 
-                    if (time < 10) {
-                        Thread.sleep(time * 1000 - 1000);
-                        break;
-                    }
-                    Thread.sleep(time * 1000 / 2);
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
+            JSONObject serverDate = HttpClientUtils.getResponse(dateUrl, headers);
+            long serverDateLong = serverDate.getLongValue("serverTime");
+            long targetDateLong = targetDate.getTime();
+            long timeDif = targetDateLong - serverDateLong;
+
+            System.out.println();
+            System.out.println("serverDateLong:" + serverDateLong);
+            System.out.println("targetDateLong:" + targetDateLong);
+            System.out.println("timeDif:       " + timeDif);
+            System.out.println("---------------------------------------");
+
+            while (timeDif > 10000) {
+                Thread.sleep(timeDif/2);
+                dateUrl = "http://a.jd.com/ajax/queryServerData.html?r=" + Math.random();
+                serverDate = HttpClientUtils.getResponse(dateUrl, headers);
+                serverDateLong = serverDate.getLongValue("serverTime");
+                timeDif = targetDateLong - serverDateLong;
+
+                System.out.println();
+                System.out.println("serverDateLong:" + serverDateLong);
+                System.out.println("targetDateLong:" + targetDateLong);
+                System.out.println("timeDif:       " + timeDif);
+                System.out.println("---------------------------------------");
             }
 
+            Thread.sleep(timeDif - 100);
 
-            headers[8] = new BasicHeader("Cookie", "user-key=b642681b-e342-4d37-8ef7-a66dda505f37; ipLoc-djd=1-72-2799-0; cn=0; __jdv=122270672|androidapp|t_335139774|appshare|Wxfriends|1500608812641; _jrda=1; JSESSIONID=FF7F44942BC2DF0AEBDCB9C62D925E50.s1; wlfstk_smdl=38yp7vg787edn8aq4ggij3bpt4z1vtaz; _jrdb=1500693605149; TrackID=1euh1y5JjWLNmsAQmgsLzZsXyCxI8pr__vX-2kYCYBvoVlLHKkMn__Ce5hnm2RPL4Fkf0BhTBddAdiAzqn26BQP43pSNJVGoAM0bMGmQzX7E; pinId=6O_FVgd3tEus06L-EIuMwg; pin=jackdaifei_m; unick=jackdaifei; thor=E04107859554A9D81B8BC922A4CB85A43336B5483B698FBDC4355A162CADC66FC5DF804938A7B02EA76695AD54CA0C5C03544830CD189176D3482F418C2DB619038A90AC742ACF23E891D5469F3C93319884FEAA48E6DC71155C9F07FD815EBF4C813A3CEA55BA6639A6A1407778406088EAB4A392EDF2C4A28F783263324A8832F75AE4DA5EAA344C94DA577BB4CCCB; _tp=CFyqN214%2FuJT47OHX%2BUStg%3D%3D; _pst=jackdaifei_m; ceshi3.com=000; __jda=122270672.15004435911171648131987.1500443591.1500608635.1500692518.9; __jdb=122270672.11.15004435911171648131987|9.1500692518; __jdc=122270672; __jdu=15004435911171648131987; 3AB9D23F7A4B3C9B=NMI64G6NR6Q3T22OVMJMKLJSV6Z62LKYEU2L6XNUMP7DKC7XVYCODQYK2LCOWVCBSOSWPIWTYIEBWS7PZB23VX2QUQ");
             int i = 0;
             long maxTime = targetDate.getTime() + 5000;
             while (true) {
                 try {
-                    final String res = HttpClientUtils.getResponseString(url, headers);
                     final int index = i;
                     Thread thread = new Thread() {
                         @Override
                         public void run() {
                             try {
+                                String url = "http://a.jd.com/indexAjax/getCoupon.html?callback=jQuery" + randomNum(7) + "&key=e0a0954646bee735793138f6bfb039d3777c9329c89e60267b03e92f41c68d5576a06bab784dab67d614a30378c6faba&type=1&_=" + System.currentTimeMillis();
+                                final String res = HttpClientUtils.getResponseString(url, headers);
                                 FileUtils.writeStringToFile(new File("D:\\FLY\\HttpTest\\other\\a\\" + index + ".txt"), res, "utf-8");
                             } catch (Exception e) {
                                 e.printStackTrace();
@@ -204,7 +105,7 @@ public class JD {
                         }
                     };
                     thread.start();
-                    Thread.sleep(80);
+                    Thread.sleep(50);
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -220,18 +121,18 @@ public class JD {
 
     }
 
-    private static void shouhuan(String startDateTime) throws Exception {
-        String url = "https://coupon.jd.com/ilink/couponActiveFront/front_index.action?key=2a150a5adccf434c807bbe4385c372b5&roleId=7419085&to=sale.jd.com/act/suvt42mxdzokkxey.html&";
-        Header[] headers = new Header[]{
+    private static void huafei(String startDateTime) throws Exception {
+        final String url = "http://coupon.jd.com/ilink/couponSendFront/send_index.action?key=f74f06c1ccde410e9092fcbe85bf8062&roleId=7479723&to=chongzhi.jd.com/&cpdad=1DLSUE";
+        final Header[] headers = new Header[]{
                 new BasicHeader("Host", "coupon.jd.com"),
                 new BasicHeader("Connection", "keep-alive"),
                 new BasicHeader("Upgrade-Insecure-Requests", "1"),
                 new BasicHeader("User-Agent", "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"),
                 new BasicHeader("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8"),
-                new BasicHeader("Referer", "https://sale.jd.com/act/suvt42mxdzokkxey.html"),
+                new BasicHeader("Referer", "http://sale.jd.com/act/gj7XnMhJvzyCm.html?cpdad=1DLSUE"),
                 new BasicHeader("Accept-Encoding", "gzip, deflate, br"),
                 new BasicHeader("Accept-Language", "zh-CN,zh;q=0.8"),
-                new BasicHeader("Cookie", "user-key=b642681b-e342-4d37-8ef7-a66dda505f37; __jdv=122270672|androidapp|t_335139774|appshare|Wxfriends|1500517652592; ipLoc-djd=1-72-2799-0; cn=0; _jrda=3; wlfstk_smdl=v9bwp98t35op9igpjf3izwln33o73kfy; TrackID=1TcYwcIc2mbNiM0JLvzwBI0R5b25LcxMf7IHrepd6LzGPErD5qfulblHYc5HH93MrW47wpKo0k1mibdZ80ctHcYOxBmU0VJ5DDaEv-wjcsnI; pinId=pt8cktXKCPB7E5keNRtBbQ; pin=u_4b33eb17f380e; unick=%E5%BD%AD%E5%AD%90%E7%A7%A6; _tp=bAu9NkgaG0UNuUeBHv2uYg%3D%3D; _pst=u_4b33eb17f380e; ceshi3.com=103; __jda=122270672.15004435911171648131987.1500443591.1500550413.1500602214.7; __jdb=122270672.4.15004435911171648131987|7.1500602214; __jdc=122270672; __jdu=15004435911171648131987; thor=8B93FA719FADF09202181D179D7610D34E6885A168D12F8A771466C3341135D62F046ADAF43BEFAECB356C2358F285BBB235B1A6B8B2949ABB16344A2835E7A6646F4D6212CED1ABDE261E015E6844DFF37265F6346925D6C3465603082B28AB23C72A960849935733DD7D9664D1632E5BA2785463D191B56B7FBA19101D722937A658EB3E77A058F73BC976012D365D6C1146130C4CDA64D805B9B46034AAD2; 3AB9D23F7A4B3C9B=NMI64G6NR6Q3T22OVMJMKLJSV6Z62LKYEU2L6XNUMP7DKC7XVYCODQYK2LCOWVCBSOSWPIWTYIEBWS7PZB23VX2QUQ")
+                new BasicHeader("Cookie", "user-key=7c0572aa-22bc-47ae-8576-7be7064887e9; __jdv=122270672|baidu|-|organic|not set|1500650911150; areaId=22; ipLocation=%u56db%u5ddd; ipLoc-djd=22-1930-50949-52153.137915318; cn=0; TrackID=1HMLWyWMeMWzqiIonBN7MRuIENDfm2jkH5pUI4HMxMFvpqDHzAYnu7MA58e5da_iQkR0EaFCu9Ablkd4UX15usg; pinId=6O_FVgd3tEus06L-EIuMwg; pin=jackdaifei_m; unick=jackdaifei; _tp=CFyqN214%2FuJT47OHX%2BUStg%3D%3D; _pst=jackdaifei_m; ceshi3.com=000; thor=DAB83B98B1932DA7527229B3F00895C43ABA2F5F0AE6CFE47EB5B905031A3FE81E724CB6F17F2737476568F3C88010C96AD5551DC8CE9436CA624776172899E025B78AFE827A40801FA9FD8D406454B14290AD3CC3CA48E7FB820F0176A0E10C282780897DDB0DA5CAC6CCDC5B79E29AD446A6E0B897B7DE346BEE11C9F8492BDF4C74732CBA170D7417CC5BA4875D1B; __jda=122270672.1500649820560365860572.1500649821.1501300345.1501378814.6; __jdb=122270672.17.1500649820560365860572|6.1501378814; __jdc=122270672; __jdu=1500649820560365860572; 3AB9D23F7A4B3C9B=LQFXPRWEG3LAJ42BSL2SROWYZTWICNQUUN4TYKHQMFU5WKRPZHPZHYQ4Q522RGXYYQQPHZ6KMCUHY6XBUPZEV4YFXI")
         };
 
         HttpGet httpGet = new HttpGet(url);
@@ -263,9 +164,9 @@ public class JD {
                 System.out.println(target);
                 System.out.println(timeDiff);
                 if (timeDiff > 12000) {
-                    Thread.sleep(10000);
+                    Thread.sleep(timeDiff/2);
                 } else {
-                    Thread.sleep(timeDiff - 1500);
+                    Thread.sleep(timeDiff - 800);
                     break;
                 }
             } catch (Exception e) {
@@ -277,12 +178,12 @@ public class JD {
         long maxTime = target.getTime() + 5000;
         while (timeDiff > - 3000) {
             try {
-                final String res = HttpClientUtils.getResponseString(url, headers);
                 final int index = i;
                 Thread thread = new Thread() {
                     @Override
                     public void run() {
                         try {
+                            String res = HttpClientUtils.getResponseString(url, headers);
                             FileUtils.writeStringToFile(new File("D:\\FLY\\HttpTest\\other\\a\\" + index + ".txt"), res, "utf-8");
                         } catch (Exception e) {
                             e.printStackTrace();
