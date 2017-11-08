@@ -41,12 +41,70 @@ public class JD {
 //        ninty_50_huafei("2017-10-26 10:00:00", "juinfo=62%7C0%7C0; ipLoc-djd=1-72-2799-0; user-key=3465669a-89fd-4035-832f-115a3ab51927; __jdv=122270672|baidu|-|organic|not set|1508207800719; mt_xid=V2_52007VwMXVl9YV1sYQRtsBWJTEVNaUVpGGRwQXRliUEJQQVEFDUpVTlgNZwpAUFwMVF4deRpdBWEfElNBWFtLH0wSXAZsABJiX2hSah9IHF0DZQEbWm1bWlo%3D; cn=4; TrackID=1K5KKR8Id676NfTvyQvM-0OGyPBhU6hMJxuuva_M8Q-hHllpqf4gu5MbPPHoJq4hWpxyhj6UUcZhJdPbYZZXVukZlbe594mMLOggLjMl1dX8; pinId=KlbkfOx3iIeQ-l7DmbcXHw; pin=shaoye1213; unick=MartinJ1213; thor=EEE829C015D6C3CA17EEB0A517382CEBF4577CF2488D92237B4860A31BCA7736418E08B652B2E2BDA4BE309E2511BAE3D17B26BEA5C99D39C2DC61BE6C24452B455871821E1993BB9ADE59881D1A0F09D4448C98D7BD2061B1E85C253BF0215375BC02B5998565D94AB90D6D408C5564E43544086A245B288B08EC0CDF6C8574A60E5A826736E690C6386FFDBF87CA5A; _tp=7NFA7WiUaSZlV5g6uooEaA%3D%3D; _pst=shaoye1213; ceshi3.com=103; __jda=122270672.1453140693.1478051914.1508810131.1508982995.304; __jdb=122270672.11.1453140693|304.1508982995; __jdc=122270672; __jdu=1453140693; 3AB9D23F7A4B3C9B=22DYTS3LZ2E7CKEIEYW4QAF6SKGY6ZMNX2V2LNZMVETEF663MGSX5AIQKSHHV5PX4MXBCMVQ6MYCZYPWBGL7F4VGJU");
 //        ninty_50_huafei("2017-10-23 10:00:00", "ipLoc-djd=1-72-2799-0; ipLocation=%u5317%u4EAC; user-key=b0b7125e-c7de-4d6d-9255-242a5844e3b0; cn=0; juinfo=105%7C1989%7C2; dc_search251=; unpl=V2_ZzNtbRZSF0IgAEIDLBwOAmJWEA9LU0pFIQlBUXIdWgYwBEEPclRCFXMURlVnGVUUZgsZWUFcQBJFCEZkexhdBGYKFF9AX3MldDhFVEscbAViCxZURVNKE3YIT1R8EFwNYQMWbXJVQyVF3Mbwr4bi0%2fGjxebzZ0IldDhAU3wdWQRiAxBtCTlCWHUNTlByHlgMYQASVEJQShV9DkZQSxhsBg%3d%3d; TrackID=1EYkJ8_vD-q_BnIxf4X-RUU9aFH4gAW2rjxV7hlgte5WW_f5tGQhA6ZVpYihpHi__M0S5H_YbM_PiK7OMEzZmyJo49HMCHUvUPbIJIZktKdBNjbLLUeG5bLMGWuivz94d; pinId=pt8cktXKCPB7E5keNRtBbQ; pin=u_4b33eb17f380e; unick=%E5%BD%AD%E5%AD%90%E7%A7%A6; _tp=bAu9NkgaG0UNuUeBHv2uYg%3D%3D; _pst=u_4b33eb17f380e; ceshi3.com=103; __jdv=122270672|kong|t_1000087339_|unionliaotian|e4efd95ff4c64d3c858ae0648572f6bc|1508291556521; __jda=122270672.14958658721816819715.1495865872.1508205291.1508291547.54; __jdb=122270672.6.14958658721816819715|54.1508291547; __jdc=122270672; __jdu=14958658721816819715; thor=4AAC32E13BD6814E6B47BCE8642244CE6296F51B957594B250457479A6F060949989468AB84764252F0358635029A3535E665BB5770733108E31E5C192DE6E236575390C66B7D0B5DD3D8942086038B9CDF9F092994A58448C3CA140E5982F51D29821FE916479A58E620D9101B31B0C632D5B6C4D546587B2E9D69CED5EC640578EEA4DC15D36D7880D062DC5D7CB8B872AE6155AA3F772FC5BA98DD76D4F21; 3AB9D23F7A4B3C9B=6HOZDRJU3KQAPETMEXMAEJIAMPTVAFDL6GTABZT2VFTKPBMSVW2H67XP5436MTUOUW37AXA2ZBWI3BJZD6ZPZ7CV7Y");
 
-        shouji("areaId=22; user-key=fd6d0ed6-ac2a-4709-ab0b-f47be0a7c3f1; mt_xid=V2_52007VwMWU1VcUl0ZSxFZAGEDFVVeXFZSGEsZbFJuV0VTCF9URkpNHlkZYgcWW0FQB1JKVU5YADMHFlsPXAUIT3kaXQVhHxJSQVlRSx5BEl8NbAAXYl9oUmofTh1UAGQAG1ptWFdcGA%3D%3D; dmpjs=dmp-d59276378bab233259d52236eebba6c8467021; __jdv=122270672|dmp|dmp_109|cpc|dmp_109_582411_d59276378bab233259d52236eebba6c8467021_1510107127|1510107123825; TrackID=1tFI8kSQE_0A7Iuq56Qa-t0PLre9Io8IGLf7Qzb1WtmTyVmEBanBGX3wuZKwLh29ogUGzratOir-6OgTfClkkqeRIdYj5zAYtQWvFfZXFVmQ; pinId=6O_FVgd3tEus06L-EIuMwg; pin=jackdaifei_m; unick=jackdaifei; _tp=CFyqN214%2FuJT47OHX%2BUStg%3D%3D; _pst=jackdaifei_m; ceshi3.com=000; cn=1; ipLoc-djd=22-1930-50949-52153.137915318; ipLocation=%u56db%u5ddd; __jda=122270672.15095167394471662559631.1509516739.1510127364.1510132916.14; __jdb=122270672.68.15095167394471662559631|14.1510132916; __jdc=122270672; thor=4FEEA4069016DB4626C26C151B9EC7F04AC1F8B31D4CF63D401059ED57DAD5449DC0C92AE31C8DCA7B89A7D6A2FF2C26CF48AD1B72EE8196BF5D2CB34EFCBBB2E0F98FE2BB6469CAC8D18AEE791887371D835E3076FBF2D4A6F650601DBB272763E9120399EFC8D891FE607CA5EA01E0F2C1583B6CE05A49AE1D29D8F2AAA06DA5B6E43B3A1C945121FDF2349667EDF1; 3AB9D23F7A4B3C9B=NMI64G6NR6Q3T22OVMJMKLJSV6Z62LKYEU2L6XNUMP7DKC7XVYCODQYK2LCOWVCBSOSWPIWTYIEBWS7PZB23VX2QUQ; __jdu=15095167394471662559631; trade-ceshi=FT1QZa9Ef3Si0vIUOsW5Tah9LXheSCNQK6PtPe+Dhy+OW6/G; JSESSIONID=3715E5C8CDC319218EBD6F14A044BDD5.s1");
 
+
+//        shouji("user-key=a43e00c7-b7e0-49a4-8335-e0fa487d34ba; __jdv=122270672|direct|-|none|-|1509927372878; TrackID=1Lj9wfR3jhjjlpeSBq9lgB3UeKYNWemqeoqglc7bglsPEa-QAkdjFmGMUQBr6J51gzQdytsDUSLV37TDsjGiecHhXRrITdPVqrEaKTYfp0mc; pinId=6O_FVgd3tEus06L-EIuMwg; pin=jackdaifei_m; unick=jackdaifei; _tp=CFyqN214%2FuJT47OHX%2BUStg%3D%3D; _pst=jackdaifei_m; ceshi3.com=000; cn=1; ipLocation=%u56db%u5ddd; trade-ceshi=fhw1T/1cW1bxrBeA+EY9ol+tneIML/KdB6JTydaREze6Krpq; __jda=122270672.15018621153461879751927.1501862115.1509927373.1510148833.14; __jdb=122270672.6.15018621153461879751927|14.1510148833; __jdc=122270672; JSESSIONID=5A83BC321165A10AE39BEC4F1DD77C91.s1; thor=B4F2C1AD5F7CC14BEB103DCA9A87A9E74CADA019D8980759558C761C905AB14771E02E4F1CD5F2BA8819B6D799D1463126A9706D9F79799AA29E0AD1E16DF3AEC9CDA2252AB9C321C716FBCF5FB80A66C0A8F737F0D5F2A4ECAF3B7266DF4DED8A0167AA45FDADBFACEFD15FCD50186610C496BCD3EBE0C2890285CD8248D48EF913691FE08119767646086619DC20ED; ipLoc-djd=22-1930-50949-52153.137915318; 3AB9D23F7A4B3C9B=CY36PSVCC7JJ7H5LIMAPQY5A7HJYHBG4EJIPP3ZT5COUIOY7BSUGJIVLZ252NKB3TXIF4VDHAGLDDMEGZL6VDUL5KU; __jdu=15018621153461879751927");
+
+//        baitiaoquan("user-key=a43e00c7-b7e0-49a4-8335-e0fa487d34ba; __jdv=122270672|direct|-|none|-|1509927372878; ipLocation=%u56db%u5ddd; TrackID=1tglrHCfdDyuyodxqXThTWCwdcgUUriUpZPJp2uWaDUysrHPgdXnHrnGBuJPFs1FNF6SzPujBEf_jA0HFke5QWodybH5QUGajmPuPRH_uz_Q; pinId=6O_FVgd3tEus06L-EIuMwg; pin=jackdaifei_m; unick=jackdaifei; _tp=CFyqN214%2FuJT47OHX%2BUStg%3D%3D; _pst=jackdaifei_m; ceshi3.com=000; cn=1; ipLoc-djd=22-1930-50949-52153.137915318; __jda=122270672.15018621153461879751927.1501862115.1510153162.1510156342.16; __jdb=122270672.36.15018621153461879751927|16.1510156342; __jdc=122270672; thor=930FF0F3B1300A1B996F0AD2BC7F188F566E2AA1EBFE8EC16814AE8D93A5FDA871D3F34546CD4E02C5B6AED5420694039564E566BF62B272D086656978833041FCB6EAAA59994D703C7527E41CA854DCB07976175B1B5CB45886B724F8042B1DC8B561B48BC289E75B90201F81D278A65535B6351E91D694E9BEE5FBF714146740C8C411260139C06615B206793571D5; 3AB9D23F7A4B3C9B=CY36PSVCC7JJ7H5LIMAPQY5A7HJYHBG4EJIPP3ZT5COUIOY7BSUGJIVLZ252NKB3TXIF4VDHAGLDDMEGZL6VDUL5KU; __jdu=15018621153461879751927");
+        xiaojinku("user-key=a43e00c7-b7e0-49a4-8335-e0fa487d34ba; __jdv=122270672|direct|-|none|-|1509927372878; ipLocation=%u56db%u5ddd; TrackID=1tglrHCfdDyuyodxqXThTWCwdcgUUriUpZPJp2uWaDUysrHPgdXnHrnGBuJPFs1FNF6SzPujBEf_jA0HFke5QWodybH5QUGajmPuPRH_uz_Q; pinId=6O_FVgd3tEus06L-EIuMwg; pin=jackdaifei_m; unick=jackdaifei; _tp=CFyqN214%2FuJT47OHX%2BUStg%3D%3D; _pst=jackdaifei_m; ceshi3.com=000; cn=1; ipLoc-djd=22-1930-50949-52153.137915318; _rdCube=%7B%22p1268291%22%3A%22%2C3748983%2C5149144%22%7D; _jrda=1; thor=1B335DBE5E9FC8EF9A155D7EB5F544269C46E48FDB57B608A638D0D42BBC8D7494823E502B8358013FAC99086639055E0FDB51C59C41637300EECFEE6DC57BD892DCCB807ADCFFC8B15B6170D767C78F6AFF966F644E99E8247F4FC8C4801E64711CD17874583ADD6C2A50007908F0BB7114836CC5C067F01D72DB75A2E58B5E836CA7C430229F4B4044CB9D60847F50; _jrdb=1510160275045; 3AB9D23F7A4B3C9B=CY36PSVCC7JJ7H5LIMAPQY5A7HJYHBG4EJIPP3ZT5COUIOY7BSUGJIVLZ252NKB3TXIF4VDHAGLDDMEGZL6VDUL5KU; abtest=20171109010222172_90; mobilev=html5; autoOpenApp_downCloseDate_auto=1510160541428_1800000; USER_FLAG_CHECK=de909f3dbd1f7c293f9b9bff357b848f; __jda=47827316.15018621153461879751927.1501862115.1510156342.1510159505.17; __jdb=47827316.27.15018621153461879751927|17.1510159505; __jdc=47827316; __jdu=15018621153461879751927; sid=b387295f9935254cda9a1305aa2ff36f; mba_muid=15018621153461879751927; mba_sid=15101605406571897451966803138.3");
+    }
+
+    /**
+     * 小金库100-99
+     * @param cookie
+     * @throws Exception
+     */
+    private static void xiaojinku(String cookie) throws Exception {
+        String url = "https://api.m.jd.com/client.action?functionId=newBabelAwardCollection&body=%7B%22activityId%22%3A%22n598yVebH3M8ERZSypuHvEsx8qK%22%2C%22from%22%3A%22H5node%22%2C%22scene%22%3A%223%22%2C%22actKey%22%3A%222017103019575999801%22%2C%22mitemAddrId%22%3A%22%22%2C%22geo%22%3A%7B%22lng%22%3A%22%22%2C%22lat%22%3A%22%22%7D%7D&client=wh5&clientVersion=1.0.0&sid=b387295f9935254cda9a1305aa2ff36f&uuid=15018621153461879751927&area=&_=" + System.currentTimeMillis() + "&callback=jsonp" + randomNum(1);
+        Header[] headers = new Header[] {
+                new BasicHeader("Host", "api.m.jd.com"),
+                new BasicHeader("Connection", "keep-alive"),
+                new BasicHeader("User-Agent", "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Mobile Safari/537.36"),
+                new BasicHeader("Accept", "*/*"),
+                new BasicHeader("Referer", "https://pro.m.jd.com/mall/active/n598yVebH3M8ERZSypuHvEsx8qK/index.html"),
+                new BasicHeader("Accept-Encoding", "gzip, deflate, br"),
+                new BasicHeader("Accept-Language", "zh-CN,zh;q=0.8"),
+                new BasicHeader("Cookie", cookie)
+        };
+
+        HttpClientUtils.getResponseString(url, headers);
+    }
+
+    /**
+     * 白条券-1111, 10点
+     * key:021efeb6f0cb526f7a1b433908a230e6
+     * @param cookie
+     * @throws Exception
+     */
+    private static void baitiaoquan(String cookie) throws Exception {
+        String url = "https://vip.jr.jd.com/jsonp/coupon/receiveCoupon?callback=jQuery" + randomNum(6) + "&couponKey=021efeb6f0cb526f7a1b433908a230e6&appToken=be1e502d45cdd5cccaeb715557a56cc8&_=" + System.currentTimeMillis();
+        Header[] headers = new Header[] {
+                new BasicHeader("Host", "vip.jr.jd.com"),
+                new BasicHeader("Connection", "keep-alive"),
+                new BasicHeader("User-Agent", "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"),
+                new BasicHeader("Accept", "*/*"),
+                new BasicHeader("Referer", "https://sale.jd.com/act/WX2fhkEvletpdM.html"),
+                new BasicHeader("Accept-Encoding", "gzip, deflate, br"),
+                new BasicHeader("Accept-Language", "zh-CN,zh;q=0.8"),
+                new BasicHeader("Cookie", cookie)
+        };
+
+        HttpClientUtils.getResponseString(url, headers);
     }
 
 
     private static void shouji(String cookie) throws Exception {
+        long serverDate = serverDate();
+        long targetDate = DateUtils.parseDate("2017-11-08 22:00:00", "yyyy-MM-dd HH:mm:ss").getTime();
+        long dif = targetDate - serverDate;
+
+        System.out.println("serverDate---------------" + serverDate);
+        System.out.println("targetDate---------------" + targetDate);
+        System.out.println("dif----------------------" + dif);
+        System.out.println("dif - 10 ----------------" + dif);
+
+        Thread.sleep(dif - 10);
+
 //        String orderPayUrl = "https://trade.jd.com/shopping/order/getOrderInfo.action?rid=" + System.currentTimeMillis();
 //        Header[] headers = new Header[] {
 //                new BasicHeader("Host", "trade.jd.com"),
@@ -81,12 +139,12 @@ public class JD {
         List<NameValuePair> paramList = new ArrayList<NameValuePair>();
         paramList.add(new BasicNameValuePair("overseaPurchaseCookies", ""));
         paramList.add(new BasicNameValuePair("submitOrderParam.sopNotPutInvoice", "false"));
-        paramList.add(new BasicNameValuePair("submitOrderParam.trackID", "1tFI8kSQE_0A7Iuq56Qa-t0PLre9Io8IGLf7Qzb1WtmTyVmEBanBGX3wuZKwLh29ogUGzratOir-6OgTfClkkqeRIdYj5zAYtQWvFfZXFVmQ"));
+        paramList.add(new BasicNameValuePair("submitOrderParam.trackID", "1Lj9wfR3jhjjlpeSBq9lgB3UeKYNWemqeoqglc7bglsPEa-QAkdjFmGMUQBr6J51gzQdytsDUSLV37TDsjGiecHhXRrITdPVqrEaKTYfp0mc"));
         paramList.add(new BasicNameValuePair("submitOrderParam.ignorePriceChange", "0"));
         paramList.add(new BasicNameValuePair("submitOrderParam.btSupport", "0"));
         paramList.add(new BasicNameValuePair("submitOrderParam.eid", ""));
         paramList.add(new BasicNameValuePair("submitOrderParam.fp", ""));
-        paramList.add(new BasicNameValuePair("riskControl", "D0E404CB705B9732FE61DA92E1359CDEC99A8114444F0F5B0A96D4CD27C4271A855CFE6533160EAF"));
+        paramList.add(new BasicNameValuePair("riskControl", "D0E404CB705B9732FE61DA92E1359CDEC99A8114444F0F5B995CC581793C6E53CF704A5E1F152C4D"));
 
         HttpClientUtils.postResponse(submit, paramList, headers);
 
