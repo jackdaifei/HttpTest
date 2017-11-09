@@ -11,6 +11,7 @@ import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
+import org.apache.http.conn.ConnectTimeoutException;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
@@ -101,7 +102,8 @@ public class HttpClientUtils {
             return JSONObject.parseObject(responseStr);
         } catch (Exception e) {
             e.printStackTrace();
-            return postResponse(url, paramList, headers);
+//            return postResponse(url, paramList, headers);
+            return null;
         }
     }
 
@@ -197,12 +199,15 @@ public class HttpClientUtils {
 
             CloseableHttpResponse response = client.execute(httpGet);
             String responseStr = EntityUtils.toString(response.getEntity());
-            System.out.println(responseStr);
+//            System.out.println(responseStr);
             response.close();
             return responseStr;
+        }catch (ConnectTimeoutException e) {
+            return getResponseString(url, headers);
         } catch (Exception e) {
             e.printStackTrace();
-            return getResponseString(url, headers);
+//            return getResponseString(url, headers);
+            return null;
         }
     }
 
