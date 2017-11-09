@@ -1,3 +1,136 @@
-tttaaaasdaaszzzaaasadsadasasd
-sadsadasfsad
-asdsad
+{"serverTime":1509429335173}
+
+serverDateLong:1509429335173
+targetDateLong:1509429600000
+timeDif:       264827
+---------------------------------------
+{"serverTime":1509429467975}
+
+serverDateLong:1509429467975
+targetDateLong:1509429600000
+timeDif:       132025
+---------------------------------------
+{"serverTime":1509429534171}
+
+serverDateLong:1509429534171
+targetDateLong:1509429600000
+timeDif:       65829
+---------------------------------------
+{"serverTime":1509429567367}
+
+serverDateLong:1509429567367
+targetDateLong:1509429600000
+timeDif:       32633
+---------------------------------------
+{"serverTime":1509429595242}
+{"serverTime":1509429595484}
+{"serverTime":1509429595736}
+{"serverTime":1509429595958}
+{"serverTime":1509429596211}
+{"serverTime":1509429596445}
+{"serverTime":1509429596654}
+{"serverTime":1509429596888}
+{"serverTime":1509429597091}
+{"serverTime":1509429597333}
+{"serverTime":1509429597558}
+{"serverTime":1509429597801}
+{"serverTime":1509429598012}
+{"serverTime":1509429598219}
+{"serverTime":1509429598426}
+{"serverTime":1509429598658}
+{"serverTime":1509429598903}
+{"serverTime":1509429599124}
+{"serverTime":1509429599332}
+jQuery1464125({
+  "desc" : "您来早了，下一场活动开始时间为 14:00，稍后再来吧！",
+  "code" : 10
+})
+
+{"serverTime":1509429599572}
+jQuery5406060({
+  "desc" : "您来早了，下一场活动开始时间为 14:00，稍后再来吧！",
+  "code" : 10
+})
+
+{"serverTime":1509429599812}
+jQuery5373415({
+  "desc" : "您来早了，下一场活动开始时间为 14:00，稍后再来吧！",
+  "code" : 10
+})
+
+{"serverTime":1509429600110}
+jQuery7191685({
+  "desc" : "您提交的过于频繁，请50秒稍后重试。",
+  "code" : 21
+})
+
+jQuery3378583({
+  "desc" : "领取成功！感谢您的参与，祝您购物愉快~",
+  "code" : 999
+})
+
+jQuery8014041({
+  "desc" : "您提交的过于频繁，请50秒稍后重试。",
+  "code" : 21
+})
+
+jQuery2930879({
+  "desc" : "您已经参加过此活动，别太贪心哟，下次再来~",
+  "code" : 14
+})
+
+jQuery1142062({
+  "desc" : "您提交的过于频繁，请50秒稍后重试。",
+  "code" : 21
+})
+
+jQuery4114047({
+  "desc" : "您已经参加过此活动，别太贪心哟，下次再来~",
+  "code" : 14
+})
+
+jQuery7550814({
+  "desc" : "优惠券领券发生错误",
+  "code" : -1
+})
+
+{"serverTime":1509429604007}
+jQuery6835917({
+  "desc" : "本时段优惠券已抢完，请20:00再来吧！",
+  "code" : 16
+})
+
+{"serverTime":1509429604210}
+jQuery7976738({
+  "desc" : "本时段优惠券已抢完，请20:00再来吧！",
+  "code" : 16
+})
+
+{"serverTime":1509429604424}
+jQuery3053606({
+  "desc" : "您提交过于频繁，请30秒后再试。",
+  "code" : 18
+})
+
+{"serverTime":1509429604604}
+jQuery2288289({
+  "desc" : "您提交过于频繁，请30秒后再试。",
+  "code" : 18
+})
+
+{"serverTime":1509429604843}
+jQuery7024598({
+  "desc" : "您提交过于频繁，请30秒后再试。",
+  "code" : 18
+})
+
+{"serverTime":1509429605064}
+jQuery3085636({
+  "desc" : "本时段优惠券已抢完，请20:00再来吧！",
+  "code" : 16
+})
+
+jQuery6074656({
+  "desc" : "您提交过于频繁，请30秒后再试。",
+  "code" : 18
+})

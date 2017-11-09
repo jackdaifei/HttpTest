@@ -90,7 +90,7 @@ public class Coin {
         JPanel mainPanel = new JPanel();
         jFrame.setContentPane(mainPanel);
 
-        JPanel sntPanel = new SelfPanel("SNT", 120, 60);
+        JPanel sntPanel = new SelfPanel("SNT", 120, 100);
         SelfLabel sntBterLabel = new SelfLabel();
         SelfLabel sntYunBiLabel = new SelfLabel();
         sntPanel.add(sntBterLabel);
@@ -127,9 +127,24 @@ public class Coin {
         omgPanel.add(omgLabel);
         mainPanel.add(omgPanel);
 
+        JPanel etcPanel = new SelfPanel("ETC", 120, 60);
+        SelfLabel etcLabel = new SelfLabel();
+        etcPanel.add(etcLabel);
+        mainPanel.add(etcPanel);
+
+        JPanel payPanel = new SelfPanel("PAY", 120, 60);
+        SelfLabel payLabel = new SelfLabel();
+        payPanel.add(payLabel);
+        mainPanel.add(payPanel);
+
+        JPanel cdtPanel = new SelfPanel("CDT", 120, 60);
+        SelfLabel cdtLabel = new SelfLabel();
+        cdtPanel.add(cdtLabel);
+        mainPanel.add(cdtPanel);
+
         jFrame.setVisible(true);
 
-        SelfThread selfThread = new SelfThread(sntBterLabel, eosBterLabel, icoBterLabel, ethBterLabel, qtumBterLabel, otherLabel, omgLabel);
+        SelfThread selfThread = new SelfThread(sntBterLabel, eosBterLabel, icoBterLabel, ethBterLabel, qtumBterLabel, otherLabel, omgLabel, etcLabel, payLabel, cdtLabel);
         Thread thread = new Thread(selfThread);
         thread.start();
     }
@@ -166,12 +181,31 @@ class SelfLabel extends JLabel {
                 float sntBterPrice = HttpClientUtils.postResponse(bterUrl, paramList, headers).getJSONObject("datas").getFloat("currentPrice");
                 this.setText("<html><span>" + "Bter: " + sntBterPrice + "</span><br>" + yunbiStr + "</html>");
             } else {
-                this.setText(yunbiStr);
+                this.setText("<html>" + yunbiStr + "</html>");
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
+
+    public void setText(String bterUrl, String yunbiStr, List<NameValuePair> paramList, Header[] headers, String name) {
+        try {
+            if (null != bterUrl) {
+                float sntBterPrice = HttpClientUtils.postResponse(bterUrl, paramList, headers).getJSONObject("datas").getFloat("currentPrice");
+                if ("PAY".equals(name)) {
+                    if (sntBterPrice >= 27) {
+                        JOptionPane.showMessageDialog(null, "比特儿PAY:" + sntBterPrice, "警告男神", JOptionPane.WARNING_MESSAGE);
+                    }
+                }
+                this.setText("<html><span>" + "Bter: " + sntBterPrice + "</span><br>" + yunbiStr + "</html>");
+            } else {
+                this.setText("<html>" + yunbiStr + "</html>");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
 
     /* public SelfLabel(final String url, final List<NameValuePair> paramList) {
         Thread thread = new Thread() {
@@ -254,6 +288,28 @@ class SelfThread implements Runnable {
             new BasicNameValuePair("token", "")
     };
 
+    private final static NameValuePair[] etcBeterParamArray = new NameValuePair[] {
+            new BasicNameValuePair("appKey", "1C843F4B-C351-4A9F-EB51-B722122341D5"),
+            new BasicNameValuePair("appLang", "cn"),
+            new BasicNameValuePair("currencyType", "ETC"),
+            new BasicNameValuePair("depth", "0.1"),
+            new BasicNameValuePair("exchangeType", "CNY"),
+            new BasicNameValuePair("length", "20"),
+            new BasicNameValuePair("sign", "b11c6ece83a1b2194529fdcc71c18e7d"),
+            new BasicNameValuePair("token", "")
+    };
+
+    private final static NameValuePair[] payBeterParamArray = new NameValuePair[] {
+            new BasicNameValuePair("appKey", "1C843F4B-C351-4A9F-EB51-B722122341D5"),
+            new BasicNameValuePair("appLang", "cn"),
+            new BasicNameValuePair("currencyType", "PAY"),
+            new BasicNameValuePair("depth", "0.1"),
+            new BasicNameValuePair("exchangeType", "CNY"),
+            new BasicNameValuePair("length", "20"),
+            new BasicNameValuePair("sign", "a5713697577fdb140e108710a1884f91"),
+            new BasicNameValuePair("token", "")
+    };
+
     private final static String yunBiUrl = "https://yunbi.com//api/v2/tickers.json";
     // private final static String yunBiUrl = "https://yunbi.com//api/v2/markets.json"; // 种类
     // https://apim.bter.com/apim/v1/marketDepth
@@ -277,8 +333,11 @@ class SelfThread implements Runnable {
     private SelfLabel qtumLabel;
     private SelfLabel otherLabel;
     private SelfLabel omgLabel;
+    private SelfLabel etcLabel;
+    private SelfLabel payLabel;
+    private SelfLabel cdtLabel;
 
-    SelfThread(SelfLabel sntLabel, SelfLabel eosLabel, SelfLabel icoLabel, SelfLabel ethLabel, SelfLabel qtumLabel, SelfLabel otherLabel, SelfLabel omgLabel) {
+    SelfThread(SelfLabel sntLabel, SelfLabel eosLabel, SelfLabel icoLabel, SelfLabel ethLabel, SelfLabel qtumLabel, SelfLabel otherLabel, SelfLabel omgLabel, SelfLabel etcLabel, SelfLabel payLabel, SelfLabel cdtLabel) {
         this.sntLabel = sntLabel;
         this.eosLabel = eosLabel;
         this.icoLabel = icoLabel;
@@ -286,6 +345,9 @@ class SelfThread implements Runnable {
         this.qtumLabel = qtumLabel;
         this.otherLabel = otherLabel;
         this.omgLabel = omgLabel;
+        this.etcLabel = etcLabel;
+        this.payLabel = payLabel;
+        this.cdtLabel = cdtLabel;
     }
 
     public void run(){
@@ -300,40 +362,74 @@ class SelfThread implements Runnable {
 //                float icoBterPrice = HttpClientUtils.postResponse(bterUrl, Arrays.asList(icoBterParamArray), headers).getJSONObject("datas").getFloat("currentPrice");
 //                float ethBterPrice = HttpClientUtils.postResponse(bterUrl, Arrays.asList(ethBterParamArray), headers).getJSONObject("datas").getFloat("currentPrice");
 //                float qtumBterPrice = HttpClientUtils.postResponse(bterUrl, Arrays.asList(qtumBterParamArray), headers).getJSONObject("datas").getFloat("currentPrice");
-                String yunBiOther = "";
-                String otherEos = "";
-                String otherEth = "";
+                StringBuilder yunBiOther = new StringBuilder();
+                StringBuilder otherEos = new StringBuilder();
+                StringBuilder otherEth = new StringBuilder();
+                StringBuilder otherSnt = new StringBuilder();
+                StringBuilder etcInfo = new StringBuilder();
                 StringBuilder otherQtum = new StringBuilder();
+                StringBuilder payInfo = new StringBuilder();
                 try {
-                    JSONObject yunBiJson = HttpClientUtils.getResponse(yunBiUrl, headers);
+
+                    Header[] headersYunBi = new Header[] {
+                            new BasicHeader("Content-Type", "application/x-www-form-urlencoded"),
+                            new BasicHeader("Host", "yunbi.com"),
+                            new BasicHeader("Connection", "keep-alive"),
+                            new BasicHeader("Accept", "application/json"),
+                            new BasicHeader("User-Agent", "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"),
+                            new BasicHeader("Referer", "https://yunbi.com/swagger/"),
+                            new BasicHeader("Accept-Encoding", "gzip, deflate, br"),
+                            new BasicHeader("Accept-Language", "zh-CN,zh;q=0.8"),
+                            new BasicHeader("Cookie", "visid_incap_1111286=8t947jxlQRGliLLKxsl8fT0KeFkAAAAAQUIPAAAAAABdBZ5zONdyZKtbaHiK7Qu6; _ga=GA1.2.513977913.1501049894; _gid=GA1.2.1508570709.1501049894; Hm_lvt_1a2ae276aba84c964e2423eebb6a4ef5=1500876826,1500877067,1500948503,1501049895; incap_ses_426_1111286=psUnQ9FqjxIJE/QX73TpBYNOeVkAAAAAepmDH+nCgDdWLhzWEbr2TQ==; ___utmvmNluSVDBB=fEhgeMhKcvn; ___utmvbNluSVDBB=pZY XlnOMalW: Qtp"),
+                            new BasicHeader("If-None-Match", "")
+                    };
+                    JSONObject yunBiJson = HttpClientUtils.getResponse(yunBiUrl, headersYunBi);
                     float first = 0f;
                     if (null != yunBiJson) {
-                        otherEos += "<span>" + "云币: " + yunBiJson.getJSONObject("eoscny").getJSONObject("ticker").getFloat("last") + "</span><br>";
-                        otherEth += "<span>" + "云币: " + yunBiJson.getJSONObject("ethcny").getJSONObject("ticker").getFloat("last") + "</span><br>";
+                        otherSnt.append("<span>" + "云币: ").append(yunBiJson.getJSONObject("sntcny").getJSONObject("ticker").getFloat("last")).append("</span><br>");
+                        etcInfo.append("<span>" + "云币: ").append(yunBiJson.getJSONObject("etccny").getJSONObject("ticker").getFloat("last")).append("</span><br>");
+                        otherEos.append("<span>" + "云币: ").append(yunBiJson.getJSONObject("eoscny").getJSONObject("ticker").getFloat("last")).append("</span><br>");
+                        otherEth.append("<span>" + "云币: ").append(yunBiJson.getJSONObject("ethcny").getJSONObject("ticker").getFloat("last")).append("</span><br>");
                         otherQtum.append("<span>" + "云币: ").append(yunBiJson.getJSONObject("qtumcny").getJSONObject("ticker").getFloat("last")).append("</span><br>");
-                        yunBiOther += "<span>" + "BTC: " + yunBiJson.getJSONObject("btccny").getJSONObject("ticker").getFloat("last") + "</span><br>";
+                        yunBiOther.append("<span color='red'>" + "BTC: ").append(yunBiJson.getJSONObject("btccny").getJSONObject("ticker").getFloat("last")).append("</span><br>");
+                        yunBiOther.append("<span color='green'>" + "BCC: ").append(yunBiJson.getJSONObject("bcccny").getJSONObject("ticker").getFloat("last")).append("</span><br>");
                         first = yunBiJson.getJSONObject("1stcny").getJSONObject("ticker").getFloat("last");
-                        yunBiOther += "<span>" + "1ST: " + first + "</span><br>";
-                        yunBiOther += "<span>" + "ANS: " + yunBiJson.getJSONObject("anscny").getJSONObject("ticker").getFloat("last") + "</span><br>";
-                        yunBiOther += "<span>" + "BTS: " + yunBiJson.getJSONObject("btscny").getJSONObject("ticker").getFloat("last") + "</span><br>";
-                        yunBiOther += "<span>" + "GXS: " + yunBiJson.getJSONObject("gxscny").getJSONObject("ticker").getFloat("last") + "</span><br>";
-                        yunBiOther += "<span>" + "GNT: " + yunBiJson.getJSONObject("gntcny").getJSONObject("ticker").getFloat("last") + "</span><br>";
+                        yunBiOther.append("<span>" + "1ST: ").append(first).append("</span><br>");
+                        yunBiOther.append("<span>" + "ANS: ").append(yunBiJson.getJSONObject("anscny").getJSONObject("ticker").getFloat("last")).append("</span><br>");
+                        yunBiOther.append("<span>" + "BTS: ").append(yunBiJson.getJSONObject("btscny").getJSONObject("ticker").getFloat("last")).append("</span><br>");
+                        yunBiOther.append("<span>" + "GXS: ").append(yunBiJson.getJSONObject("gxscny").getJSONObject("ticker").getFloat("last")).append("</span><br>");
+                        yunBiOther.append("<span>" + "GNT: ").append(yunBiJson.getJSONObject("gntcny").getJSONObject("ticker").getFloat("last")).append("</span><br>");
                     }
                     if (first >= 8.0f) {
-                        JOptionPane.showMessageDialog(null, "一血8元", "警告",JOptionPane.WARNING_MESSAGE);
+                        JOptionPane.showMessageDialog(null, "一血8元", "警告小涵涵",JOptionPane.WARNING_MESSAGE);
                     }
+
+                    String dianliangjinfuUrl = "https://www.vpdax.com/api/elecoin/coin_data?ts=" + System.currentTimeMillis();
+                    JSONObject dianliangObj = HttpClientUtils.getResponse(dianliangjinfuUrl, null);
+                    otherSnt.append("<span>" + "点量金服: ").append(dianliangObj.getJSONArray("result").getJSONObject(4).getFloat("last")).append("</span><br>");
+
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
 
-                String otherSnt = "";
                 StringBuilder omgInfo = new StringBuilder();
+                StringBuilder cdtInfo = new StringBuilder();
                 try {
                     JSONObject b8Json = HttpClientUtils.getResponse(b8Url + "?t=" + Math.random(), headers);
                     if (null != b8Json) {
-                        otherSnt += "<span>" + "B8: " + b8Json.getJSONObject("data").getJSONArray("cny").getJSONObject(4).getFloat("current") + "</span><br>";
-                        otherEth += "<span>" + "B8: " + b8Json.getJSONObject("data").getJSONArray("cny").getJSONObject(0).getFloat("current") + "</span><br>";
-                        omgInfo.append("<span>" + "B8: ").append(b8Json.getJSONObject("data").getJSONArray("cny").getJSONObject(5).getFloat("current")).append("</span><br>");
+                        otherSnt.append("<span>" + "B8: ").append(b8Json.getJSONObject("data").getJSONArray("cny").getJSONObject(4).getFloat("current")).append("</span><br>");
+                        otherEth.append("<span>" + "B8: ").append(b8Json.getJSONObject("data").getJSONArray("cny").getJSONObject(0).getFloat("current")).append("</span><br>");
+                        float omgB8 = b8Json.getJSONObject("data").getJSONArray("cny").getJSONObject(5).getFloat("current");
+                        /*if (omgB8 >= 20) {
+                            JOptionPane.showMessageDialog(null, "B8：" + omgB8, "小红收嫩模",JOptionPane.WARNING_MESSAGE);
+                        }*/
+                        omgInfo.append("<span>" + "B8: ").append(omgB8).append("</span><br>");
+                        float cdtB8 = b8Json.getJSONObject("data").getJSONArray("cny").getJSONObject(6).getFloat("current");
+                        if (cdtB8 >= 1) {
+                            JOptionPane.showMessageDialog(null, "CDT：" + cdtB8, "静静",JOptionPane.WARNING_MESSAGE);
+                        }
+                        cdtInfo.append("<span>" + "B8: ").append(cdtB8).append("</span><br>");
+
                     }
                 } catch (Exception e) {
                     e.printStackTrace();
@@ -350,11 +446,23 @@ class SelfThread implements Runnable {
                             String flag = b9Json.getString("currency_mark");
                             if (StringUtils.isNotBlank(flag)) {
                                 if (b9Json.getString("currency_mark").equals("Qtum")) {
-                                    otherQtum.append("<span>" + "币久: ").append(b9Json.getFloat("new_price")).append("</span><br>");
+                                    float qtumB9 = b9Json.getFloat("new_price");
+                                    /*if (qtumB9 >= 52) {
+                                        JOptionPane.showMessageDialog(null, "b9量子：" + qtumB9, "警告静静",JOptionPane.WARNING_MESSAGE);
+                                    }*/
+                                    otherQtum.append("<span>" + "币久: ").append(qtumB9).append("</span><br>");
                                 } else if (b9Json.getString("currency_mark").equals("ICO")) {
                                     icoInfo.append("<span>" + "币久: ").append(b9Json.getFloat("new_price")).append("</span><br>");
                                 } else if (b9Json.getString("currency_mark").equals("OMG")) {
-                                    omgInfo.append("<span>" + "币久: ").append(b9Json.getFloat("new_price")).append("</span><br>");
+                                    float omgB9 = b9Json.getFloat("new_price");
+                                   /* if (omgB9 >= 20) {
+                                        JOptionPane.showMessageDialog(null, "b9-OMG：" + omgB9, "通知小红收嫩模",JOptionPane.WARNING_MESSAGE);
+                                    }*/
+                                    omgInfo.append("<span>" + "币久: ").append(omgB9).append("</span><br>");
+                                } else if (b9Json.getString("currency_mark").equals("SNT")) {
+                                    otherSnt.append("<span>" + "币久: ").append(b9Json.getFloat("new_price")).append("</span><br>");
+                                } else if (b9Json.getString("currency_mark").equals("PAY")) {
+                                    payInfo.append("<span>" + "币久: ").append(b9Json.getFloat("new_price")).append("</span><br>");
                                 }
                             }
                         }
@@ -365,13 +473,16 @@ class SelfThread implements Runnable {
 
 
 
-                sntLabel.setText(bterUrl, otherSnt, Arrays.asList(sntBterParamArray), headers);
-                eosLabel.setText(bterUrl, otherEos, Arrays.asList(eosBterParamArray), headers);
+                sntLabel.setText(bterUrl, otherSnt.toString(), Arrays.asList(sntBterParamArray), headers);
+                eosLabel.setText(bterUrl, otherEos.toString(), Arrays.asList(eosBterParamArray), headers);
                 icoLabel.setText(bterUrl, icoInfo.toString(), Arrays.asList(icoBterParamArray), headers);
-                ethLabel.setText(bterUrl, otherEth, Arrays.asList(ethBterParamArray), headers);
-                qtumLabel.setText(bterUrl, otherQtum.toString(), Arrays.asList(qtumBterParamArray), headers);
-                otherLabel.setText(null, "<html>" + yunBiOther + "</html>", null, null);
-                omgLabel.setText(null, "<html>" + omgInfo + "</html>", null, null);
+                ethLabel.setText(bterUrl, otherEth.toString(), Arrays.asList(ethBterParamArray), headers);
+                qtumLabel.setText(bterUrl, otherQtum.toString(), Arrays.asList(qtumBterParamArray), headers, "Qtum");
+                otherLabel.setText(null, yunBiOther.toString(), null, null);
+                omgLabel.setText(null, omgInfo.toString(), null, null);
+                etcLabel.setText(bterUrl, etcInfo.toString(), Arrays.asList(etcBeterParamArray), headers);
+                payLabel.setText(bterUrl, payInfo.toString(), Arrays.asList(payBeterParamArray), headers, "PAY");
+                cdtLabel.setText(null, cdtInfo.toString(), null, null);
 
                 Thread.sleep(5000);
             } catch (Exception e) {
