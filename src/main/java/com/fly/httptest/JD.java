@@ -36,8 +36,16 @@ import java.util.TimeZone;
 public class JD {
 
     public static void main(String[] args) throws Exception {
-        String cookie = "areaId=22; user-key=fd6d0ed6-ac2a-4709-ab0b-f47be0a7c3f1; mt_xid=V2_52007VwMWU1VcUl0ZSxFZAGEDFVVeXFZSGEsZbFJuV0VTCF9URkpNHlkZYgcWW0FQB1JKVU5YADMHFlsPXAUIT3kaXQVhHxJSQVlRSx5BEl8NbAAXYl9oUmofTh1UAGQAG1ptWFdcGA%3D%3D; dmpjs=dmp-d59276378bab233259d52236eebba6c8467021; TrackID=16xYHa0JQHcEpYByLTCZYSodoOuNVTCW6Gc5RMBlZapR1ofUp2C1OVKiNAxgA1b66kxwi4QngiGJ6WZlBL2_LZWl8Ehngaq-hxUllw0EKDd8; pinId=6O_FVgd3tEus06L-EIuMwg; pin=jackdaifei_m; unick=jackdaifei; _tp=CFyqN214%2FuJT47OHX%2BUStg%3D%3D; _pst=jackdaifei_m; ceshi3.com=000; __jdv=122270672|baidu|-|organic|c0.3.cn|1510283337300; ipLocation=%u56db%u5ddd; thor=BEAD6E6DE23F057D7F6F399EB372DA5E936A76AB8B1C51E21B55AB4D2D5FFCC7A18F846B19E593AEF6903E477B42DB522185564C4461B9E800FBB8EDD48FA00553D25C826048CC7BC018A3CBCD096C20648989AFF5D721FE186310B6E345F470F24801E13C17FB4E7D8D5EDAABD809019009F8CC549402A9096FACED2D4B5A3FBAA3F0D287BFC01BFE0A5210E878EB9F; cart-main=xx; cd=0; cn=4; __jda=122270672.15095167394471662559631.1509516739.1510293190.1510299064.25; __jdb=122270672.26.15095167394471662559631|25.1510299064; __jdc=122270672; ipLoc-djd=22-1930-50949-52153.137915318; __jdu=15095167394471662559631";
-        String target = "2017-11-10 16:00:00";
+        String target = "2017-11-10 20:00:00";
+
+        // 夏普-111，电脑-999
+        String cookie = "areaId=22; user-key=fd6d0ed6-ac2a-4709-ab0b-f47be0a7c3f1; mt_xid=V2_52007VwMWU1VcUl0ZSxFZAGEDFVVeXFZSGEsZbFJuV0VTCF9URkpNHlkZYgcWW0FQB1JKVU5YADMHFlsPXAUIT3kaXQVhHxJSQVlRSx5BEl8NbAAXYl9oUmofTh1UAGQAG1ptWFdcGA%3D%3D; dmpjs=dmp-d59276378bab233259d52236eebba6c8467021; TrackID=16xYHa0JQHcEpYByLTCZYSodoOuNVTCW6Gc5RMBlZapR1ofUp2C1OVKiNAxgA1b66kxwi4QngiGJ6WZlBL2_LZWl8Ehngaq-hxUllw0EKDd8; pinId=6O_FVgd3tEus06L-EIuMwg; pin=jackdaifei_m; unick=jackdaifei; _tp=CFyqN214%2FuJT47OHX%2BUStg%3D%3D; _pst=jackdaifei_m; ceshi3.com=000; unpl=V2_ZzNtbUAAQ0V9W0AHKE5VUmICFw5KU0EWJwxFVntKDgEzUEBbclRCFXMURlRnGV0UZwsZXEJcQRxFCHZXchBYAWcCGllyBBNNIEwHDCRSBUE3XHxaEl9GFH0ME114SlsAZgEUVEZQSkF8CE9Ueh5YBWVQQG1yVEMldQl2VH8YVAFnBBRfSlJGE3UPQVd%2fHVQCZQMibUVncyVwCEFQfhtsBFcCIh8WC0sdcwxEVjYZWARvBxJaRFVLEHAORlN8GlgBbwQQXXJWcxY%3d; _contrast=; _rdCube=%7B%22p567810%22%3A%22%2C4516007%22%7D; ipLocation=%u56db%u5ddd; thor=E03277D8321640279832FE269129F2782963470AC121E8CC2AE05325E0817DFBBD4F429C9C4C0F4301FB3436C9D9D9E88699A9DDC5DB7DE55ADD618152BC6F6E911BCCE6E4BF26340AD845B61F724F690F0B5C1F481616C551C99542D9DFCE02AD9F290E3536D04BA1188B4E83793884719E1D83A6CDF4B1593F5BCB094BF70F8DED0CC85DFC0D844BD0B9AD57D8BD6E; cn=7; __jdv=122270672|baidu-pinzhuan|t_288551095_baidupinzhuan|cpc|6a94095d82b640378568e818106513bc_0_3f1a9b7bbf8f404b9532c5231bc5ebc7|1510315248066; ipLoc-djd=22-1930-50949-52153.137915318; seckill5679108=fyaJRskaPyLjX+9Cgr23HXBmZ0xs5zInu3d26FBEY0jFx4nS+WAdDguILJdKUYy5M0wyoK3kER7dGIATGPQv/Asn5yK8nNC+XPSrLmlVHXgr7cj/; __jda=122270672.15095167394471662559631.1509516739.1510310225.1510311698.29; __jdb=122270672.41.15095167394471662559631|29.1510311698; __jdc=122270672; 3AB9D23F7A4B3C9B=NMI64G6NR6Q3T22OVMJMKLJSV6Z62LKYEU2L6XNUMP7DKC7XVYCODQYK2LCOWVCBSOSWPIWTYIEBWS7PZB23VX2QUQ; __jdu=15095167394471662559631";
+//        submit(target, cookie, 1500);
+
+
+        // 键盘-11.11
+//        String cookie1 = "__jdv=122270672|direct|-|none|-|1510312500564; TrackID=12zy7Cb8eDaet2obcGyXLS8yNhOukzYJi1Aut-Y_gmToA7NMsO5nW-xkIgNTftKicu0glao8VhxZqom5wpnIPFOfIpi8qawrveEQdF73ymfo; pinId=Ik1sS0FRDt5NprWcMOUPH7V9-x-f3wj7; pin=jd_71c6cc21040a7; unick=%E8%B0%88%E7%8E%89%E6%A2%85; _tp=Q2%2BiRcDZmf7Y7UnqEG4UjaLo1Q0MVgTyCfM87Yx9VVU%3D; _pst=jd_71c6cc21040a7; ceshi3.com=000; user-key=170d250c-d160-492d-876f-24206b67df9a; _rdCube=%7B%22p1009484%22%3A%22%2C5025971%22%7D; cn=11; thor=C033DC83AC57063E1828901464B4E36AA0019B5B69E11A0BE6EB4F2C69B57DDE03CBAFEF8388DF07FF1096D2188C46BFE21AF9C0F40A3600A930FB38508684EE4D6CBD9989B269CF2E18A91309CA08AC124C54A8571947FA46CEE0FA142F084BFFAA346A43E2E1E29A6613038B56CF523321AB4105EAFBEEFB5F92469483B096011E193ADCA59CBEBAF7114C6E6E42628365ECBEB703FA05D86F4775BAFBDA93; ipLoc-djd=22-1930-50949-52154.138124284; ipLocation=%u56db%u5ddd; __jda=122270672.15103125005631664017897.1510312501.1510312501.1510312501.1; __jdb=122270672.26.15103125005631664017897|1.1510312501; __jdc=122270672; __jdu=15103125005631664017897; trade-ceshi=w4dUAE4BMTvmCFNG+HCy8jlyAj9zjQaYMhNxKmqVObNgYxUXvT/BtQ==; 3AB9D23F7A4B3C9B=NMI64G6NR6Q3T22OVMJMKLJSV6Z62LKYEU2L6XNUMP7DKC7XVYCODQYK2LCOWVCBSOSWPIWTYIEBWS7PZB23VX2QUQ; JSESSIONID=CF29C95AA7EDF75C66DEBBE5E9866F3C.s1";
+//        submit(target, cookie1, 200);
 
 //        ninty_50_huafei("2017-11-10 10:00:00", "areaId=22; juinfo=62%7C1990%7C2; user-key=fd6d0ed6-ac2a-4709-ab0b-f47be0a7c3f1; o2-webp=true; mt_xid=V2_52007VwMWU1VcUl0ZSxFZAGEDFVVeXFZSGEsZbFJuV0VTCF9URkpNHlkZYgcWW0FQB1JKVU5YADMHFlsPXAUIT3kaXQVhHxJSQVlRSx5BEl8NbAAXYl9oUmofTh1UAGQAG1ptWFdcGA%3D%3D; dmpjs=dmp-d59276378bab233259d52236eebba6c8467021; __jdv=122270672|dmp|dmp_109|cpc|dmp_109_582411_d59276378bab233259d52236eebba6c8467021_1510107127|1510107123825; ipLocation=%u56db%u5ddd; cn=2; ipLoc-djd=22-1930-50949-52153.137915318; _jrda=1; _jrdb=1510278062502; wlfstk_smdl=ke2qh81crsblzqagvdvg10k4ey1a9fku; TrackID=16xYHa0JQHcEpYByLTCZYSodoOuNVTCW6Gc5RMBlZapR1ofUp2C1OVKiNAxgA1b66kxwi4QngiGJ6WZlBL2_LZWl8Ehngaq-hxUllw0EKDd8; pinId=6O_FVgd3tEus06L-EIuMwg; pin=jackdaifei_m; unick=jackdaifei; thor=E88AC24EF8F065CF89E6D17F88F5477BA60A0C1F648CE2B5C26E54CFC28C97715D408104D4A479C677DB4D59E8B36ED00E96A07B1777077C4E655974528B55DECA7522999CC51A2A554B3D0EFBF2799DC6BE90BD552CF2C9ED6E6376959EA80134A81D61EFD5528BBEF2D33A484F9D64962F2E7A8EA59C76282485417D9603EAB1E287C862E928D2444EA36F0EDF4EE4; _tp=CFyqN214%2FuJT47OHX%2BUStg%3D%3D; _pst=jackdaifei_m; ceshi3.com=000; __jda=122270672.15095167394471662559631.1509516739.1510219948.1510277873.21; __jdb=122270672.10.15095167394471662559631|21.1510277873; __jdc=122270672; __jdu=15095167394471662559631; 3AB9D23F7A4B3C9B=NMI64G6NR6Q3T22OVMJMKLJSV6Z62LKYEU2L6XNUMP7DKC7XVYCODQYK2LCOWVCBSOSWPIWTYIEBWS7PZB23VX2QUQ");
 
@@ -45,7 +53,24 @@ public class JD {
 
 //        xiaojinku("2017-11-10 10:00:00", "areaId=22; juinfo=62%7C1990%7C2; user-key=fd6d0ed6-ac2a-4709-ab0b-f47be0a7c3f1; o2-webp=true; mt_xid=V2_52007VwMWU1VcUl0ZSxFZAGEDFVVeXFZSGEsZbFJuV0VTCF9URkpNHlkZYgcWW0FQB1JKVU5YADMHFlsPXAUIT3kaXQVhHxJSQVlRSx5BEl8NbAAXYl9oUmofTh1UAGQAG1ptWFdcGA%3D%3D; dmpjs=dmp-d59276378bab233259d52236eebba6c8467021; __jdv=122270672|dmp|dmp_109|cpc|dmp_109_582411_d59276378bab233259d52236eebba6c8467021_1510107127|1510107123825; ipLocation=%u56db%u5ddd; cn=2; ipLoc-djd=22-1930-50949-52153.137915318; _jrda=1; _jrdb=1510278062502; wlfstk_smdl=ke2qh81crsblzqagvdvg10k4ey1a9fku; TrackID=16xYHa0JQHcEpYByLTCZYSodoOuNVTCW6Gc5RMBlZapR1ofUp2C1OVKiNAxgA1b66kxwi4QngiGJ6WZlBL2_LZWl8Ehngaq-hxUllw0EKDd8; pinId=6O_FVgd3tEus06L-EIuMwg; pin=jackdaifei_m; unick=jackdaifei; thor=E88AC24EF8F065CF89E6D17F88F5477BA60A0C1F648CE2B5C26E54CFC28C97715D408104D4A479C677DB4D59E8B36ED00E96A07B1777077C4E655974528B55DECA7522999CC51A2A554B3D0EFBF2799DC6BE90BD552CF2C9ED6E6376959EA80134A81D61EFD5528BBEF2D33A484F9D64962F2E7A8EA59C76282485417D9603EAB1E287C862E928D2444EA36F0EDF4EE4; _tp=CFyqN214%2FuJT47OHX%2BUStg%3D%3D; _pst=jackdaifei_m; ceshi3.com=000; __jda=122270672.15095167394471662559631.1509516739.1510219948.1510277873.21; __jdb=122270672.10.15095167394471662559631|21.1510277873; __jdc=122270672; __jdu=15095167394471662559631; 3AB9D23F7A4B3C9B=NMI64G6NR6Q3T22OVMJMKLJSV6Z62LKYEU2L6XNUMP7DKC7XVYCODQYK2LCOWVCBSOSWPIWTYIEBWS7PZB23VX2QUQ");
 
-        submit(target, cookie);
+        String url = "https://divide.jd.com/user_routing?skuId=3822020&sn=fa8b858a4d60c76d04d1184469383af9&from=pc";
+        Header[] headers = new Header[]{
+                new BasicHeader("Host", "trade.jd.com"),
+                new BasicHeader("Connection", "keep-alive"),
+                new BasicHeader("Upgrade-Insecure-Requests", "1"),
+                new BasicHeader("User-Agent", "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"),
+                new BasicHeader("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8"),
+                new BasicHeader("Referer", "https://cart.jd.com/cart.action"),
+                new BasicHeader("Accept-Encoding", "gzip, deflate, br"),
+                new BasicHeader("Accept-Language", "zh-CN,zh;q=0.8"),
+                new BasicHeader("Cookie", cookie)
+        };
+//        HttpClientUtils.getResponseString()
+
+
+        System.out.println(HttpClientUtils.getResponseString(url, headers));
+
+
     }
 
     private static void price(String target, String cookie) throws Exception {
@@ -60,7 +85,7 @@ public class JD {
             Thread.sleep(dif);
         }
 
-        float price = 1499.0f;
+        float price = 9999.0f;
         while (true) {
             String url = "https://p.3.cn/prices/mgets?callback=jQuery" + randomNum(7) + "&type=1&area=22_1930_50949_52153.137915318&pdtk=&pduid=15095167394471662559631&pdpin=&pin=&pdbp=0&skuIds=J_1499113642&ext=11000000&source=item-pc";
             String jsonStr = HttpClientUtils.getResponseString(url, null).substring(14).split("\\)")[0];
@@ -154,16 +179,16 @@ public class JD {
      * @param cookie
      * @throws Exception
      */
-    private static void submit(String target, String cookie) throws Exception {
+    private static void submit(String target, String cookie, int targetPrice) throws Exception {
         try {
             long serverDate = serverDate();
             long targetDate = DateUtils.parseDate(target, "yyyy-MM-dd HH:mm:ss").getTime();
             long dif = targetDate - serverDate;
             System.out.println("serverDate---------------" + serverDate);
             System.out.println("targetDate---------------" + targetDate);
-            System.out.println("dif - 1000 ---------------" + (dif - 1000));
+            System.out.println("dif - 1000 --------------" + (dif - 1000));
 
-            if (dif > 0) {
+            if (dif - 1000 > 0) {
                 Thread.sleep(dif);
             }
 
@@ -186,7 +211,7 @@ public class JD {
                 float price = Float.valueOf(priceTemp.substring(0, priceTemp.indexOf("<")));
 
                 System.out.println(price);
-                while (price > 7) {
+                while (price > targetPrice) {
                     Thread.sleep(50);
                     tradeHTML = HttpClientUtils.getResponseString(tradeUrl, headers);
                     priceTemp = tradeHTML.split("<span class=\"price-num\" id=\"sumPayPriceId\">￥")[1];

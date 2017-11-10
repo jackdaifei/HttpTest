@@ -1,3 +1,112 @@
+# 请求地址
+https://divide.jd.com/user_routing?skuId=3822020&sn=fa8b858a4d60c76d04d1184469383af9&from=pc
+
+# 请求Header
+GET /user_routing?skuId=3822020&sn=fa8b858a4d60c76d04d1184469383af9&from=pc HTTP/1.1
+Host: divide.jd.com
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: https://item.jd.com/3822020.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.8
+Cookie: areaId=22; user-key=fd6d0ed6-ac2a-4709-ab0b-f47be0a7c3f1; mt_xid=V2_52007VwMWU1VcUl0ZSxFZAGEDFVVeXFZSGEsZbFJuV0VTCF9URkpNHlkZYgcWW0FQB1JKVU5YADMHFlsPXAUIT3kaXQVhHxJSQVlRSx5BEl8NbAAXYl9oUmofTh1UAGQAG1ptWFdcGA%3D%3D; dmpjs=dmp-d59276378bab233259d52236eebba6c8467021; TrackID=16xYHa0JQHcEpYByLTCZYSodoOuNVTCW6Gc5RMBlZapR1ofUp2C1OVKiNAxgA1b66kxwi4QngiGJ6WZlBL2_LZWl8Ehngaq-hxUllw0EKDd8; pinId=6O_FVgd3tEus06L-EIuMwg; pin=jackdaifei_m; unick=jackdaifei; _tp=CFyqN214%2FuJT47OHX%2BUStg%3D%3D; _pst=jackdaifei_m; ceshi3.com=000; unpl=V2_ZzNtbUAAQ0V9W0AHKE5VUmICFw5KU0EWJwxFVntKDgEzUEBbclRCFXMURlRnGV0UZwsZXEJcQRxFCHZXchBYAWcCGllyBBNNIEwHDCRSBUE3XHxaEl9GFH0ME114SlsAZgEUVEZQSkF8CE9Ueh5YBWVQQG1yVEMldQl2VH8YVAFnBBRfSlJGE3UPQVd%2fHVQCZQMibUVncyVwCEFQfhtsBFcCIh8WC0sdcwxEVjYZWARvBxJaRFVLEHAORlN8GlgBbwQQXXJWcxY%3d; _contrast=; ipLocation=%u56db%u5ddd; cn=4; ipLoc-djd=22-1930-50949-52153.137915318; __jdv=122270672|baidu-pinzhuan|t_288551095_baidupinzhuan|cpc|6a94095d82b640378568e818106513bc_0_3f1a9b7bbf8f404b9532c5231bc5ebc7|1510315780393; __jda=122270672.15095167394471662559631.1509516739.1510310225.1510311698.29; __jdb=122270672.57.15095167394471662559631|29.1510311698; __jdc=122270672; thor=6A977F8F346F1750FE77529FCE19AEC160D8261DA4A726272332751B37BEAC5DA5CA0BBEB92DB99F1B872240520C4D3AAD57F41B72A551617BA0B6CB35E77F656B8CFF78B12A420C826289D3F3FBBD78C5D35EA892214146553324F33B5FC5E8295481E9301D09946785DA14327E61CB855D50E6E02CE338A42D63706C95685ED6D3E4E5D7E6763459681E5B93AB82FA; 3AB9D23F7A4B3C9B=NMI64G6NR6Q3T22OVMJMKLJSV6Z62LKYEU2L6XNUMP7DKC7XVYCODQYK2LCOWVCBSOSWPIWTYIEBWS7PZB23VX2QUQ; __jdu=15095167394471662559631
+
+# 返回Header
+HTTP/1.1 302 Moved Temporarily
+Server: JengineD/1.5.8.1
+Date: Fri, 10 Nov 2017 12:18:47 GMT
+Content-Type: text/html
+Content-Length: 165
+Connection: close
+Set-Cookie: seckillSku=3822020;domain=divide.jd.com;path=/;expires=Fri, 10-Nov-17 12:20:47 GMT
+Set-Cookie: seckillSid=;domain=divide.jd.com;path=/;expires=Fri, 10-Nov-17 12:20:47 GMT
+Location: https://marathon.jd.com/captcha.html?from=pc&skuId=3822020&sn=fa8b858a4d60c76d04d1184469383af9
+
+-------------------------------------------------------------------------------------------------------------
+# 请求地址
+https://marathon.jd.com/captcha.html?from=pc&skuId=3822020&sn=fa8b858a4d60c76d04d1184469383af9
+
+# 请求Header
+GET /captcha.html?from=pc&skuId=3822020&sn=fa8b858a4d60c76d04d1184469383af9 HTTP/1.1
+Host: marathon.jd.com
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: https://item.jd.com/3822020.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.8
+Cookie: areaId=22; user-key=fd6d0ed6-ac2a-4709-ab0b-f47be0a7c3f1; mt_xid=V2_52007VwMWU1VcUl0ZSxFZAGEDFVVeXFZSGEsZbFJuV0VTCF9URkpNHlkZYgcWW0FQB1JKVU5YADMHFlsPXAUIT3kaXQVhHxJSQVlRSx5BEl8NbAAXYl9oUmofTh1UAGQAG1ptWFdcGA%3D%3D; dmpjs=dmp-d59276378bab233259d52236eebba6c8467021; TrackID=16xYHa0JQHcEpYByLTCZYSodoOuNVTCW6Gc5RMBlZapR1ofUp2C1OVKiNAxgA1b66kxwi4QngiGJ6WZlBL2_LZWl8Ehngaq-hxUllw0EKDd8; pinId=6O_FVgd3tEus06L-EIuMwg; pin=jackdaifei_m; unick=jackdaifei; _tp=CFyqN214%2FuJT47OHX%2BUStg%3D%3D; _pst=jackdaifei_m; ceshi3.com=000; unpl=V2_ZzNtbUAAQ0V9W0AHKE5VUmICFw5KU0EWJwxFVntKDgEzUEBbclRCFXMURlRnGV0UZwsZXEJcQRxFCHZXchBYAWcCGllyBBNNIEwHDCRSBUE3XHxaEl9GFH0ME114SlsAZgEUVEZQSkF8CE9Ueh5YBWVQQG1yVEMldQl2VH8YVAFnBBRfSlJGE3UPQVd%2fHVQCZQMibUVncyVwCEFQfhtsBFcCIh8WC0sdcwxEVjYZWARvBxJaRFVLEHAORlN8GlgBbwQQXXJWcxY%3d; _contrast=; ipLocation=%u56db%u5ddd; cn=4; ipLoc-djd=22-1930-50949-52153.137915318; __jdv=122270672|baidu-pinzhuan|t_288551095_baidupinzhuan|cpc|6a94095d82b640378568e818106513bc_0_3f1a9b7bbf8f404b9532c5231bc5ebc7|1510315780393; __jda=122270672.15095167394471662559631.1509516739.1510310225.1510311698.29; __jdb=122270672.57.15095167394471662559631|29.1510311698; __jdc=122270672; thor=6A977F8F346F1750FE77529FCE19AEC160D8261DA4A726272332751B37BEAC5DA5CA0BBEB92DB99F1B872240520C4D3AAD57F41B72A551617BA0B6CB35E77F656B8CFF78B12A420C826289D3F3FBBD78C5D35EA892214146553324F33B5FC5E8295481E9301D09946785DA14327E61CB855D50E6E02CE338A42D63706C95685ED6D3E4E5D7E6763459681E5B93AB82FA; 3AB9D23F7A4B3C9B=NMI64G6NR6Q3T22OVMJMKLJSV6Z62LKYEU2L6XNUMP7DKC7XVYCODQYK2LCOWVCBSOSWPIWTYIEBWS7PZB23VX2QUQ; __jdu=15095167394471662559631
+
+# 返回Header
+
+HTTP/1.1 302 Moved Temporarily
+Server: JengineD/1.5.8.1
+Date: Fri, 10 Nov 2017 12:18:47 GMT
+Content-Type: text/html
+Content-Length: 165
+Connection: close
+Set-Cookie: seckillSku=3822020;domain=marathon.jd.com;path=/;expires=Fri, 10-Nov-17 12:20:47 GMT
+Set-Cookie: seckillSid=;domain=marathon.jd.com;path=/;expires=Fri, 10-Nov-17 12:20:47 GMT
+Set-Cookie: seckill3822020=E2IFNPK1DjOfAKJRhns3K9Qj0oF2MNDsxfqX8pB5a9/QQkpmMzm5cPTjH2WC1nfTseQrFYhj7mgzO383tBsq3pvHhhb8mXMOPA5nWoMMwYh1K48y;domain=marathon.jd.com;path=/;expires=Fri, 10-Nov-17 12:23:47 GMT
+Set-Cookie: seckill3822020=E2IFNPK1DjOfAKJRhns3K9Qj0oF2MNDsxfqX8pB5a9/QQkpmMzm5cPTjH2WC1nfTseQrFYhj7mgzO383tBsq3pvHhhb8mXMOPA5nWoMMwYh1K48y;domain=marathon.jd.com;path=/;expires=Fri, 10-Nov-17 12:23:47 GMT
+Set-Cookie: seckillSku=3822020;domain=marathon.jd.com;path=/;expires=Fri, 10-Nov-17 12:20:47 GMT
+Set-Cookie: seckillSid=;domain=marathon.jd.com;path=/;expires=Fri, 10-Nov-17 12:20:47 GMT
+Set-Cookie: seckill3822020=7y/QHfmV8ymnuxebOzpBjSq5P/9pMs7Sh7xGCeLHrM3fznPhU12y7SuVJV1U3LbjUBYGJfora+fA52kMlTFWHVkP6/FqnLuUhDYA646Eeth8Oy74;domain=marathon.jd.com;path=/;expires=Fri, 10-Nov-17 12:23:47 GMT
+Location: https://marathon.jd.com/seckill/seckill.action?skuId=3822020&num=1&rid=1510316327
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+# 请求地址
+https://marathon.jd.com/seckill/seckill.action?skuId=3822020&num=1&rid=1510316327
+
+# 请求Header
+GET /seckill/seckill.action?skuId=3822020&num=1&rid=1510316327 HTTP/1.1
+Host: marathon.jd.com
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: https://item.jd.com/3822020.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.8
+Cookie: areaId=22; user-key=fd6d0ed6-ac2a-4709-ab0b-f47be0a7c3f1; mt_xid=V2_52007VwMWU1VcUl0ZSxFZAGEDFVVeXFZSGEsZbFJuV0VTCF9URkpNHlkZYgcWW0FQB1JKVU5YADMHFlsPXAUIT3kaXQVhHxJSQVlRSx5BEl8NbAAXYl9oUmofTh1UAGQAG1ptWFdcGA%3D%3D; dmpjs=dmp-d59276378bab233259d52236eebba6c8467021; TrackID=16xYHa0JQHcEpYByLTCZYSodoOuNVTCW6Gc5RMBlZapR1ofUp2C1OVKiNAxgA1b66kxwi4QngiGJ6WZlBL2_LZWl8Ehngaq-hxUllw0EKDd8; pinId=6O_FVgd3tEus06L-EIuMwg; pin=jackdaifei_m; unick=jackdaifei; _tp=CFyqN214%2FuJT47OHX%2BUStg%3D%3D; _pst=jackdaifei_m; ceshi3.com=000; unpl=V2_ZzNtbUAAQ0V9W0AHKE5VUmICFw5KU0EWJwxFVntKDgEzUEBbclRCFXMURlRnGV0UZwsZXEJcQRxFCHZXchBYAWcCGllyBBNNIEwHDCRSBUE3XHxaEl9GFH0ME114SlsAZgEUVEZQSkF8CE9Ueh5YBWVQQG1yVEMldQl2VH8YVAFnBBRfSlJGE3UPQVd%2fHVQCZQMibUVncyVwCEFQfhtsBFcCIh8WC0sdcwxEVjYZWARvBxJaRFVLEHAORlN8GlgBbwQQXXJWcxY%3d; _contrast=; ipLocation=%u56db%u5ddd; cn=4; ipLoc-djd=22-1930-50949-52153.137915318; __jdv=122270672|baidu-pinzhuan|t_288551095_baidupinzhuan|cpc|6a94095d82b640378568e818106513bc_0_3f1a9b7bbf8f404b9532c5231bc5ebc7|1510315780393; __jda=122270672.15095167394471662559631.1509516739.1510310225.1510311698.29; __jdb=122270672.57.15095167394471662559631|29.1510311698; __jdc=122270672; thor=6A977F8F346F1750FE77529FCE19AEC160D8261DA4A726272332751B37BEAC5DA5CA0BBEB92DB99F1B872240520C4D3AAD57F41B72A551617BA0B6CB35E77F656B8CFF78B12A420C826289D3F3FBBD78C5D35EA892214146553324F33B5FC5E8295481E9301D09946785DA14327E61CB855D50E6E02CE338A42D63706C95685ED6D3E4E5D7E6763459681E5B93AB82FA; 3AB9D23F7A4B3C9B=NMI64G6NR6Q3T22OVMJMKLJSV6Z62LKYEU2L6XNUMP7DKC7XVYCODQYK2LCOWVCBSOSWPIWTYIEBWS7PZB23VX2QUQ; __jdu=15095167394471662559631; seckillSku=3822020; seckillSid=; seckill3822020=7y/QHfmV8ymnuxebOzpBjSq5P/9pMs7Sh7xGCeLHrM3fznPhU12y7SuVJV1U3LbjUBYGJfora+fA52kMlTFWHVkP6/FqnLuUhDYA646Eeth8Oy74
+
+# 返回Header
+HTTP/1.1 200 OK
+Server: JengineD/1.5.8.1
+Date: Fri, 10 Nov 2017 12:18:48 GMT
+Content-Type: text/html;charset=UTF-8
+Connection: close
+Set-Cookie: seckillSku=3822020;domain=marathon.jd.com;path=/;expires=Fri, 10-Nov-17 12:20:48 GMT
+Set-Cookie: seckillSid=;domain=marathon.jd.com;path=/;expires=Fri, 10-Nov-17 12:20:48 GMT
+Set-Cookie: seckill3822020=hkm5CQ9Lw4RRlfhekAmBtGot416Hmig71trojQ3Fu3Aq6Tcl2j0oWV1HPsPBty2EQebC3prEdgGU68aR2Fa74eelviUywU+ecId0hfsRaUVBs0QZ;domain=marathon.jd.com;path=/;expires=Fri, 10-Nov-17 12:23:48 GMT
+Pragma: No-cache
+Cache-Control: no-store
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Content-Encoding: gzip
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #抢购按钮   "choose-btn-ko"
 https://itemko.jd.com/itemShowBtn?callback=jQuery8066003&skuId=15073234206&from=pc&_=1510294091785
 jQuery2871987({"type":"3","state":"12","shiming":"1","st":1510293600,"en":1510380000,"url":"//divide.jd.com/user_routing?skuId=15073234206&sn=13168cbf809fb8bcdf1181798b3d13f8&from=pc"})
@@ -11,6 +120,15 @@ https://yushou.jd.com/youshouinfo.action?callback=fetchJSON&sku=10718270098
 fetchJSON({"type":"1","yueEtime":"2017-11-10 18:00:00","plusType":0,"d":13506,"stime":"2017-11-09 11:35:15","plusEtime":"","state":2,"qiangEtime":"2017-11-10 20:00:00","sku":10718270098,"url":"//yushou.jd.com/toYuyue.action?sku=10718270098&key=1d344ed566daf74e9a0e4db5ca81cebf","isJ":0,"info":"\u9884\u7ea6\u8fdb\u884c\u4e2d","category":"4","isBefore":0,"num":55308,"flag":false,"etime":"2017-11-10 18:00:00","qiangStime":"2017-11-10 18:00:00","plusD":13506,"yueStime":"2017-11-09 11:35:15","plusStime":""});
 
 
+
+# 笔记本-111
+https://sale.jd.com/act/F5ZurL6zbcN.html?cpdad=1DLSUE
+
+# 机械键盘，一体电脑
+https://sale.jd.com/act/Oxp4vLQCaDl.html?cpdad=1DLSUE
+
+# vivo X20
+https://sale.jd.com/act/YwJvQOrbPKaLE2.html?cpdad=1DLSUE
 
 11.11 00:00 魅族pro7
 11.11 10:00 魅蓝E2

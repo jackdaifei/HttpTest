@@ -183,6 +183,30 @@ public class HttpClientUtils {
         }
     }
 
+
+    public static String get(String url, Header[] headers) throws Exception {
+        try {
+            HttpGet httpGet = new HttpGet(url);
+            if (ArrayUtils.isNotEmpty(headers)) {
+                httpGet.setHeaders(headers);
+            }
+            RequestConfig defaultRequestConfig = RequestConfig.custom()
+                    .setSocketTimeout(5000)
+                    .setConnectTimeout(5000)
+                    .setConnectionRequestTimeout(5000)
+                    .setStaleConnectionCheckEnabled(true)
+                    .build();
+            CloseableHttpClient client = HttpClients.custom().setDefaultRequestConfig(defaultRequestConfig).build();
+
+            CloseableHttpResponse response = client.execute(httpGet);
+//            response
+
+        } catch (Exception e) {
+
+        }
+        return null;
+    }
+
     public static String getResponseString(String url, Header[] headers) throws Exception {
         try {
             HttpGet httpGet = new HttpGet(url);
