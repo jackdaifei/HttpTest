@@ -1,10 +1,21 @@
-# 白条券活动
-https://sale.jd.com/act/WX2fhkEvletpdM.html
-# 手机秒杀？？
-https://sale.jd.com/act/FciOehkX53fqAY.html
+#抢购按钮   "choose-btn-ko"
+https://itemko.jd.com/itemShowBtn?callback=jQuery8066003&skuId=15073234206&from=pc&_=1510294091785
+jQuery2871987({"type":"3","state":"12","shiming":"1","st":1510293600,"en":1510380000,"url":"//divide.jd.com/user_routing?skuId=15073234206&sn=13168cbf809fb8bcdf1181798b3d13f8&from=pc"})
 
-#OPPO
-https://sale.jd.com/act/En5eVSGc2sY.html
+https://yushou.jd.com/youshouinfo.action?callback=fetchJSON&sku=15073234206
+
+
+
+#预约按钮   "btn-reservation"
+https://yushou.jd.com/youshouinfo.action?callback=fetchJSON&sku=10718270098
+fetchJSON({"type":"1","yueEtime":"2017-11-10 18:00:00","plusType":0,"d":13506,"stime":"2017-11-09 11:35:15","plusEtime":"","state":2,"qiangEtime":"2017-11-10 20:00:00","sku":10718270098,"url":"//yushou.jd.com/toYuyue.action?sku=10718270098&key=1d344ed566daf74e9a0e4db5ca81cebf","isJ":0,"info":"\u9884\u7ea6\u8fdb\u884c\u4e2d","category":"4","isBefore":0,"num":55308,"flag":false,"etime":"2017-11-10 18:00:00","qiangStime":"2017-11-10 18:00:00","plusD":13506,"yueStime":"2017-11-09 11:35:15","plusStime":""});
+
+
+
+11.11 00:00 魅族pro7
+11.11 10:00 魅蓝E2
+
+
 
 
 通过预约界面扫描价格，价格变动，请求抢购链接，抢购加入购物车，直接提交订单
