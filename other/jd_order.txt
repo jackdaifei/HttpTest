@@ -3,6 +3,7 @@ https://divide.jd.com/user_routing?skuId=3822020&sn=fa8b858a4d60c76d04d118446938
 
 # 请求Header
 GET /user_routing?skuId=3822020&sn=fa8b858a4d60c76d04d1184469383af9&from=pc HTTP/1.1
+
 Host: divide.jd.com
 Connection: keep-alive
 Upgrade-Insecure-Requests: 1
@@ -30,6 +31,7 @@ https://marathon.jd.com/captcha.html?from=pc&skuId=3822020&sn=fa8b858a4d60c76d04
 
 # 请求Header
 GET /captcha.html?from=pc&skuId=3822020&sn=fa8b858a4d60c76d04d1184469383af9 HTTP/1.1
+
 Host: marathon.jd.com
 Connection: keep-alive
 Upgrade-Insecure-Requests: 1
