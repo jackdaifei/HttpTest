@@ -1,0 +1,35 @@
+#页面url
+https://mixin.one/enroll/198353
+
+# 获取验证码
+https://api.mixin.one/verifications
+POST
+# 请求参数
+{"phone":"+8615928073559","purpose":"SESSION"}
+# 返回参数
+{"data":{"type":"phone_verification","id":"e539595f-ebfa-4cbf-acfe-3b7e4eeddbc2"}}
+
+
+# 注册地址？
+https://api.mixin.one/verifications/e539595f-ebfa-4cbf-acfe-3b7e4eeddbc2
+POST
+# 请求参数
+{"code":"9948","phone":"+8615928073559","verification_id":"e539595f-ebfa-4cbf-acfe-3b7e4eeddbc2","invitation_code":"198353","purpose":"SESSION","platform":"Web"}
+# 返回参数
+{"data":{"type":"user","id":"2f00f190-137c-4b9a-902c-5e15e5d9fc55","identity_number":"51689","full_name":"FLY","avatar_url":"","relationship":"me","created_at":"2017-11-28T09:25:25.797336251Z","session_id":"266348fa-9af8-474b-a494-3bbeba48b9e3","phone":"+8615928073559","authentication_token":"-----BEGIN RSA PRIVATE KEY-----\nMIICXAIBAAKBgQCRWcK7z6/FkAmlKn69ZV0YHDFitAR6KYLIH2U5CdCToJSB11uI\nAt1YP7CHlsfZaRIEAnoUxmUpT/ifLjzfo8Q5CtqbN6TblULPex+JfUXKWg23gCBf\n237icRUZbYxNfhYjSO3/11pvj+e2mdioOtQ0XsAYEa9Nm1u/e35bz5WbNwIDAQAB\nAoGANQI0V8RViUqPifHmiPIXsnxNsn6Oh3LuJEf25YdjzwMoRfYhhofs64tGuRxP\nREXicR3qIft810U4Ge2F+9XA8LQGOhoz+1jLuCSPLM8SOD4S+J+igKaQVOmhnwj0\ncp/b/7xnJV1lf2dlBCm+1LktU2dG9r0ZTcYgjnfeEo1tuDECQQDBhhy1+4OGuGYU\nAAdGiPYWrkNwPWSvkE/Fldm4tOIz1MMzM0tsYOSfOSyMHPJ2W1yoyR+X6WH9tGm0\nplsdqXs/AkEAwEZYAdDfL++3MVcrQrDMKaHlYFhedeE7mhCWgvzu2R7mxP4A5fKP\nt+YqWtG8urxAH9kmxG1ix7YshlOXOEw6CQJAE523fU7QRzCb0D0sf57UavohBdiD\nQzR6kYmd9xYGs8BGRQNXCtZLdkRCWrV4cjzSiJ1SYYCbmS7XZCNUqw4J2wJBAJ0K\nFyFMjq2hVXdoIb4zlly+jRC2vFf9IOgBelz75rzQ/1yPtP4asgVaaOeKfGHsFVet\nzXsLeG1zPkRsC4uAvrkCQH2kNgk89GxJ7ik+F/idiEWlcWIMzikMF3Os8yKA54Lg\nMYtISMSNfiX0+ASE9X78q+quLtJ/vKwaJsQM+M5erHk=\n-----END RSA PRIVATE KEY-----\n","invitation_code":"","code_id":"","network":null,"invitation_bonus":0}}
+
+
+
+Connected to the target VM, address: '127.0.0.1:49556', transport: 'socket'
+uid=mephistodemon&pwd=fishcatdog1
+http://api.eobzz.com/httpApi.do?action=getUserInfos&uid=mephistodemon&token=f3aa53e2b3891d8b00bf82527cb6c1c0
+mephistodemon;261;983;50
+15604457404|f3aa53e2b3891d8b00bf82527cb6c1c0
+{"data":{"type":"phone_verification","id":"e37415c5-b37e-41bd-8fa6-32712137dc15"}}
+not_receive
+not_receive
+15604457404|Mixin code 5300 [PIN]
+
+{"data":{"type":"user","id":"aa5a5363-50bd-49d0-a064-54062b429af6","identity_number":"127791","full_name":"","avatar_url":"","relationship":"me","created_at":"2017-11-28T18:01:27.04676796Z","session_id":"67ca4534-8bf2-4f1f-99fd-0f15adc36d6d","phone":"+8615604457404","authentication_token":"-----BEGIN RSA PRIVATE KEY-----\nMIICXAIBAAKBgQC/ENB7tPH9DGG3QvwvhDfhKaXxCFc2ibIAAiTOdgeN1cGL0uP5\n/J91Zeh4jzEbBwRToK4l6pvjYlEX/Yln7jQvkGEak4wY2IS5XP1kAfAApQG9BBbU\nH1nC/6NLyUD7RkS5EnPigOHidFjxRkAAspplSnYmZkXSlR/21b/WdpetHQIDAQAB\nAoGAE10u4/q4s763gI1HZcFusGE6Mi14OUzHP3z4IfyQU22gif07obBasNk9MErC\n3UxeweL9A1a9qdPjCB1n+aKIo0SDJMJiSOmnEPfCxMX/gWithThI4kEM+StAkCin\nj3ycMsxdPsVjztBDV+H/+mS/V9POrqtx+0Q4/3vm0CMstYECQQDQF6DIqsRT7rkO\nkOmxHFzuq7s37Ldi1vc6i0oFN8ghXFmEgc+qB+1hltlqfI4mPVZXGklP/26/6gK9\neJOYDPkRAkEA6w2vigLjquXqJqht89noAK/4K1xZ3hKg5t4Pv5NoewYmpNaWZjUk\nK2td4IxQ/P7C0rtuT4YwaL3dtJiB7OyTTQJBAJjlE3z9g91LpOsf7KT2ew3eXmP7\n6M6VtfdtCokE8GYaradfnc6HnpI6vSqxs9xC6yJ6rO07eAtIjJTceE2bEpECQEXa\nJ1SIT0g2U0Nxwls5YqzxnnqkU0CfoJl7XIq+L8p/pXRPIRr2p+0PVzKoAFlvDE67\nzKhtZG18HyrQN6xFEfECQHvJ1/Yy9wLnPtcaQm4Q0A9drVflFvwcLOQwOScgL2WJ\nWPKuCZ1Nvu4aeXBxYFegF1SsNy1VgsYBw8fz8rpleow=\n-----END RSA PRIVATE KEY-----\n","invitation_code":"160630","code_id":"","network":null,"invitation_bonus":0}}
+{"data":{"invitation_bonus":0,"invitation_code":"160630","authentication_token":"-----BEGIN RSA PRIVATE KEY-----\nMIICXAIBAAKBgQC/ENB7tPH9DGG3QvwvhDfhKaXxCFc2ibIAAiTOdgeN1cGL0uP5\n/J91Zeh4jzEbBwRToK4l6pvjYlEX/Yln7jQvkGEak4wY2IS5XP1kAfAApQG9BBbU\nH1nC/6NLyUD7RkS5EnPigOHidFjxRkAAspplSnYmZkXSlR/21b/WdpetHQIDAQAB\nAoGAE10u4/q4s763gI1HZcFusGE6Mi14OUzHP3z4IfyQU22gif07obBasNk9MErC\n3UxeweL9A1a9qdPjCB1n+aKIo0SDJMJiSOmnEPfCxMX/gWithThI4kEM+StAkCin\nj3ycMsxdPsVjztBDV+H/+mS/V9POrqtx+0Q4/3vm0CMstYECQQDQF6DIqsRT7rkO\nkOmxHFzuq7s37Ldi1vc6i0oFN8ghXFmEgc+qB+1hltlqfI4mPVZXGklP/26/6gK9\neJOYDPkRAkEA6w2vigLjquXqJqht89noAK/4K1xZ3hKg5t4Pv5NoewYmpNaWZjUk\nK2td4IxQ/P7C0rtuT4YwaL3dtJiB7OyTTQJBAJjlE3z9g91LpOsf7KT2ew3eXmP7\n6M6VtfdtCokE8GYaradfnc6HnpI6vSqxs9xC6yJ6rO07eAtIjJTceE2bEpECQEXa\nJ1SIT0g2U0Nxwls5YqzxnnqkU0CfoJl7XIq+L8p/pXRPIRr2p+0PVzKoAFlvDE67\nzKhtZG18HyrQN6xFEfECQHvJ1/Yy9wLnPtcaQm4Q0A9drVflFvwcLOQwOScgL2WJ\nWPKuCZ1Nvu4aeXBxYFegF1SsNy1VgsYBw8fz8rpleow=\n-----END RSA PRIVATE KEY-----\n","created_at":"2017-11-28T18:01:27.04676796Z","session_id":"67ca4534-8bf2-4f1f-99fd-0f15adc36d6d","identity_number":"127791","type":"user","code_id":"","full_name":"","avatar_url":"","phone":"+8615604457404","id":"aa5a5363-50bd-49d0-a064-54062b429af6","relationship":"me"}}
+
