@@ -69,4 +69,14 @@ public class UserService {
 			return "";
 		}
 	}
+
+	public static String getRecvingInfo(String uid, String token, String pid) {
+		try {
+			String para = String.format("uid=%s&pid=%s&token=%s", uid, pid, token);
+			String url = Config.getRecvingInfo + para;
+			return HttpHelper.getHtml(url);
+		} catch (Exception ex) {
+			return "";
+		}
+	}
 }
