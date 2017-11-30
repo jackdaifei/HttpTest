@@ -6,6 +6,7 @@ import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.lang3.ArrayUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.http.Header;
+import org.apache.http.HttpHost;
 import org.apache.http.HttpStatus;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.config.RequestConfig;
@@ -15,6 +16,8 @@ import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.client.params.ClientPNames;
 import org.apache.http.conn.ConnectTimeoutException;
+import org.apache.http.conn.HttpHostConnectException;
+import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.message.BasicHeader;
@@ -22,6 +25,7 @@ import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.params.HttpParams;
 import org.apache.http.util.EntityUtils;
 
+import javax.net.ssl.SSLHandshakeException;
 import java.util.*;
 
 /**
@@ -324,10 +328,11 @@ public class HttpClientUtils {
 
             CloseableHttpResponse response = client.execute(httpGet);
             String responseStr = EntityUtils.toString(response.getEntity());
-//            System.out.println(responseStr);
+            System.out.println(responseStr);
             response.close();
             return responseStr;
         }catch (ConnectTimeoutException e) {
+            e.printStackTrace();
             return getResponseString(url, headers);
         } catch (Exception e) {
             e.printStackTrace();
@@ -392,6 +397,84 @@ public class HttpClientUtils {
         Header[] allHeaders = response.getAllHeaders();
         response.close();
         return allHeaders;
+    }
+
+    public static JSONObject postWithProxy(String url, String jsonStr, String proxyUrl, int proxyPort) throws Exception {
+        try {
+            HttpPost httpPost = new HttpPost(url);
+            if (StringUtils.isNotBlank(jsonStr)) {
+                StringEntity stringEntity = new StringEntity(jsonStr, "utf-8");
+                httpPost.setEntity(stringEntity);
+            }
+
+            RequestConfig defaultRequestConfig = RequestConfig.custom()
+                    .setSocketTimeout(5000)
+                    .setConnectTimeout(5000)
+                    .setConnectionRequestTimeout(5000)
+                    .setStaleConnectionCheckEnabled(true)
+                    .setProxy(new HttpHost(proxyUrl, proxyPort))
+                    .build();
+
+            CloseableHttpClient client = HttpClients.custom().setDefaultRequestConfig(defaultRequestConfig).build();
+            CloseableHttpResponse response = client.execute(httpPost);
+            String responseStr = EntityUtils.toString(response.getEntity(), "utf-8");
+            System.out.println(responseStr);
+            response.close();
+            return JSONObject.parseObject(responseStr);
+        } catch (SSLHandshakeException e) {
+            return null;
+        } catch (HttpHostConnectException e) {
+            return null;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return postWithProxy(url, jsonStr, proxyUrl, proxyPort);
+        }
+    }
+
+    public static JSONObject postWithBodyReq(String url, String jsonStr) throws Exception {
+        HttpPost httpPost = new HttpPost(url);
+        if (StringUtils.isNotBlank(jsonStr)) {
+            StringEntity stringEntity = new StringEntity(jsonStr, "utf-8");
+            httpPost.setEntity(stringEntity);
+        }
+
+        RequestConfig defaultRequestConfig = RequestConfig.custom()
+                .setSocketTimeout(5000)
+                .setConnectTimeout(5000)
+                .setConnectionRequestTimeout(5000)
+                .setStaleConnectionCheckEnabled(true)
+                .build();
+
+        CloseableHttpClient client = HttpClients.custom().setDefaultRequestConfig(defaultRequestConfig).build();
+        CloseableHttpResponse response = client.execute(httpPost);
+        String responseStr = EntityUtils.toString(response.getEntity(), "utf-8");
+        System.out.println(responseStr);
+        response.close();
+        return JSONObject.parseObject(responseStr);
+    }
+
+    public static String getWithProxy(String url, String proxyUrl, int proxyPort) throws Exception {
+        try {
+            HttpGet httpGet = new HttpGet(url);
+            RequestConfig defaultRequestConfig = RequestConfig.custom()
+                    .setSocketTimeout(5000)
+                    .setConnectTimeout(5000)
+                    .setConnectionRequestTimeout(5000)
+                    .setStaleConnectionCheckEnabled(true)
+                    .setProxy(new HttpHost(proxyUrl, proxyPort))
+                    .build();
+
+            CloseableHttpClient client = HttpClients.custom().setDefaultRequestConfig(defaultRequestConfig).build();
+            CloseableHttpResponse response = client.execute(httpGet);
+            String responseStr = EntityUtils.toString(response.getEntity(), "utf-8");
+            response.close();
+            return responseStr;
+        } catch (ConnectTimeoutException e) {
+            e.printStackTrace();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
 }
