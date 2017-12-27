@@ -9,12 +9,12 @@ import org.apache.http.Header;
 import org.apache.http.HttpHost;
 import org.apache.http.HttpStatus;
 import org.apache.http.NameValuePair;
+import org.apache.http.client.HttpRequestRetryHandler;
 import org.apache.http.client.config.RequestConfig;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
-import org.apache.http.client.params.ClientPNames;
 import org.apache.http.conn.ConnectTimeoutException;
 import org.apache.http.conn.HttpHostConnectException;
 import org.apache.http.entity.StringEntity;
@@ -22,11 +22,15 @@ import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.message.BasicHeader;
 import org.apache.http.message.BasicNameValuePair;
-import org.apache.http.params.HttpParams;
+import org.apache.http.protocol.HttpContext;
 import org.apache.http.util.EntityUtils;
 
 import javax.net.ssl.SSLHandshakeException;
-import java.util.*;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 /**
  * Created by Administrator on 2017/2/1.
@@ -107,13 +111,56 @@ public class HttpClientUtils {
             CloseableHttpResponse response = client.execute(httpPost);
 
             String responseStr = EntityUtils.toString(response.getEntity(), "utf-8");
-            System.out.println(responseStr);
+//            System.out.println(JSON.toJSON(response.getAllHeaders()));
+//            System.out.println(responseStr);
             response.close();
             return JSONObject.parseObject(responseStr);
         } catch (Exception e) {
             e.printStackTrace();
 //            return postResponse(url, paramList, headers);
             return null;
+        }
+    }
+
+    public static JSONObject postResponseForHack(String url, List<NameValuePair> paramList, Header[] headers) throws Exception {
+        String content = postResponseString(url, paramList, headers);
+        if (content.contains("script")) {
+            getResponseForHack(url, headers);
+        }
+
+        return null;
+    }
+
+    public static void getResponseForHack(String url, Header[] headers) throws Exception {
+        try {
+            HttpGet httpGet = new HttpGet(url);
+            if (ArrayUtils.isNotEmpty(headers)) {
+                httpGet.setHeaders(headers);
+            }
+            RequestConfig defaultRequestConfig = RequestConfig.custom()
+                    .setSocketTimeout(5000)
+                    .setConnectTimeout(5000)
+                    .setConnectionRequestTimeout(5000)
+                    .setStaleConnectionCheckEnabled(true)
+                    .build();
+            CloseableHttpClient client = HttpClients.custom().setDefaultRequestConfig(defaultRequestConfig).build();
+            CloseableHttpResponse response = client.execute(httpGet);
+
+            Header[] cookies = response.getHeaders("Set-Cookie");
+            for (Header cookie : cookies) {
+                String c = cookie.getValue();
+                String name = c.substring(0, c.indexOf("="));
+                String value = c.substring(c.indexOf("=") + 1, c.indexOf(";"));
+
+            }
+
+            response.close();
+        }catch (ConnectTimeoutException e) {
+            e.printStackTrace();
+            getResponseString(url, headers);
+        } catch (Exception e) {
+            e.printStackTrace();
+//            return getResponseString(url, headers);
         }
     }
 
@@ -159,7 +206,7 @@ public class HttpClientUtils {
             CloseableHttpResponse response = client.execute(httpPost);
 
             String responseStr = EntityUtils.toString(response.getEntity());
-            System.out.println(responseStr);
+//            System.out.println(responseStr);
             response.close();
             return responseStr;
         } catch (Exception e) {
@@ -228,6 +275,9 @@ public class HttpClientUtils {
                 Header responseHeader = response.getFirstHeader("Location");
                 String u = responseHeader.getValue();
                 System.out.println("Location:------------------------------------------> " + u);
+                if (u.contains("fail")) {
+                    get(url, headers, cookieMap, skuId);
+                }
 
                 Header[] newHeader = new Header[headers.length];
                 for (int i=0;i<headers.length;i++) {
@@ -328,6 +378,7 @@ public class HttpClientUtils {
 
             CloseableHttpResponse response = client.execute(httpGet);
             String responseStr = EntityUtils.toString(response.getEntity());
+//            System.out.println(JSON.toJSON(response.getAllHeaders()));
             System.out.println(responseStr);
             response.close();
             return responseStr;
@@ -422,11 +473,13 @@ public class HttpClientUtils {
             response.close();
             return JSONObject.parseObject(responseStr);
         } catch (SSLHandshakeException e) {
+            System.out.println(e.getMessage());
             return null;
         } catch (HttpHostConnectException e) {
+            System.out.println(e.getMessage());
             return null;
         } catch (Exception e) {
-            e.printStackTrace();
+            System.out.println(e.getMessage());
             return postWithProxy(url, jsonStr, proxyUrl, proxyPort);
         }
     }
@@ -464,15 +517,23 @@ public class HttpClientUtils {
                     .setProxy(new HttpHost(proxyUrl, proxyPort))
                     .build();
 
-            CloseableHttpClient client = HttpClients.custom().setDefaultRequestConfig(defaultRequestConfig).build();
+            HttpRequestRetryHandler myRetryHandler = new HttpRequestRetryHandler() {
+                public boolean retryRequest(IOException exception, int executionCount, HttpContext context) {
+                    return false;
+                }
+            };
+
+            CloseableHttpClient client = HttpClients.custom().setDefaultRequestConfig(defaultRequestConfig).setRetryHandler(myRetryHandler).build();
+            System.out.println("start proxy test...");
             CloseableHttpResponse response = client.execute(httpGet);
+            System.out.println("start proxy test success...");
             String responseStr = EntityUtils.toString(response.getEntity(), "utf-8");
             response.close();
             return responseStr;
         } catch (ConnectTimeoutException e) {
-            e.printStackTrace();
+            System.out.println(e.getMessage());
         } catch (Exception e) {
-            e.printStackTrace();
+            System.out.println(e.getMessage());
         }
         return null;
     }
