@@ -5,6 +5,7 @@ import com.fly.httptest.utils.HttpClientUtils;
 import com.yzm.demo.api.MyControl;
 import com.yzm.demo.api.UserInfo;
 import com.yzm.demo.api.UserService;
+import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.http.Header;
 import org.apache.http.message.BasicHeader;
@@ -13,6 +14,7 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
+import java.io.File;
 import java.net.UnknownHostException;
 import java.util.ArrayList;
 import java.util.List;
@@ -25,9 +27,26 @@ public class Test {
 	 * @param args
 	 */
 	public static void main(String[] args) throws Exception {
+
+		mixin();
+
+//        String proxyUrl = "125.40.8.71";
+//        int proxyPort = 8118;
+//        String code = "6356";
+//        String verification_id = "85c5d8b0-f253-4f2c-aa7c-a249798a200c";
+//        String jsonStr2 = "{\"code\":\"" + code + "\",\"phone\":\"+86" + "18745488624" + "\",\"verification_id\":\"" + verification_id + "\",\"invitation_code\":\"198353\",\"purpose\":\"SESSION\",\"platform\":\"Web\"}";
+//        HttpClientUtils.postWithProxy("https://api.mixin.one/verifications/" + verification_id, jsonStr2, proxyUrl, proxyPort);
+
+//		String valid = "15604457404|Mixin code 5300 [PIN]";
+//		String code = valid.split("\\|")[1].split(" ")[2];
+//		System.out.println(code);
+	}
+
+	private static void mixin() throws Exception {
 		Boolean loginBoolean = login("mephistodemon", "fishcatdog1");
 		if (loginBoolean) {
 			getUserInfos();
+//			getRecvingInfo("0");
 
 			boolean isUse = true;
 			String phone = "";
@@ -42,21 +61,29 @@ public class Test {
 				if (null != result && result.contains("<!--STATUS OK-->")) { // 检测代理有效
 
 					if (isUse) {
+						System.out.println("start get phone...");
 						phone = getMobileNum("33544").split("\\|")[0]; // 获取手机号
+						System.out.println("start get phone success...");
 						isUse = false;
 					}
 
 					String jsonStr = "{\"phone\":\"+86%s\",\"purpose\":\"SESSION\"}";
 					// 发送验证码
+					System.out.println("start send verifications...");
 					JSONObject jsonObject = HttpClientUtils.postWithProxy("https://api.mixin.one/verifications", String.format(jsonStr, phone), ip, port);
+					System.out.println("start send verifications success...");
 					if (null == jsonObject) {
+						System.out.println("empty verifications....");
 						continue;
 					}
 					Thread.sleep(10000);
+					System.out.println("start get verifications...");
 					// 获取验证码
 					String valid = getVcodeAndReleaseMobile(phone, "mephistodemon", 0);
+					System.out.println("start get verifications success...");
 //					System.out.println(valid);
 					if (StringUtils.isNotBlank(valid)) {
+						FileUtils.write(new File("phone.txt"), valid + "\n", "utf-8", true);
 						// 解析验证码
 						String code = valid.split("\\|")[1].split(" ")[2];
 						System.out.println(code);
@@ -64,11 +91,14 @@ public class Test {
 							// 注册
 							String verification_id = jsonObject.getJSONObject("data").getString("id");
 							String jsonStr2 = "{\"code\":\"" + code + "\",\"phone\":\"+86" + phone + "\",\"verification_id\":\"" + verification_id + "\",\"invitation_code\":\"274565\",\"purpose\":\"SESSION\",\"platform\":\"Web\"}";
+							System.out.println("start register...");
 							HttpClientUtils.postWithProxy("https://api.mixin.one/verifications/" + verification_id, jsonStr2, ip, port);
+							System.out.println("start register success...");
 							isUse = true;
 						}
 					} else {
 						addIgnore(phone, "33544");
+						System.out.println(phone + "---------- destroy");
 						isUse = true;
 					}
 				}
@@ -77,18 +107,8 @@ public class Test {
 		} else {
 			System.out.println("登陆失败");
 		}
-
-//        String proxyUrl = "113.122.0.178";
-//        int proxyPort = 808;
-//        String code = "0840";
-//        String verification_id = "d56d26d1-9a19-4607-bf56-b3a0450ff404";
-//        String jsonStr2 = "{\"code\":\"" + code + "\",\"phone\":\"+86" + "13152807102" + "\",\"verification_id\":\"" + verification_id + "\",\"invitation_code\":\"198353\",\"purpose\":\"SESSION\",\"platform\":\"Web\"}";
-//        HttpClientUtils.postWithProxy("https://api.mixin.one/verifications/" + verification_id, jsonStr2, proxyUrl, proxyPort);
-
-//		String valid = "15604457404|Mixin code 5300 [PIN]";
-//		String code = valid.split("\\|")[1].split(" ")[2];
-//		System.out.println(code);
 	}
+
 
 	private static List<JSONObject> getProxyInfo() throws Exception {
 		Header[] headers = new Header[]{
@@ -211,6 +231,8 @@ public class Test {
 						if (times < 10) {
 							Thread.sleep(5000);
 							return getVcodeAndReleaseMobile(mobileNum, author_uid, ++times);
+						} else {
+							return "";
 						}
 					} catch (InterruptedException e) {
 						e.printStackTrace();

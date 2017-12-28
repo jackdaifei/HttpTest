@@ -1,0 +1,22 @@
+GET /luosimaoController/sendVerificationMessage?phone=17095752774&access_token=0758e922-9170-4e38-bb2f-5f5c1e739b96 HTTP/1.1
+Host: ec2-54-255-242-248.ap-southeast-1.compute.amazonaws.com:8081
+Connection: keep-alive
+Accept: */*
+Origin: http://delphy.org
+User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36
+Content-Type: application/json;charset=UTF-8
+Referer: http://delphy.org/register.html?invitationCode=D2JSSA1lZFs=
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+
+
+
+http://ec2-54-255-242-248.ap-southeast-1.compute.amazonaws.com:8081/luosimaoController/sendVerificationMessage?phone=17095752774&access_token=0758e922-9170-4e38-bb2f-5f5c1e739b96
+
+
+http://ec2-54-255-242-248.ap-southeast-1.compute.amazonaws.com:8081/user/registerByPhone?invitationCode=D2JSSA1lZFs%3D&access_token=ed4f1048-3c6e-4d4d-99cf-3face2e4620a
+
+
+
+http://delphy.org/register.html?invitationCode=D2JSSA1lZFs=

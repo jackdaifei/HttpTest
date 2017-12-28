@@ -72,7 +72,7 @@ public class UserService {
 
 	public static String getRecvingInfo(String uid, String token, String pid) {
 		try {
-			String para = String.format("uid=%s&pid=%s&token=%s", uid, pid, token);
+			String para = String.format("uid=%s&token=%s&pid=%s", uid, token, pid);
 			String url = Config.getRecvingInfo + para;
 			return HttpHelper.getHtml(url);
 		} catch (Exception ex) {
