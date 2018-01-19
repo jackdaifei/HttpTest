@@ -71,8 +71,11 @@ public class HttpClientUtils {
         CloseableHttpClient client = HttpClients.createDefault();
         CloseableHttpResponse response = client.execute(httpPost);
 
-        String responseStr = EntityUtils.toString(response.getEntity(), "utf-8");
-        System.out.println(responseStr);
+        String responseStr = EntityUtils.toString(response.getEntity(), "gbk");
+//        System.out.println(responseStr);
+        if (responseStr.contains("?do=noone")) {
+            System.out.println(responseStr);
+        }
         response.close();
         return responseStr;
     }
@@ -484,6 +487,42 @@ public class HttpClientUtils {
         }
     }
 
+    public static String postWithProxyParamList(String url, List<NameValuePair> paramList, Header[] headers, String proxyUrl, int proxyPort) throws Exception {
+        try {
+            HttpPost httpPost = new HttpPost(url);
+            if (CollectionUtils.isNotEmpty(paramList)) {
+                httpPost.setEntity(new UrlEncodedFormEntity(paramList));
+            }
+            if (ArrayUtils.isNotEmpty(headers)) {
+                httpPost.setHeaders(headers);
+            }
+
+            RequestConfig defaultRequestConfig = RequestConfig.custom()
+                    .setSocketTimeout(5000)
+                    .setConnectTimeout(5000)
+                    .setConnectionRequestTimeout(5000)
+                    .setStaleConnectionCheckEnabled(true)
+                    .setProxy(new HttpHost(proxyUrl, proxyPort))
+                    .build();
+
+            CloseableHttpClient client = HttpClients.custom().setDefaultRequestConfig(defaultRequestConfig).build();
+            CloseableHttpResponse response = client.execute(httpPost);
+            String responseStr = EntityUtils.toString(response.getEntity(), "utf-8");
+            System.out.println(responseStr);
+            response.close();
+            return responseStr;
+        } catch (SSLHandshakeException e) {
+            System.out.println(e.getMessage());
+            return null;
+        } catch (HttpHostConnectException e) {
+            System.out.println(e.getMessage());
+            return null;
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+            return postWithProxyParamList(url, paramList, headers, proxyUrl, proxyPort);
+        }
+    }
+
     public static JSONObject postWithBodyReq(String url, String jsonStr) throws Exception {
         HttpPost httpPost = new HttpPost(url);
         if (StringUtils.isNotBlank(jsonStr)) {
@@ -516,6 +555,42 @@ public class HttpClientUtils {
                     .setStaleConnectionCheckEnabled(true)
                     .setProxy(new HttpHost(proxyUrl, proxyPort))
                     .build();
+
+            HttpRequestRetryHandler myRetryHandler = new HttpRequestRetryHandler() {
+                public boolean retryRequest(IOException exception, int executionCount, HttpContext context) {
+                    return false;
+                }
+            };
+
+            CloseableHttpClient client = HttpClients.custom().setDefaultRequestConfig(defaultRequestConfig).setRetryHandler(myRetryHandler).build();
+            System.out.println("start proxy test...");
+            CloseableHttpResponse response = client.execute(httpGet);
+            System.out.println("start proxy test success...");
+            String responseStr = EntityUtils.toString(response.getEntity(), "utf-8");
+            response.close();
+            return responseStr;
+        } catch (ConnectTimeoutException e) {
+            System.out.println(e.getMessage());
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+        return null;
+    }
+
+    public static String getWithProxyHeader(String url, Header[] headers, String proxyUrl, int proxyPort) throws Exception {
+        try {
+            HttpGet httpGet = new HttpGet(url);
+            if (ArrayUtils.isNotEmpty(headers)) {
+                httpGet.setHeaders(headers);
+            }
+            RequestConfig defaultRequestConfig = RequestConfig.custom()
+                    .setSocketTimeout(5000)
+                    .setConnectTimeout(5000)
+                    .setConnectionRequestTimeout(5000)
+                    .setStaleConnectionCheckEnabled(true)
+                    .setProxy(new HttpHost(proxyUrl, proxyPort))
+                    .build();
+
 
             HttpRequestRetryHandler myRetryHandler = new HttpRequestRetryHandler() {
                 public boolean retryRequest(IOException exception, int executionCount, HttpContext context) {
