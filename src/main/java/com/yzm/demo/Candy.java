@@ -1,6 +1,7 @@
 package com.yzm.demo;
 
 import com.fly.httptest.utils.HttpClientUtils;
+import com.yzm.demo.api.MyControl;
 import com.yzm.demo.api.UserInfo;
 import com.yzm.demo.api.UserService;
 import org.apache.commons.io.FileUtils;
@@ -19,6 +20,97 @@ import java.util.List;
  */
 public class Candy {
     private static UserInfo userInfo = new UserInfo();
+
+    public static void main(String[] args) {
+        try {
+
+            Boolean loginBoolean = login("mephistodemon", "fishcatdog1");
+            String projectId = "38100";
+            String inviteId = "189225";
+            String ip = "";
+            int port = 0;
+
+            if (loginBoolean) {
+                getUserInfos();
+                String phone = null;
+                boolean isPhoneUse = false;
+                if (!isPhoneUse) {
+                    phone = getMobileNum("38100").split("\\|")[0]; // 获取手机号
+                }
+                boolean isSend = candySend(inviteId, phone, ip, port);
+                if (isSend) {
+                    Thread.sleep(10000);
+                    String code = getCode(inviteId, phone, ip, port);
+                    if (StringUtils.isBlank(code)) {
+                        submitUser(inviteId, phone, code,ip, port);
+                    }
+
+                }
+
+
+
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+
+    }
+
+    /**
+     * 登 陆
+     *
+     * @param userName 用户名
+     * @param password 密码
+     * @return true or false
+     */
+    public static Boolean login(String userName, String password) {
+        userInfo.setUid(userName);
+        userInfo.setPwd(password);
+        String result = UserService.login(userInfo);
+        if (MyControl.isNull(result)) {
+            System.out.println("login fail  result = " +result);
+            return false;
+        }
+        if (result.toLowerCase().startsWith(userInfo.getUid().toLowerCase())) {
+            String[] strings = result.split("\\|");
+            userInfo.setToken(strings[1]);
+            return true;
+        }
+        else{
+            System.out.println("login fail  result = " +result);
+            return false;
+        }
+    }
+
+    /**
+     * 获取用户个人信息
+     *
+     * @return 成功返回：用户名;积分;余额;可同时获取号码数 失败请参考文档
+     */
+    public static String getUserInfos() {
+        if (userInfo.isLogin()) {
+            String result = UserService.getUserInfo(userInfo.getUid(), userInfo.getToken());
+            System.out.println(result);
+            return result;
+        }
+        return "";
+    }
+
+    /**
+     * 获取手机号码
+     *
+     * @param pid 项目ID
+     * @return 成功返回：手机号码|token 失败请参考文档
+     */
+    public static String getMobileNum(String pid) {
+        if (userInfo.isLogin()) {
+            String result = UserService.getMobileNum(pid, userInfo.getUid(), userInfo.getToken());
+            System.out.println(result);
+            return result;
+        }
+        return "";
+    }
 
     /**
      * 发送验证码
@@ -60,8 +152,14 @@ public class Candy {
         return false;
     }
 
-
-    private void getCode(String inviteId, String phone, String ip, int port) {
+    /**
+     * 获取验证码
+     * @param inviteId
+     * @param phone
+     * @param ip
+     * @param port
+     */
+    private static String getCode(String inviteId, String phone, String ip, int port) {
         try {
             // 获取验证码
             String valid = getVcodeAndReleaseMobile(phone, "mephistodemon", 0);
@@ -82,15 +180,43 @@ public class Candy {
                             new BasicHeader("Accept-Language", "zh-CN,zh;q=0.9")
                     };
                     String result = HttpClientUtils.getWithProxyHeader(checkUrl, checkHeader, ip, port);
-                    if (null != result && result.equals("ok")) {
-
+                    if (null != result && result.equals("ok")) { // 验证码通过
+                        return code;
                     }
+                    System.out.println("check验证码失败, result=" + result);
                 }
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
+        return null;
+    }
 
+    private static void submitUser(String inviteId, String phone, String code, String ip, int port) {
+        try {
+            String submitUrl = "https://candy.one/user";
+            Header[] submitHeader = new Header[]{
+                    new BasicHeader("Host", "candy.one"),
+                    new BasicHeader("Connection", "keep-alive"),
+                    new BasicHeader("Origin", "https://candy.one"),
+                    new BasicHeader("Upgrade-Insecure-Requests", "1"),
+                    new BasicHeader("Content-Type", "application/x-www-form-urlencoded"),
+                    new BasicHeader("User-Agent", "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36"),
+                    new BasicHeader("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8"),
+                    new BasicHeader("Referer", "https://candy.one/i/" + inviteId),
+                    new BasicHeader("Accept-Encoding", "gzip, deflate, br"),
+                    new BasicHeader("Accept-Language", "zh-CN,zh;q=0.9"),
+            };
+            List<NameValuePair> paramSubmitList = new ArrayList<NameValuePair>();
+            paramSubmitList.add(new BasicNameValuePair("phone", "86" + phone));
+            paramSubmitList.add(new BasicNameValuePair("code", code));
+            paramSubmitList.add(new BasicNameValuePair("countrycode", "CN"));
+            paramSubmitList.add(new BasicNameValuePair("status", "send_msg"));
+            String submitResult = HttpClientUtils.postWithProxyParamList(submitUrl, paramSubmitList, submitHeader, ip, port);
+            System.out.println(submitResult);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     /**
