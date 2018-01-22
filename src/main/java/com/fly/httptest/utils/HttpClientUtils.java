@@ -15,18 +15,30 @@ import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
+import org.apache.http.config.Registry;
+import org.apache.http.config.RegistryBuilder;
 import org.apache.http.conn.ConnectTimeoutException;
 import org.apache.http.conn.HttpHostConnectException;
+import org.apache.http.conn.socket.ConnectionSocketFactory;
+import org.apache.http.conn.socket.PlainConnectionSocketFactory;
+import org.apache.http.conn.ssl.SSLConnectionSocketFactory;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
+import org.apache.http.impl.conn.PoolingHttpClientConnectionManager;
 import org.apache.http.message.BasicHeader;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.protocol.HttpContext;
 import org.apache.http.util.EntityUtils;
 
+import javax.net.ssl.SSLContext;
 import javax.net.ssl.SSLHandshakeException;
+import javax.net.ssl.TrustManager;
+import javax.net.ssl.X509TrustManager;
 import java.io.IOException;
+import java.security.KeyManagementException;
+import java.security.NoSuchAlgorithmException;
+import java.security.cert.CertificateException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -382,7 +394,7 @@ public class HttpClientUtils {
             CloseableHttpResponse response = client.execute(httpGet);
             String responseStr = EntityUtils.toString(response.getEntity());
 //            System.out.println(JSON.toJSON(response.getAllHeaders()));
-            System.out.println(responseStr);
+//            System.out.println(responseStr);
             response.close();
             return responseStr;
         }catch (ConnectTimeoutException e) {
@@ -489,6 +501,15 @@ public class HttpClientUtils {
 
     public static String postWithProxyParamList(String url, List<NameValuePair> paramList, Header[] headers, String proxyUrl, int proxyPort) throws Exception {
         try {
+            SSLContext sslcontext = createIgnoreVerifySSL();
+            // 设置协议http和https对应的处理socket链接工厂的对象
+            Registry<ConnectionSocketFactory> socketFactoryRegistry = RegistryBuilder.<ConnectionSocketFactory>create()
+                    .register("http", PlainConnectionSocketFactory.INSTANCE)
+                    .register("https", new SSLConnectionSocketFactory(sslcontext))
+                    .build();
+
+            PoolingHttpClientConnectionManager connManager = new PoolingHttpClientConnectionManager(socketFactoryRegistry);
+
             HttpPost httpPost = new HttpPost(url);
             if (CollectionUtils.isNotEmpty(paramList)) {
                 httpPost.setEntity(new UrlEncodedFormEntity(paramList));
@@ -505,7 +526,7 @@ public class HttpClientUtils {
                     .setProxy(new HttpHost(proxyUrl, proxyPort))
                     .build();
 
-            CloseableHttpClient client = HttpClients.custom().setDefaultRequestConfig(defaultRequestConfig).build();
+            CloseableHttpClient client = HttpClients.custom().setConnectionManager(connManager).setDefaultRequestConfig(defaultRequestConfig).build();
             CloseableHttpResponse response = client.execute(httpPost);
             String responseStr = EntityUtils.toString(response.getEntity(), "utf-8");
             System.out.println(responseStr);
@@ -579,6 +600,15 @@ public class HttpClientUtils {
 
     public static String getWithProxyHeader(String url, Header[] headers, String proxyUrl, int proxyPort) throws Exception {
         try {
+            SSLContext sslcontext = createIgnoreVerifySSL();
+            // 设置协议http和https对应的处理socket链接工厂的对象
+            Registry<ConnectionSocketFactory> socketFactoryRegistry = RegistryBuilder.<ConnectionSocketFactory>create()
+                    .register("http", PlainConnectionSocketFactory.INSTANCE)
+                    .register("https", new SSLConnectionSocketFactory(sslcontext))
+                    .build();
+
+            PoolingHttpClientConnectionManager connManager = new PoolingHttpClientConnectionManager(socketFactoryRegistry);
+
             HttpGet httpGet = new HttpGet(url);
             if (ArrayUtils.isNotEmpty(headers)) {
                 httpGet.setHeaders(headers);
@@ -598,11 +628,12 @@ public class HttpClientUtils {
                 }
             };
 
-            CloseableHttpClient client = HttpClients.custom().setDefaultRequestConfig(defaultRequestConfig).setRetryHandler(myRetryHandler).build();
+            CloseableHttpClient client = HttpClients.custom().setConnectionManager(connManager).setDefaultRequestConfig(defaultRequestConfig).setRetryHandler(myRetryHandler).build();
             System.out.println("start proxy test...");
             CloseableHttpResponse response = client.execute(httpGet);
-            System.out.println("start proxy test success...");
             String responseStr = EntityUtils.toString(response.getEntity(), "utf-8");
+            System.out.println("get request ------->" + responseStr);
+            System.out.println("start proxy test success...");
             response.close();
             return responseStr;
         } catch (ConnectTimeoutException e) {
@@ -613,4 +644,37 @@ public class HttpClientUtils {
         return null;
     }
 
+    /**
+     * 绕过验证
+     *
+     * @return
+     * @throws NoSuchAlgorithmException
+     * @throws KeyManagementException
+     */
+    private static SSLContext createIgnoreVerifySSL() throws NoSuchAlgorithmException, KeyManagementException {
+        SSLContext sc = SSLContext.getInstance("SSLv3");
+
+        // 实现一个X509TrustManager接口，用于绕过验证，不用修改里面的方法
+        X509TrustManager trustManager = new X509TrustManager() {
+            @Override
+            public void checkClientTrusted(
+                    java.security.cert.X509Certificate[] paramArrayOfX509Certificate,
+                    String paramString) throws CertificateException {
+            }
+
+            @Override
+            public void checkServerTrusted(
+                    java.security.cert.X509Certificate[] paramArrayOfX509Certificate,
+                    String paramString) throws CertificateException {
+            }
+
+            @Override
+            public java.security.cert.X509Certificate[] getAcceptedIssuers() {
+                return null;
+            }
+        };
+
+        sc.init(null, new TrustManager[]{trustManager}, null);
+        return sc;
+    }
 }
