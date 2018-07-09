@@ -331,30 +331,34 @@ public class HttpClientUtils {
                 };
                 List<NameValuePair> paramList = new ArrayList<NameValuePair>();
                 paramList.add(new BasicNameValuePair("orderParam.name", "代飞"));
-                paramList.add(new BasicNameValuePair("orderParam.addressDetail", "中柏大道蓝光金悦派(新怡华庭南50米)蓝光金悦派"));
+                paramList.add(new BasicNameValuePair("orderParam.addressDetail", "天府大道中段666号希顿国际广场B座8楼"));
                 paramList.add(new BasicNameValuePair("orderParam.mobile", "159****3559"));
                 paramList.add(new BasicNameValuePair("orderParam.email", ""));
                 paramList.add(new BasicNameValuePair("orderParam.provinceId", "22"));
                 paramList.add(new BasicNameValuePair("orderParam.cityId", "1930"));
                 paramList.add(new BasicNameValuePair("orderParam.countyId", "50949"));
-                paramList.add(new BasicNameValuePair("orderParam.townId", "52154"));
+                paramList.add(new BasicNameValuePair("orderParam.townId", "52153"));
                 paramList.add(new BasicNameValuePair("orderParam.paymentType", "4"));
                 paramList.add(new BasicNameValuePair("orderParam.password", ""));
                 paramList.add(new BasicNameValuePair("orderParam.invoiceTitle", "4"));
                 paramList.add(new BasicNameValuePair("orderParam.invoiceContent", "1"));
                 paramList.add(new BasicNameValuePair("orderParam.invoiceCompanyName", ""));
                 paramList.add(new BasicNameValuePair("orderParam.invoiceTaxpayerNO", ""));
-                paramList.add(new BasicNameValuePair("orderParam.usualAddressId", "138742315"));
+                paramList.add(new BasicNameValuePair("orderParam.invoiceEmail", ""));
+                paramList.add(new BasicNameValuePair("orderParam.invoicePhone", "159****3559"));
+                paramList.add(new BasicNameValuePair("orderParam.usualAddressId", "137915318"));
                 paramList.add(new BasicNameValuePair("skuId", skuId));
                 paramList.add(new BasicNameValuePair("num", "1"));
                 paramList.add(new BasicNameValuePair("orderParam.provinceName", "四川"));
                 paramList.add(new BasicNameValuePair("orderParam.cityName", "成都市"));
                 paramList.add(new BasicNameValuePair("orderParam.countyName", "高新区"));
-                paramList.add(new BasicNameValuePair("orderParam.townName", "中和镇"));
+                paramList.add(new BasicNameValuePair("orderParam.townName", "城区"));
                 paramList.add(new BasicNameValuePair("orderParam.codTimeType", "3"));
                 paramList.add(new BasicNameValuePair("orderParam.mobileKey", "8af2df2e7cb1cb50f0e62eb538900ae6"));
-                paramList.add(new BasicNameValuePair("eid", ""));
-                paramList.add(new BasicNameValuePair("fp", ""));
+                paramList.add(new BasicNameValuePair("eid", "YQBDCCKZVO75MAH4JTMLLSW6G3MELEVPG7GBGZ5VA5XMI6GI6XBW6OTF24GIOXCHQ7KGWHGE4QKWVKCI3N6PXCCUHM"));
+                paramList.add(new BasicNameValuePair("fp", "a4cfdefe156afd6a1cf0d91c9ac2b8e1"));
+                paramList.add(new BasicNameValuePair("addressMD5", "c833d8db98b56b3bae8938cf24887e7e"));
+                paramList.add(new BasicNameValuePair("yuyue", ""));
 
                 System.out.println("----------------------------------------submit response -----------------------------------------");
                 System.out.println(HttpClientUtils.postResponseString(submitUrl, paramList, submitHeaders));
@@ -523,13 +527,13 @@ public class HttpClientUtils {
                     .setConnectTimeout(5000)
                     .setConnectionRequestTimeout(5000)
                     .setStaleConnectionCheckEnabled(true)
-                    .setProxy(new HttpHost(proxyUrl, proxyPort))
+//                    .setProxy(new HttpHost(proxyUrl, proxyPort))
                     .build();
 
             CloseableHttpClient client = HttpClients.custom().setConnectionManager(connManager).setDefaultRequestConfig(defaultRequestConfig).build();
             CloseableHttpResponse response = client.execute(httpPost);
             String responseStr = EntityUtils.toString(response.getEntity(), "utf-8");
-            System.out.println(responseStr);
+//            System.out.println(responseStr);
             response.close();
             return responseStr;
         } catch (SSLHandshakeException e) {
@@ -651,7 +655,7 @@ public class HttpClientUtils {
      * @throws NoSuchAlgorithmException
      * @throws KeyManagementException
      */
-    private static SSLContext createIgnoreVerifySSL() throws NoSuchAlgorithmException, KeyManagementException {
+    public static SSLContext createIgnoreVerifySSL() throws NoSuchAlgorithmException, KeyManagementException {
         SSLContext sc = SSLContext.getInstance("SSLv3");
 
         // 实现一个X509TrustManager接口，用于绕过验证，不用修改里面的方法

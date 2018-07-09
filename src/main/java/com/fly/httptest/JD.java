@@ -26,21 +26,40 @@ import java.util.*;
 public class JD {
 
     public static void main(String[] args) throws Exception {
-        String cookie = "__jdv=122270672|direct|-|none|-|1514353962904; o2Control=webp; o2-webp=true; PCSYCityID=1930; wlfstk_smdl=49324hfyjibb0chc011zvttxlhczfssk; _jrda=1; _jrdb=1514354004233; TrackID=1pgO3o2g3kXODaz9n48kl0qlRgSBALlkStT3dHFPUVt22ubiJF2djaNjrNxdjBKhIApIztTY1vicuxllbtbdDyUSikiKoHqous5du5l-E__4; pinId=6O_FVgd3tEus06L-EIuMwg; pin=jackdaifei_m; unick=jackdaifei; thor=85DE35A7C51EA4D29410589D03406482EA017434957E6F1E31468341A4B49D051AEAC1A03817B7262C2BC297DF7D88D0C116418B58B6C557DEF0E6D9F27F4273FB1A5D34FF9DD304BFDAB17FE02FB661B010D6C6E9570368373112DA7FD31AB91F2273BF11BD38CF6512DF4A9E5327888DAD4095043BADE5A6358F8042F1C0691583BF6441E071FBCF5E1C9B51EA23E3; _tp=CFyqN214%2FuJT47OHX%2BUStg%3D%3D; _pst=jackdaifei_m; ceshi3.com=000; __jda=122270672.15143539629042026362536.1514353963.1514353963.1514353963.1; __jdb=122270672.3.15143539629042026362536|1.1514353963; __jdc=122270672; 3AB9D23F7A4B3C9B=YQBDCCKZVO75MAH4JTMLLSW6G3MELEVPG7GBGZ5VA5XMI6GI6XBW6OTF24GIOXCHQ7KGWHGE4QKWVKCI3N6PXCCUHM; __jdu=15143539629042026362536";
-        /*long jdServer = serverDate();
-        long targetTime = DateUtils.parseDate("2017-12-26 10:00:00", "yyyy-MM-dd HH:mm:ss").getTime();
+        String cookie = "__jdu=426841177; areaId=22; user-key=0d923f21-ae9b-496d-8ed7-45edadc4d063; pinId=6O_FVgd3tEus06L-EIuMwg; pin=jackdaifei_m; unick=jackdaifei; _tp=CFyqN214%2FuJT47OHX%2BUStg%3D%3D; _pst=jackdaifei_m; ipLoc-djd=22-1930-50949-52153.137915318; ipLocation=%u56db%u5ddd; mt_xid=V2_52007VwYRVVRdUloZTykOBDBQFgFaWU5fGR5MQAA3URNODVwAXwMbH15VYVcRVF9dAggvShhcDHsCFE5cXENaF0IdVQ5lCyJQbVhiWRxOG14MYQsXYl5QUg%3D%3D; unpl=V2_ZzNtbRVUShMlC04AKB5dUGJWEwkRUUAXJQEVUS9LDAEzCkYOclRCFXwUR1JnGFgUZAAZX0JcQRxFCEZkexhdBGMEE1RCUnMldDhFVEsRbABkBBtYQldFE0U4QWRLQgRVOFVABAYHHBV3C3ZVSxhsBVdIfFwPUkASfA1GVH0fbARXAA%3d%3d; __jda=122270672.426841177.1530176271.1530877846.1531098895.20; __jdc=122270672; PCSYCityID=1930; shshshfpb=186b052caa1654e9ba3f8ce067b6fb58c31ed09923a4c76275ac971cbf; shshshfpa=95c7638a-479b-b4d3-2f1d-514e7fc6ec78-1531098916; 3AB9D23F7A4B3C9B=YQBDCCKZVO75MAH4JTMLLSW6G3MELEVPG7GBGZ5VA5XMI6GI6XBW6OTF24GIOXCHQ7KGWHGE4QKWVKCI3N6PXCCUHM; wlfstk_smdl=ac30z5cjhma4lpb4yl47ii94c0dxra62; TrackID=1WKhEP70wnDHDxLu-h0mFx4T3Ud5J4gvccKS-tE0W2_dsZbGVRDjj7BPN6IvZNmFPq1oDqZ7IAc3UfDGJFGTPD_9v0XKkwDEdzHliWS57kc8; ceshi3.com=000; cart-main=xx; __tak=42707e713a5aa8bccbbb45431250feba23050877ca837c38b28e0573da32a1d26a063668c4c1d120a6da26acb81db781cd4fab02f8d6129267db5d6c7572eba33f2622ecc40f2c1403649099783d5375; thor=D32515A2AEB1407CE340C2A977590CC7781BB4B0A4918DF3503D619FDAA51DD7499A5420035DC5621A4634E4BBB30F4BE059E85518895EF4054948FDBBB3BADE1DB4806B8B8126CCBD885FAD0499BC6879575FC07B954DFD0B7785E2F4CBB76A63A2575442C7E113EC5B2FADEDD787E205A8D78F08813E67863BC9188B508F1B972EEEA767A194975F38B45BE8340F0D; seckillSku=7489068; seckillSid=; wq_logid=1531101391.1453689305; wxa_level=1; retina=0; cid=9; webp=1; mba_muid=426841177; mba_sid=15311013879861527626411922056.1; __wga=1531101388552.1531101388552.1531101388552.1531101388552.1.1; __jdv=122270672%7Candroidapp%7Ct_335139774%7Cappshare%7CWxfriends%7C1531101388556; PPRD_P=UUID.426841177; sc_width=1920; mobilev=html5; sid=a96584ac7e7409202c5ee17d799ea925; wq_area=22_1930_50947%7C3; shshshfp=652eaf63e37bff35dbcac3c61855631b; cn=1; cd=0; shshshsID=5196e6f3696fcc698f170320abc4be52_14_1531101448790; __jdb=122270672.21.426841177|20.1531098895";
+        String startDateTime = "2018-07-09 10:00:00";
+
+//        couponA(startDateTime, cookie, "c8c26b4fe878917db55a3e4e8f0e173c6eb8bc10743c0dcceb4ac00aaf12c75949617ffa2d556f820581efceab775d33");
+
+//        String hunshaRoleId = "86024850";
+//        a53af908f4fe461b98a97d2d0dac2f97
+
+
+//        String hufeikey = "d88304accdc44958b2eb761799fd21de";
+//        String huafeiroleId = "12816306";
+//        ninty_50_huafei(startDateTime, cookie, hufeikey, huafeiroleId);
+
+       /* String key199 = "41b6e36e08f641a49ee8bff28e327216";
+        String roleId199 = "12220711";
+        coupon_blank(startDateTime, cookie, key199, roleId199);*/
+
+//        submit(startDateTime, cookie, 10);
+
+
+
+        long jdServer = serverDate();
+        long targetTime = DateUtils.parseDate(startDateTime, "yyyy-MM-dd HH:mm:ss").getTime();
         long t = targetTime - jdServer - 5000;
         if (t > 0) {
             Thread.sleep(t);
-        }*/
-
-
-        /*while (jdServer < targetTime) {
-            String url = userRoutingUrl("4993737", "");
+        }
+        while (jdServer < targetTime) {
+            String url = userRoutingUrl("7489068", "");
             if (StringUtils.isNotBlank(url)) {
-                kill(url, cookie, "4993737");
+                kill(url, cookie, "7489068");
             }
-        }*/
+        }
+//        userRoutingUrl("6236115", "");
 
         /*while (jdServer < targetTime) {
             String url = userRoutingUrl("4993773", "");
@@ -58,21 +77,106 @@ public class JD {
 
 
         // 80-79
-//        coupon_blank("2017-12-27 14:00:00", cookie, "e053941704af4cd9806d3647f9856301", "9742498");
+//        coupon_blank("2017-12-29 14:00:00", cookie, "e053941704af4cd9806d3647f9856301", "9742498");
         // 70-69
-//        coupon_blank("2017-12-27 14:00:00", cookie, "4b7a2ad375884c8b9fd23d987b808423", "9742480");
+//        coupon_blank("2017-12-29 14:00:00", cookie, "4b7a2ad375884c8b9fd23d987b808423", "9742480");
         // 60-59
-//        coupon_blank("2017-12-27 14:00:00", cookie, "04884cbb6dbe4a91a24a3cc264785bf0", "9742460");
+//        coupon_blank("2017-12-28 14:00:00", cookie, "04884cbb6dbe4a91a24a3cc264785bf0", "9742460");
         // 50-49
-//        coupon_blank("2017-12-27 14:00:00", cookie, "9314dac6cbac4242b76e37c9046a51cc", "9742442");
+//        coupon_blank("2017-12-28 14:00:00", cookie, "9314dac6cbac4242b76e37c9046a51cc", "9742442");
 
-//        ninty_50_huafei("2017-12-27 10:00:00", cookie, null, null);
+
+//        ninty_50_huafeiA("2018-01-08 10:00:00", cookie, "eac9f8e4a8fa418abec03b544cab5630", "9899640");
+//        ninty_50_huafei("2017-12-29 14:00:00", cookie, "e053941704af4cd9806d3647f9856301", "9742498");
+//        ninty_50_huafei("2017-12-29 14:00:00", cookie, "4b7a2ad375884c8b9fd23d987b808423", "9742480");
+        //        coupon_blank("2017-12-29 10:00:00", cookie, "e053941704af4cd9806d3647f9856301", "9742498");
 
 
     }
 
+    private static void couponA(String startDateTime, String cookie, String key) throws Exception {
+
+        Header[] headers = new Header[]{
+                new BasicHeader("Host", "a.jd.com"),
+                new BasicHeader("Connection", "keep-alive"),
+                new BasicHeader("Accept", "text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01"),
+                new BasicHeader("X-Requested-With", "XMLHttpRequest"),
+                new BasicHeader("User-Agent", "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36"),
+                new BasicHeader("Referer", "https://a.jd.com/?cateId=0"),
+                new BasicHeader("Accept-Encoding", "gzip, deflate, br"),
+                new BasicHeader("Accept-Language", "zh-CN,zh;q=0.9"),
+                new BasicHeader("Cookie", cookie),
+        };
+
+        final Date targetDate = DateUtils.parseDate(startDateTime, "yyyy-MM-dd HH:mm:ss");
+        long serverDateLong = serverDate();
+        long targetDateLong = targetDate.getTime();
+        long timeDif = targetDateLong - serverDateLong;
+
+        System.out.println();
+        System.out.println("serverDateLong:" + serverDateLong);
+        System.out.println("targetDateLong:" + targetDateLong);
+        System.out.println("timeDif:       " + timeDif);
+        System.out.println("---------------------------------------");
+
+        while (timeDif > 60000) {
+            Thread.sleep(timeDif/2);
+            serverDateLong = serverDate();
+            timeDif = targetDateLong - serverDateLong;
+
+            System.out.println();
+            System.out.println("serverDateLong:" + serverDateLong);
+            System.out.println("targetDateLong:" + targetDateLong);
+            System.out.println("timeDif:       " + timeDif);
+            System.out.println("---------------------------------------");
+        }
+
+        if (timeDif > 5000) {
+            Thread.sleep(timeDif - 5000);
+        }
+
+
+        int i = 0;
+        long maxTime = targetDate.getTime() + 5000;
+        while (true) {
+            final long sd = serverDate();
+            try {
+                final int index = i;
+                Thread thread = new Thread() {
+                    @Override
+                    public void run() {
+                        try {
+                            long sleepTime = 0;
+                            long lTime = targetDate.getTime() - sd; // 开始时间和jd系统时间差值
+                            if (lTime > 0 && lTime > 500) {
+                                sleepTime = lTime - 380;
+                                if (sleepTime < 0) {
+                                    sleepTime = 0;
+                                }
+                                Thread.sleep(sleepTime);
+                            }
+                            String url = "https://a.jd.com/indexAjax/getCoupon.html?callback=jQuery" + randomNum(7) + "&key=" + key + "&type=1&_=" + sd;
+                            final String res = HttpClientUtils.getResponseString(url, headers);
+                            System.out.print(System.currentTimeMillis() + "--------" + sleepTime + "---------" + sd);
+                            System.out.println(res);
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                        }
+                    }
+                };
+                thread.start();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            i = i + 5;
+            if (sd > maxTime) {
+                break;
+            }
+        }
+    }
+
     private static void kill(String divideUrl, String cookie, String skuId) throws Exception {
-        int originPrice = 100;
+//        int originPrice = 3000;
 //        String cookie = "__jdv=122270672|direct|-|none|-|1510393111166; thor=44C4B09E5A8F3FBC9E1F2D8EDE9656FAD0C80C1A516E18AF7D43A6770C448AC7C6FACB928D60386D606C60AE0198C4B7E47D93A4F30B0B1475E51795228512392ECAC1DFA4C40E46A6B101AA223E56C647CF4FAE05F2E1D1BC0352E4FF5117B196317B5623B4932DF4D19C02F139B4ABD1FFB8590C5351B68036C67ED926041C15FD85D87C0F327B6BD197AFE85FF642CD94380103DA122F96D9C83D2045349C; unick=%E8%B0%88%E7%8E%89%E6%A2%85; __jda=122270672.1510393111165833354326.1510393111.1510393111.1510393111.1; __jdb=122270672.5.1510393111165833354326|1.1510393111; __jdc=122270672; __jdu=1510393111165833354326";
 //        String skuId = "2299918";
 //        int originPrice = 1000;
@@ -268,7 +372,7 @@ public class JD {
             System.out.println("dif - 1000 --------------" + (dif - 1000));
 
             if (dif - 3000 > 0) {
-                Thread.sleep(dif);
+                Thread.sleep(dif-3000);
             }
 
             String tradeUrl = "https://trade.jd.com/shopping/order/getOrderInfo.action?rid=" + System.currentTimeMillis();
@@ -332,6 +436,9 @@ public class JD {
             paramList.add(new BasicNameValuePair("riskControl", riskControl));
 
             JSONObject result = HttpClientUtils.postResponse(submitUrl, paramList, submitHeaders);
+            if (result.toString().contains("商品无货")) {
+                result = HttpClientUtils.postResponse(submitUrl, paramList, submitHeaders);
+            }
             System.out.println(result);
         } catch (NumberFormatException e) {
             e.printStackTrace();
@@ -536,11 +643,11 @@ public class JD {
                 new BasicHeader("Host", "coupon.jd.com"),
                 new BasicHeader("Upgrade-Insecure-Requests", "1"),
                 new BasicHeader("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8"),
-                new BasicHeader("Referer", "https://sale.jd.com/act/KnbHpVdwXr.html"),
+                new BasicHeader("Referer", "https://sale.jd.com/act/xEULDnAuiM.html"),
                 new BasicHeader("Connection", "keep-alive"),
-                new BasicHeader("User-Agent", "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"),
+                new BasicHeader("User-Agent", "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36"),
                 new BasicHeader("Accept-Encoding", "gzip, deflate, br"),
-                new BasicHeader("Accept-Language", "zh-CN,zh;q=0.8"),
+                new BasicHeader("Accept-Language", "zh-CN,zh;q=0.9"),
                 new BasicHeader("Cookie", cookie)
         };
 
@@ -567,8 +674,8 @@ public class JD {
             System.out.println("---------------------------------------");
         }
 
-        if (timeDif > 5000) {
-            Thread.sleep(timeDif - 5000);
+        if (timeDif > 2000) {
+            Thread.sleep(timeDif - 2000);
         }
 
 
@@ -585,14 +692,15 @@ public class JD {
                             long sleepTime = 0;
                             long lTime = targetDate.getTime() - sd; // 开始时间和jd系统时间差值
                             if (lTime > 0 && lTime > 1000) {
-                                sleepTime = lTime - 200 - index;
+                                sleepTime = lTime - 220;
                                 if (sleepTime < 0) {
                                     sleepTime = 0;
                                 }
                                 Thread.sleep(sleepTime);
                             }
-                            String url = "https://coupon.jd.com/ilink/couponActiveFront/front_index.action?key=" + key + "&roleId=" + roleId + "&to=sale.jd.com/act/zI2r4stZVGS0Ew.html&";
+                            String url = "https://coupon.jd.com/ilink/couponActiveFront/front_index.action?key=" + key + "&roleId=" + roleId + "&to=sale.jd.com/act/xEULDnAuiM.html&";
                             final String res = HttpClientUtils.getResponseString(url, headers);
+                            System.out.println(res);
                         } catch (Exception e) {
                             e.printStackTrace();
                         }
@@ -614,7 +722,88 @@ public class JD {
         final Header[] headers = new Header[]{
                 new BasicHeader("Host", "act-jshop.jd.com"),
                 new BasicHeader("Accept", "*/*"),
-                new BasicHeader("Referer", "https://sale.jd.com/act/XWpsJbIahD.html?cpdad=1DLSUE"),
+                new BasicHeader("Referer", "https://sale.jd.com/act/Giw7U0QEIV.html?cpdad=1DLSUE"),
+                new BasicHeader("Connection", "keep-alive"),
+                new BasicHeader("User-Agent", "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36"),
+                new BasicHeader("Accept-Encoding", "gzip, deflate, br"),
+                new BasicHeader("Accept-Language", "zh-CN,zh;q=0.9"),
+                new BasicHeader("Cookie", cookie)
+        };
+
+        final Date targetDate = DateUtils.parseDate(startDateTime, "yyyy-MM-dd HH:mm:ss");
+        long serverDateLong = serverDate();
+        long targetDateLong = targetDate.getTime();
+        long timeDif = targetDateLong - serverDateLong;
+
+        System.out.println();
+        System.out.println("serverDateLong:" + serverDateLong);
+        System.out.println("targetDateLong:" + targetDateLong);
+        System.out.println("timeDif:       " + timeDif);
+        System.out.println("---------------------------------------");
+
+        while (timeDif > 60000) {
+            Thread.sleep(timeDif/2);
+            serverDateLong = serverDate();
+            timeDif = targetDateLong - serverDateLong;
+
+            System.out.println();
+            System.out.println("serverDateLong:" + serverDateLong);
+            System.out.println("targetDateLong:" + targetDateLong);
+            System.out.println("timeDif:       " + timeDif);
+            System.out.println("---------------------------------------");
+        }
+
+        if (timeDif > 5000) {
+            Thread.sleep(timeDif - 5000);
+        }
+
+
+        int i = 0;
+        long maxTime = targetDate.getTime() + 5000;
+        while (true) {
+            final long sd = serverDate();
+            try {
+                final int index = i;
+                Thread thread = new Thread() {
+                    @Override
+                    public void run() {
+                        try {
+                            long sleepTime = 0;
+                            long lTime = targetDate.getTime() - sd; // 开始时间和jd系统时间差值
+                            if (lTime > 0 && lTime > 500) {
+                                sleepTime = lTime - 500;
+                                if (sleepTime < 0) {
+                                    sleepTime = 0;
+                                }
+                                Thread.sleep(sleepTime);
+                            }
+//                            String url = "https://act-jshop.jd.com/couponSend.html?callback=jQuery" + randomNum(7) + "&roleId=" + roleId + "&key=" + key + "&_=" + sd;
+                            String url = "https://act-jshop.jd.com/couponSend.html?callback=jQuery" + randomNum(7) + "&ruleId=" + roleId + "&key=" + key + "&eid=YQBDCCKZVO75MAH4JTMLLSW6G3MELEVPG7GBGZ5VA5XMI6GI6XBW6OTF24GIOXCHQ7KGWHGE4QKWVKCI3N6PXCCUHM&fp=a4cfdefe156afd6a1cf0d91c9ac2b8e1&shshshfp=652eaf63e37bff35dbcac3c61855631b&shshshfpa=4ba70ea3-d5e2-e44d-0a1d-28bdec99c53b-1529890267&shshshfpb=186b052caa1654e9ba3f8ce067b6fb58c31ed09923a4c76275ac971cbf&jda=122270672.426841177.1530176271.1530176273.1530236198.2&pageClickKey=pageclick%7Ckeycount%7Ccoupon_simple_36482510_1%7C0&platform=0&applicationId=1575845&_=" + sd;
+                            final String res = HttpClientUtils.getResponseString(url, headers);
+                            System.out.print(System.currentTimeMillis() + "--------" + sleepTime + "---------" + sd);
+                            System.out.println(res);
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                        }
+                    }
+                };
+                thread.start();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            i = i + 5;
+            if (sd > maxTime) {
+                break;
+            }
+        }
+
+    }
+
+    private static void ninty_50_huafeiA(String startDateTime, String cookie, final String key, final String roleId) throws Exception {
+        final Header[] headers = new Header[]{
+                new BasicHeader("Host", "vip.jr.jd.com"),
+                new BasicHeader("Accept", "*/*"),
+                new BasicHeader("Referer", "https://sale.jd.com/act/EBkJdzA6mwi7l.html?cpdad=1DLSUE"),
                 new BasicHeader("Connection", "keep-alive"),
                 new BasicHeader("User-Agent", "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"),
                 new BasicHeader("Accept-Encoding", "gzip, deflate, br"),
@@ -663,13 +852,13 @@ public class JD {
                             long sleepTime = 0;
                             long lTime = targetDate.getTime() - sd; // 开始时间和jd系统时间差值
                             if (lTime > 0 && lTime > 1000) {
-                                sleepTime = lTime - 200 - index;
+                                sleepTime = lTime - 100;
                                 if (sleepTime < 0) {
                                     sleepTime = 0;
                                 }
                                 Thread.sleep(sleepTime);
                             }
-                            String url = "https://act-jshop.jd.com/couponSend.html?callback=jQuery" + randomNum(7) + "&roleId=" + roleId + "&key=" + key + "&_=" + sd;
+                            String url = "https://vip.jr.jd.com/jsonp/coupon/receiveCoupon?callback=" + randomNum(7) + "&couponKey=" + key + "&appToken=" + roleId + "&_=" + sd;
                             final String res = HttpClientUtils.getResponseString(url, headers);
                         } catch (Exception e) {
                             e.printStackTrace();

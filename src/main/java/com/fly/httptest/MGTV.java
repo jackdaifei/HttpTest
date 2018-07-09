@@ -21,10 +21,12 @@ public class MGTV {
             public void run() {
                 try {
                     login();
+                    Thread.sleep(sleepMillisecond(3000, 5000));
                     share();
+                    Thread.sleep(sleepMillisecond(3000, 5000));
                     wheelGame(10);
-                    Thread.sleep(1000*60*60*5+sleepMillisecond(1000, 10000));
-                    login();
+//                    Thread.sleep(1000*60*60*5+sleepMillisecond(1000, 10000));
+//                    login();
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -32,19 +34,6 @@ public class MGTV {
         };
         loginThread.start();
         Thread.sleep(sleepMillisecond(1000, 5000));
-
-        /*Thread huafeiThread = new Thread() {
-            @Override
-            public void run() {
-                try {
-                    submitHuaFei(5);
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-            }
-        };
-        huafeiThread.start();
-        Thread.sleep(sleepMillisecond(1000, 5000));*/
 
         /*Thread redThread = new Thread() {
             @Override
@@ -58,9 +47,9 @@ public class MGTV {
                 }
             }
         };
-        redThread.start();
+        redThread.start();*/
 
-        Thread red2Thread = new Thread() {
+        /*Thread red2Thread = new Thread() {
             @Override
             public void run() {
                 try {
@@ -75,7 +64,7 @@ public class MGTV {
         };
         red2Thread.start();*/
 
-        Thread red3Thread = new Thread() {
+        /*Thread red3Thread = new Thread() {
             @Override
             public void run() {
                 try {
@@ -88,7 +77,7 @@ public class MGTV {
                 }
             }
         };
-        red3Thread.start();
+        red3Thread.start();*/
 
 //        System.out.println(111);
 
@@ -170,8 +159,9 @@ public class MGTV {
     }
 
     private static void share() throws Exception {
-        String url = "http://activity.mgtvhd.com/commonM/CommonUserInfo_addShowByUserId.do?userId=141255";
+        String url = "http://activity.mgtvhd.com/commonM/CommonUserInfo_addShowByUserId.do?userId=141255&businessType=&businessParameter=";
         HttpClientUtils.getResponse(url, null);
+        System.out.println("share end...");
     }
 
     private static void submitOrder(int times) throws Exception {
@@ -222,7 +212,7 @@ public class MGTV {
             start = false;
         }
 
-        if (baseInfo.getBooleanValue("noRedBag")) {
+        if (start && baseInfo.getBooleanValue("noRedBag")) {
             System.out.println("红包游戏[" + baseInfo.getJSONObject("gameInfo").getIntValue("id") + "]已经没有红包");
 //            Thread.sleep(1000 * 60 * 30);
             Thread.sleep(1000 * 30);
@@ -276,6 +266,7 @@ public class MGTV {
         for (int i = 0; i < times; i++) {
             JSONObject result = HttpClientUtils.getResponse(url, null);
             if ("您今天的游戏次数已用完！".equals(result.getString("data"))) {
+                System.out.println("10477 end...");
                 break;
             }
             Thread.sleep(sleepMillisecond(1500, 2500));
@@ -291,14 +282,18 @@ public class MGTV {
     private static void redBag2(int times) throws Exception {
         String url = "http://activity.mgtvhd.com/commonWebM/CommonGameRedbag_dealRedBag.do?userId=141255&gameId=10237&deviceNumber=869922026733969&payTypeUser=dou";
         for (int i = 0; i < times; i++) {
-            JSONObject result = HttpClientUtils.getResponse(url, null);
-            if (result.getBooleanValue("success")) {
-                break;
+            try {
+                JSONObject result = HttpClientUtils.getResponse(url, null);
+                if (result.getBooleanValue("success")) {
+                    break;
+                }
+                if ("您今天的游戏次数已用完！".equals(result.getString("data")) || "null".equals(result.getString("data"))) {
+                    break;
+                }
+                Thread.sleep(sleepMillisecond(1500, 2500));
+            } catch (Exception e) {
+                e.printStackTrace();
             }
-            if ("您今天的游戏次数已用完！".equals(result.getString("data")) || "null".equals(result.getString("data"))) {
-                break;
-            }
-            Thread.sleep(sleepMillisecond(1500, 2500));
         }
     }
 
@@ -312,19 +307,23 @@ public class MGTV {
         String url = "http://activity.mgtvhd.com/commonWebM/CommonGameRedbag_dealRedBag.do?userId=141255&gameId=10393&deviceNumber=869922026733969&payTypeUser=dou";
         int i = 0;
         while (i < times) {
-            JSONObject result = HttpClientUtils.getResponse(url, null);
-            if (result.getBooleanValue("success")) {
-                if (result.getString("data").equals("null")) {
-                    Thread.sleep(100);
-                    continue;
+            try {
+                JSONObject result = HttpClientUtils.getResponse(url, null);
+                if (result.getBooleanValue("success")) {
+                    if (result.getString("data").equals("null")) {
+                        Thread.sleep(100);
+                        continue;
+                    }
+                    break;
                 }
-                break;
+                if ("您今天的游戏次数已用完！".equals(result.getString("data"))) {
+                    break;
+                }
+                Thread.sleep(sleepMillisecond(1000, 1500));
+                i++;
+            } catch (Exception e) {
+                e.printStackTrace();
             }
-            if ("您今天的游戏次数已用完！".equals(result.getString("data"))) {
-                break;
-            }
-            Thread.sleep(sleepMillisecond(1000, 1500));
-            i++;
         }
     }
 
@@ -339,9 +338,10 @@ public class MGTV {
         for (int i = 0; i < times; i++) {
             JSONObject result = HttpClientUtils.getResponse(url, null);
             if (result.getString("data").equals("您今天的游戏次数已用完！")) {
+                System.out.println("wheelGame end...");
                 break;
             }
-            Thread.sleep(sleepMillisecond(2000, 4000));
+            Thread.sleep(sleepMillisecond(3000, 5000));
         }
     }
 
