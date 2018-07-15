@@ -26,8 +26,11 @@ import java.util.*;
 public class JD {
 
     public static void main(String[] args) throws Exception {
-        String cookie = "__jdu=426841177; areaId=22; user-key=0d923f21-ae9b-496d-8ed7-45edadc4d063; pinId=6O_FVgd3tEus06L-EIuMwg; pin=jackdaifei_m; unick=jackdaifei; _tp=CFyqN214%2FuJT47OHX%2BUStg%3D%3D; _pst=jackdaifei_m; ipLoc-djd=22-1930-50949-52153.137915318; ipLocation=%u56db%u5ddd; mt_xid=V2_52007VwYRVVRdUloZTykOBDBQFgFaWU5fGR5MQAA3URNODVwAXwMbH15VYVcRVF9dAggvShhcDHsCFE5cXENaF0IdVQ5lCyJQbVhiWRxOG14MYQsXYl5QUg%3D%3D; unpl=V2_ZzNtbRVUShMlC04AKB5dUGJWEwkRUUAXJQEVUS9LDAEzCkYOclRCFXwUR1JnGFgUZAAZX0JcQRxFCEZkexhdBGMEE1RCUnMldDhFVEsRbABkBBtYQldFE0U4QWRLQgRVOFVABAYHHBV3C3ZVSxhsBVdIfFwPUkASfA1GVH0fbARXAA%3d%3d; __jda=122270672.426841177.1530176271.1530877846.1531098895.20; __jdc=122270672; PCSYCityID=1930; shshshfpb=186b052caa1654e9ba3f8ce067b6fb58c31ed09923a4c76275ac971cbf; shshshfpa=95c7638a-479b-b4d3-2f1d-514e7fc6ec78-1531098916; 3AB9D23F7A4B3C9B=YQBDCCKZVO75MAH4JTMLLSW6G3MELEVPG7GBGZ5VA5XMI6GI6XBW6OTF24GIOXCHQ7KGWHGE4QKWVKCI3N6PXCCUHM; wlfstk_smdl=ac30z5cjhma4lpb4yl47ii94c0dxra62; TrackID=1WKhEP70wnDHDxLu-h0mFx4T3Ud5J4gvccKS-tE0W2_dsZbGVRDjj7BPN6IvZNmFPq1oDqZ7IAc3UfDGJFGTPD_9v0XKkwDEdzHliWS57kc8; ceshi3.com=000; cart-main=xx; __tak=42707e713a5aa8bccbbb45431250feba23050877ca837c38b28e0573da32a1d26a063668c4c1d120a6da26acb81db781cd4fab02f8d6129267db5d6c7572eba33f2622ecc40f2c1403649099783d5375; thor=D32515A2AEB1407CE340C2A977590CC7781BB4B0A4918DF3503D619FDAA51DD7499A5420035DC5621A4634E4BBB30F4BE059E85518895EF4054948FDBBB3BADE1DB4806B8B8126CCBD885FAD0499BC6879575FC07B954DFD0B7785E2F4CBB76A63A2575442C7E113EC5B2FADEDD787E205A8D78F08813E67863BC9188B508F1B972EEEA767A194975F38B45BE8340F0D; seckillSku=7489068; seckillSid=; wq_logid=1531101391.1453689305; wxa_level=1; retina=0; cid=9; webp=1; mba_muid=426841177; mba_sid=15311013879861527626411922056.1; __wga=1531101388552.1531101388552.1531101388552.1531101388552.1.1; __jdv=122270672%7Candroidapp%7Ct_335139774%7Cappshare%7CWxfriends%7C1531101388556; PPRD_P=UUID.426841177; sc_width=1920; mobilev=html5; sid=a96584ac7e7409202c5ee17d799ea925; wq_area=22_1930_50947%7C3; shshshfp=652eaf63e37bff35dbcac3c61855631b; cn=1; cd=0; shshshsID=5196e6f3696fcc698f170320abc4be52_14_1531101448790; __jdb=122270672.21.426841177|20.1531098895";
-        String startDateTime = "2018-07-09 10:00:00";
+        String cookie = "__jdu=767847430; PCSYCityID=1930; user-key=0b74d3bf-e84b-4e28-920a-21356ddd21e6; pinId=6O_FVgd3tEus06L-EIuMwg; pin=jackdaifei_m; unick=jackdaifei; _tp=CFyqN214%2FuJT47OHX%2BUStg%3D%3D; _pst=jackdaifei_m; mt_xid=V2_52007VwUVVFRdVF8dSCkPUWAAQABUWk5SGUpLQABmBhBODVsBUgNNTFUNNQVGUFVfU1kvShhcDHsCFE5dXENaHUIZXg5kASJSbVhiWR1IH1kGYgUTYl9cU18%3D; ipLoc-djd=22-1930-50949-52153.137915318; ipLocation=%u56db%u5ddd; unpl=V2_ZzNtbUUHF0Z3AUUBKREPA2JWFggRUBYQcQwTAHoZDAU1BxRbclRCFXwUR1JnGVgUZwsZXktcQB1FCEZkexhdBGMEE1RCUnMldDhFVEsRbANgBRtYRFJBFEU4QWRLQgRVOFVABAYHHBV3C3ZVSxhsBVdIfFwPUUQTfA1AUXkYbARXAA%3d%3d; __jdc=122270672; shshshfpb=1e9b881f961844f95a23e8213516156734698719808227b9b5b3ef8ae0; shshshfp=f7ae8cec4b36e9061f4c4133586bb6ef; shshshfpa=a86da543-d498-b311-edd7-4bc906987cdd-1531654232; wlfstk_smdl=xe7xwkyat3wa0322ysix877591f05lh2; TrackID=1ddo_BnKkSeZUCtc1HbcrnKpwqtUtG30llaqAGvdI6uJStO3Sf4DOSE-M7wBJdfYLC2foIcOyARMXoHkk1h46mQ; ceshi3.com=000; 3AB9D23F7A4B3C9B=NMI64G6NR6Q3T22OVMJMKLJSV6Z62LKYEU2L6XNUMP7DKC7XVYCODQYK2LCOWVCBSOSWPIWTYIEBWS7PZB23VX2QUQ; __jda=122270672.767847430.1530842142.1531654146.1531658592.11; __tak=9a059ab2e3ee1bd5e0e1ab43cf05d5b658763b841eda1ced8494b1db8d71c8bfae9bc4c5d69d23ab96367a855cd51c0f77d6f1891f81d5e324371bb4d440f35615647b08fdbadd1a45a5dfdc37ec195f; __jdv=122270672|kong|t_1000560814_|tuiguang|6aeb382dc9b74d5db6d455de01a1c577|1531659045952; _rdCube=%7B%22p1009484%22%3A%22%2C7613853%2C6784749%22%7D; cn=1; thor=239FD61F5904BB8E827B8E658D0329C27AA1295D2F3ED0A2B32DB9F83DF45BD9F429163B6A33EE7653A97F551ECD5443EE8B8ECBAC60143BECE81C3ECB5451FB1ACAF636220302D29F46CC3750505DCA27D32FC985B85556920DD6881B45ECD83E3C990966D29F51127336FA2817B214061B28A109BBAA28DB4B94C59B779A8C6D07A71D4CF8D9C022780B518F572FF6; __jdb=122270672.61.767847430|11.1531658592; JSESSIONID=75159753D46C80126B2DC793512C6991.s1";
+        String startDateTime = "2018-07-15 23:00:00";
+
+        // 7399696
+        // 7920196
 
 //        couponA(startDateTime, cookie, "c8c26b4fe878917db55a3e4e8f0e173c6eb8bc10743c0dcceb4ac00aaf12c75949617ffa2d556f820581efceab775d33");
 
@@ -43,23 +46,23 @@ public class JD {
         String roleId199 = "12220711";
         coupon_blank(startDateTime, cookie, key199, roleId199);*/
 
-//        submit(startDateTime, cookie, 10);
+        submit(startDateTime, cookie, 1500);
 
 
 
-        long jdServer = serverDate();
-        long targetTime = DateUtils.parseDate(startDateTime, "yyyy-MM-dd HH:mm:ss").getTime();
-        long t = targetTime - jdServer - 5000;
-        if (t > 0) {
-            Thread.sleep(t);
-        }
-        while (jdServer < targetTime) {
-            String url = userRoutingUrl("7489068", "");
-            if (StringUtils.isNotBlank(url)) {
-                kill(url, cookie, "7489068");
-            }
-        }
-//        userRoutingUrl("6236115", "");
+//        long jdServer = serverDate();
+//        long targetTime = DateUtils.parseDate(startDateTime, "yyyy-MM-dd HH:mm:ss").getTime();
+//        long t = targetTime - jdServer - 5000;
+//        if (t > 0) {
+//            Thread.sleep(t);
+//        }
+//        while (jdServer < targetTime) {
+//            String url = userRoutingUrl("7489068", "");
+//            if (StringUtils.isNotBlank(url)) {
+//                kill(url, cookie, "7489068");
+//            }
+//        }
+//        userRoutingUrl("7920196", "");
 
         /*while (jdServer < targetTime) {
             String url = userRoutingUrl("4993773", "");
@@ -253,109 +256,6 @@ public class JD {
         return null;
     }
 
-
-
-
-    private static void price(String target, String cookie) throws Exception {
-        long serverDate = serverDate();
-        long targetDate = DateUtils.parseDate(target, "yyyy-MM-dd HH:mm:ss").getTime();
-        long dif = targetDate - serverDate;
-        System.out.println("serverDate---------------" + serverDate);
-        System.out.println("targetDate---------------" + targetDate);
-        System.out.println("dif - 1000 ---------------" + (dif - 1000));
-
-        if (dif -1000 > 0) {
-            Thread.sleep(dif);
-        }
-
-        float price = 9999.0f;
-        while (true) {
-            String url = "https://p.3.cn/prices/mgets?callback=jQuery" + randomNum(7) + "&type=1&area=22_1930_50949_52153.137915318&pdtk=&pduid=15095167394471662559631&pdpin=&pin=&pdbp=0&skuIds=J_1499113642&ext=11000000&source=item-pc";
-            String jsonStr = HttpClientUtils.getResponseString(url, null).substring(14).split("\\)")[0];
-            JSONArray jsonArray = JSONArray.parseArray(jsonStr);
-            JSONObject jsonObject = jsonArray.getJSONObject(0);
-            price = jsonObject.getFloat("p");
-            System.out.println(price);
-            if (price < 10) {
-                break;
-            }
-            Thread.sleep(100);
-            if (new Date().getTime() > 1510286415000l) {
-                System.exit(0);
-            }
-        }
-
-
-        String qianggouUrl = "https://yushou.jd.com/qianggou.action?sku=1499113642&key=b10a50f87cee48736a97de6a8f4ea8a5";
-        Header[] qianggouHeaders = new Header[] {
-                new BasicHeader("Host", "yushou.jd.com"),
-                new BasicHeader("Connection", "keep-alive"),
-                new BasicHeader("Upgrade-Insecure-Requests", "1"),
-                new BasicHeader("User-Agent", "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"),
-                new BasicHeader("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8"),
-                new BasicHeader("Referer", "https://item.jd.com/1499113642.html"),
-                new BasicHeader("Accept-Encoding", "gzip, deflate, br"),
-                new BasicHeader("Accept-Language", "zh-CN,zh;q=0.8"),
-                new BasicHeader("Cookie", cookie)
-        };
-
-        System.out.println();
-        System.out.println("---------------------------抢购返回--------------------------------");
-        System.out.println(HttpClientUtils.getResponseString(qianggouUrl, qianggouHeaders));
-        System.out.println("---------------------------抢购返回--------------------------------");
-        System.out.println();
-
-        String cartUrl = "https://trade.jd.com/shopping/order/getOrderInfo.action?rid=" + System.currentTimeMillis();
-        Header[] headers = new Header[]{
-                new BasicHeader("Host", "trade.jd.com"),
-                new BasicHeader("Connection", "keep-alive"),
-                new BasicHeader("Upgrade-Insecure-Requests", "1"),
-                new BasicHeader("User-Agent", "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"),
-                new BasicHeader("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8"),
-                new BasicHeader("Referer", "https://cart.jd.com/cart.action"),
-                new BasicHeader("Accept-Encoding", "gzip, deflate, br"),
-                new BasicHeader("Accept-Language", "zh-CN,zh;q=0.8"),
-                new BasicHeader("Cookie", cookie)
-        };
-        String shopCartHTML = HttpClientUtils.getResponseString(cartUrl, headers);
-
-        String tempRisk = shopCartHTML.split("<input type=\"hidden\" id=\"riskControl\" value=\"")[1];
-        String riskControl = tempRisk.substring(0, tempRisk.indexOf("\"/>"));
-        System.out.println("riskControl-------------------------------------" + riskControl);
-
-        String submitUrl = "https://trade.jd.com/shopping/order/submitOrder.action";
-        Header[] submitHeaders = new Header[]{
-                new BasicHeader("Host", "trade.jd.com"),
-                new BasicHeader("Connection", "keep-alive"),
-                new BasicHeader("Accept", "application/json, text/javascript, */*; q=0.01"),
-                new BasicHeader("Origin", "https://trade.jd.com"),
-                new BasicHeader("X-Requested-With", "XMLHttpRequest"),
-                new BasicHeader("User-Agent", "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"),
-                new BasicHeader("Content-Type", "application/x-www-form-urlencoded"),
-                new BasicHeader("Referer", cartUrl),
-                new BasicHeader("Accept-Encoding", "gzip, deflate, br"),
-                new BasicHeader("Accept-Language", "zh-CN,zh;q=0.8"),
-                new BasicHeader("Cookie", cookie)
-        };
-
-        List<NameValuePair> paramList = new ArrayList<NameValuePair>();
-        paramList.add(new BasicNameValuePair("overseaPurchaseCookies", ""));
-        paramList.add(new BasicNameValuePair("submitOrderParam.sopNotPutInvoice", "false"));
-        String trackIDTemp = cookie.split("TrackID=")[1];
-        paramList.add(new BasicNameValuePair("submitOrderParam.trackID", trackIDTemp.substring(0, trackIDTemp.indexOf(";"))));
-        paramList.add(new BasicNameValuePair("submitOrderParam.ignorePriceChange", "0"));
-        paramList.add(new BasicNameValuePair("submitOrderParam.btSupport", "0"));
-        paramList.add(new BasicNameValuePair("submitOrderParam.eid", ""));
-        paramList.add(new BasicNameValuePair("submitOrderParam.fp", ""));
-        paramList.add(new BasicNameValuePair("riskControl", riskControl));
-
-        System.out.println();
-        System.out.println("-------------------------提交结果---------------------------");
-        System.out.println(HttpClientUtils.postResponse(submitUrl, paramList, submitHeaders));
-        System.out.println("-------------------------提交结果---------------------------");
-        System.out.println();
-    }
-
     /**
      * 提交订单
      * @param target
@@ -395,7 +295,7 @@ public class JD {
 
                 System.out.println(price);
                 while (price >= targetPrice) {
-                    Thread.sleep(50);
+                    Thread.sleep(100);
                     tradeHTML = HttpClientUtils.getResponseString(tradeUrl, headers);
                     priceTemp = tradeHTML.split("<span class=\"price-num\" id=\"sumPayPriceId\">￥")[1];
                     price = Float.valueOf(priceTemp.substring(0, priceTemp.indexOf("<")));
@@ -425,15 +325,29 @@ public class JD {
             };
 
             List<NameValuePair> paramList = new ArrayList<NameValuePair>();
-            paramList.add(new BasicNameValuePair("overseaPurchaseCookies", ""));
-            paramList.add(new BasicNameValuePair("submitOrderParam.sopNotPutInvoice", "false"));
             String trackIDTemp = cookie.split("TrackID=")[1];
-            paramList.add(new BasicNameValuePair("submitOrderParam.trackID", trackIDTemp.substring(0, trackIDTemp.indexOf(";"))));
+
+//            paramList.add(new BasicNameValuePair("overseaPurchaseCookies", ""));
+//            paramList.add(new BasicNameValuePair("submitOrderParam.sopNotPutInvoice", "false"));
+//            paramList.add(new BasicNameValuePair("submitOrderParam.trackID", trackIDTemp.substring(0, trackIDTemp.indexOf(";"))));
+//            paramList.add(new BasicNameValuePair("submitOrderParam.ignorePriceChange", "0"));
+//            paramList.add(new BasicNameValuePair("submitOrderParam.btSupport", "0"));
+////            paramList.add(new BasicNameValuePair("submitOrderParam.eid", ""));
+////            paramList.add(new BasicNameValuePair("submitOrderParam.fp", ""));
+//            paramList.add(new BasicNameValuePair("riskControl", riskControl));
+
+            paramList.add(new BasicNameValuePair("overseaPurchaseCookies", ""));
+            paramList.add(new BasicNameValuePair("submitOrderParam.payPassword", "u31u35u39u32u38u30u37u33u35u35u39u66u65u69"));
+            paramList.add(new BasicNameValuePair("vendorRemarks", "[]"));
+            paramList.add(new BasicNameValuePair("submitOrderParam.sopNotPutInvoice", "false"));
+//            paramList.add(new BasicNameValuePair("submitOrderParam.trackID", trackIDTemp.substring(0, trackIDTemp.indexOf(";"))));
+            paramList.add(new BasicNameValuePair("submitOrderParam.trackID", "TestTrackId"));
             paramList.add(new BasicNameValuePair("submitOrderParam.ignorePriceChange", "0"));
             paramList.add(new BasicNameValuePair("submitOrderParam.btSupport", "0"));
-            paramList.add(new BasicNameValuePair("submitOrderParam.eid", ""));
-            paramList.add(new BasicNameValuePair("submitOrderParam.fp", ""));
             paramList.add(new BasicNameValuePair("riskControl", riskControl));
+            paramList.add(new BasicNameValuePair("submitOrderParam.isBestCoupon", "1"));
+            paramList.add(new BasicNameValuePair("submitOrderParam.jxj", "1"));
+            paramList.add(new BasicNameValuePair("submitOrderParam.trackId", "646176eabee26931003f2c6e0a9d6346"));
 
             JSONObject result = HttpClientUtils.postResponse(submitUrl, paramList, submitHeaders);
             if (result.toString().contains("商品无货")) {
