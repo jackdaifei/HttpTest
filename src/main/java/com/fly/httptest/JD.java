@@ -26,8 +26,8 @@ import java.util.*;
 public class JD {
 
     public static void main(String[] args) throws Exception {
-        String cookie = "__jdu=767847430; PCSYCityID=1930; user-key=0b74d3bf-e84b-4e28-920a-21356ddd21e6; pinId=6O_FVgd3tEus06L-EIuMwg; pin=jackdaifei_m; unick=jackdaifei; _tp=CFyqN214%2FuJT47OHX%2BUStg%3D%3D; _pst=jackdaifei_m; mt_xid=V2_52007VwUVVFRdVF8dSCkPUWAAQABUWk5SGUpLQABmBhBODVsBUgNNTFUNNQVGUFVfU1kvShhcDHsCFE5dXENaHUIZXg5kASJSbVhiWR1IH1kGYgUTYl9cU18%3D; ipLoc-djd=22-1930-50949-52153.137915318; ipLocation=%u56db%u5ddd; unpl=V2_ZzNtbUUHF0Z3AUUBKREPA2JWFggRUBYQcQwTAHoZDAU1BxRbclRCFXwUR1JnGVgUZwsZXktcQB1FCEZkexhdBGMEE1RCUnMldDhFVEsRbANgBRtYRFJBFEU4QWRLQgRVOFVABAYHHBV3C3ZVSxhsBVdIfFwPUUQTfA1AUXkYbARXAA%3d%3d; __jdc=122270672; shshshfpb=1e9b881f961844f95a23e8213516156734698719808227b9b5b3ef8ae0; shshshfp=f7ae8cec4b36e9061f4c4133586bb6ef; shshshfpa=a86da543-d498-b311-edd7-4bc906987cdd-1531654232; wlfstk_smdl=xe7xwkyat3wa0322ysix877591f05lh2; TrackID=1ddo_BnKkSeZUCtc1HbcrnKpwqtUtG30llaqAGvdI6uJStO3Sf4DOSE-M7wBJdfYLC2foIcOyARMXoHkk1h46mQ; ceshi3.com=000; 3AB9D23F7A4B3C9B=NMI64G6NR6Q3T22OVMJMKLJSV6Z62LKYEU2L6XNUMP7DKC7XVYCODQYK2LCOWVCBSOSWPIWTYIEBWS7PZB23VX2QUQ; __jda=122270672.767847430.1530842142.1531654146.1531658592.11; __tak=9a059ab2e3ee1bd5e0e1ab43cf05d5b658763b841eda1ced8494b1db8d71c8bfae9bc4c5d69d23ab96367a855cd51c0f77d6f1891f81d5e324371bb4d440f35615647b08fdbadd1a45a5dfdc37ec195f; __jdv=122270672|kong|t_1000560814_|tuiguang|6aeb382dc9b74d5db6d455de01a1c577|1531659045952; _rdCube=%7B%22p1009484%22%3A%22%2C7613853%2C6784749%22%7D; cn=1; thor=239FD61F5904BB8E827B8E658D0329C27AA1295D2F3ED0A2B32DB9F83DF45BD9F429163B6A33EE7653A97F551ECD5443EE8B8ECBAC60143BECE81C3ECB5451FB1ACAF636220302D29F46CC3750505DCA27D32FC985B85556920DD6881B45ECD83E3C990966D29F51127336FA2817B214061B28A109BBAA28DB4B94C59B779A8C6D07A71D4CF8D9C022780B518F572FF6; __jdb=122270672.61.767847430|11.1531658592; JSESSIONID=75159753D46C80126B2DC793512C6991.s1";
-        String startDateTime = "2018-07-15 23:00:00";
+        String cookie = "__jdu=767847430; user-key=0b74d3bf-e84b-4e28-920a-21356ddd21e6; pinId=6O_FVgd3tEus06L-EIuMwg; pin=jackdaifei_m; unick=jackdaifei; _tp=CFyqN214%2FuJT47OHX%2BUStg%3D%3D; _pst=jackdaifei_m; mt_xid=V2_52007VwUVVFRdVF8dSCkPUWAAQABUWk5SGUpLQABmBhBODVsBUgNNTFUNNQVGUFVfU1kvShhcDHsCFE5dXENaHUIZXg5kASJSbVhiWR1IH1kGYgUTYl9cU18%3D; ipLoc-djd=22-1930-50949-52153.137915318; ipLocation=%u56db%u5ddd; PCSYCityID=1930; unpl=V2_ZzNtbUtQEBUmXBMELExbVWIFRlwSVhEVJ1pOVSkfXVFvVBZYclRCFXwUR1JnGVoUZAEZWUdcQxVFCEZkexhdBGMEE1RCUnMldDhFVEsRbANgBRtYRFJBFEU4QWRLQgRVOFVABAYHHBV3C3ZVSxhsBVdIfFwPUUQTfA1AUXkYbARXAA%3d%3d; __jda=122270672.767847430.1530842142.1531837362.1531842890.14; __jdc=122270672; TrackID=1zgVIqhEw6TaO_aMrfhvUZK4vGAOet93DghIqTJiJpUGrQ57AeFJKXtWYBd9OkyCMFZD359XExS_cj34lgVNGjg; thor=D2031FF812A1C541696B26CF7F98D4D7577C0CA4DF9449723F6F6132526F8882A85AED053EA7B975F52FFD23EBC32E44311C55C79D99F5E7BA2B987EB969B997EA8C8BCC646CC2D247A7D8505AD6EA4FECB366C129F1C379AD96FA73E38B0A330776CBD06CB87D025D8F70B57CEBB3A1D6E3A5E5A2F8C3244741075575C1B4F450781D931822A7D55000E2782F163540; ceshi3.com=000; __jdv=122270672|kong|t_1000560814_|tuiguang|86b1bedafd6a47e0a0c1cc90c70e9f54|1531842958025; cn=1; shshshfpb=1e9b881f961844f95a23e8213516156734698719808227b9b5b3ef8ae0; shshshfp=f7ae8cec4b36e9061f4c4133586bb6ef; shshshfpa=80d00a5c-5e88-b6bb-b07b-0cecb199d783-1531842996; 3AB9D23F7A4B3C9B=NMI64G6NR6Q3T22OVMJMKLJSV6Z62LKYEU2L6XNUMP7DKC7XVYCODQYK2LCOWVCBSOSWPIWTYIEBWS7PZB23VX2QUQ; shshshsID=a31a14d6662738747f1b547f61c3186d_2_1531843004282; __tak=f67505df19a56f8b8ec9b68e0d549b09e78f0aa4405c1ca253045aed34e90632f14bf1d1beb5bfb2265d65f5b422ceb6d368ce497ca1256957a7ee9e05c0d9169e0435e25369c09057f3cbc5b89aa046; JSESSIONID=EEE5367D43F7B6D909DDCE35820ED3CD.s1; __jdb=122270672.10.767847430|14.1531842890";
+        String startDateTime = "2018-07-18 00:00:00";
 
         // 7399696
         // 7920196
@@ -46,22 +46,9 @@ public class JD {
         String roleId199 = "12220711";
         coupon_blank(startDateTime, cookie, key199, roleId199);*/
 
-        submit(startDateTime, cookie, 1500);
+//        submit(startDateTime, cookie, 10);
 
 
-
-//        long jdServer = serverDate();
-//        long targetTime = DateUtils.parseDate(startDateTime, "yyyy-MM-dd HH:mm:ss").getTime();
-//        long t = targetTime - jdServer - 5000;
-//        if (t > 0) {
-//            Thread.sleep(t);
-//        }
-//        while (jdServer < targetTime) {
-//            String url = userRoutingUrl("7489068", "");
-//            if (StringUtils.isNotBlank(url)) {
-//                kill(url, cookie, "7489068");
-//            }
-//        }
 //        userRoutingUrl("7920196", "");
 
         /*while (jdServer < targetTime) {
@@ -178,42 +165,6 @@ public class JD {
         }
     }
 
-    private static void kill(String divideUrl, String cookie, String skuId) throws Exception {
-//        int originPrice = 3000;
-//        String cookie = "__jdv=122270672|direct|-|none|-|1510393111166; thor=44C4B09E5A8F3FBC9E1F2D8EDE9656FAD0C80C1A516E18AF7D43A6770C448AC7C6FACB928D60386D606C60AE0198C4B7E47D93A4F30B0B1475E51795228512392ECAC1DFA4C40E46A6B101AA223E56C647CF4FAE05F2E1D1BC0352E4FF5117B196317B5623B4932DF4D19C02F139B4ABD1FFB8590C5351B68036C67ED926041C15FD85D87C0F327B6BD197AFE85FF642CD94380103DA122F96D9C83D2045349C; unick=%E8%B0%88%E7%8E%89%E6%A2%85; __jda=122270672.1510393111165833354326.1510393111.1510393111.1510393111.1; __jdb=122270672.5.1510393111165833354326|1.1510393111; __jdc=122270672; __jdu=1510393111165833354326";
-//        String skuId = "2299918";
-//        int originPrice = 1000;
-        try {
-//            checkPrice(skuId, originPrice); //
-//            String divideUrl = userRoutingUrl(skuId, cookie);
-            if (StringUtils.isNotBlank(divideUrl)) {
-                Header[] headers = new Header[]{
-                        new BasicHeader("Host", "divide.jd.com"),
-                        new BasicHeader("Connection", "keep-alive"),
-                        new BasicHeader("Upgrade-Insecure-Requests", "1"),
-                        new BasicHeader("User-Agent", "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36"),
-                        new BasicHeader("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8"),
-                        new BasicHeader("Accept-Encoding", "gzip, deflate, br"),
-                        new BasicHeader("Accept-Language", "zh-CN,zh;q=0.9"),
-                        new BasicHeader("Cookie", cookie)
-                };
-                HttpClientUtils.get(divideUrl, headers, cookieMap(cookie), skuId);
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-//            submit(targetDate, cookie, originPrice);
-        }
-    }
-
-    private static Map<String, String> cookieMap(String cookie) {
-        Map<String, String> cookieMap = new HashMap<String, String>();
-        String[] cookies = cookie.split("; ");
-        for (String c : cookies) {
-            cookieMap.put(c.substring(0, c.indexOf("=")), c.substring(c.indexOf("=") + 1));
-        }
-        return cookieMap;
-    }
-
     /**
      * 检测价格是否变化
      * @param skuId
@@ -230,30 +181,6 @@ public class JD {
             JSONObject jsonObject = jsonArray.getJSONObject(0);
             price = jsonObject.getFloat("p");
         }
-    }
-
-    private static String userRoutingUrl(String skuId, String cookie) throws Exception {
-        try {
-            String url = "https://itemko.jd.com/itemShowBtn?callback=jQuery" + randomNum(7) + "&skuId=" + skuId + "&from=pc&_=" + System.currentTimeMillis();
-            Header[] headers = new Header[]{
-                    new BasicHeader("Host", "itemko.jd.com"),
-                    new BasicHeader("Connection", "keep-alive"),
-                    new BasicHeader("Upgrade-Insecure-Requests", "1"),
-                    new BasicHeader("User-Agent", "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"),
-                    new BasicHeader("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8"),
-                    new BasicHeader("Referer", "https://item.jd.com/" + skuId + ".html"),
-                    new BasicHeader("Accept-Encoding", "gzip, deflate, br"),
-                    new BasicHeader("Accept-Language", "zh-CN,zh;q=0.8"),
-                    new BasicHeader("Cookie", cookie)
-            };
-            String jsonStr = HttpClientUtils.getResponseString(url, headers).substring(14).split("\\)")[0];
-            System.out.println(jsonStr);
-            JSONObject jsonObject = JSONObject.parseObject(jsonStr);
-            return jsonObject.getString("url");
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return null;
     }
 
     /**

@@ -3,6 +3,7 @@ package com.fly.httptest.utils;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import org.apache.commons.collections.CollectionUtils;
+import org.apache.commons.collections.MapUtils;
 import org.apache.commons.lang3.ArrayUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.http.Header;
@@ -254,6 +255,76 @@ public class HttpClientUtils {
             return getResponse(url, headers);
         }
     }
+
+    public static String redirectReq(String url, Header[] headers, String skuId, Map<String, String> cookieMap) {
+        try {
+            if (!url.startsWith("http")) {
+                url = "https:" + url;
+            }
+            System.out.println("url:------------------------------------------> " + url);
+            HttpGet httpGet = new HttpGet(url);
+            if (ArrayUtils.isNotEmpty(headers)) {
+                httpGet.setHeaders(headers);
+            }
+            RequestConfig defaultRequestConfig = RequestConfig.custom()
+                    .setSocketTimeout(5000)
+                    .setConnectTimeout(5000)
+                    .setConnectionRequestTimeout(5000)
+                    .setStaleConnectionCheckEnabled(true)
+                    .setRedirectsEnabled(false)
+                    .build();
+            CloseableHttpClient client = HttpClients.custom().setDefaultRequestConfig(defaultRequestConfig).build();
+
+            CloseableHttpResponse response = client.execute(httpGet);
+
+            Header[] cookies = response.getHeaders("Set-Cookie");
+            for (Header cookie : cookies) {
+                String c = cookie.getValue();
+                String name = c.substring(0, c.indexOf("="));
+                String value = c.substring(c.indexOf("=") + 1, c.indexOf(";"));
+                cookieMap.put(name, value);
+            }
+
+            Header responseHeader = response.getFirstHeader("Location");
+            String directUrl = responseHeader.getValue();
+            System.out.println("Location:------------------------------------------> " + directUrl);
+
+            return directUrl;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    public static void getOrderPage(String url, Header[] headers, String skuId, Map<String, String> cookieMap) throws Exception {
+        if (!url.startsWith("http")) {
+            url = "https:" + url;
+        }
+        System.out.println("url:------------------------------------------> " + url);
+        HttpGet httpGet = new HttpGet(url);
+        if (ArrayUtils.isNotEmpty(headers)) {
+            httpGet.setHeaders(headers);
+        }
+        RequestConfig defaultRequestConfig = RequestConfig.custom()
+                .setSocketTimeout(5000)
+                .setConnectTimeout(5000)
+                .setConnectionRequestTimeout(5000)
+                .setStaleConnectionCheckEnabled(true)
+                .setRedirectsEnabled(false)
+                .build();
+        CloseableHttpClient client = HttpClients.custom().setDefaultRequestConfig(defaultRequestConfig).build();
+
+        CloseableHttpResponse response = client.execute(httpGet);
+
+        Header[] cookies = response.getHeaders("Set-Cookie");
+        for (Header cookie : cookies) {
+            String c = cookie.getValue();
+            String name = c.substring(0, c.indexOf("="));
+            String value = c.substring(c.indexOf("=") + 1, c.indexOf(";"));
+            cookieMap.put(name, value);
+        }
+    }
+
 
 
     public static void get(String url, Header[] headers, Map<String, String> cookieMap, String skuId) throws Exception {
