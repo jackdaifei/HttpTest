@@ -2,12 +2,19 @@ package com.jd;
 
 import com.alibaba.fastjson.JSONObject;
 import com.fly.httptest.utils.HttpClientUtils;
+import org.apache.commons.lang3.ArrayUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.time.DateUtils;
 import org.apache.http.Header;
 import org.apache.http.NameValuePair;
+import org.apache.http.client.config.RequestConfig;
+import org.apache.http.client.methods.CloseableHttpResponse;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClients;
 import org.apache.http.message.BasicHeader;
 import org.apache.http.message.BasicNameValuePair;
+import org.apache.http.util.EntityUtils;
 
 import java.util.*;
 
@@ -15,9 +22,9 @@ public class Kill {
 
     public static void main(String[] args) throws Exception {
 
-        String startDateTime = "2018-07-20 10:00:00";
-        String cookie = "";
-        String skuId = "";
+        String startDateTime = "2018-09-04 10:00:00";
+        String cookie = "user-key=30298b3f-d000-4a7c-a1b4-09e261f48dc2; shshshfpb=1d6ded839132a4485b1672fb8b5159e7788d10a43dcd041475b68f9e4e; shshshfpa=f75a2ee4-0b68-6ef2-f501-87785191f140-1535938301; pinId=6O_FVgd3tEus06L-EIuMwg; pin=jackdaifei_m; unick=jackdaifei; _tp=CFyqN214%2FuJT47OHX%2BUStg%3D%3D; _pst=jackdaifei_m; PCSYCityID=1930; unpl=V2_ZzNsbUsASxwiCkFXZx1ZAGUfF18XVF8cdwASSHwaDgxnC0JdFV8XR2lJKFRzEVQZJkB8XUFRSwklTShUehlfA2MzEVxCXl8UfRRHVmoZXA5kCxlcS2dDJXUJR1V6GloGYQoibXJXQSV0OEZQeR1UB24BE11KVkAWdAtFVXwRWAJuM0FcElRDRXNfWlcsEAkZYgtCWl4EEBMlFEVcexBeAWJQGw5FAnMTcw%3D%3D; __jdv=122270672|kong|t_1000027278_101275|zssc|8f98f362-5443-43d2-839e-62c819a1f9ec-p_1999-pr_1279-at_101275|1535945344036; areaId=22; ipLoc-djd=22-1930-50949-52153; __jda=122270672.15359383019022022069568.1535938302.1535974019.1536025146.7; __jdc=122270672; TrackID=111zajAvLNUDBxbd_a1-vkc6E2zO80wmHCFE5Hd7NaivmGtn-q1yfSzd4lq3I25Khv0e7nPoQt14tPtFDo4T2JdBoh16vyL4VZJHAuEUwkg4; ceshi3.com=000; cn=1; sid=7e7d6fb8884a353f14afabc162eda6a5; wxa_level=1; retina=0; cid=9; webp=1; mba_muid=15359383019022022069568; sc_width=1920; wq_area=22_1930_50947%7C2; visitkey=36731700017751171; wq_logid=1536025794.1576698401; __wga=1536025794985.1536025729747.1536025729747.1536025729747.2.1; PPRD_P=UUID.15359383019022022069568-LOGID.1536025794997.1132255315; __jdu=15359383019022022069568; thor=DE63EFE3A78BA6D0D0C3C0EDEE88CA24D9EDD0E84D145C2C49987725A789CDAA5234EE0F1B694A51B2AA202A41D63AE75217DA99E8519EAF0A22AECBBC6883899FF2827099904374D1BFA88AA110161614366233D2D212F4956E431B744786D55464C43F0AACB716B7A9F95EB98D87770FA266FC51840F0BBFEDD26F9DA36E26DC8E75F7869F5DA1565868BA47C2FDF4; 3AB9D23F7A4B3C9B=YQBDCCKZVO75MAH4JTMLLSW6G3MELEVPG7GBGZ5VA5XMI6GI6XBW6OTF24GIOXCHQ7KGWHGE4QKWVKCI3N6PXCCUHM; shshshfp=91de4d983743e182d3e08e1e761bacd2; __jdb=122270672.32.15359383019022022069568|7.1536025146; mba_sid=15360257284708385005147637548.4; shshshsID=8f763255bb89d6a61d23d19ee488f4f7_22_1536025831861";
+        String skuId = "5589915";
 
         long jdServer = serverDate();
         long targetTime = DateUtils.parseDate(startDateTime, "yyyy-MM-dd HH:mm:ss").getTime();
@@ -27,7 +34,11 @@ public class Kill {
         }
         // 提前5秒获取抢购链接
         while (true) {
-            String killLink = getKillLink(skuId);
+            // todo：获取链接，种cookie
+            Map<String, Object> a = getKillLink(skuId, cookie);
+            String killLink = a.get("url").toString();
+            Map<String, String> cookieMap = (Map<String, String>) a.get("cookieMap");
+            cookie = cookieString(cookieMap);
             if (StringUtils.isNotBlank(killLink)) { // 获取到抢购链接进行第一次条件
                 user_routing(killLink, cookie, skuId);
                 break;
@@ -113,7 +124,7 @@ public class Kill {
     }
 
 
-    private static void submitOrder(String skuId, String referer, String cookie) throws Exception {
+    private static String submitOrder(String skuId, String referer, String cookie) throws Exception {
         String submitUrl = "https://marathon.jd.com/seckill/submitOrder.action?skuId=" + skuId + "&vid=";
         Header[] submitHeaders = new Header[]{
                 new BasicHeader("Host", "marathon.jd.com"),
@@ -160,8 +171,10 @@ public class Kill {
         paramList.add(new BasicNameValuePair("yuyue", ""));
 
         System.out.println("----------------------------------------submit response -----------------------------------------");
-        System.out.println(HttpClientUtils.postResponseString(submitUrl, paramList, submitHeaders));
+        String content = HttpClientUtils.postResponseString(submitUrl, paramList, submitHeaders);
+        System.out.println(content);
         System.out.println("---------------------------submit success !!! ----------------------------------");
+        return content;
     }
 
     private static Map<String, String> cookieMap(String cookie) {
@@ -201,23 +214,58 @@ public class Kill {
         return jsonObject.getLongValue("serverTime");
     }
 
-    private static String getKillLink(String skuId) throws Exception {
+    private static Map<String, Object> getKillLink(String skuId, String cookieStr) throws Exception {
+        Map<String, Object> map = new HashMap<>();
         try {
-            String url = "https://itemko.jd.com/itemShowBtn?callback=jQuery" + randomNum(7) + "&skuId=" + skuId + "&from=pc&_=" + System.currentTimeMillis();
+            // https://itemko.jd.com/itemShowBtn?skuId=5589915&callback=jsonp1536027135356&_=1536027142815
+            String url = "https://itemko.jd.com/itemShowBtn?skuId=" + skuId + "&callback=jsonp" + System.currentTimeMillis() + "&_=" + System.currentTimeMillis();
             Header[] headers = new Header[]{
-                    new BasicHeader("Host", "itemko.jd.com"),
-                    new BasicHeader("Connection", "keep-alive"),
-                    new BasicHeader("Upgrade-Insecure-Requests", "1"),
-                    new BasicHeader("User-Agent", "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"),
-                    new BasicHeader("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8"),
-                    new BasicHeader("Referer", "https://item.jd.com/" + skuId + ".html"),
+                    new BasicHeader("Accept", "*/*"),
                     new BasicHeader("Accept-Encoding", "gzip, deflate, br"),
-                    new BasicHeader("Accept-Language", "zh-CN,zh;q=0.8")
+                    new BasicHeader("Accept-Language", "zh-CN,zh;q=0.9"),
+                    new BasicHeader("Cache-Control", "no-cache"),
+                    new BasicHeader("Connection", "keep-alive"),
+                    new BasicHeader("Cookie", cookieStr),
+                    new BasicHeader("Host", "itemko.jd.com"),
+                    new BasicHeader("Pragma", "no-cache"),
+                    new BasicHeader("Referer", "https://item.jd.com/" + skuId + ".html"),
+                    new BasicHeader("User-Agent", "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36")
             };
-            String jsonStr = HttpClientUtils.getResponseString(url, headers).substring(14).split("\\)")[0];
-            System.out.println(jsonStr);
+
+            HttpGet httpGet = new HttpGet(url);
+            if (ArrayUtils.isNotEmpty(headers)) {
+                httpGet.setHeaders(headers);
+            }
+            RequestConfig defaultRequestConfig = RequestConfig.custom()
+                    .setSocketTimeout(5000)
+                    .setConnectTimeout(5000)
+                    .setConnectionRequestTimeout(5000)
+                    .setStaleConnectionCheckEnabled(true)
+                    .setRedirectsEnabled(false)
+                    .build();
+            CloseableHttpClient client = HttpClients.custom().setDefaultRequestConfig(defaultRequestConfig).build();
+
+            CloseableHttpResponse response = client.execute(httpGet);
+
+            Header[] cookies = response.getHeaders("Set-Cookie");
+            Map<String, String> cookieMap = cookieMap(cookieStr);
+            for (Header cookie : cookies) {
+                String c = cookie.getValue();
+                String name = c.substring(0, c.indexOf("="));
+                String value = c.substring(c.indexOf("=") + 1, c.indexOf(";"));
+                cookieMap.put(name, value);
+            }
+
+            String responseStr = EntityUtils.toString(response.getEntity());
+            response.close();
+            System.out.println(responseStr);
+            String jsonStr = responseStr.substring(19).split("\\)")[0];
             JSONObject jsonObject = JSONObject.parseObject(jsonStr);
-            return jsonObject.getString("url");
+
+            map.put("cookieMap", cookieMap);
+            map.put("url", jsonObject.getString("url"));
+            return map;
+
         } catch (Exception e) {
             e.printStackTrace();
         }

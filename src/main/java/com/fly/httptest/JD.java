@@ -26,62 +26,14 @@ import java.util.*;
 public class JD {
 
     public static void main(String[] args) throws Exception {
-        String cookie = "__jdu=767847430; user-key=0b74d3bf-e84b-4e28-920a-21356ddd21e6; pinId=6O_FVgd3tEus06L-EIuMwg; pin=jackdaifei_m; unick=jackdaifei; _tp=CFyqN214%2FuJT47OHX%2BUStg%3D%3D; _pst=jackdaifei_m; mt_xid=V2_52007VwUVVFRdVF8dSCkPUWAAQABUWk5SGUpLQABmBhBODVsBUgNNTFUNNQVGUFVfU1kvShhcDHsCFE5dXENaHUIZXg5kASJSbVhiWR1IH1kGYgUTYl9cU18%3D; ipLoc-djd=22-1930-50949-52153.137915318; ipLocation=%u56db%u5ddd; PCSYCityID=1930; unpl=V2_ZzNtbUtQEBUmXBMELExbVWIFRlwSVhEVJ1pOVSkfXVFvVBZYclRCFXwUR1JnGVoUZAEZWUdcQxVFCEZkexhdBGMEE1RCUnMldDhFVEsRbANgBRtYRFJBFEU4QWRLQgRVOFVABAYHHBV3C3ZVSxhsBVdIfFwPUUQTfA1AUXkYbARXAA%3d%3d; __jda=122270672.767847430.1530842142.1531837362.1531842890.14; __jdc=122270672; TrackID=1zgVIqhEw6TaO_aMrfhvUZK4vGAOet93DghIqTJiJpUGrQ57AeFJKXtWYBd9OkyCMFZD359XExS_cj34lgVNGjg; thor=D2031FF812A1C541696B26CF7F98D4D7577C0CA4DF9449723F6F6132526F8882A85AED053EA7B975F52FFD23EBC32E44311C55C79D99F5E7BA2B987EB969B997EA8C8BCC646CC2D247A7D8505AD6EA4FECB366C129F1C379AD96FA73E38B0A330776CBD06CB87D025D8F70B57CEBB3A1D6E3A5E5A2F8C3244741075575C1B4F450781D931822A7D55000E2782F163540; ceshi3.com=000; __jdv=122270672|kong|t_1000560814_|tuiguang|86b1bedafd6a47e0a0c1cc90c70e9f54|1531842958025; cn=1; shshshfpb=1e9b881f961844f95a23e8213516156734698719808227b9b5b3ef8ae0; shshshfp=f7ae8cec4b36e9061f4c4133586bb6ef; shshshfpa=80d00a5c-5e88-b6bb-b07b-0cecb199d783-1531842996; 3AB9D23F7A4B3C9B=NMI64G6NR6Q3T22OVMJMKLJSV6Z62LKYEU2L6XNUMP7DKC7XVYCODQYK2LCOWVCBSOSWPIWTYIEBWS7PZB23VX2QUQ; shshshsID=a31a14d6662738747f1b547f61c3186d_2_1531843004282; __tak=f67505df19a56f8b8ec9b68e0d549b09e78f0aa4405c1ca253045aed34e90632f14bf1d1beb5bfb2265d65f5b422ceb6d368ce497ca1256957a7ee9e05c0d9169e0435e25369c09057f3cbc5b89aa046; JSESSIONID=EEE5367D43F7B6D909DDCE35820ED3CD.s1; __jdb=122270672.10.767847430|14.1531842890";
-        String startDateTime = "2018-07-18 00:00:00";
+        String cookie = "user-key=30298b3f-d000-4a7c-a1b4-09e261f48dc2; shshshfpb=1d6ded839132a4485b1672fb8b5159e7788d10a43dcd041475b68f9e4e; shshshfpa=f75a2ee4-0b68-6ef2-f501-87785191f140-1535938301; pinId=6O_FVgd3tEus06L-EIuMwg; pin=jackdaifei_m; unick=jackdaifei; _tp=CFyqN214%2FuJT47OHX%2BUStg%3D%3D; _pst=jackdaifei_m; PCSYCityID=1930; unpl=V2_ZzNsbUsASxwiCkFXZx1ZAGUfF18XVF8cdwASSHwaDgxnC0JdFV8XR2lJKFRzEVQZJkB8XUFRSwklTShUehlfA2MzEVxCXl8UfRRHVmoZXA5kCxlcS2dDJXUJR1V6GloGYQoibXJXQSV0OEZQeR1UB24BE11KVkAWdAtFVXwRWAJuM0FcElRDRXNfWlcsEAkZYgtCWl4EEBMlFEVcexBeAWJQGw5FAnMTcw%3D%3D; __jdv=122270672|kong|t_1000027278_101275|zssc|8f98f362-5443-43d2-839e-62c819a1f9ec-p_1999-pr_1279-at_101275|1535945344036; areaId=22; ipLoc-djd=22-1930-50949-52153; __jda=122270672.15359383019022022069568.1535938302.1535974019.1536025146.7; __jdc=122270672; TrackID=111zajAvLNUDBxbd_a1-vkc6E2zO80wmHCFE5Hd7NaivmGtn-q1yfSzd4lq3I25Khv0e7nPoQt14tPtFDo4T2JdBoh16vyL4VZJHAuEUwkg4; ceshi3.com=000; cn=1; sid=7e7d6fb8884a353f14afabc162eda6a5; wxa_level=1; retina=0; cid=9; webp=1; mba_muid=15359383019022022069568; sc_width=1920; wq_area=22_1930_50947%7C2; visitkey=36731700017751171; wq_logid=1536025794.1576698401; __wga=1536025794985.1536025729747.1536025729747.1536025729747.2.1; PPRD_P=UUID.15359383019022022069568-LOGID.1536025794997.1132255315; __jdu=15359383019022022069568; thor=DE63EFE3A78BA6D0D0C3C0EDEE88CA24D9EDD0E84D145C2C49987725A789CDAA5234EE0F1B694A51B2AA202A41D63AE75217DA99E8519EAF0A22AECBBC6883899FF2827099904374D1BFA88AA110161614366233D2D212F4956E431B744786D55464C43F0AACB716B7A9F95EB98D87770FA266FC51840F0BBFEDD26F9DA36E26DC8E75F7869F5DA1565868BA47C2FDF4; 3AB9D23F7A4B3C9B=YQBDCCKZVO75MAH4JTMLLSW6G3MELEVPG7GBGZ5VA5XMI6GI6XBW6OTF24GIOXCHQ7KGWHGE4QKWVKCI3N6PXCCUHM; shshshfp=91de4d983743e182d3e08e1e761bacd2; __jdb=122270672.32.15359383019022022069568|7.1536025146; mba_sid=15360257284708385005147637548.4; shshshsID=8f763255bb89d6a61d23d19ee488f4f7_22_1536025831861";
+        String startDateTime = "2018-09-04 10:00:00";
 
-        // 7399696
-        // 7920196
+        String hufeikey = "6fe25cd1b00a41eeb49a2569aa6baa7f";
+        String huafeiroleId = "13949582";
+        ninty_50_huafei(startDateTime, cookie, hufeikey, huafeiroleId);
 
-//        couponA(startDateTime, cookie, "c8c26b4fe878917db55a3e4e8f0e173c6eb8bc10743c0dcceb4ac00aaf12c75949617ffa2d556f820581efceab775d33");
-
-//        String hunshaRoleId = "86024850";
-//        a53af908f4fe461b98a97d2d0dac2f97
-
-
-//        String hufeikey = "d88304accdc44958b2eb761799fd21de";
-//        String huafeiroleId = "12816306";
-//        ninty_50_huafei(startDateTime, cookie, hufeikey, huafeiroleId);
-
-       /* String key199 = "41b6e36e08f641a49ee8bff28e327216";
-        String roleId199 = "12220711";
-        coupon_blank(startDateTime, cookie, key199, roleId199);*/
-
-//        submit(startDateTime, cookie, 10);
-
-
-//        userRoutingUrl("7920196", "");
-
-        /*while (jdServer < targetTime) {
-            String url = userRoutingUrl("4993773", "");
-            if (StringUtils.isNotBlank(url)) {
-                kill(url, cookie, "4993773");
-            }
-        }*/
-
-        /*while (jdServer < targetTime) {
-            String url = userRoutingUrl("4993751", "");
-            if (StringUtils.isNotBlank(url)) {
-                kill(url, cookie, "4993751");
-            }
-        }*/
-
-
-        // 80-79
-//        coupon_blank("2017-12-29 14:00:00", cookie, "e053941704af4cd9806d3647f9856301", "9742498");
-        // 70-69
-//        coupon_blank("2017-12-29 14:00:00", cookie, "4b7a2ad375884c8b9fd23d987b808423", "9742480");
-        // 60-59
-//        coupon_blank("2017-12-28 14:00:00", cookie, "04884cbb6dbe4a91a24a3cc264785bf0", "9742460");
-        // 50-49
-//        coupon_blank("2017-12-28 14:00:00", cookie, "9314dac6cbac4242b76e37c9046a51cc", "9742442");
-
-
-//        ninty_50_huafeiA("2018-01-08 10:00:00", cookie, "eac9f8e4a8fa418abec03b544cab5630", "9899640");
-//        ninty_50_huafei("2017-12-29 14:00:00", cookie, "e053941704af4cd9806d3647f9856301", "9742498");
-//        ninty_50_huafei("2017-12-29 14:00:00", cookie, "4b7a2ad375884c8b9fd23d987b808423", "9742480");
-        //        coupon_blank("2017-12-29 10:00:00", cookie, "e053941704af4cd9806d3647f9856301", "9742498");
-
-
+//        submit(startDateTime, cookie, 2500);
     }
 
     private static void couponA(String startDateTime, String cookie, String key) throws Exception {
@@ -238,17 +190,21 @@ public class JD {
 
             String submitUrl = "https://trade.jd.com/shopping/order/submitOrder.action";
             Header[] submitHeaders = new Header[]{
-                    new BasicHeader("Host", "trade.jd.com"),
-                    new BasicHeader("Connection", "keep-alive"),
-                    new BasicHeader("Accept", "application/json, text/javascript, */*; q=0.01"),
-                    new BasicHeader("Origin", "https://trade.jd.com"),
-                    new BasicHeader("X-Requested-With", "XMLHttpRequest"),
-                    new BasicHeader("User-Agent", "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"),
-                    new BasicHeader("Content-Type", "application/x-www-form-urlencoded"),
-                    new BasicHeader("Referer", tradeUrl),
-                    new BasicHeader("Accept-Encoding", "gzip, deflate, br"),
-                    new BasicHeader("Accept-Language", "zh-CN,zh;q=0.8"),
-                    new BasicHeader("Cookie", cookie)
+                    new BasicHeader(":authority", "trade.jd.com"),
+                    new BasicHeader(":method", "POST"),
+                    new BasicHeader(":path", "/shopping/order/submitOrder.action"),
+                    new BasicHeader(":scheme", "https"),
+                    new BasicHeader("accept", "application/json, text/javascript, */*; q=0.01"),
+                    new BasicHeader("accept-encoding", "gzip, deflate, br"),
+                    new BasicHeader("accept-language", "zh-CN,zh;q=0.9"),
+                    new BasicHeader("cache-control", "no-cache"),
+                    new BasicHeader("content-type", "application/x-www-form-urlencoded"),
+                    new BasicHeader("cookie", cookie),
+                    new BasicHeader("origin", "https://trade.jd.com"),
+                    new BasicHeader("pragma", "no-cache"),
+                    new BasicHeader("referer", tradeUrl),
+                    new BasicHeader("user-agent", "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36"),
+                    new BasicHeader("x-requested-with", "XMLHttpRequest")
             };
 
             List<NameValuePair> paramList = new ArrayList<NameValuePair>();
@@ -264,17 +220,17 @@ public class JD {
 //            paramList.add(new BasicNameValuePair("riskControl", riskControl));
 
             paramList.add(new BasicNameValuePair("overseaPurchaseCookies", ""));
-            paramList.add(new BasicNameValuePair("submitOrderParam.payPassword", "u31u35u39u32u38u30u37u33u35u35u39u66u65u69"));
-            paramList.add(new BasicNameValuePair("vendorRemarks", "[]"));
+//            paramList.add(new BasicNameValuePair("submitOrderParam.payPassword", "u31u35u39u32u38u30u37u33u35u35u39u66u65u69"));
+            paramList.add(new BasicNameValuePair("vendorRemarks", "[{\"venderId\":\"65501\",\"remark\":\"\"}]"));
+//            paramList.add(new BasicNameValuePair("submitOrderParam.sopNotPutInvoice", "true"));
             paramList.add(new BasicNameValuePair("submitOrderParam.sopNotPutInvoice", "false"));
-//            paramList.add(new BasicNameValuePair("submitOrderParam.trackID", trackIDTemp.substring(0, trackIDTemp.indexOf(";"))));
             paramList.add(new BasicNameValuePair("submitOrderParam.trackID", "TestTrackId"));
             paramList.add(new BasicNameValuePair("submitOrderParam.ignorePriceChange", "0"));
             paramList.add(new BasicNameValuePair("submitOrderParam.btSupport", "0"));
             paramList.add(new BasicNameValuePair("riskControl", riskControl));
             paramList.add(new BasicNameValuePair("submitOrderParam.isBestCoupon", "1"));
             paramList.add(new BasicNameValuePair("submitOrderParam.jxj", "1"));
-            paramList.add(new BasicNameValuePair("submitOrderParam.trackId", "646176eabee26931003f2c6e0a9d6346"));
+            paramList.add(new BasicNameValuePair("submitOrderParam.trackId", "f8591b598dcffcb9feec6b17429a72b7"));
 
             JSONObject result = HttpClientUtils.postResponse(submitUrl, paramList, submitHeaders);
             if (result.toString().contains("商品无货")) {
@@ -293,14 +249,15 @@ public class JD {
      * @throws Exception
      */
     private static void xiaojinku(String target, String cookie) throws Exception {
-        final String url = "https://api.m.jd.com/client.action?functionId=newBabelAwardCollection&body=%7B%22activityId%22%3A%22n598yVebH3M8ERZSypuHvEsx8qK%22%2C%22from%22%3A%22H5node%22%2C%22scene%22%3A%223%22%2C%22actKey%22%3A%222017103019575999801%22%2C%22mitemAddrId%22%3A%22%22%2C%22geo%22%3A%7B%22lng%22%3A%22%22%2C%22lat%22%3A%22%22%7D%7D&client=wh5&clientVersion=1.0.0&sid=b387295f9935254cda9a1305aa2ff36f&uuid=15018621153461879751927&area=&_=" + System.currentTimeMillis() + "&callback=jsonp" + randomNum(1);
+        final String url = "https://api.m.jd.com/client.action?functionId=newBabelAwardCollection&body=%7B%22activityId%22%3A%222YTG2J9YkTkegLWby4aqhk6aNLsw%22%2C%22from%22%3A%22H5node%22%2C%22scene%22%3A%221%22%2C%22args%22%3A%22key%3D926005cd20b2413ca1bf8235f8574a25%2CroleId%3D13157311%22%2C%22platform%22%3A%223%22%2C%22orgType%22%3A%222%22%2C%22openId%22%3A%22-1%22%2C%22pageClickKey%22%3A%22Babel_Coupon%22%2C%22eid%22%3A%22eidA2B700114ODY4NjAyMDQ3MTI1NTE3MA%3D%3D0I7u8gZRJfxuaDVhagH3uQjoCRqDZgV4oZflP8e%2F6uphn9NxD4vvpXaqrAFb0%2BOog6wilp42RLPGbnAB%22%2C%22fp%22%3A%22-1%22%2C%22shshshfp%22%3A%220e1c028952a4ee3b2a0d8dd81ef769b8%22%2C%22shshshfpa%22%3A%22a4cdbb67-7cde-5e8b-da1b-4b802ee73fb9-1531959567%22%2C%22shshshfpb%22%3A%220dbc96aa3a4851841e901aa877fba4b53bcf5b67d1f3f40fa5b4fd910a%22%2C%22childActivityUrl%22%3A%22https%253A%252F%252Fpro.m.jd.com%252Fmall%252Factive%252F2YTG2J9YkTkegLWby4aqhk6aNLsw%252Findex.html%253FinnerIndex%253D1%2526lng%253D104.095838%2526lat%253D30.531884%2526un_area%253D22_1930_49324_49396%2526sid%253D3f8fdf3cc3d0246fc1f78576ea2a474w%22%2C%22mitemAddrId%22%3A%22%22%2C%22geo%22%3A%7B%22lng%22%3A%22104.095838%22%2C%22lat%22%3A%2230.531884%22%7D%2C%22addressId%22%3A%220%22%2C%22posLng%22%3A%22%22%2C%22posLat%22%3A%22%22%2C%22focus%22%3A%22%22%2C%22innerAnchor%22%3A%22%22%2C%22siteClient%22%3A%22android%22%2C%22siteClientVersion%22%3A%227.0.12%22%7D&client=wh5&clientVersion=1.0.0&sid=3f8fdf3cc3d0246fc1f78576ea2a474w&uuid=868602047125517-20f77c733fa1&area=22_1930_49324_49396" + System.currentTimeMillis() + "&callback=jsonp" + randomNum(1);
         final Header[] headers = new Header[] {
                 new BasicHeader("Host", "api.m.jd.com"),
                 new BasicHeader("Connection", "keep-alive"),
-                new BasicHeader("User-Agent", "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Mobile Safari/537.36"),
+//                new BasicHeader("User-Agent", "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Mobile Safari/537.36"),
+                new BasicHeader("User-Agent", "jdapp;android;7.0.12;8.1.0;868602047125517-20f77c733fa1;network/wifi;model/vivo Z1;addressid/0;osp/android;apv/7.0.12;osv/8.1.0;uid/868602047125517-20f77c733fa1;pv/72.38;psn/868602047125517-20f77c733fa1|122;psq/1;ref/com.jingdong.app.mall.home.JDHomeFragment;pap/JA2015_311210|7.0.12|ANDROID 8.1.0;usc/kong;ucp/t_1000170135;umd/tuiguang;utr/notset;adk/;ads/;jdv/0|kong|t_1000170135|tuiguang|notset|4006183638000|1532325504;partner/vivo;apprpd/Home_Main;Mozilla/5.0 (Linux; Android 8.1; vivo Z1 Build/OPM1.171019.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044203 Mobile Safari/537.36"),
                 new BasicHeader("Accept", "*/*"),
-                new BasicHeader("Referer", "https://pro.m.jd.com/mall/active/n598yVebH3M8ERZSypuHvEsx8qK/index.html"),
-                new BasicHeader("Accept-Encoding", "gzip, deflate, br"),
+                new BasicHeader("Referer", "https://pro.m.jd.com/mall/active/2YTG2J9YkTkegLWby4aqhk6aNLsw/index.html?innerIndex=1&lng=104.095838&lat=30.531884&un_area=22_1930_49324_49396&sid=3f8fdf3cc3d0246fc1f78576ea2a474w"),
+                new BasicHeader("Accept-Encoding", "gzip, deflate"),
                 new BasicHeader("Accept-Language", "zh-CN,zh;q=0.8"),
                 new BasicHeader("Cookie", cookie)
         };
@@ -563,7 +520,7 @@ public class JD {
         final Header[] headers = new Header[]{
                 new BasicHeader("Host", "act-jshop.jd.com"),
                 new BasicHeader("Accept", "*/*"),
-                new BasicHeader("Referer", "https://sale.jd.com/act/Giw7U0QEIV.html?cpdad=1DLSUE"),
+                new BasicHeader("Referer", "https://sale.jd.com/act/T38x1wPim04.html"),
                 new BasicHeader("Connection", "keep-alive"),
                 new BasicHeader("User-Agent", "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36"),
                 new BasicHeader("Accept-Encoding", "gzip, deflate, br"),
@@ -599,10 +556,12 @@ public class JD {
         }
 
 
-        int i = 0;
+        int i = 2000;
         long maxTime = targetDate.getTime() + 5000;
-        while (true) {
-            final long sd = serverDate();
+        final long sd = serverDate();
+        int tar = 0;
+        while (tar < 30) {
+            tar++;
             try {
                 final int index = i;
                 Thread thread = new Thread() {
@@ -610,16 +569,18 @@ public class JD {
                     public void run() {
                         try {
                             long sleepTime = 0;
-                            long lTime = targetDate.getTime() - sd; // 开始时间和jd系统时间差值
+                            long lTime = targetDate.getTime() - sd - index; // 开始时间和jd系统时间差值
                             if (lTime > 0 && lTime > 500) {
-                                sleepTime = lTime - 500;
+                                sleepTime = lTime - 280;
                                 if (sleepTime < 0) {
                                     sleepTime = 0;
                                 }
                                 Thread.sleep(sleepTime);
                             }
 //                            String url = "https://act-jshop.jd.com/couponSend.html?callback=jQuery" + randomNum(7) + "&roleId=" + roleId + "&key=" + key + "&_=" + sd;
-                            String url = "https://act-jshop.jd.com/couponSend.html?callback=jQuery" + randomNum(7) + "&ruleId=" + roleId + "&key=" + key + "&eid=YQBDCCKZVO75MAH4JTMLLSW6G3MELEVPG7GBGZ5VA5XMI6GI6XBW6OTF24GIOXCHQ7KGWHGE4QKWVKCI3N6PXCCUHM&fp=a4cfdefe156afd6a1cf0d91c9ac2b8e1&shshshfp=652eaf63e37bff35dbcac3c61855631b&shshshfpa=4ba70ea3-d5e2-e44d-0a1d-28bdec99c53b-1529890267&shshshfpb=186b052caa1654e9ba3f8ce067b6fb58c31ed09923a4c76275ac971cbf&jda=122270672.426841177.1530176271.1530176273.1530236198.2&pageClickKey=pageclick%7Ckeycount%7Ccoupon_simple_36482510_1%7C0&platform=0&applicationId=1575845&_=" + sd;
+//                            String url = "https://act-jshop.jd.com/couponSend.html?callback=jQuery" + randomNum(7) + "&ruleId=" + roleId + "&key=" + key + "&eid=YQBDCCKZVO75MAH4JTMLLSW6G3MELEVPG7GBGZ5VA5XMI6GI6XBW6OTF24GIOXCHQ7KGWHGE4QKWVKCI3N6PXCCUHM&fp=2178051fb8962946d77d94b72645b134&shshshfp=a807da1f8943f7e561e7d03fb14218c6&shshshfpa=2bb2b40b-079e-8d22-8749-87666ac894a7-1533001104&shshshfpb=01f3dabd0a07944f1d22551ae471abf11ae755c5a10531d515b5a8ea5c&jda=122270672.1531106842010511219587.1531106842.1532946027.1533000315.35&pageClickKey=pageclick%7Ckeycount%7Ccoupon_simple_36991698_1%7C0&platform=0&applicationId=1587745&_=" + sd;
+                            String url = "https://act-jshop.jd.com/couponSend.html?callback=jQuery" + randomNum(7) + "&ruleId=" + roleId + "&key=" + key + "&eid=YQBDCCKZVO75MAH4JTMLLSW6G3MELEVPG7GBGZ5VA5XMI6GI6XBW6OTF24GIOXCHQ7KGWHGE4QKWVKCI3N6PXCCUHM&fp=e93095687a45210f6bf116a37f015b77&shshshfp=b4c2032ba9b5e5f180cd0f9779dff01f&shshshfpa=3457f0c8-eb75-a7a4-8370-0ed5b1e25f71-1533606367&shshshfpb=1d6ded839132a4485b1672fb8b5159e7788d10a43dcd041475b68f9e4e&jda=122270672.1533606366416598151839.1533606366.1534937496.1534988449.17&pageClickKey=pageclick%7Ckeycount%7Ccoupon_simple_37448055_1%7C0&platform=0&applicationId=1606960&_=" + System.currentTimeMillis();
+
                             final String res = HttpClientUtils.getResponseString(url, headers);
                             System.out.print(System.currentTimeMillis() + "--------" + sleepTime + "---------" + sd);
                             System.out.println(res);
@@ -632,7 +593,7 @@ public class JD {
             } catch (Exception e) {
                 e.printStackTrace();
             }
-            i = i + 5;
+            i = i - 200;
             if (sd > maxTime) {
                 break;
             }
