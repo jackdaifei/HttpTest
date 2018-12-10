@@ -1,0 +1,134 @@
+http://api.m.jd.com/client.action?functionId=signBeanIndex&clientVersion=7.2.6&build=63370&client=android&d_brand=vivo&d_model=vivoZ1&osVersion=8.1.0&screen=2280*1080&partner=vivo&androidId=c151521cf7c1430f&installtionId=73e5ce8937244403ae1e93dc8d3ecf69&sdkVersion=27&lang=zh_CN&uuid=868602047125517-20f77c733fa1&area=22_1930_50949_52153&networkType=wifi&wifiBssid=dad94a9d1e16905aac6420087a4877cd&st=1544458991632&sign=69ba850cad177fe09d384153cda5f438&sv=122
+
+POST http://api.m.jd.com/client.action?functionId=signBeanIndex&clientVersion=7.2.6&build=63370&client=android&d_brand=vivo&d_model=vivoZ1&osVersion=8.1.0&screen=2280*1080&partner=vivo&androidId=c151521cf7c1430f&installtionId=73e5ce8937244403ae1e93dc8d3ecf69&sdkVersion=27&lang=zh_CN&uuid=868602047125517-20f77c733fa1&area=22_1930_50949_52153&networkType=wifi&wifiBssid=dad94a9d1e16905aac6420087a4877cd&st=1544458991632&sign=69ba850cad177fe09d384153cda5f438&sv=122 HTTP/1.1
+Connection: Keep-Alive
+Cookie: pin=jackdaifei_m; wskey=AAFbT9AfAEAWGgHkSanFbpfjKXgOiumMdr6hsmtr2NT8oMdHMGiyza11FEh5pRhZjDKGmIvaBKfLN7WYk7n3dJOtSXVkvGPJ; whwswswws=zfKxNSJYpkuxQ2l5Cz9M6SAKwbIQBt9YIF6Fj/545EHilrLsep8ki5XL/aLuKoCgVUaOazA9eTDSkefFN3XT7Xg==; unionwsws={"devicefinger":"eidA2B700114ODY4NjAyMDQ3MTI1NTE3MA==0I7u8gZRJfxuaDVhagH3uQjoCRqDZgV4oZflP8e\/6uphn9NxD4vvpXaqrAFb0+Oog6wilp42RLPGbnAB","jmafinger":"zfKxNSJYpkuxQ2l5Cz9M6SAKwbIQBt9YIF6Fj\/545EHilrLsep8ki5XL\/aLuKoCgVUaOazA9eTDSkefFN3XT7Xg=="}
+Charset: UTF-8
+Accept-Encoding: gzip,deflate
+jdc-backup: pin=jackdaifei_m; wskey=AAFbT9AfAEAWGgHkSanFbpfjKXgOiumMdr6hsmtr2NT8oMdHMGiyza11FEh5pRhZjDKGmIvaBKfLN7WYk7n3dJOtSXVkvGPJ; whwswswws=zfKxNSJYpkuxQ2l5Cz9M6SAKwbIQBt9YIF6Fj/545EHilrLsep8ki5XL/aLuKoCgVUaOazA9eTDSkefFN3XT7Xg==; unionwsws={"devicefinger":"eidA2B700114ODY4NjAyMDQ3MTI1NTE3MA==0I7u8gZRJfxuaDVhagH3uQjoCRqDZgV4oZflP8e\/6uphn9NxD4vvpXaqrAFb0+Oog6wilp42RLPGbnAB","jmafinger":"zfKxNSJYpkuxQ2l5Cz9M6SAKwbIQBt9YIF6Fj\/545EHilrLsep8ki5XL\/aLuKoCgVUaOazA9eTDSkefFN3XT7Xg=="}
+Cache-Control: no-cache
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Content-Length: 198
+Host: api.m.jd.com
+User-Agent: okhttp/3.6.0
+
+
+HTTP/1.1 200
+Server: jfe
+Date: Mon, 10 Dec 2018 16:23:11 GMT
+Content-Type: text/plain;charset=utf-8
+Connection: keep-alive
+Vary: Accept-Encoding
+X-API-Request-Id: 895918a2-3858-40aa-82ee-7a6b7dbcb135
+X-API-Wl-Message: 0
+Content-Length: 2335
+
+
+body
+body	{"fp":"-1","jda":"-1","referUrl":"-1","rnVersion":"4.0","shshshfp":"-1","shshshfpa":"-1","userAgent":"-1"}
+
+{"code":"0","data":{"signedRan":"B","status":"1","beanUserType":1,"awardType":"1","dailyAward":{"type":"1","title":"签到成功，","subTitle":"恭喜您获得","beanAward":{"beanCount":"3","beanImgUrl":"https://m.360buyimg.com/njmobilecms/jfs/t23452/19/1797778090/8622/14e40996/5b69974eN9880f531.png"}},"conductionBtn":{"btnText":"种豆瓜分京豆","linkUrl":"openapp.jdmobile://virtual?params={\"category\":\"jump\",\"des\":\"jdreactcommon\",\"modulename\":\"JDReactSowAndReap\",\"appname\":\"JDReactSowAndReap\",\"ishidden\":true,\"param\":{\"transparentenable\":true}}"},"signRemind":{"title":"领京豆","content":"签到领京豆啦，断签会错过连签礼包哦","popImgUrl":"https://m.360buyimg.com/njmobilecms/jfs/t25144/349/281504248/8702/2397c397/5b6ab64fN016b2a9d.png","beanHomeLink":"{\"des\":\"m\",\"params\":{\"url\":\"https://bean.m.jd.com\"}}"},"signCalendar":{"currentDate":"20181211","signRecordList":[{"day":"1","awardState":"1"},{"day":"2","awardState":"1"},{"day":"3","awardState":"1"},{"day":"4","awardState":"1"},{"day":"5","awardState":"1"},{"day":"6","awardState":"1"},{"day":"7","awardState":"1"},{"day":"8","awardState":"1"},{"day":"9","awardState":"1"},{"day":"10","awardState":"1"},{"day":"11","awardState":"1","awardType":"1"},{"day":"16","awardImgUrl":"https://m.360buyimg.com/njmobilecms/jfs/t25771/309/792025266/1853/7e27160f/5b7aac27N44dbd72a.png","awardState":"2","awardType":"2","awardDesc":"40京豆","popText":"再连签5天即可获得哦"},{"day":"19","awardImgUrl":"https://m.360buyimg.com/njmobilecms/jfs/t25771/309/792025266/1853/7e27160f/5b7aac27N44dbd72a.png","awardState":"2","awardType":"2","awardDesc":"5京豆"},{"day":"23","awardImgUrl":"https://m.360buyimg.com/njmobilecms/jfs/t25771/309/792025266/1853/7e27160f/5b7aac27N44dbd72a.png","awardState":"2","awardType":"2","awardDesc":"15京豆"},{"day":"30","awardImgUrl":"https://m.360buyimg.com/njmobilecms/jfs/t25771/309/792025266/1853/7e27160f/5b7aac27N44dbd72a.png","awardState":"2","awardType":"2","awardDesc":"20京豆"}]},"recommend":{"oneFrameFloors":[{"imgUrl":"https://m.360buyimg.com/mobilecms/jfs/t30565/240/879637819/94513/1dcf392/5c011638Na36b0aa9.jpg","linkType":2,"linkUrl":"https://sale.jd.com/m/h5/wedqdgdjh3dd.html","id":95,"title":"12.11-钙尔奇"}],"twoFrameFloors":[]},"signAiRan":"B","msgGuideSwitch":"0"}}
+
+
+
+
+
+
+
+//////////////////////
+
+钢镚签到
+https://ms.jr.jd.com/gw/generic/hy/h5/m/signIn?_=1544459483759
+
+POST https://ms.jr.jd.com/gw/generic/hy/h5/m/signIn?_=1544459483759 HTTP/1.1
+Host: ms.jr.jd.com
+Connection: keep-alive
+Content-Length: 47
+Accept: application/json
+Origin: https://m.jr.jd.com
+User-Agent: Mozilla/5.0 (Linux; Android 8.1; vivo Z1 Build/OPM1.171019.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044307 Mobile Safari/537.36/application=JDJR-App&clientType=android&deviceId=868602047125517&src=vivo&version=5.0.5&clientVersion=5.0.5&osVersion=8.1.0&osName=vivo Z1&isUpdate=0&HiClVersion=5.0.5&netWork=1&netWorkType=1&ip=192.168.2.51&mac=20:F7:7C:73:3F:A1&sPoint=&*#@jdPaySDK*#@jdPayChannel=jdFinance&jdPayChannelVersion=5.0.5&jdPaySdkVersion=2.21.4.0&androidBrand=vivo&androidManufacturer=vivo&jdPayClientName=Android*#@jdPaySDK*#@
+Content-Type: application/x-www-form-urlencoded;charset=UTF-8
+Referer: https://m.jr.jd.com/vip/sign/html/index.html?source=2
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,en-US;q=0.8
+Cookie: pt_key=app_openAAFcDpS_ADC-ko22ixM2XLy-hXtFoRn7lYEwDoAuVVt755P173SEJsl00ypwcXKLiMEkXqjwsxk; pt_pin=jackdaifei_m; pwdt_id=jackdaifei_m; sid=d94f0b713a22a6caa60614b92497538w; _jrda=1; _jrdb=1544459473609; bigBannerValue_1180=0
+X-Requested-With: com.jd.jrapp
+
+
+HTTP/1.1 200 OK
+Server: openresty
+Date: Mon, 10 Dec 2018 16:31:23 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+Access-Control-Allow-Origin: https://m.jr.jd.com
+Access-Control-Allow-Credentials: true
+Expires: Mon, 10 Dec 2018 16:31:23 GMT
+Cache-Control: max-age=0
+Content-Length: 271
+
+body
+reqData	{"channelSource":"JRAPP"}
+
+
+/////////////////////////////////////
+
+
+翻拍
+https://gpm.jd.com/signin_new/choice?sid=d94f0b713a22a6caa60614b92497538w&uaType=2&position=2&_=1544459658626&callback=Zepto1544459642809
+
+GET https://gpm.jd.com/signin_new/choice?sid=d94f0b713a22a6caa60614b92497538w&uaType=2&position=2&_=1544459658626&callback=Zepto1544459642809 HTTP/1.1
+Host: gpm.jd.com
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 8.1; vivo Z1 Build/OPM1.171019.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044307 Mobile Safari/537.36/application=JDJR-App&clientType=android&deviceId=868602047125517&src=vivo&version=5.0.5&clientVersion=5.0.5&osVersion=8.1.0&osName=vivo Z1&isUpdate=0&HiClVersion=5.0.5&netWork=1&netWorkType=1&ip=192.168.2.51&mac=20:F7:7C:73:3F:A1&sPoint=&*#@jdPaySDK*#@jdPayChannel=jdFinance&jdPayChannelVersion=5.0.5&jdPaySdkVersion=2.21.4.0&androidBrand=vivo&androidManufacturer=vivo&jdPayClientName=Android*#@jdPaySDK*#@
+Accept: */*
+Referer: https://stock-sr.jd.com/h5/jd-flipDraw/html/index.html?mustLogin=1&sid=d94f0b713a22a6caa60614b92497538w
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,en-US;q=0.8
+Cookie: _jrda=1; __jdv=130990925|direct|-|none|-|1544459630380; pt_key=app_openAAFcDpS_ADC-ko22ixM2XLy-hXtFoRn7lYEwDoAuVVt755P173SEJsl00ypwcXKLiMEkXqjwsxk; pt_pin=jackdaifei_m; pwdt_id=jackdaifei_m; sid=d94f0b713a22a6caa60614b92497538w; __jda=130990925.15444596303781953174048.1544459630.1544459630.1544459630.1; __jdb=130990925.2.15444596303781953174048|1.1544459630; __jdc=130990925; _jrdb=1544459643252; __jdu=15444596303781953174048; JSESSIONID=3CCE9CCCD2E565AD0782EEA8EB8891FF.s1
+
+
+HTTP/1.1 200 OK
+Server: JDWS/1.0.0
+Date: Mon, 10 Dec 2018 16:34:18 GMT
+Content-Type: text/plain;charset=UTF-8
+X-Cnection: close
+Vary: Accept-Encoding
+Accept-Charset: big5, big5-hkscs, cesu-8, euc-jp, euc-kr, gb18030, gb2312, gbk, ibm-thai, ibm00858, ibm01140, ibm01141, ibm01142, ibm01143, ibm01144, ibm01145, ibm01146, ibm01147, ibm01148, ibm01149, ibm037, ibm1026, ibm1047, ibm273, ibm277, ibm278, ibm280, ibm284, ibm285, ibm290, ibm297, ibm420, ibm424, ibm437, ibm500, ibm775, ibm850, ibm852, ibm855, ibm857, ibm860, ibm861, ibm862, ibm863, ibm864, ibm865, ibm866, ibm868, ibm869, ibm870, ibm871, ibm918, iso-2022-cn, iso-2022-jp, iso-2022-jp-2, iso-2022-kr, iso-8859-1, iso-8859-13, iso-8859-15, iso-8859-2, iso-8859-3, iso-8859-4, iso-8859-5, iso-8859-6, iso-8859-7, iso-8859-8, iso-8859-9, jis_x0201, jis_x0212-1990, koi8-r, koi8-u, shift_jis, tis-620, us-ascii, utf-16, utf-16be, utf-16le, utf-32, utf-32be, utf-32le, utf-8, windows-1250, windows-1251, windows-1252, windows-1253, windows-1254, windows-1255, windows-1256, windows-1257, windows-1258, windows-31j, x-big5-hkscs-2001, x-big5-solaris, x-compound_text, x-euc-jp-linux, x-euc-tw, x-eucjp-open, x-ibm1006, x-ibm1025, x-ibm1046, x-ibm1097, x-ibm1098, x-ibm1112, x-ibm1122, x-ibm1123, x-ibm1124, x-ibm1166, x-ibm1364, x-ibm1381, x-ibm1383, x-ibm300, x-ibm33722, x-ibm737, x-ibm833, x-ibm834, x-ibm856, x-ibm874, x-ibm875, x-ibm921, x-ibm922, x-ibm930, x-ibm933, x-ibm935, x-ibm937, x-ibm939, x-ibm942, x-ibm942c, x-ibm943, x-ibm943c, x-ibm948, x-ibm949, x-ibm949c, x-ibm950, x-ibm964, x-ibm970, x-iscii91, x-iso-2022-cn-cns, x-iso-2022-cn-gb, x-iso-8859-11, x-jis0208, x-jisautodetect, x-johab, x-macarabic, x-maccentraleurope, x-maccroatian, x-maccyrillic, x-macdingbat, x-macgreek, x-machebrew, x-maciceland, x-macroman, x-macromania, x-macsymbol, x-macthai, x-macturkish, x-macukraine, x-ms932_0213, x-ms950-hkscs, x-ms950-hkscs-xp, x-mswin-936, x-pck, x-sjis_0213, x-utf-16le-bom, x-utf-32be-bom, x-utf-32le-bom, x-windows-50220, x-windows-50221, x-windows-874, x-windows-949, x-windows-950, x-windows-iso2022jp
+Expires: Mon, 10 Dec 2018 16:34:18 GMT
+Cache-Control: max-age=0
+Content-Length: 581
+
+//////////////////////////////////////////////////
+
+双签
+https://ms.jr.jd.com/newjrmactivity/base/sign1111/getSignAward.action?sid=d94f0b713a22a6caa60614b92497538w
+
+GET https://ms.jr.jd.com/newjrmactivity/base/sign1111/getSignAward.action?sid=d94f0b713a22a6caa60614b92497538w HTTP/1.1
+Host: ms.jr.jd.com
+Connection: keep-alive
+Accept: application/json
+Origin: https://m.jr.jd.com
+User-Agent: Mozilla/5.0 (Linux; Android 8.1; vivo Z1 Build/OPM1.171019.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044307 Mobile Safari/537.36/application=JDJR-App&clientType=android&deviceId=868602047125517&src=vivo&version=5.0.5&clientVersion=5.0.5&osVersion=8.1.0&osName=vivo Z1&isUpdate=0&HiClVersion=5.0.5&netWork=1&netWorkType=1&ip=192.168.2.51&mac=20:F7:7C:73:3F:A1&sPoint=&*#@jdPaySDK*#@jdPayChannel=jdFinance&jdPayChannelVersion=5.0.5&jdPaySdkVersion=2.21.4.0&androidBrand=vivo&androidManufacturer=vivo&jdPayClientName=Android*#@jdPaySDK*#@
+Referer: https://m.jr.jd.com/activity/2018/06/SignIn/index.html?sid=d94f0b713a22a6caa60614b92497538w
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,en-US;q=0.8
+Cookie: _jrda=1; bigBannerValue_1180=0; __jdv=130990925|direct|-|none|-|1544459630380; pt_key=app_openAAFcDpS_ADC-ko22ixM2XLy-hXtFoRn7lYEwDoAuVVt755P173SEJsl00ypwcXKLiMEkXqjwsxk; pt_pin=jackdaifei_m; pwdt_id=jackdaifei_m; sid=d94f0b713a22a6caa60614b92497538w; _jrdb=1544459821855; __jda=168871293.15444596303781953174048.1544459630.1544459630.1544459630.1; __jdb=168871293.3.15444596303781953174048|1.1544459630; __jdc=168871293; __jdu=15444596303781953174048; __jrr=5749AADC6EE3627789607775533DF0
+X-Requested-With: com.jd.jrapp
+
+
+HTTP/1.1 200 OK
+Server: nginx
+Date: Mon, 10 Dec 2018 16:37:26 GMT
+Content-Type: text/html;charset=UTF-8
+X-Cnection: close
+Vary: Accept-Encoding
+Access-Control-Allow-Origin: https://m.jr.jd.com
+Access-Control-Allow-Credentials: true
+usaddr: 165.13
+Expires: Mon, 10 Dec 2018 16:37:26 GMT
+Cache-Control: max-age=0
+Content-Length: 107
+
+
+
+
