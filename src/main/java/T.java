@@ -3,6 +3,11 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileOutputStream;
+import java.time.Duration;
+import java.time.LocalDateTime;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 /**
  * Created by wintech
@@ -90,7 +95,55 @@ public class T {
             g.dispose();
             // 输出图片
             FileOutputStream outImgStream = new FileOutputStream(outImgPath);
-            ImageIO.write(bufImg, "png", outImgStream);
+            ImageIO.write(bufImg, "jpg", outImgStream);
+            outImgStream.flush();
+            outImgStream.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void a(String srcImgPath, String outImgPath, String fontType, int fontStyle, Color markContentColor, int fontSize, List<String> waterMarkContent) {
+        try {
+            // 读取原图片信息
+            File srcImgFile = new File(srcImgPath);
+            Image srcImg = null;
+            if (srcImgFile.exists() && srcImgFile.isFile() && srcImgFile.canRead()) {
+                srcImg = ImageIO.read(srcImgFile);
+            }
+            // 宽、高
+            int srcImgWidth = srcImg.getWidth(null);
+            int srcImgHeight = srcImg.getHeight(null);
+            // 加水印
+            BufferedImage bufImg = new BufferedImage(srcImgWidth, srcImgHeight, BufferedImage.TYPE_INT_RGB);
+            Graphics2D g = bufImg.createGraphics();
+            g.drawImage(srcImg, 0, 0, srcImgWidth, srcImgHeight, null);
+            Font font = new Font(fontType, fontStyle, fontSize);
+            //设置水印颜色
+            g.setColor(markContentColor);
+            g.setFont(font);
+            // 抗锯齿
+            g.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+
+            // 相对与X的起始的位置
+            int originX = 0;
+            // 相对与Y的起始的位置
+            int originY = 2140;
+
+            for (String content : waterMarkContent) {
+                // 文字宽度
+                int fontLength = getWatermarkLength(content, g);
+                originX = (srcImgWidth - fontLength) / 2;
+
+                //最后叠加余下的文字
+                g.drawString(content, originX, originY+45);
+
+                originY += 160;
+            }
+            g.dispose();
+            // 输出图片
+            FileOutputStream outImgStream = new FileOutputStream(outImgPath);
+            ImageIO.write(bufImg, "jpg", outImgStream);
             outImgStream.flush();
             outImgStream.close();
         } catch (Exception e) {
@@ -115,14 +168,19 @@ public class T {
 
 
     public static void main(String[] args) {
+        LocalDateTime beginTime = LocalDateTime.now();
         // 原图位置, 输出图片位置, 水印字体，水印文字样式，水印文字颜色, 水印文字大小，水印文字内容
-        String fontType = "宋体";
+        String fontType = "黑体";
         int fontStyle = Font.BOLD;
-        int fontSize = 85;
+        int fontSize = 90;
         String font = "2018多点为我代步100公里";
+        List<String> contentList = Arrays.asList("2018多点为我代步100公里", "2019，继续做货来伸手的掌上明\"猪\"", "超市躺着逛  大奖躺着赢");
        /* String font = "印效果测水印效果整水印效果 ";*/
-       Color color = new Color(188, 118, 46);
-        new T().waterPress("1.jpg", "2.jpg", fontType, fontStyle, color, fontSize, font);
+        Color color = new Color(188, 118, 46);
+//        new T().waterPress("1.jpg", "2.jpg", fontType, fontStyle, color, fontSize, font);
+        new T().a("1.jpg", "2.jpg", fontType, fontStyle, color, fontSize, contentList);
+        Long timeConsuming = Duration.between(beginTime, LocalDateTime.now()).toMillis();
+        System.out.println(timeConsuming);
     }
 
 }
