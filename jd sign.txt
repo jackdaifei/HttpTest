@@ -1,3 +1,20 @@
+{"code":"0","data":{"signedRan":"B","status":"1","beanUserType":1,"awardType":"1","dailyAward":{"type":"2","title":"签到成功，","subTitle":"恭喜您获得","beanAward":{"beanCount":"3","beanImgUrl":"https://m.360buyimg.com/njmobilecms/jfs/t23077/281/1785113494/12232/1b2c8fe2/5b699736N9a079de0.png"},"couponAward":{"couponName":"红蜻蜓官方旗舰店优惠券1张","couponImgUrl":"https://m.360buyimg.com/mobilecms/jfs/t1/19533/14/1/7712/5c063332E4b9a3070/2f0525f0279b6b2c.png","couponLinkUrl":"openApp.jdMobile://virtual?params={\"category\":\"jump\",\"des\":\"jshopMain\",\"shopId\":\"37727\",\"sourceType\":\"JDReactCollectJDBeans\",\"sourceValue\":\" \"}"}},"conductionBtn":{"btnText":"种豆瓜分京豆","linkUrl":"openapp.jdmobile://virtual?params={\"category\":\"jump\",\"des\":\"jdreactcommon\",\"modulename\":\"JDReactSowAndReap\",\"appname\":\"JDReactSowAndReap\",\"ishidden\":true,\"param\":{\"transparentenable\":true}}"},"signRemind":{"title":"领京豆","content":"签到领京豆啦，断签会错过连签礼包哦","popImgUrl":"https://m.360buyimg.com/njmobilecms/jfs/t25144/349/281504248/8702/2397c397/5b6ab64fN016b2a9d.png","beanHomeLink":"{\"des\":\"m\",\"params\":{\"url\":\"https://bean.m.jd.com\"}}"},"signCalendar":{"currentDate":"20181214","signRecordList":[{"day":"1","awardState":"1"},{"day":"2","awardState":"1"},{"day":"3","awardState":"1"},{"day":"4","awardState":"1"},{"day":"5","awardState":"1"},{"day":"6","awardState":"1"},{"day":"7","awardState":"1"},{"day":"8","awardState":"1"},{"day":"9","awardState":"1"},{"day":"10","awardState":"1"},{"day":"11","awardState":"1"},{"day":"12","awardState":"1"},{"day":"13","awardState":"1"},{"day":"14","awardState":"1","awardType":"1"},{"day":"16","awardImgUrl":"https://m.360buyimg.com/njmobilecms/jfs/t25771/309/792025266/1853/7e27160f/5b7aac27N44dbd72a.png","awardState":"2","awardType":"2","awardDesc":"40京豆","popText":"再连签2天即可获得哦"},{"day":"19","awardImgUrl":"https://m.360buyimg.com/njmobilecms/jfs/t25771/309/792025266/1853/7e27160f/5b7aac27N44dbd72a.png","awardState":"2","awardType":"2","awardDesc":"5京豆"},{"day":"23","awardImgUrl":"https://m.360buyimg.com/njmobilecms/jfs/t25771/309/792025266/1853/7e27160f/5b7aac27N44dbd72a.png","awardState":"2","awardType":"2","awardDesc":"15京豆"},{"day":"30","awardImgUrl":"https://m.360buyimg.com/njmobilecms/jfs/t25771/309/792025266/1853/7e27160f/5b7aac27N44dbd72a.png","awardState":"2","awardType":"2","awardDesc":"20京豆"}]},"recommend":{"oneFrameFloors":[{"imgUrl":"https://m.360buyimg.com/mobilecms/jfs/t26845/280/2377634361/44619/65e00f95/5c0117a0N8df6c33f.jpg","linkType":2,"linkUrl":"https://shop.m.jd.com/?shopId=37727","id":98,"title":"12.14-红蜻蜓"}],"twoFrameFloors":[]},"signAiRan":"B","msgGuideSwitch":"0"}}
+签到成功，恭喜您获得3京豆
+APP签到--------->>>{"code":"0","data":{"signedRan":"B","status":"1","beanUserType":1,"awardType":"1","dailyAward":{"type":"2","title":"签到成功，","subTitle":"恭喜您获得","beanAward":{"beanCount":"3","beanImgUrl":"https://m.360buyimg.com/njmobilecms/jfs/t23077/281/1785113494/12232/1b2c8fe2/5b699736N9a079de0.png"},"couponAward":{"couponName":"红蜻蜓官方旗舰店优惠券1张","couponImgUrl":"https://m.360buyimg.com/mobilecms/jfs/t1/19533/14/1/7712/5c063332E4b9a3070/2f0525f0279b6b2c.png","couponLinkUrl":"openApp.jdMobile://virtual?params={\"category\":\"jump\",\"des\":\"jshopMain\",\"shopId\":\"37727\",\"sourceType\":\"JDReactCollectJDBeans\",\"sourceValue\":\" \"}"}},"conductionBtn":{"btnText":"种豆瓜分京豆","linkUrl":"openapp.jdmobile://virtual?params={\"category\":\"jump\",\"des\":\"jdreactcommon\",\"modulename\":\"JDReactSowAndReap\",\"appname\":\"JDReactSowAndReap\",\"ishidden\":true,\"param\":{\"transparentenable\":true}}"},"signRemind":{"title":"领京豆","content":"签到领京豆啦，断签会错过连签礼包哦","popImgUrl":"https://m.360buyimg.com/njmobilecms/jfs/t25144/349/281504248/8702/2397c397/5b6ab64fN016b2a9d.png","beanHomeLink":"{\"des\":\"m\",\"params\":{\"url\":\"https://bean.m.jd.com\"}}"},"signCalendar":{"currentDate":"20181214","signRecordList":[{"day":"1","awardState":"1"},{"day":"2","awardState":"1"},{"day":"3","awardState":"1"},{"day":"4","awardState":"1"},{"day":"5","awardState":"1"},{"day":"6","awardState":"1"},{"day":"7","awardState":"1"},{"day":"8","awardState":"1"},{"day":"9","awardState":"1"},{"day":"10","awardState":"1"},{"day":"11","awardState":"1"},{"day":"12","awardState":"1"},{"day":"13","awardState":"1"},{"day":"14","awardState":"1","awardType":"1"},{"day":"16","awardImgUrl":"https://m.360buyimg.com/njmobilecms/jfs/t25771/309/792025266/1853/7e27160f/5b7aac27N44dbd72a.png","awardState":"2","awardType":"2","awardDesc":"40京豆","popText":"再连签2天即可获得哦"},{"day":"19","awardImgUrl":"https://m.360buyimg.com/njmobilecms/jfs/t25771/309/792025266/1853/7e27160f/5b7aac27N44dbd72a.png","awardState":"2","awardType":"2","awardDesc":"5京豆"},{"day":"23","awardImgUrl":"https://m.360buyimg.com/njmobilecms/jfs/t25771/309/792025266/1853/7e27160f/5b7aac27N44dbd72a.png","awardState":"2","awardType":"2","awardDesc":"15京豆"},{"day":"30","awardImgUrl":"https://m.360buyimg.com/njmobilecms/jfs/t25771/309/792025266/1853/7e27160f/5b7aac27N44dbd72a.png","awardState":"2","awardType":"2","awardDesc":"20京豆"}]},"recommend":{"oneFrameFloors":[{"imgUrl":"https://m.360buyimg.com/mobilecms/jfs/t26845/280/2377634361/44619/65e00f95/5c0117a0N8df6c33f.jpg","linkType":2,"linkUrl":"https://shop.m.jd.com/?shopId=37727","id":98,"title":"12.14-红蜻蜓"}],"twoFrameFloors":[]},"signAiRan":"B","msgGuideSwitch":"0"}}
+{"code":"0","data":{"entryId":"uvk5kz4mqioi4oqbns6eertieu","broadcastList":[{"messageText":"欢迎来到种豆得豆，我是小小豆，长大了会结京豆哦"},{"messageText":"等我成熟了，点采摘就能收获京豆，快去收集营养液助我长大吧"},{"messageText":"种豆得豆升级后，营养液变更多，记得每2小时来领取一次哦"},{"messageText":"邀请好友为你助力可获得营养液，考验友情的时候到啦"},{"messageText":"快邀请好友一起玩种豆得豆，好友越多，营养液越多哦"},{"messageText":"嗨，每日完成任务我会长更快哦"},{"messageText":"悄悄告诉你，我长大后会变身，努力种豆吧"}],"ruleLink":"https://pro.m.jd.com/mall/active/3o5pcJjuj3dK64Wtf5VxHk6GfP6A/index.html","roundList":[{"roundId":"yt4n3tabw53muoqbns6eertieu","roundState":"2","headImgUrl":"https://m.360buyimg.com/njmobilecms/jfs/t1/14213/27/596/13590/5c0b18b4E569056c2/ac4b5d06a2ed3575.png","awardState":"1","beanState":"2","growth":"15","nutrients":"2"},{"roundId":"qibaemixjkifqoqbns6eertieu","roundState":"3","headImgUrl":"https://m.360buyimg.com/njmobilecms/jfs/t1/29424/32/593/12954/5c0b1ae5E1eb3bcdc/e73463ee8639b764.png","awardState":"1","growth":"0","nutrients":"0"}],"awardList":[{"awardName":"每日签到","awardType":"1","timesNutrients":"1","daysNutrients":"1","limitFlag":"2","linkUrl":"openapp.jdmobile://virtual?params={\"category\":\"jump\",\"des\":\"jdreactcommon\",\"modulename\":\"JDReactCollectJDBeans\",\"appname\":\"JDReactCollectJDBeans\",\"ishidden\":true,\"param\":{\"page\":\"collectJDBeansHomePage\",\"source\":\"actest\",\"transparentenable\":true}}"},{"awardName":"浏览店铺","awardType":"3","timesNutrients":"1","daysNutrients":"6","limitFlag":"1"},{"awardName":"邀请好友","awardType":"2","timesNutrients":"2","daysNutrients":"8","limitFlag":"1"},{"awardName":"购买任务","awardType":"4"}],"accessFlag":"1","timeNutrientsRes":{"state":"1"},"shareInfo":{"shareTitle":"送你京豆福利，来瓜分上亿京豆吧","shareContent":"来京东APP签到并开启你的种豆之旅","shareIcon":"https://m.360buyimg.com/njmobilecms/jfs/t25066/90/2116335097/5008/e98b4e74/5bc42c93N303acd5a.png","shareUrl":"https://bean.m.jd.com/plantBean/newshare.action?plantUuid=za4bsadr7ryyenulh47vdxrhfu5ac3f4ijdgqji"}}}
+yt4n3tabw53muoqbns6eertieu培养液使用成功--------->>>{"code":"0","data":{"growth":"17","nutrients":"0","beanState":"2"}}
+yt4n3tabw53muoqbns6eertieu培养液使用成功--------->>>{"code":"0","errorCode":"PB200","errorMessage":"活动太火爆了，请稍后再来"}
+领取培养液成功--------->>>{"code":"0","data":{"nutrients":"1","state":"3","countDown":"7199"}}
+yt4n3tabw53muoqbns6eertieu培养液使用成功--------->>>{"code":"0","data":{"growth":"18","nutrients":"0","beanState":"2"}}
+qibaemixjkifqoqbns6eertieu培养液使用成功--------->>>{"code":"600","echo":"signature verification failed"}
+金融签到--------->>>{"resultCode":0,"resultMsg":"操作成功","resultData":{"resBusiCode":0,"resBusiData":{"accountBalance":"1.74","totalNumber":758,"isContinuity":false,"continuityDays":"26","continuityAmount":0,"isSuccess":true,"thisAmount":2,"rewardType":3},"resBusiMsg":"操作成功"}}
+双签奖励--------->>>{"resultMsg":"响应成功","status":0,"awardList":[{"count":3,"name":"京豆","type":1}],"resultCode":200}
+翻拍--------->>>Zepto1544459642809([{"code":1,"data":{"result":0,"todayCount":1,"totalCount":1,"type":2,"rewardList":[{"checked":0,"position":1,"type":1,"jingdou":0.1},{"checked":1,"rewardContent":{"title":"股事聊斋：你觉得现在该抄底黄金吗？","jumpInfo":{"p":"https://m.jr.jd.com/mjractivity/73561-2.html?appVersion=null&mustLogin=0","ex":"","s":0,"t":"w","n":""}},"position":2,"type":2},{"checked":0,"position":3,"type":1,"jingdou":0.04}]},"errcode":1,"flushTime":null,"msg":"成功","success":true,"systime":1544751512773,"trade":true,"usIsTrade":false}])
+钢镚签到--------->>>{"resultCode":0,"resultMsg":"操作成功","resultData":{"showMsg":"签到获得0.02钢镚","isContinuity":false,"continuityDays":0,"isSuccess":true,"continuityAmount":"","thisAmount":"0.02","continuousMsg":"","statusCode":0,"additionalPrizeName":"","thisTime":2,"prizeName":"钢镚"}}
+随机领钢镚--------->>>{"resultMsg":"响应成功","createTime":"2018-12-14 09:38:48","count":1,"status":0,"resultCode":200,"day":"2018-12-14","success":true}
+金融领京豆签到--------->>>{"success":true,"result":{"token":"285461932","isLogin":true,"floorInfoList":[{"code":"M_SIGN_INFO","dataDetail":{"jdnum":1,"signStatus":true,"type":102,"brightSize":2}},{"code":"M_SIGN_TWO_AD","dataDetail":{"twoAdList":[{"id":3321,"name":"广告","title":"贝特阿斯保鲜","subTitle":"关注送1京豆","description":"","btnLabel":"点击参与","backgroundColor":"#ffffff","imgUrl":"//img11.360buyimg.com/vip/jfs/t1/7351/36/9137/32024/5c11f038E1a6f643b/82efc02b3f867957.jpg","img2Url":"","httpUrl":"//shop.m.jd.com/?shopId=715913"},{"id":3268,"name":"广告","title":"美斯尼品牌","subTitle":"关注送3京豆","description":"","btnLabel":"点击参与","backgroundColor":"#ffffff","imgUrl":"//img13.360buyimg.com/vip/jfs/t1/29253/6/491/14240/5c0a4f07E44a81cdf/2e04d1cc315e52e7.jpg","img2Url":"","httpUrl":"//shop.m.jd.com/?shopId=146935"}]}},{"code":"M_SIGN_BI_PRODUCT","dataDetail":{"productList":[{"id":3997387,"brandId":8983,"venderId":1000000877,"state":1,"brandName":"佳能","fullName":"佳能微单（Canon）EOS M6 黑色机身（2420万像素 触控翻转LCD 全像素双核对焦）","imgUrl":"//img12.360buyimg.com/vip/s300x300_jfs/t4465/118/778153574/225129/afa822d6/58d48e52N111b14be.jpg","firstCategory":"652","secondCategory":"654","thirdCategory":"5012","goodRate":"99%"},{"id":3176630,"brandId":51421,"venderId":1000002062,"state":1,"brandName":"Kindle","fullName":"Kindle 电纸书阅读器 电子书墨水屏 入门款6英寸wifi黑色","imgUrl":"//img11.360buyimg.com/vip/s300x300_jfs/t2659/299/2595305273/183782/6fbfe853/576be639N962f95a6.jpg","firstCategory":"652","secondCategory":"12346","thirdCategory":"1203","promoInfo":"加价购","goodRate":"99%"},{"id":5155905,"brandId":41422,"venderId":1000000715,"state":1,"brandName":"AOC","fullName":"AOC I2490VXH/BS 23.8英寸 1.5mm窄边框 AH-IPS硬屏 低蓝光爱眼不闪 电脑显示器（HDMI版）","imgUrl":"//img13.360buyimg.com/vip/s300x300_jfs/t19843/6/2160171365/339844/53c5fa21/5b32fb3bN09ca4fbc.jpg","firstCategory":"670","secondCategory":"677","thirdCategory":"688","promoInfo":"加价购","goodRate":"99%"},{"id":2430453,"brandId":10965,"venderId":1000000312,"state":1,"brandName":"朗科","fullName":"朗科（Netac）16GB TF（MicroSD）存储卡 U1 C10 高速畅销版 读速80MB/s 行车记录仪监控摄像手机内存卡","imgUrl":"//img10.360buyimg.com/vip/s300x300_jfs/t1/8101/34/212/338002/5bc98ab3Eefa66a34/15e7d874da501a2d.jpg","firstCategory":"652","secondCategory":"829","thirdCategory":"845","promoInfo":"换购","goodRate":"99%"},{"id":7323541,"brandId":16538,"venderId":1000000921,"state":1,"brandName":"索尼","fullName":"索尼（SONY）128G存储卡 SF-G128 SDXC UHS-II内存卡/SD卡 300MB/S读取速度","imgUrl":"//img11.360buyimg.com/vip/s300x300_jfs/t16597/49/1676545505/184350/2893fcf8/5ad5a4b1N981ec646.jpg","firstCategory":"652","secondCategory":"829","thirdCategory":"10971","promoInfo":"赠品","goodRate":"100%"},{"id":7748348,"brandId":8740,"venderId":1000000155,"state":1,"brandName":"惠普","fullName":"惠普（HP）战66 Pro G1 14英寸轻薄笔记本电脑（i5-8250U 8G 360G PCIe SSD 标压MX150 2G独显）银色","imgUrl":"//img14.360buyimg.com/vip/s300x300_jfs/t22897/282/1192249406/187153/a5252790/5b56eeb7N249809be.jpg","firstCategory":"670","secondCategory":"671","thirdCategory":"672","goodRate":"98%"},{"id":5089253,"brandId":14026,"venderId":1000000127,"state":1,"brandName":"Apple","fullName":"Apple iPhone X (A1865) 64GB 深空灰色 移动联通电信4G手机","imgUrl":"//img13.360buyimg.com/vip/s300x300_jfs/t10675/253/1344769770/66891/92d54ca4/59df2e7fN86c99a27.jpg","firstCategory":"9987","secondCategory":"653","thirdCategory":"655","promoInfo":"换购","goodRate":"99%"},{"id":7641991,"brandId":18374,"venderId":1000004123,"state":1,"brandName":"小米","fullName":"小米（MI）小米电视4X 55英寸 L55M5-AD 2GB+8GB HDR 4K超高清 蓝牙语音遥控 人工智能语音网络液晶平板电视","imgUrl":"//img14.360buyimg.com/vip/s300x300_jfs/t29518/5/50591075/273007/2bc96965/5be66874N2b394fba.jpg","firstCategory":"737","secondCategory":"794","thirdCategory":"798","promoInfo":"加价购","goodRate":"99%"},{"id":5853579,"brandId":8557,"venderId":1000000904,"state":1,"brandName":"华为","fullName":"荣耀 V10 全网通高配版 6GB+64GB 幻夜黑 移动联通电信4G全面屏游戏手机 双卡双待","imgUrl":"//img12.360buyimg.com/vip/s300x300_jfs/t13441/73/1250191369/239632/8b94bbc6/5a1d1e2dN6ba9aac4.jpg","firstCategory":"9987","secondCategory":"653","thirdCategory":"655","goodRate":"98%"},{"id":3082122,"brandId":12380,"venderId":1000001452,"state":1,"brandName":"美的","fullName":"美的（Midea）正1.5匹 变频 智弧 冷暖 智能壁挂式卧室空调挂机 KFR-35GW/WDAA3@","imgUrl":"//img14.360buyimg.com/vip/s300x300_jfs/t26830/185/2124982882/95441/620c859d/5bf7c4b6N715193f2.jpg","firstCategory":"737","secondCategory":"794","thirdCategory":"870","goodRate":"99%"}]}},{"code":"M_SIGN_TASK","dataDetail":{"taskList":[{"id":131,"name":"买清洁用户，获清洁勋章和京豆","type":1,"processKey":4,"description":"截止当天近半年内在清洁用品分类下有过购物行为，订单完成后第二天即可获得清洁勋章和领取京豆奖励！\r\nPS：请在京东APP“我的”-“京享值”-“任务中心”领取奖励","beginTime":"2018-07-24 00:00:00","endTime":"2018-12-31 23:59:59","imgUrl":"//img11.360buyimg.com/vip/jfs/t20896/23/2413752342/13906/9bfeb57d/5b5591cbN871c3d53.jpg","maLink":"//pro.m.jd.com/mall/active/2Tjm6ay1ZbZ3v7UbriTj6kHy9dn6/index.html","wqLink":"//channel.jd.com/1620-1625.html","rewardType":1,"rewardList":[{"id":143,"name":"奖品20181123142349","taskId":131,"rewardType":1,"rewardKey":"JINGBEAN_RESOURCE_TASK_CALLID_238_2BID_1001321","description":"200京豆","rewardPerNum":200,"rewardQuota":20000000,"gmtCreate":"2018-07-23 16:31:29","gmtModify":"2018-11-23 14:23:49"}],"taskUserStatus":0,"taskTagStatus":-1,"completeRate":0.0,"hasTaskLeave":true,"totalRewardCouponCount":0,"totalRewardJBeanCount":200,"beginTimeStr":"2018-07-24","endTimeStr":"2018-12-31","completeTimeStr":""},{"id":134,"name":"买酒饮商品，获酒饮勋章和京豆","type":1,"processKey":4,"description":"截止当天近1年内在酒饮用品分类下有过购物行为，订单完成后第二天即可获得酒饮勋章和领取京豆奖励！\r\nPS：请在京东APP“我的”-“京享值”-“任务中心”领取奖励","beginTime":"2018-08-09 13:59:09","endTime":"2018-12-31 23:59:59","imgUrl":"//img12.360buyimg.com/vip/jfs/t22522/16/1886527458/9219/c242816f/5b6bd80eNe7724822.jpg","maLink":"//h5.m.jd.com/active/zGwAUzL3pVGjptBBGeYfpKjYdtX/index.html","wqLink":"","rewardType":1,"rewardList":[{"id":146,"name":"奖品20180811125551","taskId":134,"rewardType":1,"rewardKey":"JINGBEAN_RESOURCE_TASK_CALLID_449_2BID_1012300000","description":"150京豆","rewardPerNum":150,"rewardQuota":2914200,"gmtCreate":"2018-08-09 14:00:51","gmtModify":"2018-08-11 12:55:51"}],"taskUserStatus":0,"taskTagStatus":-1,"completeRate":0.0,"hasTaskLeave":true,"totalRewardCouponCount":0,"totalRewardJBeanCount":150,"beginTimeStr":"2018-08-09","endTimeStr":"2018-12-31","completeTimeStr":""},{"id":35,"name":"加入陪伴计划 享专属特权","type":1,"processKey":12,"description":"填写宝贝档案信息，加入陪伴计划即可获得奖励，超值特权惊喜连连，完成任务后记得回任务中心领奖哦","beginTime":"2017-05-15 00:00:00","endTime":"2020-09-15 23:59:59","imgUrl":"//img11.360buyimg.com/vip/jfs/t5731/245/2489879862/16545/569fee41/59313821Naad61efd.png","maLink":"//h5.m.jd.com/dev/3786r4YdgZxtkrMBpcD9c2ho1kpe/index.html#/index?entrance=rw","wqLink":"","rewardType":1,"rewardList":[{"id":49,"name":"奖品20180514104142","taskId":35,"rewardType":1,"rewardKey":"TASK_BEAN_20","description":"80京豆","rewardPerNum":80,"rewardQuota":18000000,"gmtCreate":"2017-06-05 15:00:35","gmtModify":"2018-05-14 10:41:42"}],"taskUserStatus":0,"taskTagStatus":-1,"completeRate":0.0,"hasTaskLeave":true,"totalRewardCouponCount":0,"totalRewardJBeanCount":80,"beginTimeStr":"2017-05-15","endTimeStr":"2020-09-15","completeTimeStr":""}]}},{"code":"M_SIGN_BARTER_JINGBEAN","dataDetail":{"ad":{"id":1357,"name":"广告","title":"京豆优惠购","subTitle":"","description":"","btnLabel":"点击参与","backgroundColor":"#ffffff","imgUrl":"","img2Url":"","httpUrl":""},"btSkuList":[{"skuId":34043884653,"image":"//img12.360buyimg.com/vip/s330x330_jfs/t27109/159/743254363/484902/21557b58/5bb82ee9N6ab77a1c.jpg","name":"观悦三合一数据线Type-c苹果安卓快充充电线一拖三iPhone华为小米多功能充电线 中国红【新款弯头】","beanNum":10,"promPrice":17.1},{"skuId":32061563989,"image":"//img14.360buyimg.com/vip/s330x330_jfs/t25054/48/961426528/80386/f7f916e1/5b83788aNa4c335cf.jpg","name":"格士奇 8G 16G 32G 64G金属优盘 防水芯片 U盘定制 免费刻字 企业定单 欢迎询价 16G","beanNum":10,"promPrice":11.9},{"skuId":19733803485,"image":"//img11.360buyimg.com/vip/s330x330_jfs/t18286/346/1099613103/160018/e17caf42/5abb19d6N37a1510c.jpg","name":"虎克 Kindle Oasis2钢化膜 亚马逊2017新款电子书阅读器贴膜 7英寸电纸书屏幕保护膜 高清钢化膜","beanNum":20,"promPrice":26.2},{"skuId":29776693449,"image":"//img10.360buyimg.com/vip/s330x330_jfs/t23722/62/346020387/60810/b4b08782/5b2ca85eN1429ee7e.jpg","name":"羊太家车载充电器带线一拖三多功能万能快充车充华为苹果手机充电三合一 带一个USB接口 满足98%手机","beanNum":100,"promPrice":40.0}]}},{"code":"M_SIGN_FULI","dataDetail":{"fuliActBriefList":[{"id":2410,"title":"领299元全球购骑士卡","adImgUrl":"//img12.360buyimg.com/vip/jfs/t1/700/8/10756/25052/5bceecb5Eef97d787/2d81a808df1f68cc.jpg","lowestScore":5000,"exchangeable":true,"exchangePrice":{"currencyType":0,"price":0},"newAct":false,"actWay":1,"detailUrl":"","introduction":"数量有限，先到先得！","buttonText":"立即参与"},{"id":2606,"title":"漫咖啡折扣券免费领","adImgUrl":"//img10.360buyimg.com/vip/jfs/t26638/9/1858275886/40498/8621d78d/5beed5bbN148e9902.png","lowestScore":5000,"exchangeable":true,"exchangePrice":{"currencyType":0,"price":0},"newAct":false,"actWay":1,"detailUrl":"","introduction":"数量有限，先到先得！","buttonText":"立即兑换"},{"id":2640,"title":"翼猫HRA健康评估优惠","adImgUrl":"//img10.360buyimg.com/vip/jfs/t30271/132/555579804/25264/b25075c4/5bf6a71dN2fcdd340.jpg","lowestScore":5000,"exchangeable":true,"exchangePrice":{"currencyType":0,"price":20},"newAct":false,"actWay":1,"detailUrl":"","introduction":"数量有限，先到先得！","buttonText":"立即兑换"},{"id":1657,"title":"随手印24页照片集免费打印","adImgUrl":"//img12.360buyimg.com/vip/jfs/t22282/180/567206747/16127/b9cef7da/5b114b64N059b7e54.jpg","lowestScore":201,"exchangeable":true,"exchangePrice":{"currencyType":0,"price":10},"newAct":false,"actWay":1,"detailUrl":"","introduction":"数量有限，先到先得！","buttonText":"立即参与"}]}}]},"code":0}
+
+
 http://api.m.jd.com/client.action?functionId=signBeanIndex&clientVersion=7.2.6&build=63370&client=android&d_brand=vivo&d_model=vivoZ1&osVersion=8.1.0&screen=2280*1080&partner=vivo&androidId=c151521cf7c1430f&installtionId=73e5ce8937244403ae1e93dc8d3ecf69&sdkVersion=27&lang=zh_CN&uuid=868602047125517-20f77c733fa1&area=22_1930_50949_52153&networkType=wifi&wifiBssid=dad94a9d1e16905aac6420087a4877cd&st=1544458991632&sign=69ba850cad177fe09d384153cda5f438&sv=122
 
 POST http://api.m.jd.com/client.action?functionId=signBeanIndex&clientVersion=7.2.6&build=63370&client=android&d_brand=vivo&d_model=vivoZ1&osVersion=8.1.0&screen=2280*1080&partner=vivo&androidId=c151521cf7c1430f&installtionId=73e5ce8937244403ae1e93dc8d3ecf69&sdkVersion=27&lang=zh_CN&uuid=868602047125517-20f77c733fa1&area=22_1930_50949_52153&networkType=wifi&wifiBssid=dad94a9d1e16905aac6420087a4877cd&st=1544458991632&sign=69ba850cad177fe09d384153cda5f438&sv=122 HTTP/1.1
@@ -128,6 +145,782 @@ usaddr: 165.13
 Expires: Mon, 10 Dec 2018 16:37:26 GMT
 Cache-Control: max-age=0
 Content-Length: 107
+
+==============================================================
+钢镚签到
+https://ms.jr.jd.com/gw/generic/base/h5/m/baseSignInEncryptNew
+
+POST https://ms.jr.jd.com/gw/generic/base/h5/m/baseSignInEncryptNew HTTP/1.1
+Host: ms.jr.jd.com
+Connection: keep-alive
+Content-Length: 21
+Origin: https://m.jr.jd.com
+User-Agent: Mozilla/5.0 (Linux; Android 8.1; vivo Z1 Build/OPM1.171019.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044307 Mobile Safari/537.36/application=JDJR-App&clientType=android&deviceId=868602047125517&src=vivo&version=5.0.5&clientVersion=5.0.5&osVersion=8.1.0&osName=vivo Z1&isUpdate=0&HiClVersion=5.0.5&netWork=1&netWorkType=1&ip=10.12.197.183&mac=20:F7:7C:73:3F:A1&sPoint=MjAwMDIjI3hpYW9qaW5rdTQzMDM%3D%0A&*#@jdPaySDK*#@jdPayChannel=jdFinance&jdPayChannelVersion=5.0.5&jdPaySdkVersion=2.21.4.0&androidBrand=vivo&androidManufacturer=vivo&jdPayClientName=Android*#@jdPaySDK*#@
+content-type: application/x-www-form-urlencoded;charset=UTF-8
+Accept: */*
+Referer: https://m.jr.jd.com/spe/qyy/hzq/index.html?usertype=1176&utm_source=androidapp&utm_medium=appshare&utm_campaign=t_335139774&utm_term=Wxfriends&from=singlemessage
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,en-US;q=0.8
+Cookie: _jrda=1; __jrr=2D83B0E218EE54B859EDC82F4AD2E9; pt_key=app_openAAFcD3UcADCjl4LinAZw0OfNlwumIHKGQS6Asjl45w7eWwT2FG7MQ4FmnNP68vIncDDHFrZytjk; pt_pin=jackdaifei_m; pwdt_id=jackdaifei_m; sid=06ad44e5f9da81cd5e525fcf1dc713fw; grwng_uid=b5dcde57-0ffe-4ad8-b649-d7205cd6006f; hzq_grade=true; bigBannerValue_1180=0; unpl=V2_ZzNtbRFSE0clDBFQck5eBWIFEFpLURNGIQwWB30RWwdmVBdfclRCFXwURldnGVwUZwQZXkpcQxVFCEdkexhdBGMHE19FXnMldDhFVEsZXTVnBxdYRldEHH0KRFx%2bGVQBYAsUW0dRSyVFD3ZkrpLB0cCuxMr8g%2fqNo53JZHsZVAJlBBVcQFRzFEUIRVB%2fEFUCZAQSbQk5Qlh1DENRfxlbDG8BEFVHV0sRcgBAUn4fVDVmMxE%3d; CCC_SE=ADC_7%2fl4%2bRrDzKOZriZYzKtXYBBoYJXVijPuyuLbpHabQDkbI3CuV3Qy8GTZDZUZPp6mPBUS1Hv4GSkMmmKX9zfRq6NNEez6dPBNaOfDkP0JoGC12yfW%2fsekZjP%2f20dZtq5HYqG5hJ7PLYToDyQQTXwc8kUYVrqiMV7Jniz6m6YJM4dCBNiIpSwGR%2bAY0q1uCxBcAqurT25oG2kUZVk92LcBPgO6stFl3qrcr4iuI1fV3jvzjmovZYmATlzVxKMAxpYulszrQDcqBFRoH84LVbb9NsIVZzqE5UcIFnczA08%2b%2fnzkzdSUL6z2m0lcEn0rV5Gxt30%2blNU9s3QN9x%2fEi02HVxLa0FuIzQNgmP0P9tsFWeLPvY5e%2bBYrItwuAZTJDGcqTlu8rLjD7ls5ok%2bhRqJeXKPnWUygtZnCylhXDKHabSgXBov8vNA6oHorPXKjX%2bbRm7hxCQuuYUAxGaZLB5MHSaghbFosfE00YT5vmYmy7H4xhYlMFwRLfcQeTTBVgNNj5UHTmRGSL6w5OjtjV7CT1Jo2GH82cazLETDkKeeFAbg%3d; __jda=168871293.15445168933941956977479.1544516893.1544516923.1544516962.4; __jdb=168871293.1.15445168933941956977479|4.1544516962; __jdc=168871293; __jdv=168871293|androidapp|t_335139774|appshare|Wxfriends|1544516962429; __jdu=15445168933941956977479; gr_user_id=fd1720ce-a446-47b2-bf10-7f38c82d0a9c; 91719e1e58f56f2d_gr_session_id_ca5360f5-242b-4706-ae17-7f6cd8b1e3fb=true; 91719e1e58f56f2d_gr_session_id=ca5360f5-242b-4706-ae17-7f6cd8b1e3fb; _jrdb=1544516962678
+X-Requested-With: com.jd.jrapp
+
+
+HTTP/1.1 200 OK
+Server: openresty
+Date: Tue, 11 Dec 2018 08:29:59 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+Access-Control-Allow-Origin: https://m.jr.jd.com
+Access-Control-Allow-Credentials: true
+Expires: Tue, 11 Dec 2018 08:29:59 GMT
+Cache-Control: max-age=0
+Content-Length: 285
+
+reqData	{}
+source	app
+
+==============================================================
+手气领钢镚
+https://ms.jr.jd.com/newjrmactivity/base/appdownload/lotteryBySmart.action
+
+POST https://ms.jr.jd.com/newjrmactivity/base/appdownload/lotteryBySmart.action HTTP/1.1
+Host: ms.jr.jd.com
+Connection: keep-alive
+Content-Length: 0
+Accept: application/json
+Origin: https://m.jr.jd.com
+User-Agent: Mozilla/5.0 (Linux; Android 8.1; vivo Z1 Build/OPM1.171019.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044307 Mobile Safari/537.36/application=JDJR-App&clientType=android&deviceId=868602047125517&src=vivo&version=5.0.5&clientVersion=5.0.5&osVersion=8.1.0&osName=vivo Z1&isUpdate=0&HiClVersion=5.0.5&netWork=1&netWorkType=1&ip=10.12.197.183&mac=20:F7:7C:73:3F:A1&sPoint=MjAwMDIjI3hpYW9qaW5rdTQzMDM%3D%0A&*#@jdPaySDK*#@jdPayChannel=jdFinance&jdPayChannelVersion=5.0.5&jdPaySdkVersion=2.21.4.0&androidBrand=vivo&androidManufacturer=vivo&jdPayClientName=Android*#@jdPaySDK*#@
+Referer: https://m.jr.jd.com/activity/brief/get5Coin/index2.html?source=zq
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,en-US;q=0.8
+Cookie: _jrda=1; __jrr=2D83B0E218EE54B859EDC82F4AD2E9; pt_key=app_openAAFcD3UcADCjl4LinAZw0OfNlwumIHKGQS6Asjl45w7eWwT2FG7MQ4FmnNP68vIncDDHFrZytjk; pt_pin=jackdaifei_m; pwdt_id=jackdaifei_m; sid=06ad44e5f9da81cd5e525fcf1dc713fw; grwng_uid=b5dcde57-0ffe-4ad8-b649-d7205cd6006f; hzq_grade=true; bigBannerValue_1180=0; unpl=V2_ZzNtbRFSE0clDBFQck5eBWIFEFpLURNGIQwWB30RWwdmVBdfclRCFXwURldnGVwUZwQZXkpcQxVFCEdkexhdBGMHE19FXnMldDhFVEsZXTVnBxdYRldEHH0KRFx%2bGVQBYAsUW0dRSyVFD3ZkrpLB0cCuxMr8g%2fqNo53JZHsZVAJlBBVcQFRzFEUIRVB%2fEFUCZAQSbQk5Qlh1DENRfxlbDG8BEFVHV0sRcgBAUn4fVDVmMxE%3d; CCC_SE=ADC_7%2fl4%2bRrDzKOZriZYzKtXYBBoYJXVijPuyuLbpHabQDkbI3CuV3Qy8GTZDZUZPp6mPBUS1Hv4GSkMmmKX9zfRq6NNEez6dPBNaOfDkP0JoGC12yfW%2fsekZjP%2f20dZtq5HYqG5hJ7PLYToDyQQTXwc8kUYVrqiMV7Jniz6m6YJM4dCBNiIpSwGR%2bAY0q1uCxBcAqurT25oG2kUZVk92LcBPgO6stFl3qrcr4iuI1fV3jvzjmovZYmATlzVxKMAxpYulszrQDcqBFRoH84LVbb9NsIVZzqE5UcIFnczA08%2b%2fnzkzdSUL6z2m0lcEn0rV5Gxt30%2blNU9s3QN9x%2fEi02HVxLa0FuIzQNgmP0P9tsFWeLPvY5e%2bBYrItwuAZTJDGcqTlu8rLjD7ls5ok%2bhRqJeXKPnWUygtZnCylhXDKHabSgXBov8vNA6oHorPXKjX%2bbRm7hxCQuuYUAxGaZLB5MHSaghbFosfE00YT5vmYmy7H4xhYlMFwRLfcQeTTBVgNNj5UHTmRGSL6w5OjtjV7CT1Jo2GH82cazLETDkKeeFAbg%3d; __jdv=168871293|androidapp|t_335139774|appshare|Wxfriends|1544516962429; gr_user_id=fd1720ce-a446-47b2-bf10-7f38c82d0a9c; 91719e1e58f56f2d_gr_session_id_ca5360f5-242b-4706-ae17-7f6cd8b1e3fb=true; 91719e1e58f56f2d_gr_session_id=ca5360f5-242b-4706-ae17-7f6cd8b1e3fb; __jda=168871293.15445168933941956977479.1544516893.1544516923.1544516962.4; __jdb=168871293.2.15445168933941956977479|4.1544516962; __jdc=168871293; __jdu=15445168933941956977479; _jrdb=1544517038860
+X-Requested-With: com.jd.jrapp
+
+
+HTTP/1.1 200 OK
+Server: openresty
+Date: Tue, 11 Dec 2018 08:31:08 GMT
+Content-Type: text/html;charset=UTF-8
+Connection: keep-alive
+Vary: Accept-Encoding
+Access-Control-Allow-Origin: https://m.jr.jd.com
+Access-Control-Allow-Credentials: true
+Expires: Tue, 11 Dec 2018 08:31:08 GMT
+Cache-Control: max-age=0
+Content-Length: 135
+
+
+==============================================================
+福利社, 领京豆
+https://vip.m.jd.com/page/signin
+
+GET https://vip.m.jd.com/page/signin HTTP/1.1
+Host: vip.m.jd.com
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 8.1; vivo Z1 Build/OPM1.171019.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044307 Mobile Safari/537.36/application=JDJR-App&clientType=android&deviceId=868602047125517&src=vivo&version=5.0.5&clientVersion=5.0.5&osVersion=8.1.0&osName=vivo Z1&isUpdate=0&HiClVersion=5.0.5&netWork=1&netWorkType=1&ip=10.12.197.183&mac=20:F7:7C:73:3F:A1&sPoint=MjAwMDIjI3hpYW9qaW5rdTQzMDM%3D%0A&*#@jdPaySDK*#@jdPayChannel=jdFinance&jdPayChannelVersion=5.0.5&jdPaySdkVersion=2.21.4.0&androidBrand=vivo&androidManufacturer=vivo&jdPayClientName=Android*#@jdPaySDK*#@
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,image/tpg,*/*;q=0.8
+Referer: https://vip.m.jd.com/?utm_source=iosapp&utm_medium=appshare&utm_campaign=t_335139774&utm_term=Wxfriends&cu=true&utm_source=home.jdpay.com&utm_medium=tuiguang&utm_campaign=t_1000550368_&utm_term=4efa8232eec845e2acf60d53a951d0db
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,en-US;q=0.8
+Cookie: _jrda=1; pt_key=app_openAAFcD3UcADCjl4LinAZw0OfNlwumIHKGQS6Asjl45w7eWwT2FG7MQ4FmnNP68vIncDDHFrZytjk; pt_pin=jackdaifei_m; pwdt_id=jackdaifei_m; sid=06ad44e5f9da81cd5e525fcf1dc713fw; grwng_uid=b5dcde57-0ffe-4ad8-b649-d7205cd6006f; _jrdb=1544517127520; gr_user_id=fd1720ce-a446-47b2-bf10-7f38c82d0a9c; 91719e1e58f56f2d_gr_session_id_ca5360f5-242b-4706-ae17-7f6cd8b1e3fb=true; 91719e1e58f56f2d_gr_session_id=ca5360f5-242b-4706-ae17-7f6cd8b1e3fb; __jdu=15445169021861353377499; unpl=V2_ZzNtbUcDFEV8C0RXL00ODGIHRl4SBRQSdF1CVisRWAUyAkcOclRCFXwURldnGVwUZwQZX0FcQBZFCEdkexhdBGMHE19FXnMldDhFVEsZXTVnBxdYRldEHH0KRFx%2bGVQBYAsUW0dRSyVFD3ZkrpLB0cCuxMr8g%2fqNo53JZHsZVAJlBBVcQFRzFEUIRVZzH10AZgYRbQk5Qlh1DENRfxlbDG8BEFVHV0sRcgBAUn4fVDVmMxE%3d; CCC_SE=ADC_J5PZH71mHaz8ezfPW2VFLaB5bCmyiZarsbHLEQEGKoPT7NU54P5%2f2VHXJOel8fXVLmPzvODmxfQwuzin5J4Ctffe9ajfLRRrUUuvqMU0Uq4SX6wbWArX4oei2IpZKHVqIYW8uqyxiPvdvzbnb4caVdDE1ccuIt5hkCQq90f381qN99%2fzHzTHkgv64Vce6mWC0LU0Qv2ps3KQLw4GsRnLR5OrIOW5qpoUEJGURmhkWdYOBtmvtcnV13uAhrbS6RG7I4uUEBpeeNRbFAUd48zNJ1J%2fvTBUSRs4tRmLz6c9Ff5roZvxTQIhC9rTKv9OHfvrwYhP0CSpiWruWqiJmsvJWlfCxZlydGCoCnOxjcAzjhBlAFb2Bc4c13yI5fF4U47w76Dl7hkTUlmSes6oCQVXVBPWniQmKhJzfG6dCXAVal7cijG5tVwTtuSbPoj%2ffpe6r7EZvv1eva8EIK2ME66rA%2bHF3v8M1fAc5Z5hYVpLFV1BTcG0MOxCBG0Pvlx7k7gjnWeOBEIvz1XGiP02fdT%2fWRW%2bZ9fgGa15ck4tQmSRxQU%3d; __jda=168871293.15445168933941956977479.1544516893.1544516962.1544517143.5; __jdb=168871293.1.15445168933941956977479|5.1544517143; __jdv=168871293|iosapp|t_335139774|appshare|Wxfriends|1544517143084; __jdc=168871293; shshshfp=9fe23e97c6757c85aeb98bd4cd49a660; shshshfpa=355efec4-39de-7f45-7302-61d4509a2d8e-1544517144; shshshsID=b5bea413760f0220e8010ee205ef94c2_1_1544517144221; shshshfpb=2fe96028c45574734af6d7e1758911d32569095a106ea30584bcc74300; mba_muid=15445168933941956977479; mba_sid=15445171430871364671865680737.1
+
+
+HTTP/1.1 200 OK
+Server: JDWS/1.0.0
+Date: Tue, 11 Dec 2018 08:32:51 GMT
+Content-Type: text/html;charset=UTF-8
+Connection: close
+Vary: Accept-Encoding
+Pragma: No-cache
+Cache-Control: no-store
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Content-Language: zh-CN
+Content-Length: 2029
+
+---------------------------------同上
+https://vip.m.jd.com/scoreSign/getPage.html?token=401832346&wxProgramFlag=false
+
+GET https://vip.m.jd.com/scoreSign/getPage.html?token=401832346&wxProgramFlag=false HTTP/1.1
+Host: vip.m.jd.com
+Connection: keep-alive
+Accept: application/json, text/plain, */*
+X-Requested-With: XMLHttpRequest
+User-Agent: Mozilla/5.0 (Linux; Android 8.1; vivo Z1 Build/OPM1.171019.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044307 Mobile Safari/537.36/application=JDJR-App&clientType=android&deviceId=868602047125517&src=vivo&version=5.0.5&clientVersion=5.0.5&osVersion=8.1.0&osName=vivo Z1&isUpdate=0&HiClVersion=5.0.5&netWork=1&netWorkType=1&ip=10.12.197.183&mac=20:F7:7C:73:3F:A1&sPoint=MjAwMDIjI3hpYW9qaW5rdTQzMDM%3D%0A&*#@jdPaySDK*#@jdPayChannel=jdFinance&jdPayChannelVersion=5.0.5&jdPaySdkVersion=2.21.4.0&androidBrand=vivo&androidManufacturer=vivo&jdPayClientName=Android*#@jdPaySDK*#@
+Referer: https://vip.m.jd.com/page/signin
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,en-US;q=0.8
+Cookie: _jrda=1; pt_key=app_openAAFcD3UcADCjl4LinAZw0OfNlwumIHKGQS6Asjl45w7eWwT2FG7MQ4FmnNP68vIncDDHFrZytjk; pt_pin=jackdaifei_m; pwdt_id=jackdaifei_m; sid=06ad44e5f9da81cd5e525fcf1dc713fw; grwng_uid=b5dcde57-0ffe-4ad8-b649-d7205cd6006f; _jrdb=1544517127520; gr_user_id=fd1720ce-a446-47b2-bf10-7f38c82d0a9c; 91719e1e58f56f2d_gr_session_id_ca5360f5-242b-4706-ae17-7f6cd8b1e3fb=true; 91719e1e58f56f2d_gr_session_id=ca5360f5-242b-4706-ae17-7f6cd8b1e3fb; __jdu=15445169021861353377499; unpl=V2_ZzNtbUcDFEV8C0RXL00ODGIHRl4SBRQSdF1CVisRWAUyAkcOclRCFXwURldnGVwUZwQZX0FcQBZFCEdkexhdBGMHE19FXnMldDhFVEsZXTVnBxdYRldEHH0KRFx%2bGVQBYAsUW0dRSyVFD3ZkrpLB0cCuxMr8g%2fqNo53JZHsZVAJlBBVcQFRzFEUIRVZzH10AZgYRbQk5Qlh1DENRfxlbDG8BEFVHV0sRcgBAUn4fVDVmMxE%3d; CCC_SE=ADC_J5PZH71mHaz8ezfPW2VFLaB5bCmyiZarsbHLEQEGKoPT7NU54P5%2f2VHXJOel8fXVLmPzvODmxfQwuzin5J4Ctffe9ajfLRRrUUuvqMU0Uq4SX6wbWArX4oei2IpZKHVqIYW8uqyxiPvdvzbnb4caVdDE1ccuIt5hkCQq90f381qN99%2fzHzTHkgv64Vce6mWC0LU0Qv2ps3KQLw4GsRnLR5OrIOW5qpoUEJGURmhkWdYOBtmvtcnV13uAhrbS6RG7I4uUEBpeeNRbFAUd48zNJ1J%2fvTBUSRs4tRmLz6c9Ff5roZvxTQIhC9rTKv9OHfvrwYhP0CSpiWruWqiJmsvJWlfCxZlydGCoCnOxjcAzjhBlAFb2Bc4c13yI5fF4U47w76Dl7hkTUlmSes6oCQVXVBPWniQmKhJzfG6dCXAVal7cijG5tVwTtuSbPoj%2ffpe6r7EZvv1eva8EIK2ME66rA%2bHF3v8M1fAc5Z5hYVpLFV1BTcG0MOxCBG0Pvlx7k7gjnWeOBEIvz1XGiP02fdT%2fWRW%2bZ9fgGa15ck4tQmSRxQU%3d; __jdv=168871293|iosapp|t_335139774|appshare|Wxfriends|1544517143084; shshshfpa=355efec4-39de-7f45-7302-61d4509a2d8e-1544517144; __jda=168871293.15445168933941956977479.1544516893.1544516962.1544517143.5; __jdb=168871293.2.15445168933941956977479|5.1544517143; __jdc=168871293; shshshfp=9fe23e97c6757c85aeb98bd4cd49a660; shshshsID=b5bea413760f0220e8010ee205ef94c2_2_1544517173086; shshshfpb=2fe96028c45574734af6d7e1758911d32569095a106ea30584bcc74300; mba_muid=15445168933941956977479; mba_sid=15445171430871364671865680737.2
+
+
+HTTP/1.1 200 OK
+Server: JDWS/1.0.0
+Date: Tue, 11 Dec 2018 08:32:53 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: close
+Content-Length: 11067
+
+
+============================================================
+福利社, 拆红包
+https://ms.jr.jd.com/gw/generic/jrm/h5/m/conOrderLottery?_=1544517583686
+
+POST https://ms.jr.jd.com/gw/generic/jrm/h5/m/conOrderLottery?_=1544517583686 HTTP/1.1
+Host: ms.jr.jd.com
+Connection: keep-alive
+Content-Length: 1724
+Accept: application/json
+Origin: https://m.jr.jd.com
+User-Agent: Mozilla/5.0 (Linux; Android 8.1; vivo Z1 Build/OPM1.171019.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044307 Mobile Safari/537.36/application=JDJR-App&clientType=android&deviceId=868602047125517&src=vivo&version=5.0.5&clientVersion=5.0.5&osVersion=8.1.0&osName=vivo Z1&isUpdate=0&HiClVersion=5.0.5&netWork=1&netWorkType=1&ip=10.12.197.183&mac=20:F7:7C:73:3F:A1&sPoint=MjAwMDIjI3hpYW9qaW5rdTQzMDM%3D%0A&*#@jdPaySDK*#@jdPayChannel=jdFinance&jdPayChannelVersion=5.0.5&jdPaySdkVersion=2.21.4.0&androidBrand=vivo&androidManufacturer=vivo&jdPayClientName=Android*#@jdPaySDK*#@
+Content-Type: application/x-www-form-urlencoded;charset=UTF-8
+Referer: https://m.jr.jd.com/zc/drawSystem/hb/index.html?contentParam=100000916&act=1&actCode=73362F6CE2&actType=1&sourece=qdb&type=jixifulishe
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,en-US;q=0.8
+Cookie: _jrda=1; __jrr=2D83B0E218EE54B859EDC82F4AD2E9; pt_key=app_openAAFcD3UcADCjl4LinAZw0OfNlwumIHKGQS6Asjl45w7eWwT2FG7MQ4FmnNP68vIncDDHFrZytjk; pt_pin=jackdaifei_m; pwdt_id=jackdaifei_m; sid=06ad44e5f9da81cd5e525fcf1dc713fw; grwng_uid=b5dcde57-0ffe-4ad8-b649-d7205cd6006f; hzq_grade=true; bigBannerValue_1180=0; gr_user_id=fd1720ce-a446-47b2-bf10-7f38c82d0a9c; 91719e1e58f56f2d_gr_session_id_ca5360f5-242b-4706-ae17-7f6cd8b1e3fb=true; 91719e1e58f56f2d_gr_session_id=ca5360f5-242b-4706-ae17-7f6cd8b1e3fb; shshshfpa=355efec4-39de-7f45-7302-61d4509a2d8e-1544517144; mba_muid=15445168933941956977479; mba_sid=15445171430871364671865680737.3; shshshfp=9fe23e97c6757c85aeb98bd4cd49a660; shshshsID=b5bea413760f0220e8010ee205ef94c2_3_1544517535207; shshshfpb=2fe96028c45574734af6d7e1758911d32569095a106ea30584bcc74300; from=jrapp; zin=jackdaifei_m; reqZin=app_openAAFcD3UcADCjl4LinAZw0OfNlwumIHKGQS6Asjl45w7eWwT2FG7MQ4FmnNP68vIncDDHFrZytjk; __jdv=57808826|home.jdpay.com|t_1000550368_|tuiguang|44aa1cbc04a34d91be33483af6f17f03|1544517557509; unpl=V2_ZzNtbUYHRxYmWEADfxteAWICFlQRUkQQfFtCBylMWFJkUBRdclRCFXwURldnGVwUZwQZX0pcQRJFCEdkexhdBGMHE19FXnMldAlEVH8cXgxiBBBfQ1ZBEXE4RVRLGVo1ZwcXWEZXRBx9CkRcfhlUAWALFFtHUUslRQhHXEspiY7617XwlMD9wcyQkMH0KVwFbwQQWkVWQRZFCXZVS1IyBCoDFlhHU0MSfABEVnMcXA1jBBpbRFJFHUUJdlQ%3d; CCC_SE=ADC_inRfhonisqrruV9sjIHZk5xX1bpFJCGgP6BEKq00bTS%2bo9I7hYFVL7skaaRNN5MXdfUm%2b%2f9iGGs9FhfFiaAONNPMSzLf4cctq%2fgRlg19Rw%2bpiSafEFMU%2fA5IrmTyjGf2IaWQVORiFCkqWYVMxQvGFDhs20F9CVeAfv9g%2fAk5kbimSszaAOk6GUHhOev2wQuZoMnD1l2GAwGN1o4qqYOrEdvtWR%2fAwhbgiZZFYhjKIHPStjpUDwhX1DqUFqgvRDE9y1lHNxEsOGFXUjv6wI3CS5TA5Ek8UngF2llqvxqSG52eUjDvvFhIF88M70nJJ4U7JreE4Szi%2bKtMH25mubRcVooMvmb4pv3e3yutQl4rSgC2fCtLk%2fxMO3kUuUWxPupIlTPP3AnKqI13tr6EbSc8put%2f6aIJgH5ttEb5%2fEJDdFgyfTIBGttSgTF58vgV1A43u6nNKB2ErnQjhNeMKnu%2ba2gM2Dw%2bqai1X7AT7lX5weXgZ%2fp2yTwgn3WvgjrJ3AQrtNcaFvbpguRF8ex3Wt18XQWavVfGg%2fPfdBUe6J%2fZXtJExes05EnvgoQztVjYJy5y; __jda=168871293.15445168933941956977479.1544516893.1544517143.1544517547.6; __jdb=168871293.3.15445168933941956977479|6.1544517547; __jdc=168871293; _jrdb=1544517578515; __jdu=15445168933941956977479
+X-Requested-With: com.jd.jrapp
+
+
+HTTP/1.1 200 OK
+Server: openresty
+Date: Tue, 11 Dec 2018 08:39:43 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+Access-Control-Allow-Origin: https://m.jr.jd.com
+Access-Control-Allow-Credentials: true
+Expires: Tue, 11 Dec 2018 08:39:43 GMT
+Cache-Control: max-age=0
+Content-Length: 539
+
+
+reqData	{"actCode":"73362F6CE2","riskDeviceParam":"{\"deviceType\":\"vivo Z1\",\"traceIp\":\"\",\"macAddress\":\"20F77C733FA1\",\"imei\":\"868602047125517\",\"os\":\"android\",\"osVersion\":\"8.1.0\",\"fp\":\"e97f7d0c71e5d065f43fcae400a74a46\",\"ip\":\"10.12.197.183\",\"eid\":\"KWVSHNUO4MB3VTPWRM3MFPRQVSARY54O3KPOQT5W66NHNZBHJDDRC4HGJ62D6KPCDVIVY2DNZNQTJCE5IWRW5GJFYE\",\"appId\":\"com.jd.jrapp\",\"openUUID\":\"\",\"uuid\":\"868602047125517-20F77C733FA1\",\"clientVersion\":\"5.0.5\",\"resolution\":\"1080.0*2280.0\",\"channelInfo\":\"vivo#309080027\",\"networkType\":\"wifi\",\"startNo\":\"270\",\"openid\":\"\",\"token\":\"\",\"sid\":\"\",\"terminalType\":\"02\",\"longtitude\":\"104.068599\",\"latitude\":\"30.548989\",\"securityData\":\"\",\"jscContent\":\"\",\"fnHttpHead\":\"\",\"receiveRequestTime\":\"\",\"port\":\"\",\"appType\":3,\"optType\":\"\",\"idfv\":\"\",\"wifiSSID\":\"\",\"wifiMacAddress\":\"\",\"cellIpAddress\":\"\",\"wifiIpAddress\":\"\",\"sdkToken\":\"\"}"}
+reqData {"actCode":"4AEDFB9EDC","riskDeviceParam":"{\"deviceType\":\"vivo Z1\",\"traceIp\":\"\",\"macAddress\":\"20F77C733FA1\",\"imei\":\"868602047125517\",\"os\":\"android\",\"osVersion\":\"8.1.0\",\"fp\":\"e97f7d0c71e5d065f43fcae400a74a46\",\"ip\":\"10.12.197.183\",\"eid\":\"KWVSHNUO4MB3VTPWRM3MFPRQVSARY54O3KPOQT5W66NHNZBHJDDRC4HGJ62D6KPCDVIVY2DNZNQTJCE5IWRW5GJFYE\",\"appId\":\"com.jd.jrapp\",\"openUUID\":\"\",\"uuid\":\"868602047125517-20F77C733FA1\",\"clientVersion\":\"5.0.5\",\"resolution\":\"1080.0*2280.0\",\"channelInfo\":\"vivo#309080027\",\"networkType\":\"wifi\",\"startNo\":\"270\",\"openid\":\"\",\"token\":\"\",\"sid\":\"\",\"terminalType\":\"02\",\"longtitude\":\"104.068599\",\"latitude\":\"30.548989\",\"securityData\":\"\",\"jscContent\":\"\",\"fnHttpHead\":\"\",\"receiveRequestTime\":\"\",\"port\":\"\",\"appType\":3,\"optType\":\"\",\"idfv\":\"\",\"wifiSSID\":\"\",\"wifiMacAddress\":\"\",\"cellIpAddress\":\"\",\"wifiIpAddress\":\"\",\"sdkToken\":\"\"}"}
+
+---
+获取待领取
+https://ms.jr.jd.com/gw/generic/jrm/h5/m/oneNeedUserPickUpReward
+
+POST https://ms.jr.jd.com/gw/generic/jrm/h5/m/oneNeedUserPickUpReward HTTP/1.1
+Host: ms.jr.jd.com
+Connection: keep-alive
+Content-Length: 43
+Origin: https://m.jr.jd.com
+User-Agent: Mozilla/5.0 (Linux; Android 8.1; vivo Z1 Build/OPM1.171019.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044307 Mobile Safari/537.36/application=JDJR-App&clientType=android&deviceId=868602047125517&src=vivo&version=5.0.5&clientVersion=5.0.5&osVersion=8.1.0&osName=vivo Z1&isUpdate=0&HiClVersion=5.0.5&netWork=1&netWorkType=1&ip=10.12.197.183&mac=20:F7:7C:73:3F:A1&sPoint=MjAwMDIjI3hpYW9qaW5rdTQzMDM%3D%0A&*#@jdPaySDK*#@jdPayChannel=jdFinance&jdPayChannelVersion=5.0.5&jdPaySdkVersion=2.21.4.0&androidBrand=vivo&androidManufacturer=vivo&jdPayClientName=Android*#@jdPaySDK*#@
+content-type: application/x-www-form-urlencoded;charset=UTF-8
+Accept: */*
+Referer: https://m.jr.jd.com/zc/drawSystem/hb/index.html?contentParam=100000916&act=1&actCode=73362F6CE2&actType=1&sourece=qdb&type=jixifulishe
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,en-US;q=0.8
+Cookie: _jrda=1; __jrr=2D83B0E218EE54B859EDC82F4AD2E9; pt_key=app_openAAFcD3UcADCjl4LinAZw0OfNlwumIHKGQS6Asjl45w7eWwT2FG7MQ4FmnNP68vIncDDHFrZytjk; pt_pin=jackdaifei_m; pwdt_id=jackdaifei_m; sid=06ad44e5f9da81cd5e525fcf1dc713fw; grwng_uid=b5dcde57-0ffe-4ad8-b649-d7205cd6006f; hzq_grade=true; bigBannerValue_1180=0; gr_user_id=fd1720ce-a446-47b2-bf10-7f38c82d0a9c; 91719e1e58f56f2d_gr_session_id_ca5360f5-242b-4706-ae17-7f6cd8b1e3fb=true; 91719e1e58f56f2d_gr_session_id=ca5360f5-242b-4706-ae17-7f6cd8b1e3fb; shshshfpa=355efec4-39de-7f45-7302-61d4509a2d8e-1544517144; mba_muid=15445168933941956977479; mba_sid=15445171430871364671865680737.3; shshshfp=9fe23e97c6757c85aeb98bd4cd49a660; shshshsID=b5bea413760f0220e8010ee205ef94c2_3_1544517535207; shshshfpb=2fe96028c45574734af6d7e1758911d32569095a106ea30584bcc74300; from=jrapp; zin=jackdaifei_m; reqZin=app_openAAFcD3UcADCjl4LinAZw0OfNlwumIHKGQS6Asjl45w7eWwT2FG7MQ4FmnNP68vIncDDHFrZytjk; __jdv=57808826|home.jdpay.com|t_1000550368_|tuiguang|44aa1cbc04a34d91be33483af6f17f03|1544517557509; unpl=V2_ZzNtbUYHRxYmWEADfxteAWICFlQRUkQQfFtCBylMWFJkUBRdclRCFXwURldnGVwUZwQZX0pcQRJFCEdkexhdBGMHE19FXnMldAlEVH8cXgxiBBBfQ1ZBEXE4RVRLGVo1ZwcXWEZXRBx9CkRcfhlUAWALFFtHUUslRQhHXEspiY7617XwlMD9wcyQkMH0KVwFbwQQWkVWQRZFCXZVS1IyBCoDFlhHU0MSfABEVnMcXA1jBBpbRFJFHUUJdlQ%3d; CCC_SE=ADC_inRfhonisqrruV9sjIHZk5xX1bpFJCGgP6BEKq00bTS%2bo9I7hYFVL7skaaRNN5MXdfUm%2b%2f9iGGs9FhfFiaAONNPMSzLf4cctq%2fgRlg19Rw%2bpiSafEFMU%2fA5IrmTyjGf2IaWQVORiFCkqWYVMxQvGFDhs20F9CVeAfv9g%2fAk5kbimSszaAOk6GUHhOev2wQuZoMnD1l2GAwGN1o4qqYOrEdvtWR%2fAwhbgiZZFYhjKIHPStjpUDwhX1DqUFqgvRDE9y1lHNxEsOGFXUjv6wI3CS5TA5Ek8UngF2llqvxqSG52eUjDvvFhIF88M70nJJ4U7JreE4Szi%2bKtMH25mubRcVooMvmb4pv3e3yutQl4rSgC2fCtLk%2fxMO3kUuUWxPupIlTPP3AnKqI13tr6EbSc8put%2f6aIJgH5ttEb5%2fEJDdFgyfTIBGttSgTF58vgV1A43u6nNKB2ErnQjhNeMKnu%2ba2gM2Dw%2bqai1X7AT7lX5weXgZ%2fp2yTwgn3WvgjrJ3AQrtNcaFvbpguRF8ex3Wt18XQWavVfGg%2fPfdBUe6J%2fZXtJExes05EnvgoQztVjYJy5y; __jda=168871293.15445168933941956977479.1544516893.1544517143.1544517547.6; __jdb=168871293.3.15445168933941956977479|6.1544517547; __jdc=168871293; _jrdb=1544517578515; __jdu=15445168933941956977479
+X-Requested-With: com.jd.jrapp
+
+
+HTTP/1.1 200 OK
+Server: nginx
+Date: Tue, 11 Dec 2018 08:41:07 GMT
+Content-Type: application/json;charset=UTF-8
+X-Cnection: close
+Access-Control-Allow-Origin: https://m.jr.jd.com
+Access-Control-Allow-Credentials: true
+usaddr: 214.74
+Expires: Tue, 11 Dec 2018 08:41:07 GMT
+Cache-Control: max-age=0
+Content-Length: 577
+
+
+reqData	{"actCode":"73362F6CE2"}
+source	app
+
+reqData	{"actCode":"4AEDFB9EDC"}
+source	app
+
+
+---
+领取
+https://ms.jr.jd.com/gw/generic/jrm/h5/m/pickUpReward?_=1544517668445
+
+POST https://ms.jr.jd.com/gw/generic/jrm/h5/m/pickUpReward?_=1544517668445 HTTP/1.1
+Host: ms.jr.jd.com
+Connection: keep-alive
+Content-Length: 1755
+Accept: application/json
+Origin: https://m.jr.jd.com
+User-Agent: Mozilla/5.0 (Linux; Android 8.1; vivo Z1 Build/OPM1.171019.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044307 Mobile Safari/537.36/application=JDJR-App&clientType=android&deviceId=868602047125517&src=vivo&version=5.0.5&clientVersion=5.0.5&osVersion=8.1.0&osName=vivo Z1&isUpdate=0&HiClVersion=5.0.5&netWork=1&netWorkType=1&ip=10.12.197.183&mac=20:F7:7C:73:3F:A1&sPoint=MjAwMDIjI3hpYW9qaW5rdTQzMDM%3D%0A&*#@jdPaySDK*#@jdPayChannel=jdFinance&jdPayChannelVersion=5.0.5&jdPaySdkVersion=2.21.4.0&androidBrand=vivo&androidManufacturer=vivo&jdPayClientName=Android*#@jdPaySDK*#@
+Content-Type: application/x-www-form-urlencoded;charset=UTF-8
+Referer: https://m.jr.jd.com/zc/drawSystem/hb/index.html?contentParam=100000916&act=1&actCode=73362F6CE2&actType=1&sourece=qdb&type=jixifulishe
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,en-US;q=0.8
+Cookie: _jrda=1; __jrr=2D83B0E218EE54B859EDC82F4AD2E9; pt_key=app_openAAFcD3UcADCjl4LinAZw0OfNlwumIHKGQS6Asjl45w7eWwT2FG7MQ4FmnNP68vIncDDHFrZytjk; pt_pin=jackdaifei_m; pwdt_id=jackdaifei_m; sid=06ad44e5f9da81cd5e525fcf1dc713fw; grwng_uid=b5dcde57-0ffe-4ad8-b649-d7205cd6006f; hzq_grade=true; bigBannerValue_1180=0; gr_user_id=fd1720ce-a446-47b2-bf10-7f38c82d0a9c; 91719e1e58f56f2d_gr_session_id_ca5360f5-242b-4706-ae17-7f6cd8b1e3fb=true; 91719e1e58f56f2d_gr_session_id=ca5360f5-242b-4706-ae17-7f6cd8b1e3fb; shshshfpa=355efec4-39de-7f45-7302-61d4509a2d8e-1544517144; mba_muid=15445168933941956977479; mba_sid=15445171430871364671865680737.3; shshshfp=9fe23e97c6757c85aeb98bd4cd49a660; shshshsID=b5bea413760f0220e8010ee205ef94c2_3_1544517535207; shshshfpb=2fe96028c45574734af6d7e1758911d32569095a106ea30584bcc74300; from=jrapp; zin=jackdaifei_m; reqZin=app_openAAFcD3UcADCjl4LinAZw0OfNlwumIHKGQS6Asjl45w7eWwT2FG7MQ4FmnNP68vIncDDHFrZytjk; __jdv=57808826|home.jdpay.com|t_1000550368_|tuiguang|44aa1cbc04a34d91be33483af6f17f03|1544517557509; unpl=V2_ZzNtbUYHRxYmWEADfxteAWICFlQRUkQQfFtCBylMWFJkUBRdclRCFXwURldnGVwUZwQZX0pcQRJFCEdkexhdBGMHE19FXnMldAlEVH8cXgxiBBBfQ1ZBEXE4RVRLGVo1ZwcXWEZXRBx9CkRcfhlUAWALFFtHUUslRQhHXEspiY7617XwlMD9wcyQkMH0KVwFbwQQWkVWQRZFCXZVS1IyBCoDFlhHU0MSfABEVnMcXA1jBBpbRFJFHUUJdlQ%3d; CCC_SE=ADC_inRfhonisqrruV9sjIHZk5xX1bpFJCGgP6BEKq00bTS%2bo9I7hYFVL7skaaRNN5MXdfUm%2b%2f9iGGs9FhfFiaAONNPMSzLf4cctq%2fgRlg19Rw%2bpiSafEFMU%2fA5IrmTyjGf2IaWQVORiFCkqWYVMxQvGFDhs20F9CVeAfv9g%2fAk5kbimSszaAOk6GUHhOev2wQuZoMnD1l2GAwGN1o4qqYOrEdvtWR%2fAwhbgiZZFYhjKIHPStjpUDwhX1DqUFqgvRDE9y1lHNxEsOGFXUjv6wI3CS5TA5Ek8UngF2llqvxqSG52eUjDvvFhIF88M70nJJ4U7JreE4Szi%2bKtMH25mubRcVooMvmb4pv3e3yutQl4rSgC2fCtLk%2fxMO3kUuUWxPupIlTPP3AnKqI13tr6EbSc8put%2f6aIJgH5ttEb5%2fEJDdFgyfTIBGttSgTF58vgV1A43u6nNKB2ErnQjhNeMKnu%2ba2gM2Dw%2bqai1X7AT7lX5weXgZ%2fp2yTwgn3WvgjrJ3AQrtNcaFvbpguRF8ex3Wt18XQWavVfGg%2fPfdBUe6J%2fZXtJExes05EnvgoQztVjYJy5y; __jda=168871293.15445168933941956977479.1544516893.1544517143.1544517547.6; __jdb=168871293.3.15445168933941956977479|6.1544517547; __jdc=168871293; _jrdb=1544517578515; __jdu=15445168933941956977479
+X-Requested-With: com.jd.jrapp
+
+
+HTTP/1.1 200 OK
+Server: nginx
+Date: Tue, 11 Dec 2018 08:41:08 GMT
+Content-Type: application/json;charset=UTF-8
+X-Cnection: close
+Access-Control-Allow-Origin: https://m.jr.jd.com
+Access-Control-Allow-Credentials: true
+usaddr: 214.73
+Expires: Tue, 11 Dec 2018 08:41:08 GMT
+Cache-Control: max-age=0
+Content-Length: 587
+
+
+reqData	{"actCode":"73362F6CE2","rewardCode":"600","riskDeviceParam":"{\"deviceType\":\"vivo Z1\",\"traceIp\":\"\",\"macAddress\":\"20F77C733FA1\",\"imei\":\"868602047125517\",\"os\":\"android\",\"osVersion\":\"8.1.0\",\"fp\":\"e97f7d0c71e5d065f43fcae400a74a46\",\"ip\":\"10.12.197.183\",\"eid\":\"KWVSHNUO4MB3VTPWRM3MFPRQVSARY54O3KPOQT5W66NHNZBHJDDRC4HGJ62D6KPCDVIVY2DNZNQTJCE5IWRW5GJFYE\",\"appId\":\"com.jd.jrapp\",\"openUUID\":\"\",\"uuid\":\"868602047125517-20F77C733FA1\",\"clientVersion\":\"5.0.5\",\"resolution\":\"1080.0*2280.0\",\"channelInfo\":\"vivo#309080027\",\"networkType\":\"wifi\",\"startNo\":\"270\",\"openid\":\"\",\"token\":\"\",\"sid\":\"\",\"terminalType\":\"02\",\"longtitude\":\"104.068599\",\"latitude\":\"30.548989\",\"securityData\":\"\",\"jscContent\":\"\",\"fnHttpHead\":\"\",\"receiveRequestTime\":\"\",\"port\":\"\",\"appType\":3,\"optType\":\"\",\"idfv\":\"\",\"wifiSSID\":\"\",\"wifiMacAddress\":\"\",\"cellIpAddress\":\"\",\"wifiIpAddress\":\"\",\"sdkToken\":\"\"}"}
+
+reqData	{"actCode":"4AEDFB9EDC","rewardCode":"1025","riskDeviceParam":"{\"deviceType\":\"vivo Z1\",\"traceIp\":\"\",\"macAddress\":\"20F77C733FA1\",\"imei\":\"868602047125517\",\"os\":\"android\",\"osVersion\":\"8.1.0\",\"fp\":\"e97f7d0c71e5d065f43fcae400a74a46\",\"ip\":\"10.12.197.183\",\"eid\":\"KWVSHNUO4MB3VTPWRM3MFPRQVSARY54O3KPOQT5W66NHNZBHJDDRC4HGJ62D6KPCDVIVY2DNZNQTJCE5IWRW5GJFYE\",\"appId\":\"com.jd.jrapp\",\"openUUID\":\"\",\"uuid\":\"868602047125517-20F77C733FA1\",\"clientVersion\":\"5.0.5\",\"resolution\":\"1080.0*2280.0\",\"channelInfo\":\"vivo#309080027\",\"networkType\":\"wifi\",\"startNo\":\"270\",\"openid\":\"\",\"token\":\"\",\"sid\":\"\",\"terminalType\":\"02\",\"longtitude\":\"104.068599\",\"latitude\":\"30.548989\",\"securityData\":\"\",\"jscContent\":\"\",\"fnHttpHead\":\"\",\"receiveRequestTime\":\"\",\"port\":\"\",\"appType\":3,\"optType\":\"\",\"idfv\":\"\",\"wifiSSID\":\"\",\"wifiMacAddress\":\"\",\"cellIpAddress\":\"\",\"wifiIpAddress\":\"\",\"sdkToken\":\"\"}"}
+
+
+====================================================================
+福利社, 小金库, 摇红包
+
+https://kx.jd.com/dzp/go?activityno=16-130181130113526559831&sid=1616&_=1544517925548&callback=Zepto1544517911256
+
+GET https://kx.jd.com/dzp/go?activityno=16-130181130113526559831&sid=1616&_=1544517925548&callback=Zepto1544517911256 HTTP/1.1
+Host: kx.jd.com
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 8.1; vivo Z1 Build/OPM1.171019.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044307 Mobile Safari/537.36/application=JDJR-App&clientType=android&deviceId=868602047125517&src=vivo&version=5.0.5&clientVersion=5.0.5&osVersion=8.1.0&osName=vivo Z1&isUpdate=0&HiClVersion=5.0.5&netWork=1&netWorkType=1&ip=10.12.197.183&mac=20:F7:7C:73:3F:A1&sPoint=MjAwMDIjI3hpYW9qaW5rdTQzMDM%3D%0A&*#@jdPaySDK*#@jdPayChannel=jdFinance&jdPayChannelVersion=5.0.5&jdPaySdkVersion=2.21.4.0&androidBrand=vivo&androidManufacturer=vivo&jdPayClientName=Android*#@jdPaySDK*#@
+Accept: */*
+Referer: https://active.jd.com/2017/VaultPraise/html/index.html?type=jingxifulishe
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,en-US;q=0.8
+Cookie: _jrda=1; pt_key=app_openAAFcD3UcADCjl4LinAZw0OfNlwumIHKGQS6Asjl45w7eWwT2FG7MQ4FmnNP68vIncDDHFrZytjk; pt_pin=jackdaifei_m; pwdt_id=jackdaifei_m; sid=06ad44e5f9da81cd5e525fcf1dc713fw; grwng_uid=b5dcde57-0ffe-4ad8-b649-d7205cd6006f; gr_user_id=fd1720ce-a446-47b2-bf10-7f38c82d0a9c; 91719e1e58f56f2d_gr_session_id_ca5360f5-242b-4706-ae17-7f6cd8b1e3fb=true; 91719e1e58f56f2d_gr_session_id=ca5360f5-242b-4706-ae17-7f6cd8b1e3fb; shshshfpa=355efec4-39de-7f45-7302-61d4509a2d8e-1544517144; mba_muid=15445168933941956977479; mba_sid=15445171430871364671865680737.3; shshshfp=9fe23e97c6757c85aeb98bd4cd49a660; shshshsID=b5bea413760f0220e8010ee205ef94c2_3_1544517535207; shshshfpb=2fe96028c45574734af6d7e1758911d32569095a106ea30584bcc74300; from=jrapp; zin=jackdaifei_m; reqZin=app_openAAFcD3UcADCjl4LinAZw0OfNlwumIHKGQS6Asjl45w7eWwT2FG7MQ4FmnNP68vIncDDHFrZytjk; __jdv=57808826|home.jdpay.com|t_1000550368_|tuiguang|44aa1cbc04a34d91be33483af6f17f03|1544517557509; unpl=V2_ZzNtbRAFFxAnChVVeREJUWJQR11LB0tHfAERVC4bXgJhUEcNclRCFXwURldnGVwUZwQZWEZcQxRFCEdkexhdBGMHE19FXnMldAlFVH8cXgxlBRRfSlBGEXc4RVRLGVo1ZwcXWEZXRBx9CkRcfhlUAWALFFtHUUslRQhHXEspiY7617XwlMD9wcyQkMH0KVwFbwQQWkVWQRZFCXZVS1IyBCoDFlhHU0MSfABEVnMcXA1jBBpbRFJFHUUJdlQ%3d; CCC_SE=ADC_VgKQf2I3lt9B5W3EI4nKNX%2fpfQgMLjxMz3Lbms3kiteqc7TwNN7PzoYCfZP9iKBIrysGq0%2bAcVqEc45SMBXCluR6ZslHBM5yGyGUk%2b9C8EGj2P%2bbKpFR%2ffPm8XETfYGs464v1QrhGVc4wQZ3WZyEuNpyExZ%2ftaoQZU2M5rONw5K9cOuFka%2bQ%2bd%2bOAz39kv8PRlemiPW48awTVGq%2buURHinMuB1xELxW33%2fTFTdhZEXsr1vX9JjISeRJvd5RJ5GspTamqq0i0%2fJ7bdRSMji5rU7jZ8vqJY%2btouREnA3tG2nN1y5WNlizGy3XnyBrYvOrpRNm%2fv01TVAvdKkeZpo8AJ8AwvVNmLl4zb8F%2beYHzgqGq25TBmNDCgmOQf0lTkRbRBPEy1z1SZ0mlJes9JX%2bEWyKvgrRdlT9UYiaW8AOkJkXyYMFMvhtL8rw6196u4JBt7NujDOTKVaFPF7Vwp3gbCtMGWenmFFkHHbv%2fkXTz%2f%2fCJS6eUGnmkHWouccMDB%2bKbr%2fyrsG1YoJ%2fW3%2f%2baApLiBhBq1eWdUI8JVsYNqNtJK2NHjvr7%2bBEMefsrDtffSMB7; __jda=57808826.15445168933941956977479.1544516893.1544517143.1544517547.6; __jdb=57808826.5.15445168933941956977479|6.1544517547; __jdc=57808826; __jdu=15445168933941956977479; _jrdb=1544517911677
+
+
+HTTP/1.1 200 OK
+Server: JDWS/1.0.0
+Date: Tue, 11 Dec 2018 08:45:25 GMT
+Content-Type: text/json;charset=UTF-8
+Connection: close
+Expires: Tue, 11 Dec 2018 08:45:25 GMT
+Cache-Control: max-age=0
+Content-Length: 540
+
+
+==========================================================
+抓取
+
+https://ms.jr.jd.com/gw/generic/jrm/h5/m/taskFreeLottery?_=1544518036508
+
+POST https://ms.jr.jd.com/gw/generic/jrm/h5/m/taskFreeLottery?_=1544518036508 HTTP/1.1
+Host: ms.jr.jd.com
+Connection: keep-alive
+Content-Length: 1724
+Accept: application/json
+Origin: https://m.jr.jd.com
+User-Agent: Mozilla/5.0 (Linux; Android 8.1; vivo Z1 Build/OPM1.171019.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044307 Mobile Safari/537.36/application=JDJR-App&clientType=android&deviceId=868602047125517&src=vivo&version=5.0.5&clientVersion=5.0.5&osVersion=8.1.0&osName=vivo Z1&isUpdate=0&HiClVersion=5.0.5&netWork=1&netWorkType=1&ip=10.12.197.183&mac=20:F7:7C:73:3F:A1&sPoint=MjAwMDIjI3hpYW9qaW5rdTQzMDM%3D%0A&*#@jdPaySDK*#@jdPayChannel=jdFinance&jdPayChannelVersion=5.0.5&jdPaySdkVersion=2.21.4.0&androidBrand=vivo&androidManufacturer=vivo&jdPayClientName=Android*#@jdPaySDK*#@
+Content-Type: application/x-www-form-urlencoded;charset=UTF-8
+Referer: https://m.jr.jd.com/spe/acs/hymSystem/index.html?contentParam=100001144&actCode=ED995E5638&actType=1&source=1
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,en-US;q=0.8
+Cookie: _jrda=1; __jrr=2D83B0E218EE54B859EDC82F4AD2E9; pt_key=app_openAAFcD3UcADCjl4LinAZw0OfNlwumIHKGQS6Asjl45w7eWwT2FG7MQ4FmnNP68vIncDDHFrZytjk; pt_pin=jackdaifei_m; pwdt_id=jackdaifei_m; sid=06ad44e5f9da81cd5e525fcf1dc713fw; grwng_uid=b5dcde57-0ffe-4ad8-b649-d7205cd6006f; hzq_grade=true; bigBannerValue_1180=0; gr_user_id=fd1720ce-a446-47b2-bf10-7f38c82d0a9c; 91719e1e58f56f2d_gr_session_id_ca5360f5-242b-4706-ae17-7f6cd8b1e3fb=true; 91719e1e58f56f2d_gr_session_id=ca5360f5-242b-4706-ae17-7f6cd8b1e3fb; shshshfpa=355efec4-39de-7f45-7302-61d4509a2d8e-1544517144; mba_muid=15445168933941956977479; mba_sid=15445171430871364671865680737.3; shshshfp=9fe23e97c6757c85aeb98bd4cd49a660; shshshsID=b5bea413760f0220e8010ee205ef94c2_3_1544517535207; shshshfpb=2fe96028c45574734af6d7e1758911d32569095a106ea30584bcc74300; from=jrapp; zin=jackdaifei_m; reqZin=app_openAAFcD3UcADCjl4LinAZw0OfNlwumIHKGQS6Asjl45w7eWwT2FG7MQ4FmnNP68vIncDDHFrZytjk; __jdv=57808826|home.jdpay.com|t_1000550368_|tuiguang|44aa1cbc04a34d91be33483af6f17f03|1544517557509; unpl=V2_ZzNtbUZQQBMgARNTf0lVB2IFElRKXxEWc18TUitMW1JhABcKclRCFXwURldnGVwUZwQZWERcQh1FCEdkexhdBGMHE19FXnMldAlEVH8cXgZjAxRbQF5LFnA4RVRLGVo1ZwcXWEZXRBx9CkRcfhlUAWALFFtHUUslRQhHXEspiY7617XwlMD9wcyQkMH0KVwFbwQQWkVWQRZFCXZVS1IyBCoDFlhHU0MSfABEVnMcXA1jBBpbRFJFHUUJdlQ%3d; CCC_SE=ADC_%2fn%2f3UtU4pVirw%2fUIpefz4CVa5yfTBEITdz2Pdn49loyrUIFSYeU7Q7ibcqwssVPjTfNeb%2fcW7keWRmOcH2JQU6Cnl1g58KOtLOdbwUu%2fE2vseKJMpbnSU7%2faCS9wdmNaBBRPLcosArF1b6I5Yep04Q1kfp0QkaF9gM3WL8AhzdeA88eKO9u%2b%2fQdmhLnn%2bQh6KFUKSuGiyKaKylTXZfkWMwGdd7nV1Y2HED9o6sINE6iY330V%2fS2MUaINYW5hjQZ1g2UDGJho9%2fuXAm44H36May7NYeN%2fwbbS3OQWzIn7Eu4w7PcS40ClrZ7duVETAVf%2f62fRDPfo5YtIO8I7uCV7OoabQiTByWyrwrKBxMbFc59RUCF6n4k76BVa91j%2fatlPz%2b0%2b%2bWCOsKYDidmdH4Vs0SUhTiinQIevl%2bj4YK4rkdDkRVxFQJKGnAZue%2bS7t7mRPsBZEXnD5OL0P89bW3JEZqGbqghGIKh5M%2fqMt97WZ31odufLVBLycav6emey36TNsmDBfGiG5vcX%2fyq%2bYi7J0PALqD0ehMQbg5sFt2XtZZWPfamLtP93SMHcoRYYG5X8; __jda=168871293.15445168933941956977479.1544516893.1544517143.1544517547.6; __jdb=168871293.6.15445168933941956977479|6.1544517547; __jdc=168871293; __jdu=15445168933941956977479; _jrdb=1544518031075
+X-Requested-With: com.jd.jrapp
+
+
+HTTP/1.1 200 OK
+Server: nginx
+Date: Tue, 11 Dec 2018 08:47:16 GMT
+Content-Type: application/json;charset=UTF-8
+X-Cnection: close
+Access-Control-Allow-Origin: https://m.jr.jd.com
+Access-Control-Allow-Credentials: true
+usaddr: 214.137
+Expires: Tue, 11 Dec 2018 08:47:16 GMT
+Cache-Control: max-age=0
+Content-Length: 541
+
+
+reqData	{"actCode":"ED995E5638","riskDeviceParam":"{\"deviceType\":\"vivo Z1\",\"traceIp\":\"\",\"macAddress\":\"20F77C733FA1\",\"imei\":\"868602047125517\",\"os\":\"android\",\"osVersion\":\"8.1.0\",\"fp\":\"e97f7d0c71e5d065f43fcae400a74a46\",\"ip\":\"10.12.197.183\",\"eid\":\"KWVSHNUO4MB3VTPWRM3MFPRQVSARY54O3KPOQT5W66NHNZBHJDDRC4HGJ62D6KPCDVIVY2DNZNQTJCE5IWRW5GJFYE\",\"appId\":\"com.jd.jrapp\",\"openUUID\":\"\",\"uuid\":\"868602047125517-20F77C733FA1\",\"clientVersion\":\"5.0.5\",\"resolution\":\"1080.0*2280.0\",\"channelInfo\":\"vivo#309080027\",\"networkType\":\"wifi\",\"startNo\":\"270\",\"openid\":\"\",\"token\":\"\",\"sid\":\"\",\"terminalType\":\"02\",\"longtitude\":\"104.068599\",\"latitude\":\"30.548989\",\"securityData\":\"\",\"jscContent\":\"\",\"fnHttpHead\":\"\",\"receiveRequestTime\":\"\",\"port\":\"\",\"appType\":3,\"optType\":\"\",\"idfv\":\"\",\"wifiSSID\":\"\",\"wifiMacAddress\":\"\",\"cellIpAddress\":\"\",\"wifiIpAddress\":\"\",\"sdkToken\":\"\"}"}
+
+领取
+https://ms.jr.jd.com/gw/generic/jrm/h5/m/taskPickupReward?reqData=%7B%22recordId%22:4684961,%22actCode%22:%22ED995E5638%22%7D
+
+GET https://ms.jr.jd.com/gw/generic/jrm/h5/m/taskPickupReward?reqData=%7B%22recordId%22:4684961,%22actCode%22:%22ED995E5638%22%7D HTTP/1.1
+Host: ms.jr.jd.com
+Connection: keep-alive
+Accept: application/json, text/plain, */*
+Origin: https://m.jr.jd.com
+User-Agent: Mozilla/5.0 (Linux; Android 8.1; vivo Z1 Build/OPM1.171019.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044307 Mobile Safari/537.36/application=JDJR-App&clientType=android&deviceId=868602047125517&src=vivo&version=5.0.5&clientVersion=5.0.5&osVersion=8.1.0&osName=vivo Z1&isUpdate=0&HiClVersion=5.0.5&netWork=1&netWorkType=1&ip=10.12.197.183&mac=20:F7:7C:73:3F:A1&sPoint=MjAwMDIjI3hpYW9qaW5rdTQzMDM%3D%0A&*#@jdPaySDK*#@jdPayChannel=jdFinance&jdPayChannelVersion=5.0.5&jdPaySdkVersion=2.21.4.0&androidBrand=vivo&androidManufacturer=vivo&jdPayClientName=Android*#@jdPaySDK*#@
+Referer: https://m.jr.jd.com/spe/acs/hymNew/dist/rewardList.html?actCode=ED995E5638&sid=06ad44e5f9da81cd5e525fcf1dc713fw
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,en-US;q=0.8
+Cookie: _jrda=1; __jrr=2D83B0E218EE54B859EDC82F4AD2E9; grwng_uid=b5dcde57-0ffe-4ad8-b649-d7205cd6006f; hzq_grade=true; bigBannerValue_1180=0; gr_user_id=fd1720ce-a446-47b2-bf10-7f38c82d0a9c; 91719e1e58f56f2d_gr_session_id_ca5360f5-242b-4706-ae17-7f6cd8b1e3fb=true; 91719e1e58f56f2d_gr_session_id=ca5360f5-242b-4706-ae17-7f6cd8b1e3fb; shshshfpa=355efec4-39de-7f45-7302-61d4509a2d8e-1544517144; mba_muid=15445168933941956977479; mba_sid=15445171430871364671865680737.3; shshshfp=9fe23e97c6757c85aeb98bd4cd49a660; shshshsID=b5bea413760f0220e8010ee205ef94c2_3_1544517535207; shshshfpb=2fe96028c45574734af6d7e1758911d32569095a106ea30584bcc74300; from=jrapp; zin=jackdaifei_m; reqZin=app_openAAFcD3UcADCjl4LinAZw0OfNlwumIHKGQS6Asjl45w7eWwT2FG7MQ4FmnNP68vIncDDHFrZytjk; __jdv=57808826|home.jdpay.com|t_1000550368_|tuiguang|44aa1cbc04a34d91be33483af6f17f03|1544517557509; unpl=V2_ZzNtbUZQQBMgARNTf0lVB2IFElRKXxEWc18TUitMW1JhABcKclRCFXwURldnGVwUZwQZWERcQh1FCEdkexhdBGMHE19FXnMldAlEVH8cXgZjAxRbQF5LFnA4RVRLGVo1ZwcXWEZXRBx9CkRcfhlUAWALFFtHUUslRQhHXEspiY7617XwlMD9wcyQkMH0KVwFbwQQWkVWQRZFCXZVS1IyBCoDFlhHU0MSfABEVnMcXA1jBBpbRFJFHUUJdlQ%3d; CCC_SE=ADC_%2fn%2f3UtU4pVirw%2fUIpefz4CVa5yfTBEITdz2Pdn49loyrUIFSYeU7Q7ibcqwssVPjTfNeb%2fcW7keWRmOcH2JQU6Cnl1g58KOtLOdbwUu%2fE2vseKJMpbnSU7%2faCS9wdmNaBBRPLcosArF1b6I5Yep04Q1kfp0QkaF9gM3WL8AhzdeA88eKO9u%2b%2fQdmhLnn%2bQh6KFUKSuGiyKaKylTXZfkWMwGdd7nV1Y2HED9o6sINE6iY330V%2fS2MUaINYW5hjQZ1g2UDGJho9%2fuXAm44H36May7NYeN%2fwbbS3OQWzIn7Eu4w7PcS40ClrZ7duVETAVf%2f62fRDPfo5YtIO8I7uCV7OoabQiTByWyrwrKBxMbFc59RUCF6n4k76BVa91j%2fatlPz%2b0%2b%2bWCOsKYDidmdH4Vs0SUhTiinQIevl%2bj4YK4rkdDkRVxFQJKGnAZue%2bS7t7mRPsBZEXnD5OL0P89bW3JEZqGbqghGIKh5M%2fqMt97WZ31odufLVBLycav6emey36TNsmDBfGiG5vcX%2fyq%2bYi7J0PALqD0ehMQbg5sFt2XtZZWPfamLtP93SMHcoRYYG5X8; __jda=168871293.15445168933941956977479.1544516893.1544517143.1544517547.6; __jdb=168871293.7.15445168933941956977479|6.1544517547; __jdc=168871293; __jdu=15445168933941956977479; _jrdb=1544518103531; pt_key=app_openAAFcD3UcADCjl4LinAZw0OfNlwumIHKGQS6Asjl45w7eWwT2FG7MQ4FmnNP68vIncDDHFrZytjk; pt_pin=jackdaifei_m; pwdt_id=jackdaifei_m; sid=06ad44e5f9da81cd5e525fcf1dc713fw
+X-Requested-With: com.jd.jrapp
+
+
+HTTP/1.1 200 OK
+Server: nginx
+Date: Tue, 11 Dec 2018 08:48:48 GMT
+Content-Type: application/json;charset=UTF-8
+X-Cnection: close
+Access-Control-Allow-Origin: https://m.jr.jd.com
+Access-Control-Allow-Credentials: true
+usaddr: 19.237
+Expires: Tue, 11 Dec 2018 08:48:48 GMT
+Cache-Control: max-age=0
+Content-Length: 113
+
+
+=====================================================================
+每日任务签到
+https://s.m.jd.com/activemcenter/muserwelfare/sign?num=2&active=Myonghufliqiandao3&level=2&activedown=mriqiandaodoudijiangchi&_=1544518203117&sceneval=2&g_login_type=1&callback=jsonpCBKI&g_ty=ls
+
+-- 完成任务
+https://s.m.jd.com/activemcenter/muserwelfare/task?level=6&_=1544518257380&sceneval=2&g_login_type=1&callback=jsonpCBKK&g_ty=ls
+https://s.m.jd.com/activemcenter/muserwelfare/draw?active=mrenwu29&level=6&type=3&_=1544518403737&sceneval=2&g_login_type=1&callback=jsonpCBKF&g_ty=ls
+
+GET https://s.m.jd.com/activemcenter/muserwelfare/draw?active=mrenwu29&level=6&type=3&_=1544518403737&sceneval=2&g_login_type=1&callback=jsonpCBKF&g_ty=ls HTTP/1.1
+Host: s.m.jd.com
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 8.1; vivo Z1 Build/OPM1.171019.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044307 Mobile Safari/537.36/application=JDJR-App&clientType=android&deviceId=868602047125517&src=vivo&version=5.0.5&clientVersion=5.0.5&osVersion=8.1.0&osName=vivo Z1&isUpdate=0&HiClVersion=5.0.5&netWork=1&netWorkType=1&ip=10.12.197.183&mac=20:F7:7C:73:3F:A1&sPoint=MjAwMDIjI3hpYW9qaW5rdTQzMDM%3D%0A&*#@jdPaySDK*#@jdPayChannel=jdFinance&jdPayChannelVersion=5.0.5&jdPaySdkVersion=2.21.4.0&androidBrand=vivo&androidManufacturer=vivo&jdPayClientName=Android*#@jdPaySDK*#@
+Accept: */*
+Referer: https://s.m.jd.com/activemcenter/activemsite/m_welfare?ptag=138026.1.1&sceneval=2&logintag=
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,en-US;q=0.8
+Cookie: shshshfpa=355efec4-39de-7f45-7302-61d4509a2d8e-1544517144; __jdv=57808826|home.jdpay.com|t_1000550368_|tuiguang|44aa1cbc04a34d91be33483af6f17f03|1544517557509; pt_key=app_openAAFcD3UcADCjl4LinAZw0OfNlwumIHKGQS6Asjl45w7eWwT2FG7MQ4FmnNP68vIncDDHFrZytjk; pt_pin=jackdaifei_m; pwdt_id=jackdaifei_m; sid=06ad44e5f9da81cd5e525fcf1dc713fw; unpl=V2_ZzNtbRdRRxF8ARRTchAJVWIEEg0SUxMdJQASUnJKWAxmVxdeclRCFXwURldnGVwUZwQZWEpcRxRFCEdkexhdBGMHE19FXnMldDhFVEsZXTVnBxdYRldEHH0KRFx%2bGVQBYAsUW0dRSyVFD3ZkrpLB0cCuxMr8g%2fqNo53JZHsZVAJlBBVcQFRzFEUIRFN%2fHVUDZAETbQk5Qlh1DENRfxlbDG8BEFVHV0sRcgBAUn4fVDVmMxE%3d; webp=1; sc_width=360; visitkey=16812328902162992; wq_area=22_1930_49318%7C1; __jdu=15445168933941956977479; wxa_level=1; retina=1; cid=10; __jda=122270672.15445168933941956977479.1544516893.1544517143.1544517547.6; __jdb=122270672.15.15445168933941956977479|6.1544517547; __jdc=122270672; mba_muid=15445168933941956977479; mba_sid=15445171430871364671865680737.9; __wga=1544518398611.1544518193067.1544518193067.1544518193067.4.1; PPRD_P=CT.138026.1.1-UUID.15445168933941956977479; shshshfp=9fe23e97c6757c85aeb98bd4cd49a660; shshshsID=b5bea413760f0220e8010ee205ef94c2_9_1544518399111; shshshfpb=2fe96028c45574734af6d7e1758911d32569095a106ea30584bcc74300
+
+
+HTTP/1.1 200 OK
+Server: jfe
+Date: Tue, 11 Dec 2018 08:53:23 GMT
+Content-Type: text/html; charset=utf-8
+Connection: keep-alive
+Set-Cookie: SERVERID=ff7dc1d6dcf529e0a82da3b52e744847; Path=/
+Cache-Control: max-age=5
+Expires: Tue, 11 Dec 2018 08:53:28 GMT
+L5percent: 100
+Strict-Transport-Security: max-age=86400
+Content-Length: 131
+
+
+
+
+
+https://s.m.jd.com/activemcenter/muserwelfare/task?level=16&_=1544518311325&sceneval=2&g_login_type=1&callback=jsonpCBKF&g_ty=ls
+https://s.m.jd.com/activemcenter/muserwelfare/draw?active=mrenwu29&level=16&type=3&_=1544518465730&sceneval=2&g_login_type=1&callback=jsonpCBKH&g_ty=ls
+
+GET https://s.m.jd.com/activemcenter/muserwelfare/draw?active=mrenwu29&level=16&type=3&_=1544518465730&sceneval=2&g_login_type=1&callback=jsonpCBKH&g_ty=ls HTTP/1.1
+Host: s.m.jd.com
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 8.1; vivo Z1 Build/OPM1.171019.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044307 Mobile Safari/537.36/application=JDJR-App&clientType=android&deviceId=868602047125517&src=vivo&version=5.0.5&clientVersion=5.0.5&osVersion=8.1.0&osName=vivo Z1&isUpdate=0&HiClVersion=5.0.5&netWork=1&netWorkType=1&ip=10.12.197.183&mac=20:F7:7C:73:3F:A1&sPoint=MjAwMDIjI3hpYW9qaW5rdTQzMDM%3D%0A&*#@jdPaySDK*#@jdPayChannel=jdFinance&jdPayChannelVersion=5.0.5&jdPaySdkVersion=2.21.4.0&androidBrand=vivo&androidManufacturer=vivo&jdPayClientName=Android*#@jdPaySDK*#@
+Accept: */*
+Referer: https://s.m.jd.com/activemcenter/activemsite/m_welfare?ptag=138026.1.1&sceneval=2&logintag=
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,en-US;q=0.8
+Cookie: shshshfpa=355efec4-39de-7f45-7302-61d4509a2d8e-1544517144; __jdv=57808826|home.jdpay.com|t_1000550368_|tuiguang|44aa1cbc04a34d91be33483af6f17f03|1544517557509; pt_key=app_openAAFcD3UcADCjl4LinAZw0OfNlwumIHKGQS6Asjl45w7eWwT2FG7MQ4FmnNP68vIncDDHFrZytjk; pt_pin=jackdaifei_m; pwdt_id=jackdaifei_m; sid=06ad44e5f9da81cd5e525fcf1dc713fw; unpl=V2_ZzNtbRdRRxF8ARRTchAJVWIEEg0SUxMdJQASUnJKWAxmVxdeclRCFXwURldnGVwUZwQZWEpcRxRFCEdkexhdBGMHE19FXnMldDhFVEsZXTVnBxdYRldEHH0KRFx%2bGVQBYAsUW0dRSyVFD3ZkrpLB0cCuxMr8g%2fqNo53JZHsZVAJlBBVcQFRzFEUIRFN%2fHVUDZAETbQk5Qlh1DENRfxlbDG8BEFVHV0sRcgBAUn4fVDVmMxE%3d; webp=1; sc_width=360; visitkey=16812328902162992; wq_area=22_1930_49318%7C1; __jdu=15445168933941956977479; wxa_level=1; retina=1; cid=10; __jda=122270672.15445168933941956977479.1544516893.1544517143.1544517547.6; __jdb=122270672.15.15445168933941956977479|6.1544517547; __jdc=122270672; __wga=1544518398611.1544518193067.1544518193067.1544518193067.4.1; PPRD_P=CT.138026.1.1-UUID.15445168933941956977479; shshshfp=9fe23e97c6757c85aeb98bd4cd49a660; shshshsID=b5bea413760f0220e8010ee205ef94c2_9_1544518399111; SERVERID=ff7dc1d6dcf529e0a82da3b52e744847; mba_muid=15445168933941956977479; mba_sid=15445171430871364671865680737.9; shshshfpb=2fe96028c45574734af6d7e1758911d32569095a106ea30584bcc74300
+
+
+HTTP/1.1 200 OK
+Server: jfe
+Date: Tue, 11 Dec 2018 08:54:24 GMT
+Content-Type: text/html; charset=utf-8
+Connection: keep-alive
+Cache-Control: max-age=5
+Expires: Tue, 11 Dec 2018 08:54:30 GMT
+L5percent: 100
+Strict-Transport-Security: max-age=86400
+Content-Length: 132
+
+
+
+
+
+https://s.m.jd.com/activemcenter/muserwelfare/task?level=26&_=1544518370877&sceneval=2&g_login_type=1&callback=jsonpCBKF&g_ty=ls
+https://s.m.jd.com/activemcenter/muserwelfare/draw?active=mrenwu29&level=26&type=3&_=1544518495157&sceneval=2&g_login_type=1&callback=jsonpCBKJ&g_ty=ls
+
+GET https://s.m.jd.com/activemcenter/muserwelfare/draw?active=mrenwu29&level=26&type=3&_=1544518495157&sceneval=2&g_login_type=1&callback=jsonpCBKJ&g_ty=ls HTTP/1.1
+Host: s.m.jd.com
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 8.1; vivo Z1 Build/OPM1.171019.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044307 Mobile Safari/537.36/application=JDJR-App&clientType=android&deviceId=868602047125517&src=vivo&version=5.0.5&clientVersion=5.0.5&osVersion=8.1.0&osName=vivo Z1&isUpdate=0&HiClVersion=5.0.5&netWork=1&netWorkType=1&ip=10.12.197.183&mac=20:F7:7C:73:3F:A1&sPoint=MjAwMDIjI3hpYW9qaW5rdTQzMDM%3D%0A&*#@jdPaySDK*#@jdPayChannel=jdFinance&jdPayChannelVersion=5.0.5&jdPaySdkVersion=2.21.4.0&androidBrand=vivo&androidManufacturer=vivo&jdPayClientName=Android*#@jdPaySDK*#@
+Accept: */*
+Referer: https://s.m.jd.com/activemcenter/activemsite/m_welfare?ptag=138026.1.1&sceneval=2&logintag=
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,en-US;q=0.8
+Cookie: shshshfpa=355efec4-39de-7f45-7302-61d4509a2d8e-1544517144; __jdv=57808826|home.jdpay.com|t_1000550368_|tuiguang|44aa1cbc04a34d91be33483af6f17f03|1544517557509; pt_key=app_openAAFcD3UcADCjl4LinAZw0OfNlwumIHKGQS6Asjl45w7eWwT2FG7MQ4FmnNP68vIncDDHFrZytjk; pt_pin=jackdaifei_m; pwdt_id=jackdaifei_m; sid=06ad44e5f9da81cd5e525fcf1dc713fw; unpl=V2_ZzNtbRdRRxF8ARRTchAJVWIEEg0SUxMdJQASUnJKWAxmVxdeclRCFXwURldnGVwUZwQZWEpcRxRFCEdkexhdBGMHE19FXnMldDhFVEsZXTVnBxdYRldEHH0KRFx%2bGVQBYAsUW0dRSyVFD3ZkrpLB0cCuxMr8g%2fqNo53JZHsZVAJlBBVcQFRzFEUIRFN%2fHVUDZAETbQk5Qlh1DENRfxlbDG8BEFVHV0sRcgBAUn4fVDVmMxE%3d; webp=1; sc_width=360; visitkey=16812328902162992; wq_area=22_1930_49318%7C1; __jdu=15445168933941956977479; wxa_level=1; retina=1; cid=10; __jda=122270672.15445168933941956977479.1544516893.1544517143.1544517547.6; __jdb=122270672.15.15445168933941956977479|6.1544517547; __jdc=122270672; __wga=1544518398611.1544518193067.1544518193067.1544518193067.4.1; PPRD_P=CT.138026.1.1-UUID.15445168933941956977479; shshshfp=9fe23e97c6757c85aeb98bd4cd49a660; shshshsID=b5bea413760f0220e8010ee205ef94c2_9_1544518399111; SERVERID=ff7dc1d6dcf529e0a82da3b52e744847; mba_muid=15445168933941956977479; mba_sid=15445171430871364671865680737.9; shshshfpb=2fe96028c45574734af6d7e1758911d32569095a106ea30584bcc74300
+
+
+HTTP/1.1 200 OK
+Server: jfe
+Date: Tue, 11 Dec 2018 08:54:54 GMT
+Content-Type: text/html; charset=utf-8
+Connection: keep-alive
+Cache-Control: max-age=5
+Expires: Tue, 11 Dec 2018 08:54:59 GMT
+L5percent: 100
+Strict-Transport-Security: max-age=86400
+Content-Length: 132
+
+
+
+
+
+GET https://s.m.jd.com/activemcenter/muserwelfare/task?level=6&_=1544518257380&sceneval=2&g_login_type=1&callback=jsonpCBKK&g_ty=ls HTTP/1.1
+Host: s.m.jd.com
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 8.1; vivo Z1 Build/OPM1.171019.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044307 Mobile Safari/537.36/application=JDJR-App&clientType=android&deviceId=868602047125517&src=vivo&version=5.0.5&clientVersion=5.0.5&osVersion=8.1.0&osName=vivo Z1&isUpdate=0&HiClVersion=5.0.5&netWork=1&netWorkType=1&ip=10.12.197.183&mac=20:F7:7C:73:3F:A1&sPoint=MjAwMDIjI3hpYW9qaW5rdTQzMDM%3D%0A&*#@jdPaySDK*#@jdPayChannel=jdFinance&jdPayChannelVersion=5.0.5&jdPaySdkVersion=2.21.4.0&androidBrand=vivo&androidManufacturer=vivo&jdPayClientName=Android*#@jdPaySDK*#@
+Accept: */*
+Referer: https://s.m.jd.com/activemcenter/activemsite/m_welfare?ptag=138026.1.1&sceneval=2&logintag=
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,en-US;q=0.8
+Cookie: shshshfpa=355efec4-39de-7f45-7302-61d4509a2d8e-1544517144; __jdv=57808826|home.jdpay.com|t_1000550368_|tuiguang|44aa1cbc04a34d91be33483af6f17f03|1544517557509; pt_key=app_openAAFcD3UcADCjl4LinAZw0OfNlwumIHKGQS6Asjl45w7eWwT2FG7MQ4FmnNP68vIncDDHFrZytjk; pt_pin=jackdaifei_m; pwdt_id=jackdaifei_m; sid=06ad44e5f9da81cd5e525fcf1dc713fw; __jdu=15445169021861353377499; unpl=V2_ZzNtbRdRRxF8ARRTchAJVWIEEg0SUxMdJQASUnJKWAxmVxdeclRCFXwURldnGVwUZwQZWEpcRxRFCEdkexhdBGMHE19FXnMldDhFVEsZXTVnBxdYRldEHH0KRFx%2bGVQBYAsUW0dRSyVFD3ZkrpLB0cCuxMr8g%2fqNo53JZHsZVAJlBBVcQFRzFEUIRFN%2fHVUDZAETbQk5Qlh1DENRfxlbDG8BEFVHV0sRcgBAUn4fVDVmMxE%3d; wxa_level=1; retina=1; cid=10; webp=1; __jda=168871293.15445168933941956977479.1544516893.1544517143.1544517547.6; __jdb=168871293.8.15445168933941956977479|6.1544517547; __jdc=168871293; __wga=1544518193067.1544518193067.1544518193067.1544518193067.1.1; PPRD_P=CT.138026.1.1-UUID.15445168933941956977479; sc_width=360; visitkey=16812328902162992; shshshfp=9fe23e97c6757c85aeb98bd4cd49a660; shshshsID=b5bea413760f0220e8010ee205ef94c2_4_1544518193755; wq_area=22_1930_49318%7C1; shshshfpb=2fe96028c45574734af6d7e1758911d32569095a106ea30584bcc74300; SERVERID=ff7dc1d6dcf529e0a82da3b52e744847; mba_muid=15445168933941956977479; mba_sid=15445171430871364671865680737.4
+
+
+HTTP/1.1 200 OK
+Server: jfe
+Date: Tue, 11 Dec 2018 08:50:56 GMT
+Content-Type: text/html; charset=utf-8
+Connection: keep-alive
+Cache-Control: max-age=5
+Expires: Tue, 11 Dec 2018 08:51:02 GMT
+L5percent: 100
+Strict-Transport-Security: max-age=86400
+Content-Length: 50
+
+
+
+
+
+
+==============================================================
+种豆, 领取培养液
+
+http://api.m.jd.com/client.action?functionId=receiveNutrients&clientVersion=7.2.6&build=63370&client=android&d_brand=vivo&d_model=vivoZ1&osVersion=8.1.0&screen=2280*1080&partner=vivo&androidId=c151521cf7c1430f&installtionId=73e5ce8937244403ae1e93dc8d3ecf69&sdkVersion=27&lang=zh_CN&uuid=868602047125517-20f77c733fa1&area=22_1930_50949_52153&networkType=wifi&wifiBssid=unknown&st=1544516367092&sign=d2a94e200d4425e8aa12267bca7406cb&sv=112
+
+POST http://api.m.jd.com/client.action?functionId=receiveNutrients&clientVersion=7.2.6&build=63370&client=android&d_brand=vivo&d_model=vivoZ1&osVersion=8.1.0&screen=2280*1080&partner=vivo&androidId=c151521cf7c1430f&installtionId=73e5ce8937244403ae1e93dc8d3ecf69&sdkVersion=27&lang=zh_CN&uuid=868602047125517-20f77c733fa1&area=22_1930_50949_52153&networkType=wifi&wifiBssid=unknown&st=1544516367092&sign=d2a94e200d4425e8aa12267bca7406cb&sv=112 HTTP/1.1
+Connection: Keep-Alive
+Cookie: pin=jackdaifei_m; wskey=AAFbT9AfAEAWGgHkSanFbpfjKXgOiumMdr6hsmtr2NT8oMdHMGiyza11FEh5pRhZjDKGmIvaBKfLN7WYk7n3dJOtSXVkvGPJ; whwswswws=zfKxNSJYpkuxQ2l5Cz9M6SAKwbIQBt9YIF6Fj/545EHilrLsep8ki5XL/aLuKoCgVUaOazA9eTDSkefFN3XT7Xg==; unionwsws={"devicefinger":"eidA2B700114ODY4NjAyMDQ3MTI1NTE3MA==0I7u8gZRJfxuaDVhagH3uQjoCRqDZgV4oZflP8e\/6uphn9NxD4vvpXaqrAFb0+Oog6wilp42RLPGbnAB","jmafinger":"zfKxNSJYpkuxQ2l5Cz9M6SAKwbIQBt9YIF6Fj\/545EHilrLsep8ki5XL\/aLuKoCgVUaOazA9eTDSkefFN3XT7Xg=="}
+Charset: UTF-8
+Accept-Encoding: gzip,deflate
+jdc-backup: pin=jackdaifei_m; wskey=AAFbT9AfAEAWGgHkSanFbpfjKXgOiumMdr6hsmtr2NT8oMdHMGiyza11FEh5pRhZjDKGmIvaBKfLN7WYk7n3dJOtSXVkvGPJ; whwswswws=zfKxNSJYpkuxQ2l5Cz9M6SAKwbIQBt9YIF6Fj/545EHilrLsep8ki5XL/aLuKoCgVUaOazA9eTDSkefFN3XT7Xg==; unionwsws={"devicefinger":"eidA2B700114ODY4NjAyMDQ3MTI1NTE3MA==0I7u8gZRJfxuaDVhagH3uQjoCRqDZgV4oZflP8e\/6uphn9NxD4vvpXaqrAFb0+Oog6wilp42RLPGbnAB","jmafinger":"zfKxNSJYpkuxQ2l5Cz9M6SAKwbIQBt9YIF6Fj\/545EHilrLsep8ki5XL\/aLuKoCgVUaOazA9eTDSkefFN3XT7Xg=="}
+Cache-Control: no-cache
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Content-Length: 60
+Host: api.m.jd.com
+User-Agent: okhttp/3.6.0
+
+
+HTTP/1.1 200
+Server: jfe
+Date: Tue, 11 Dec 2018 08:19:26 GMT
+Content-Type: text/plain;charset=utf-8
+Connection: keep-alive
+Vary: Accept-Encoding
+X-API-Request-Id: 05f291b8-c789-48ae-a9fe-eee59f377f95
+X-API-Wl-Message: 0
+Content-Length: 68
+
+body	{"roundId":"yt4n3tabw53muoqbns6eertieu"}
+
+
+
+====================================================================
+种豆, 状态
+
+http://api.m.jd.com/client.action?functionId=plantBeanIndex&clientVersion=7.2.6&build=63370&client=android&d_brand=vivo&d_model=vivoZ1&osVersion=8.1.0&screen=2280*1080&partner=vivo&androidId=c151521cf7c1430f&installtionId=73e5ce8937244403ae1e93dc8d3ecf69&sdkVersion=27&lang=zh_CN&uuid=868602047125517-20f77c733fa1&area=22_1930_50949_52153&networkType=wifi&wifiBssid=unknown&st=1544516483539&sign=5e40205b9466aca6493bc11bc3359a52&sv=101
+
+POST http://api.m.jd.com/client.action?functionId=plantBeanIndex&clientVersion=7.2.6&build=63370&client=android&d_brand=vivo&d_model=vivoZ1&osVersion=8.1.0&screen=2280*1080&partner=vivo&androidId=c151521cf7c1430f&installtionId=73e5ce8937244403ae1e93dc8d3ecf69&sdkVersion=27&lang=zh_CN&uuid=868602047125517-20f77c733fa1&area=22_1930_50949_52153&networkType=wifi&wifiBssid=unknown&st=1544516483539&sign=5e40205b9466aca6493bc11bc3359a52&sv=101 HTTP/1.1
+Connection: Keep-Alive
+Cookie: pin=jackdaifei_m; wskey=AAFbT9AfAEAWGgHkSanFbpfjKXgOiumMdr6hsmtr2NT8oMdHMGiyza11FEh5pRhZjDKGmIvaBKfLN7WYk7n3dJOtSXVkvGPJ; whwswswws=zfKxNSJYpkuxQ2l5Cz9M6SAKwbIQBt9YIF6Fj/545EHilrLsep8ki5XL/aLuKoCgVUaOazA9eTDSkefFN3XT7Xg==; unionwsws={"devicefinger":"eidA2B700114ODY4NjAyMDQ3MTI1NTE3MA==0I7u8gZRJfxuaDVhagH3uQjoCRqDZgV4oZflP8e\/6uphn9NxD4vvpXaqrAFb0+Oog6wilp42RLPGbnAB","jmafinger":"zfKxNSJYpkuxQ2l5Cz9M6SAKwbIQBt9YIF6Fj\/545EHilrLsep8ki5XL\/aLuKoCgVUaOazA9eTDSkefFN3XT7Xg=="}
+Charset: UTF-8
+Accept-Encoding: gzip,deflate
+jdc-backup: pin=jackdaifei_m; wskey=AAFbT9AfAEAWGgHkSanFbpfjKXgOiumMdr6hsmtr2NT8oMdHMGiyza11FEh5pRhZjDKGmIvaBKfLN7WYk7n3dJOtSXVkvGPJ; whwswswws=zfKxNSJYpkuxQ2l5Cz9M6SAKwbIQBt9YIF6Fj/545EHilrLsep8ki5XL/aLuKoCgVUaOazA9eTDSkefFN3XT7Xg==; unionwsws={"devicefinger":"eidA2B700114ODY4NjAyMDQ3MTI1NTE3MA==0I7u8gZRJfxuaDVhagH3uQjoCRqDZgV4oZflP8e\/6uphn9NxD4vvpXaqrAFb0+Oog6wilp42RLPGbnAB","jmafinger":"zfKxNSJYpkuxQ2l5Cz9M6SAKwbIQBt9YIF6Fj\/545EHilrLsep8ki5XL\/aLuKoCgVUaOazA9eTDSkefFN3XT7Xg=="}
+Cache-Control: no-cache
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Content-Length: 12
+Host: api.m.jd.com
+User-Agent: okhttp/3.6.0
+
+
+HTTP/1.1 200
+Server: jfe
+Date: Tue, 11 Dec 2018 08:21:22 GMT
+Content-Type: text/plain;charset=utf-8
+Connection: keep-alive
+Vary: Accept-Encoding
+X-API-Request-Id: 81d8bba0-1b66-4c17-aeee-94accd24eaf7
+X-API-Wl-Message: 0
+Content-Length: 2338
+
+
+body	{}
+
+
+============================================================================================
+种豆, 使用培养液
+
+http://api.m.jd.com/client.action?functionId=cultureBean&clientVersion=7.2.6&build=63370&client=android&d_brand=vivo&d_model=vivoZ1&osVersion=8.1.0&screen=2280*1080&partner=vivo&androidId=c151521cf7c1430f&installtionId=73e5ce8937244403ae1e93dc8d3ecf69&sdkVersion=27&lang=zh_CN&uuid=868602047125517-20f77c733fa1&area=22_1930_50949_52153&networkType=wifi&wifiBssid=unknown&st=1544516650249&sign=01886657660c59ba531f5e7065eb15d4&sv=102
+
+POST http://api.m.jd.com/client.action?functionId=cultureBean&clientVersion=7.2.6&build=63370&client=android&d_brand=vivo&d_model=vivoZ1&osVersion=8.1.0&screen=2280*1080&partner=vivo&androidId=c151521cf7c1430f&installtionId=73e5ce8937244403ae1e93dc8d3ecf69&sdkVersion=27&lang=zh_CN&uuid=868602047125517-20f77c733fa1&area=22_1930_50949_52153&networkType=wifi&wifiBssid=unknown&st=1544516650249&sign=01886657660c59ba531f5e7065eb15d4&sv=102 HTTP/1.1
+Connection: Keep-Alive
+Cookie: pin=jackdaifei_m; wskey=AAFbT9AfAEAWGgHkSanFbpfjKXgOiumMdr6hsmtr2NT8oMdHMGiyza11FEh5pRhZjDKGmIvaBKfLN7WYk7n3dJOtSXVkvGPJ; whwswswws=zfKxNSJYpkuxQ2l5Cz9M6SAKwbIQBt9YIF6Fj/545EHilrLsep8ki5XL/aLuKoCgVUaOazA9eTDSkefFN3XT7Xg==; unionwsws={"devicefinger":"eidA2B700114ODY4NjAyMDQ3MTI1NTE3MA==0I7u8gZRJfxuaDVhagH3uQjoCRqDZgV4oZflP8e\/6uphn9NxD4vvpXaqrAFb0+Oog6wilp42RLPGbnAB","jmafinger":"zfKxNSJYpkuxQ2l5Cz9M6SAKwbIQBt9YIF6Fj\/545EHilrLsep8ki5XL\/aLuKoCgVUaOazA9eTDSkefFN3XT7Xg=="}
+Charset: UTF-8
+Accept-Encoding: gzip,deflate
+jdc-backup: pin=jackdaifei_m; wskey=AAFbT9AfAEAWGgHkSanFbpfjKXgOiumMdr6hsmtr2NT8oMdHMGiyza11FEh5pRhZjDKGmIvaBKfLN7WYk7n3dJOtSXVkvGPJ; whwswswws=zfKxNSJYpkuxQ2l5Cz9M6SAKwbIQBt9YIF6Fj/545EHilrLsep8ki5XL/aLuKoCgVUaOazA9eTDSkefFN3XT7Xg==; unionwsws={"devicefinger":"eidA2B700114ODY4NjAyMDQ3MTI1NTE3MA==0I7u8gZRJfxuaDVhagH3uQjoCRqDZgV4oZflP8e\/6uphn9NxD4vvpXaqrAFb0+Oog6wilp42RLPGbnAB","jmafinger":"zfKxNSJYpkuxQ2l5Cz9M6SAKwbIQBt9YIF6Fj\/545EHilrLsep8ki5XL\/aLuKoCgVUaOazA9eTDSkefFN3XT7Xg=="}
+Cache-Control: no-cache
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Content-Length: 60
+Host: api.m.jd.com
+User-Agent: okhttp/3.6.0
+
+
+HTTP/1.1 200
+Server: jfe
+Date: Tue, 11 Dec 2018 08:24:10 GMT
+Content-Type: text/plain;charset=utf-8
+Connection: keep-alive
+Vary: Accept-Encoding
+X-API-Request-Id: 73b94145-0140-4049-a77c-f0e2817b0299
+X-API-Wl-Message: 0
+Content-Length: 66
+
+
+body	{"roundId":"yt4n3tabw53muoqbns6eertieu"}
+
+
+=====================================================================================================
+领券签到
+
+http://api.m.jd.com/client.action?functionId=signInCoupon&clientVersion=7.2.6&build=63370&client=android&d_brand=vivo&d_model=vivoZ1&osVersion=8.1.0&screen=2280*1080&partner=vivo&androidId=c151521cf7c1430f&installtionId=73e5ce8937244403ae1e93dc8d3ecf69&sdkVersion=27&lang=zh_CN&uuid=868602047125517-20f77c733fa1&area=22_1930_50949_52153&networkType=wifi&wifiBssid=unknown&st=1544516716602&sign=72ed0181a1a0806de7053b5da4c8d265&sv=112
+
+POST http://api.m.jd.com/client.action?functionId=signInCoupon&clientVersion=7.2.6&build=63370&client=android&d_brand=vivo&d_model=vivoZ1&osVersion=8.1.0&screen=2280*1080&partner=vivo&androidId=c151521cf7c1430f&installtionId=73e5ce8937244403ae1e93dc8d3ecf69&sdkVersion=27&lang=zh_CN&uuid=868602047125517-20f77c733fa1&area=22_1930_50949_52153&networkType=wifi&wifiBssid=unknown&st=1544516716602&sign=72ed0181a1a0806de7053b5da4c8d265&sv=112 HTTP/1.1
+Connection: Keep-Alive
+Cookie: pin=jackdaifei_m; wskey=AAFbT9AfAEAWGgHkSanFbpfjKXgOiumMdr6hsmtr2NT8oMdHMGiyza11FEh5pRhZjDKGmIvaBKfLN7WYk7n3dJOtSXVkvGPJ; whwswswws=zfKxNSJYpkuxQ2l5Cz9M6SAKwbIQBt9YIF6Fj/545EHilrLsep8ki5XL/aLuKoCgVUaOazA9eTDSkefFN3XT7Xg==; unionwsws={"devicefinger":"eidA2B700114ODY4NjAyMDQ3MTI1NTE3MA==0I7u8gZRJfxuaDVhagH3uQjoCRqDZgV4oZflP8e\/6uphn9NxD4vvpXaqrAFb0+Oog6wilp42RLPGbnAB","jmafinger":"zfKxNSJYpkuxQ2l5Cz9M6SAKwbIQBt9YIF6Fj\/545EHilrLsep8ki5XL\/aLuKoCgVUaOazA9eTDSkefFN3XT7Xg=="}
+Charset: UTF-8
+Accept-Encoding: gzip,deflate
+jdc-backup: pin=jackdaifei_m; wskey=AAFbT9AfAEAWGgHkSanFbpfjKXgOiumMdr6hsmtr2NT8oMdHMGiyza11FEh5pRhZjDKGmIvaBKfLN7WYk7n3dJOtSXVkvGPJ; whwswswws=zfKxNSJYpkuxQ2l5Cz9M6SAKwbIQBt9YIF6Fj/545EHilrLsep8ki5XL/aLuKoCgVUaOazA9eTDSkefFN3XT7Xg==; unionwsws={"devicefinger":"eidA2B700114ODY4NjAyMDQ3MTI1NTE3MA==0I7u8gZRJfxuaDVhagH3uQjoCRqDZgV4oZflP8e\/6uphn9NxD4vvpXaqrAFb0+Oog6wilp42RLPGbnAB","jmafinger":"zfKxNSJYpkuxQ2l5Cz9M6SAKwbIQBt9YIF6Fj\/545EHilrLsep8ki5XL\/aLuKoCgVUaOazA9eTDSkefFN3XT7Xg=="}
+Cache-Control: no-cache
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Content-Length: 523
+Host: api.m.jd.com
+User-Agent: okhttp/3.6.0
+
+
+HTTP/1.1 200
+Server: jfe
+Date: Tue, 11 Dec 2018 08:25:15 GMT
+Content-Type: text/plain;charset=utf-8
+Connection: keep-alive
+Vary: Accept-Encoding
+X-API-Request-Id: 04403f67-6801-4f69-92f8-1c0191f228ba
+X-API-Wl-Message: 0
+Content-Length: 887
+
+
+
+body	{"childActivityUrl":"openapp.jdmobile://virtual?params={\"category\":\"jump\",\"des\":\"couponCenter\"}","eid":"eidA2B700114ODY4NjAyMDQ3MTI1NTE3MA==0I7u8gZRJfxuaDVhagH3uQjoCRqDZgV4oZflP8e/6uphn9NxD4vvpXaqrAFb0+Oog6wilp42RLPGbnAB","pageClickKey":"Coupons_GetCenter","receiveKey":"90","shshshfpb":"zfKxNSJYpkuxQ2l5Cz9M6SAKwbIQBt9YIF6Fj/545EHilrLsep8ki5XL/aLuKoCgVUaOazA9eTDSkefFN3XT7Xg=="}
+
+================================================================================================
+种豆任务列表
+
+http://api.m.jd.com/client.action?functionId=shopTaskList&clientVersion=7.3.0&build=63742&client=android&d_brand=vivo&d_model=vivoZ1&osVersion=8.1.0&screen=2280*1080&partner=vivo&androidId=c151521cf7c1430f&installtionId=73e5ce8937244403ae1e93dc8d3ecf69&sdkVersion=27&lang=zh_CN&uuid=868602047125517-20f77c733fa1&area=22_1930_50949_52153&networkType=wifi&wifiBssid=f08146662bbc4ec19d958771395f263e&st=1544705272964&sign=2388da5079fbd3bd521e6a0d6be8e406&sv=102
+
+POST http://api.m.jd.com/client.action?functionId=shopTaskList&clientVersion=7.3.0&build=63742&client=android&d_brand=vivo&d_model=vivoZ1&osVersion=8.1.0&screen=2280*1080&partner=vivo&androidId=c151521cf7c1430f&installtionId=73e5ce8937244403ae1e93dc8d3ecf69&sdkVersion=27&lang=zh_CN&uuid=868602047125517-20f77c733fa1&area=22_1930_50949_52153&networkType=wifi&wifiBssid=f08146662bbc4ec19d958771395f263e&st=1544705272964&sign=2388da5079fbd3bd521e6a0d6be8e406&sv=102 HTTP/1.1
+Connection: Keep-Alive
+Cookie: pin=jackdaifei_m;wskey=AAFbT9AfAEAWGgHkSanFbpfjKXgOiumMdr6hsmtr2NT8oMdHMGiyza11FEh5pRhZjDKGmIvaBKfLN7WYk7n3dJOtSXVkvGPJ;whwswswws=zfKxNSJYpkuxQ2l5Cz9M6SAKwbIQBt9YIF6Fj/545EHilrLsep8ki5XL/aLuKoCgVUaOazA9eTDSkefFN3XT7Xg==;unionwsws={"devicefinger":"eidA2B700114ODY4NjAyMDQ3MTI1NTE3MA==0I7u8gZRJfxuaDVhagH3uQjoCRqDZgV4oZflP8e\/6uphn9NxD4vvpXaqrAFb0+Oog6wilp42RLPGbnAB","jmafinger":"zfKxNSJYpkuxQ2l5Cz9M6SAKwbIQBt9YIF6Fj\/545EHilrLsep8ki5XL\/aLuKoCgVUaOazA9eTDSkefFN3XT7Xg=="};
+Charset: UTF-8
+Accept-Encoding: gzip,deflate
+jdc-backup: pin=jackdaifei_m;wskey=AAFbT9AfAEAWGgHkSanFbpfjKXgOiumMdr6hsmtr2NT8oMdHMGiyza11FEh5pRhZjDKGmIvaBKfLN7WYk7n3dJOtSXVkvGPJ;whwswswws=zfKxNSJYpkuxQ2l5Cz9M6SAKwbIQBt9YIF6Fj/545EHilrLsep8ki5XL/aLuKoCgVUaOazA9eTDSkefFN3XT7Xg==;unionwsws={"devicefinger":"eidA2B700114ODY4NjAyMDQ3MTI1NTE3MA==0I7u8gZRJfxuaDVhagH3uQjoCRqDZgV4oZflP8e\/6uphn9NxD4vvpXaqrAFb0+Oog6wilp42RLPGbnAB","jmafinger":"zfKxNSJYpkuxQ2l5Cz9M6SAKwbIQBt9YIF6Fj\/545EHilrLsep8ki5XL\/aLuKoCgVUaOazA9eTDSkefFN3XT7Xg=="};
+Cache-Control: no-cache
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Content-Length: 12
+Host: api.m.jd.com
+User-Agent: okhttp/3.6.0
+
+
+HTTP/1.1 200
+Server: jfe
+Date: Thu, 13 Dec 2018 12:47:51 GMT
+Content-Type: text/plain;charset=utf-8
+Connection: keep-alive
+Vary: Accept-Encoding
+X-API-Request-Id: 6612e21d-d606-4ee3-b1a4-82069a003b0a
+X-API-Wl-Message: 0
+Content-Length: 6780
+
+body	{}
+
+{"code":"0","data":{"goodShopList":[{"shopTaskId":"2218","shopId":"1000003179","taskState":"2","shopName":"美赞臣自营旗舰店","shopLogo":"https://img10.360buyimg.com/cms/jfs/t1/6633/8/418/8294/5bc8ae2dE2983c0b8/58fb54db78349d23.png","linkUrl":"https://shop.m.jd.com/?shopId=1000003179"},{"shopTaskId":"2219","shopId":"103760","taskState":"2","shopName":"GAP官方旗舰店","shopLogo":"https://img13.360buyimg.com/cms/jfs/t29059/313/1030880475/3034/89fb9b47/5c054219N7ce78d2e.png","linkUrl":"https://shop.m.jd.com/?shopId=103760"},{"shopTaskId":"2220","shopId":"1000010825","taskState":"2","shopName":"雪花秀自营专区","shopLogo":"https://img30.360buyimg.com/popshop/jfs/t2218/86/2788476464/3631/26b5745a/56ebc705Nf8a60369.jpg","linkUrl":"https://shop.m.jd.com/?shopId=1000010825"},{"shopTaskId":"2221","shopId":"1000003443","taskState":"2","shopName":"三星手机自营店","shopLogo":"https://img30.360buyimg.com/popshop/jfs/t2611/334/654600932/11658/d56e67e9/57201b47N7bf15715.jpg","linkUrl":"https://shop.m.jd.com/?shopId=1000003443"},{"shopTaskId":"2222","shopId":"1000003570","taskState":"2","shopName":"伊利母婴自营店","shopLogo":"https://img30.360buyimg.com/popshop/jfs/t1984/290/2132282902/5486/859ee7a3/56ab2723N1d78e04b.jpg","linkUrl":"https://shop.m.jd.com/?shopId=1000003570"},{"shopTaskId":"2223","shopId":"71989","taskState":"2","shopName":"盼盼旗舰店","shopLogo":"https://img30.360buyimg.com/popshop/jfs/t694/6/361018593/4639/6cf23919/5460b1c8N3174f76e.jpg","linkUrl":"https://shop.m.jd.com/?shopId=71989"}],"moreShopList":[{"shopTaskId":"2231","shopId":"95513","taskState":"2","shopName":"正泰电器官方旗舰店","shopLogo":"https://img30.360buyimg.com/popshop/jfs/t691/256/1223526379/22835/7016ffee/54c20991Nc1a765af.jpg","linkUrl":"https://shop.m.jd.com/?shopId=95513"},{"shopTaskId":"2247","shopId":"1000004328","taskState":"2","shopName":"汉米尔顿京东自营品牌授权旗舰店","shopLogo":"https://img10.360buyimg.com/cms/jfs/t1/79/23/15456/6141/5bdad60fE5e90f540/a11cc0d7d1d776f5.jpg","linkUrl":"https://shop.m.jd.com/?shopId=1000004328"},{"shopTaskId":"2200","shopId":"1000101952","taskState":"2","shopName":"天然博士京东自营旗舰店","shopLogo":"https://img10.360buyimg.com/cms/jfs/t27733/164/380010871/270879/e01d60a3/5b907f98Ne35c67b8.gif","linkUrl":"https://shop.m.jd.com/?shopId=1000101952"},{"shopTaskId":"2195","shopId":"1000002676","taskState":"2","shopName":"飞亚达京东自营旗舰店","shopLogo":"https://img11.360buyimg.com/zx/jfs/t16612/122/1125116955/5732/dda62f12/5abb0613N4ea390a6.jpg","linkUrl":"https://shop.m.jd.com/?shopId=1000002676"},{"shopTaskId":"2239","shopId":"1000104797","taskState":"2","shopName":"北大仓京东自营旗舰店","shopLogo":"https://img11.360buyimg.com/cms/jfs/t21154/227/1102925048/6357/6f7b3eb8/5b206aa3N6c2530db.png","linkUrl":"https://shop.m.jd.com/?shopId=1000104797"},{"shopTaskId":"2242","shopId":"1000128354","taskState":"2","shopName":"叶罗丽京东自营旗舰店","shopLogo":"https://img30.360buyimg.com/popshop/jfs/t1/6890/39/6145/7923/5bdfe5ffE3c277b26/f757ed4e39ef842d.png","linkUrl":"https://shop.m.jd.com/?shopId=1000128354"},{"shopTaskId":"2235","shopId":"662490","taskState":"2","shopName":"卡西欧手表官方旗舰店","shopLogo":"https://img10.360buyimg.com/jshopm/jfs/t4420/347/3216923028/10930/a80cd2ca/58f85f1fN6acebd9b.jpg","linkUrl":"https://shop.m.jd.com/?shopId=662490"},{"shopTaskId":"2192","shopId":"793561","taskState":"2","shopName":"千品堂情趣用品专营店","shopLogo":"https://img13.360buyimg.com/cms/jfs/t23641/291/193408424/10282/b40ab5ae/5b2873e6N78a2b57c.jpg","linkUrl":"https://shop.m.jd.com/?shopId=793561"},{"shopTaskId":"2216","shopId":"112533","taskState":"2","shopName":"水星家纺婚庆馆","shopLogo":"https://img30.360buyimg.com/popshop/jfs/t2140/39/2331446944/5203/dae30a32/56d6582bNd43e094b.jpg","linkUrl":"https://shop.m.jd.com/?shopId=112533"},{"shopTaskId":"2205","shopId":"1000124481","taskState":"2","shopName":"太阳神（APOLLO）保健食品京东自营旗舰店","shopLogo":"https://img12.360buyimg.com/cms/jfs/t30724/236/892557568/6231/ad50d6c9/5c00a843N1abb164f.jpg","linkUrl":"https://shop.m.jd.com/?shopId=1000124481"},{"shopTaskId":"2187","shopId":"1000098702","taskState":"2","shopName":"上海教育出版社","shopLogo":"https://img12.360buyimg.com/cms/jfs/t1/19559/23/1109/5207/5c0f52b6E9da5c7b9/9484e91281c274e6.png","linkUrl":"https://shop.m.jd.com/?shopId=1000098702"},{"shopTaskId":"2176","shopId":"204566","taskState":"2","shopName":"UNIVERSITY OF OXFORD箱包旗舰店","shopLogo":"https://img30.360buyimg.com/popshop/jfs/t2581/347/1837562696/17543/80b6b53f/574d4013N123a97c5.jpg","linkUrl":"https://shop.m.jd.com/?shopId=204566"},{"shopTaskId":"2197","shopId":"703308","taskState":"2","shopName":"乡盛食品官方旗舰店","shopLogo":"https://img30.360buyimg.com/popshop/jfs/t7639/195/1712758547/31092/f7e2beee/599fdf7cN2c0ec46e.jpg","linkUrl":"https://shop.m.jd.com/?shopId=703308"},{"shopTaskId":"2240","shopId":"1000087391","taskState":"2","shopName":"北京京瑞德文化","shopLogo":"https://img30.360buyimg.com/popshop/jfs/t5614/65/289839152/21002/6cef2790/591e8e4aNd8096f1b.jpg","linkUrl":"https://shop.m.jd.com/?shopId=1000087391"},{"shopTaskId":"2202","shopId":"30806","taskState":"2","shopName":"云南嘉华食品旗舰店","shopLogo":"https://img10.360buyimg.com/jshopm/jfs/t6868/269/2016705187/5651/4d82e976/598834f2N8a670bd1.png","linkUrl":"https://shop.m.jd.com/?shopId=30806"},{"shopTaskId":"2179","shopId":"14684","taskState":"2","shopName":"九洲鹿家纺旗舰店","shopLogo":"https://img30.360buyimg.com/popshop/jfs/t535/102/1161098246/5853/d873042c/54b788b1N737dcded.png","linkUrl":"https://shop.m.jd.com/?shopId=14684"},{"shopTaskId":"2175","shopId":"83657","taskState":"2","shopName":"TSL谢瑞麟官方旗舰店","shopLogo":"https://img30.360buyimg.com/popshop/jfs/t1/3964/5/2825/22870/5b978c04E0b72bdea/2b0f12133fed0d99.jpg","linkUrl":"https://shop.m.jd.com/?shopId=83657"},{"shopTaskId":"2245","shopId":"53705","taskState":"2","shopName":"外交官Diplomat旗舰店","shopLogo":"https://img30.360buyimg.com/popshop/g15/M03/04/15/rBEhWFL5kGoIAAAAAACH2zdsbUAAAIX1gFJvlwAAIfz324.jpg","linkUrl":"https://shop.m.jd.com/?shopId=53705"},{"shopTaskId":"2177","shopId":"117507","taskState":"2","shopName":"zeppelin齐博林旗舰店","shopLogo":"https://img30.360buyimg.com/popshop/jfs/t673/346/1417890623/27362/33d9913e/54d99d68Na6e7e147.jpg","linkUrl":"https://shop.m.jd.com/?shopId=117507"},{"shopTaskId":"2191","shopId":"692109","taskState":"2","shopName":"千纸鹤服饰旗舰店","shopLogo":"https://img30.360buyimg.com/popshop/jfs/t8722/127/1870857817/4859/368a3b75/59c07d02N0f2dad15.jpg","linkUrl":"https://shop.m.jd.com/?shopId=692109"}]}}
+
+---
+
+店铺关注任务
+
+http://api.m.jd.com/client.action?functionId=shopNutrientsTask&clientVersion=7.3.0&build=63742&client=android&d_brand=vivo&d_model=vivoZ1&osVersion=8.1.0&screen=2280*1080&partner=vivo&androidId=c151521cf7c1430f&installtionId=73e5ce8937244403ae1e93dc8d3ecf69&sdkVersion=27&lang=zh_CN&uuid=868602047125517-20f77c733fa1&area=22_1930_50949_52153&networkType=wifi&wifiBssid=f08146662bbc4ec19d958771395f263e&st=1544705386750&sign=d2783f04ea791301b2a1e727116598ae&sv=101
+
+POST http://api.m.jd.com/client.action?functionId=shopNutrientsTask&clientVersion=7.3.0&build=63742&client=android&d_brand=vivo&d_model=vivoZ1&osVersion=8.1.0&screen=2280*1080&partner=vivo&androidId=c151521cf7c1430f&installtionId=73e5ce8937244403ae1e93dc8d3ecf69&sdkVersion=27&lang=zh_CN&uuid=868602047125517-20f77c733fa1&area=22_1930_50949_52153&networkType=wifi&wifiBssid=f08146662bbc4ec19d958771395f263e&st=1544705386750&sign=d2783f04ea791301b2a1e727116598ae&sv=101 HTTP/1.1
+Connection: Keep-Alive
+Cookie: pin=jackdaifei_m;wskey=AAFbT9AfAEAWGgHkSanFbpfjKXgOiumMdr6hsmtr2NT8oMdHMGiyza11FEh5pRhZjDKGmIvaBKfLN7WYk7n3dJOtSXVkvGPJ;whwswswws=zfKxNSJYpkuxQ2l5Cz9M6SAKwbIQBt9YIF6Fj/545EHilrLsep8ki5XL/aLuKoCgVUaOazA9eTDSkefFN3XT7Xg==;unionwsws={"devicefinger":"eidA2B700114ODY4NjAyMDQ3MTI1NTE3MA==0I7u8gZRJfxuaDVhagH3uQjoCRqDZgV4oZflP8e\/6uphn9NxD4vvpXaqrAFb0+Oog6wilp42RLPGbnAB","jmafinger":"zfKxNSJYpkuxQ2l5Cz9M6SAKwbIQBt9YIF6Fj\/545EHilrLsep8ki5XL\/aLuKoCgVUaOazA9eTDSkefFN3XT7Xg=="};
+Charset: UTF-8
+Accept-Encoding: gzip,deflate
+jdc-backup: pin=jackdaifei_m;wskey=AAFbT9AfAEAWGgHkSanFbpfjKXgOiumMdr6hsmtr2NT8oMdHMGiyza11FEh5pRhZjDKGmIvaBKfLN7WYk7n3dJOtSXVkvGPJ;whwswswws=zfKxNSJYpkuxQ2l5Cz9M6SAKwbIQBt9YIF6Fj/545EHilrLsep8ki5XL/aLuKoCgVUaOazA9eTDSkefFN3XT7Xg==;unionwsws={"devicefinger":"eidA2B700114ODY4NjAyMDQ3MTI1NTE3MA==0I7u8gZRJfxuaDVhagH3uQjoCRqDZgV4oZflP8e\/6uphn9NxD4vvpXaqrAFb0+Oog6wilp42RLPGbnAB","jmafinger":"zfKxNSJYpkuxQ2l5Cz9M6SAKwbIQBt9YIF6Fj\/545EHilrLsep8ki5XL\/aLuKoCgVUaOazA9eTDSkefFN3XT7Xg=="};
+Cache-Control: no-cache
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Content-Length: 75
+Host: api.m.jd.com
+User-Agent: okhttp/3.6.0
+
+
+HTTP/1.1 200
+Server: jfe
+Date: Thu, 13 Dec 2018 12:49:45 GMT
+Content-Type: text/plain;charset=utf-8
+Connection: keep-alive
+Vary: Accept-Encoding
+X-API-Request-Id: 4c10f84b-f025-4580-a342-819f85364899
+X-API-Wl-Message: 0
+Content-Length: 473
+
+
+body	{"shopId":"1000003443","shopTaskId":"2221"}
+
+{"code":"0","data":{"nutrState":"1","followState":"1","nutrToast":"恭喜你获得营养液，快去培养小小豆吧","shopLinkUrl":"openApp.jdMobile://virtual?params={\"category\":\"jump\",\"des\":\"jshopMain\",\"shopId\":\"1000003443\",\"showingUrl\":\"https://self.jd.com/snowandreap?beanNum=1&shopId=1000003443&v_clientVersion=7.3.0&v_client=android\",\"complexSource\":\"collectCard\",\"sourceInfo\":{\"moduleId\":\"rn-sowAndReap\",\"entrance\":\"种豆得豆\"}}"}}
+
+
+-----
+
+取消店铺关注
+http://api.m.jd.com/client.action?functionId=followShop&clientVersion=7.3.0&build=63742&client=android&d_brand=vivo&d_model=vivoZ1&osVersion=8.1.0&screen=2280*1080&partner=vivo&androidId=c151521cf7c1430f&installtionId=73e5ce8937244403ae1e93dc8d3ecf69&sdkVersion=27&lang=zh_CN&uuid=868602047125517-20f77c733fa1&area=22_1930_50949_52153&networkType=wifi&wifiBssid=f08146662bbc4ec19d958771395f263e&st=1544705481124&sign=9133b43f8b4fe78c8f93a6a35af99d89&sv=102
+
+POST http://api.m.jd.com/client.action?functionId=followShop&clientVersion=7.3.0&build=63742&client=android&d_brand=vivo&d_model=vivoZ1&osVersion=8.1.0&screen=2280*1080&partner=vivo&androidId=c151521cf7c1430f&installtionId=73e5ce8937244403ae1e93dc8d3ecf69&sdkVersion=27&lang=zh_CN&uuid=868602047125517-20f77c733fa1&area=22_1930_50949_52153&networkType=wifi&wifiBssid=f08146662bbc4ec19d958771395f263e&st=1544705481124&sign=9133b43f8b4fe78c8f93a6a35af99d89&sv=102 HTTP/1.1
+Connection: Keep-Alive
+Cookie: pin=jackdaifei_m;wskey=AAFbT9AfAEAWGgHkSanFbpfjKXgOiumMdr6hsmtr2NT8oMdHMGiyza11FEh5pRhZjDKGmIvaBKfLN7WYk7n3dJOtSXVkvGPJ;whwswswws=zfKxNSJYpkuxQ2l5Cz9M6SAKwbIQBt9YIF6Fj/545EHilrLsep8ki5XL/aLuKoCgVUaOazA9eTDSkefFN3XT7Xg==;unionwsws={"devicefinger":"eidA2B700114ODY4NjAyMDQ3MTI1NTE3MA==0I7u8gZRJfxuaDVhagH3uQjoCRqDZgV4oZflP8e\/6uphn9NxD4vvpXaqrAFb0+Oog6wilp42RLPGbnAB","jmafinger":"zfKxNSJYpkuxQ2l5Cz9M6SAKwbIQBt9YIF6Fj\/545EHilrLsep8ki5XL\/aLuKoCgVUaOazA9eTDSkefFN3XT7Xg=="};
+Charset: UTF-8
+Accept-Encoding: gzip,deflate
+jdc-backup: pin=jackdaifei_m;wskey=AAFbT9AfAEAWGgHkSanFbpfjKXgOiumMdr6hsmtr2NT8oMdHMGiyza11FEh5pRhZjDKGmIvaBKfLN7WYk7n3dJOtSXVkvGPJ;whwswswws=zfKxNSJYpkuxQ2l5Cz9M6SAKwbIQBt9YIF6Fj/545EHilrLsep8ki5XL/aLuKoCgVUaOazA9eTDSkefFN3XT7Xg==;unionwsws={"devicefinger":"eidA2B700114ODY4NjAyMDQ3MTI1NTE3MA==0I7u8gZRJfxuaDVhagH3uQjoCRqDZgV4oZflP8e\/6uphn9NxD4vvpXaqrAFb0+Oog6wilp42RLPGbnAB","jmafinger":"zfKxNSJYpkuxQ2l5Cz9M6SAKwbIQBt9YIF6Fj\/545EHilrLsep8ki5XL\/aLuKoCgVUaOazA9eTDSkefFN3XT7Xg=="};
+Cache-Control: no-cache
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Content-Length: 66
+Host: api.m.jd.com
+User-Agent: okhttp/3.6.0
+
+
+HTTP/1.1 200
+Server: jfe
+Date: Thu, 13 Dec 2018 12:51:19 GMT
+Content-Type: text/plain;charset=utf-8
+Connection: keep-alive
+Vary: Accept-Encoding
+X-API-Request-Id: 601209a7-ae36-49ae-89a6-b00bd7b5c175
+X-API-Wl-Message: 0
+Content-Length: 107
+
+
+body	{"follow":false,"shopId":"1000003443"}
+
+{"standbyText":"","subMsg":null,"optCode":"F10000","state":0,"code":"0","msg":"取消成功","follow":true}
+
+
+-------------------------
+划线签到
+https://coin.jd.com/m/sign/userSign.do
+
+POST https://coin.jd.com/m/sign/userSign.do HTTP/1.1
+Host: coin.jd.com
+Connection: keep-alive
+Content-Length: 1622
+Accept: application/json, text/javascript, */*; q=0.01
+Origin: https://coin.jd.com
+X-Requested-With: XMLHttpRequest
+User-Agent: Mozilla/5.0 (Linux; Android 8.1; vivo Z1 Build/OPM1.171019.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044325 Mobile Safari/537.36/application=JDJR-App&clientType=android&deviceId=868602047125517&src=vivo&version=5.0.6&clientVersion=5.0.6&osVersion=8.1.0&osName=vivo Z1&isUpdate=0&HiClVersion=5.0.6&netWork=1&netWorkType=1&ip=10.12.197.183&mac=20:F7:7C:73:3F:A1&sPoint=MTAwMDYjIw%3D%3D%0A&*#@jdPaySDK*#@jdPayChannel=jdFinance&jdPayChannelVersion=5.0.6&jdPaySdkVersion=2.21.6.0&androidBrand=vivo&androidManufacturer=vivo&jdPayClientName=Android*#@jdPaySDK*#@
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Referer: https://coin.jd.com/m/gb/index.html?sid=cb9faf2adb5bdf84f5c7638b386ff60w
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,en-US;q=0.8
+Cookie: __jdv=168871293|direct|-|none|-|1545903702505; _jrda=1; qd_ad=-%7C-%7Cdirect%7C-%7C0; qd_sid=JQ6F5F68-VMS382KLVHKYHRM1WVIF-1; qd_uid=JQ6F5F68-VMS382KLVHKYHRM1WVIF; qd_sq=1; qd_fs=1545903702790; qd_ls=1545903702790; qd_ts=1545903702790; pt_key=app_openAAFcJJ5VADCntzLcXWtk4h7_hQJVyz4RziUepfmQEiHnM0Vbf0ojyrE7eoy95gZEUJd_kh760sQ; pt_pin=jackdaifei_m; pwdt_id=jackdaifei_m; sid=cb9faf2adb5bdf84f5c7638b386ff60w; JSESSIONID=ED8A6FB78180B482D2212059B9B637C4.s1; __jda=177095863.15459037025011126576943.1545903702.1545903702.1545903702.1; __jdb=177095863.3.15459037025011126576943|1.1545903702; __jdc=177095863; _jrdb=1545903791757; __jdu=15459037025011126576943
+
+
+HTTP/1.1 200 OK
+Server: wy_nginx/1.9.5
+Date: Thu, 27 Dec 2018 09:43:15 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+Access-Control-Allow-Origin: https://coin.jd.com
+Access-Control-Allow-Credentials: true
+P3P: CP=CAO PSA OUR
+Set-Cookie: JSESSIONID=06162C078685B79DDC48217E46CE6043.s1; Path=/
+Expires: Thu, 27 Dec 2018 09:43:15 GMT
+Cache-Control: max-age=0
+Content-Length: 358
+
+
+deviceStr	{"location":{"channelInfo":"vivo#309080027","city":"成都市","clientIp":"10.12.197.183","clientVersion":"5.0.6","country":"中国","deviceType":"vivo Z1","imei":"868602047125517","latitude":"30.548981","longitude":"104.068601","macAddress":"20F77C733FA1","networkType":"wifi","osPlatform":"android","osVersion":"8.1.0","province":"四川省","resolution":"1080.0*2280.0","startNo":"309"},"deviceInfo":{"appId":"com.jd.jrapp","clientVersion":"5.0.6","deviceType":"vivo Z1","osPlatform":"android","osVersion":"8.1.0","resolution":"1080.0*2280.0","channelInfo":"vivo#309080027","networkType":"wifi","IPAddress1":"10.12.197.183","macAddress":"20F77C733FA1","deviceId":"868602047125517","UUID":"868602047125517-20F77C733FA1","startNo":"309","latitude":"30.548981","longitude":"104.068601","country":"中国","province":"四川省","city":"成都市","terminalType":"02","IPAddress":""},"eid":"KWVSHNUO4MB3VTPWRM3MFPRQVSARY54O3KPOQT5W66NHNZBHJDDRC4HGJ62D6KPCDVIVY2DNZNQTJCE5IWRW5GJFYE","fp":"12266204bb6b3ceb359e331c8530f358"}
+source	JRMO
+
+{"resultCode":"0000","resultMessage":"成功","btnText":null,"data":{"days":1,"reward":{"awardId":1770,"awardName":"老用户京东钢镚","awardAlias":"京东钢镚","awardType":18,"awardDeadline":1546271700000,"volumn":"0.01","extend":"","packageInfos":null,"rid":2553202,"status":null},"rewardMsg":"连续签到1天，再签6天有惊喜"},"success":true}
+
+
+
+---------------------------
+
+每日蹦一蹦
+https://coin.jd.com/mlgnActivity/coins/awardNeedLogin.html?merchantCode=4B2CE697A1AEE055&callback=jQuery331044158133399655486_1545903913861&_=1545903913865
+https://coin.jd.com/mlgnActivity/coins/awardNeedLogin.html?merchantCode=4B2CE697A1AEE055&callback=jQuery331044158133399655486_1545903913861&_=1545903913867
+https://coin.jd.com/mlgnActivity/coins/awardNeedLogin.html?merchantCode=4B2CE697A1AEE055&callback=jQuery331044158133399655486_1545903913861&_=1545903913868
+
+GET https://coin.jd.com/mlgnActivity/coins/awardNeedLogin.html?merchantCode=4B2CE697A1AEE055&callback=jQuery331044158133399655486_1545903913861&_=1545903913865 HTTP/1.1
+Host: coin.jd.com
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Linux; Android 8.1; vivo Z1 Build/OPM1.171019.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044325 Mobile Safari/537.36/application=JDJR-App&clientType=android&deviceId=868602047125517&src=vivo&version=5.0.6&clientVersion=5.0.6&osVersion=8.1.0&osName=vivo Z1&isUpdate=0&HiClVersion=5.0.6&netWork=1&netWorkType=1&ip=10.12.197.183&mac=20:F7:7C:73:3F:A1&sPoint=MTAwMDYjIw%3D%3D%0A&*#@jdPaySDK*#@jdPayChannel=jdFinance&jdPayChannelVersion=5.0.6&jdPaySdkVersion=2.21.6.0&androidBrand=vivo&androidManufacturer=vivo&jdPayClientName=Android*#@jdPaySDK*#@
+Accept: */*
+Referer: https://red-e.jd.com/resources/pineapple/index.html?merchantCode=4B2CE697A1AEE055
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,en-US;q=0.8
+Cookie: __jdv=168871293|direct|-|none|-|1545903702505; _jrda=1; qd_ad=-%7C-%7Cdirect%7C-%7C0; qd_sid=JQ6F5F68-VMS382KLVHKYHRM1WVIF-1; qd_uid=JQ6F5F68-VMS382KLVHKYHRM1WVIF; qd_sq=1; qd_fs=1545903702790; qd_ls=1545903702790; qd_ts=1545903702790; pt_key=app_openAAFcJJ5VADCntzLcXWtk4h7_hQJVyz4RziUepfmQEiHnM0Vbf0ojyrE7eoy95gZEUJd_kh760sQ; pt_pin=jackdaifei_m; pwdt_id=jackdaifei_m; sid=cb9faf2adb5bdf84f5c7638b386ff60w; shshshfp=c6302c082e29c91c9926a04c43a46927; shshshfpa=5cd8e92d-9869-19f6-9a31-43b9fab210e3-1545903883; shshshsID=f0eb983f03e1db24680a12c14cb5a475_1_1545903883315; shshshfpb=2fe96028c45574734af6d7e1758911d32569095a106ea30584bcc74300; mba_muid=15459037025011126576943; mba_sid=15459038816528251560020222439.1; JSESSIONID=00E49147CA4C7659C32CB8256A046B0C.s1; __jda=192305705.15459037025011126576943.1545903702.1545903702.1545903702.1; __jdb=192305705.8.15459037025011126576943|1.1545903702; __jdc=192305705; _jrdb=1545903914881; __jdu=15459037025011126576943
+
+
+HTTP/1.1 200 OK
+Server: wy_nginx/1.9.5
+Date: Thu, 27 Dec 2018 09:46:58 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+Access-Control-Allow-Credentials: true
+P3P: CP=CAO PSA OUR
+Expires: Thu, 27 Dec 2018 09:46:58 GMT
+Cache-Control: max-age=0
+Content-Length: 320
+
+
+
+---------------------------
+分享得钢镚
+https://ms.jr.jd.com/gw/generic/jrm/h5/m/giftGB?_=1545904239947
+
+
+
+---------------------------
+
+sina weibo
+
+https://m.weibo.cn/c/checkin/ug/v2/signin/signin?st=21904d
+
+GET https://m.weibo.cn/c/checkin/ug/v2/signin/signin?st=21904d HTTP/1.1
+Host: m.weibo.cn
+Connection: keep-alive
+Accept: application/json, text/plain, */*
+X-Requested-With: XMLHttpRequest
+User-Agent: Mozilla/5.0 (Linux; Android 8.1.0; vivo Z1 Build/OPM1.171019.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/71.0.3578.83 Mobile Safari/537.36 Weibo (vivo-vivo Z1__weibo__8.12.0__android__android8.1.0)
+Referer: https://m.weibo.cn/c/checkin?ua=vivo-vivo%20Z1__weibo__8.12.0__android__android8.1.0&from=108C095010
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,en-US;q=0.9
+Cookie: SUBP=0033WrSXqPxfM725Ws9jqgMF55529P9D9WWc0Lpx2X4SezxUCMVITMdI5NHD95Qp1heE1hz0eonEWs4DqcjMi--NiK.Xi-2Ri--ciKnRi-zNeKn0eonEe0zRentt; WEIBOCN_FROM=1110005030; _T_WM=65857eb113f99098b02fec131abefcec; SUB=_2A25xCo91DeRhGedG6FAZ8i3Owz6IHXVSRzs9rDV6PUJbitANLVn9kWtNUUoDHAvxXgscRGwkUnKh0YNgOtzYoQD8; SCF=AgmZXuj2sXp4FteHPITl-2fP7CIVv3xIWMFTtvjxyu2Cxh48PHK09NN9SwqycbkWAA..; SUHB=0rr6YwgRpYV3uj; MLOGIN=1; M_WEIBOCN_PARAMS=from%3D108C095010%26uicode%3D10000746
+
+
+HTTP/1.1 200 OK
+Server: Tengine/2.2.2
+Date: Fri, 14 Dec 2018 05:16:32 GMT
+Content-Type: application/json; charset=utf-8
+Connection: keep-alive
+Vary: Accept-Encoding
+X-Powered-By: PHP/7.2.1
+Set-Cookie: MLOGIN=1; expires=Fri, 14-Dec-2018 06:16:32 GMT; Max-Age=3600; path=/; domain=.weibo.cn
+X-Log-Uid: 1832823282
+Set-Cookie: M_WEIBOCN_PARAMS=from%3D108C095010%26uicode%3D10000746; expires=Fri, 14-Dec-2018 05:26:32 GMT; Max-Age=600; path=/; domain=.weibo.cn; HttpOnly
+PROC_NODE: v5-web-233.mweibo.tc.sinanode.com
+SSL_NODE: ssl-001.mweibo.dbl.intra.weibo.cn
+LB: 39.156.6.60
+Content-Length: 6107
+
+
+{"ok":1,"msg":"\u4fe1\u606f\u83b7\u53d6\u6210\u529f","http_code":200,"apiCode":10000,"data":{"header":{"points":{"title":"\u6211\u7684\u79ef\u5206","value":190,"icon":"https:\/\/h5.sinaimg.cn\/upload\/1005\/269\/2018\/08\/08\/icon_star.png","unit":"\u79ef\u5206","click":"layer","content":{"name":"exchange","points":190,"min_exchange":1000,"rate":0.8000000000000000444089209850062616169452667236328125,"rate_divide":1000,"button":{"text":"\u5c0f\u79ef\u5206\u62a2\u8c6a\u793c","scheme":"sinaweibo:\/\/browser?url=https%3A%2F%2Fluckypoints.sc.weibo.com%2Fhome%3Fsource%3Dugduihuanbanner"},"code":{"uicode":"10000831","act_code":"3112","ext":"point_status:0"},"button_exchange_code":{"uicode":"10000831","act_code":"2999","ext":"loci:exchange|point_status:0"},"button_exchange_all_code":{"uicode":"10000831","act_code":"2999","ext":"loci:exchange_all|point_status:0"}},"button_text":"\u6362\u94b1","code":{"uicode":"10000746","act_code":"2987","ext":""}},"money":{"title":"\u6211\u7684\u96f6\u94b1","value":"0","icon":"","unit":"\uffe5","click":"layer","content":{"name":"withdrawal","can_withdrawal":0,"withdrawal_tips":"\u6bcf\u6b21\u63d0\u73b0\u9700\u5927\u4e8e3\u5143"},"button_text":"\u63d0\u73b0","code":{"uicode":"10000746","act_code":"3213","ext":""}},"detail":{"text":"\u660e\u7ec6","scheme":"sinaweibo:\/\/browser?disable_gesture_back=1&url=https%3A%2F%2Fm.weibo.cn%2Fc%2Fcheckin%2Fscore&showmenu=0","code":{"uicode":"10000746","act_code":"2985","ext":""}},"background":"https:\/\/h5.sinaimg.cn\/upload\/1078\/660\/2018\/12\/12\/background.png","notice":{"title":"\u79ef\u5206\u65b0\u653b\u7565","background":"https:\/\/h5.sinaimg.cn\/upload\/1005\/269\/2018\/08\/08\/notice_bg.png","text":"\u603b\u79ef\u5206\u57282018\u5e7412\u670831\u65e5\u4e4b\u524d\u4e0d\u6e05\u96f6\uff0c\u8d76\u7d27\u4e89\u5206\u593a\u79d2\u505a\u4efb\u52a1\u62a2\u798f\u5229\u5427~\u5077\u5077\u544a\u8bc9\u4f60\uff0c\u66f4\u591a\u73a9\u6cd5\u5373\u5c06\u6765\u88ad\u54e6~~"},"rule":{"text":"\u89c4\u5219","scheme":"sinaweibo:\/\/browser?disable_gesture_back=1&url=https%3A%2F%2Fm.weibo.cn%2Fc%2Fcheckin%2Frule","code":{"uicode":"10000746","act_code":"2985","ext":""}}},"card":[{"position_weight":99,"background":"https:\/\/h5.sinaimg.cn\/upload\/1055\/569\/2018\/10\/17\/1539760647.png","title":"\u62bd\u5927\u5956","unit":"","value":"","click":"scheme","content":{"scheme":"sinaweibo:\/\/browser?url=https%3A%2F%2Fluckypoints.sc.weibo.com%2Fhome%3Fsource%3Dugindexbanner"},"code":{"uicode":"10000746","act_code":"2986","ext":"freq:6|loci:duobao"}},{"position_weight":90,"background":"https:\/\/h5.sinaimg.cn\/upload\/1078\/660\/2018\/12\/12\/sina_game2.png","title":"\u73a9\u6e38\u620f\u8d62\u79ef\u5206<br\/>\u6700\u9ad8\u8d6216\u500d","unit":"","value":"","click":"scheme","content":{"scheme":"sinaweibo:\/\/browser?url=http%3A%2F%2Fupdate.qp.games.weibo.com%2Fsinaddz%2Fh5%2Fweb-mobile%2Findex.html%3Fchannelid%3D30001%26gameType%3D8%26gameId%3D1%26platformId%3D4"},"code":{"uicode":"10000746","act_code":"2986","ext":"freq:6|loci:sina_game"}},{"position_weight":80,"background":"https:\/\/h5.sinaimg.cn\/upload\/114\/758\/2018\/12\/12\/dianshijudashang1212.png","title":"PK\u5267\u597d\u73a9<br\/>\u62bc\u4e2d\u8d62\u79ef\u5206","unit":"","value":"","click":"scheme","content":{"scheme":"sinaweibo:\/\/browser?url=https%3A%2F%2Fm.edm.weibo.cn%2Fippk%2F%3Fentry_type%3Dqiandao%26ip%3Ddianshijudashang%26disable_gesture_back%3D1%26navigation_gestures%3D0"},"code":{"uicode":"10000746","act_code":"2986","ext":"freq:6|loci:PK_dsjds"}},{"position_weight":50,"background":"https:\/\/h5.sinaimg.cn\/upload\/1055\/569\/2018\/09\/07\/kaquan.png","title":"\u8d85\u989d\u798f\u5229","unit":"\u5143","value":"5-100","click":"scheme","content":{"scheme":"sinaweibo:\/\/browser?url=https%3A%2F%2Fscore.edm.weibo.cn%2Fsso%3Fversion%3D1"},"code":{"uicode":"10000746","act_code":"2986","ext":"freq:6|loci:coupon"}}],"sign_in":{"alipay_redpack":[],"sign_in":{"show":1,"type":"signIn","content":{"gift":{"points":{"value":80,"unit":"\u79ef\u5206"}},"follow":0},"code":[]},"days":[{"bottom":{"text":"12\u670811\u65e5","current":0},"body":{"state":1,"click":[],"content":{"points":{"value":30,"unit":"\u79ef\u5206"}}}},{"bottom":{"text":"12\u670812\u65e5","current":0},"body":{"state":-1,"click":[],"content":{"points":{"value":60,"unit":"\u79ef\u5206"}}}},{"bottom":{"text":"12\u670813\u65e5","current":0},"body":{"state":1,"click":[],"content":{"points":{"value":80,"unit":"\u79ef\u5206"}}}},{"bottom":{"text":"12\u670814\u65e5","current":1},"body":{"state":1,"click":[],"content":{"points":{"value":80,"unit":"\u79ef\u5206"}}}},{"bottom":{"text":"12\u670815\u65e5","current":0},"body":{"state":0,"click":[],"content":{"points":{"value":80,"unit":"\u79ef\u5206"}}}},{"bottom":{"text":"12\u670816\u65e5","current":0},"body":{"state":0,"click":[],"content":{"points":{"value":90,"unit":"\u79ef\u5206"}}}},{"bottom":{"text":"12\u670817\u65e5","current":0},"body":{"state":0,"click":[],"content":{"points":{"value":100,"unit":"\u79ef\u5206"}}}}],"dayth":4},"goods":[{"name":"BOSE SoundLink Revolve+ \u84dd\u7259\u626c\u58f0\u5668 \u9ed1\u8272","img":"https:\/\/ww3.sinaimg.cn\/wap360\/007ir4NIly1fvqk92yq06j30ei08cac1","url":"https:\/\/luckypoints.sc.weibo.com\/good\/detail?source=ugtuijian&update=1&pid=218472","score":"100","code":{"uicode":"10000746","act_code":"3159","ext":"loci:1"}},{"name":"\u98de\u5229\u6d66 \u7535\u52a8\u7259\u5237 \u9ed1\u94bbHX9352\/04","img":"https:\/\/ww3.sinaimg.cn\/wap360\/007ir4NIly1fvqmeus7qkj30ei08c3zy","url":"https:\/\/luckypoints.sc.weibo.com\/good\/detail?source=ugtuijian&update=1&pid=217080","score":"100","code":{"uicode":"10000746","act_code":"3159","ext":"loci:2"}},{"name":"\u6234\u68eeDyson\u5439\u98ce\u673a","img":"https:\/\/ww3.sinaimg.cn\/wap360\/007ir4NIly1fvphrdttpmj30ei08cgn2","url":"https:\/\/luckypoints.sc.weibo.com\/good\/detail?source=ugtuijian&update=1&pid=222761","score":"100","code":{"uicode":"10000746","act_code":"3159","ext":"loci:3"}}],"days_task_combine":0,"version_status":"online"},"params":{"st":"21904d","from":"108C095010","uicode":"10000746","uid":"1832823282"}}
 
 
 

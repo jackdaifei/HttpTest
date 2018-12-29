@@ -25,23 +25,23 @@ public class IQiangGou {
 
         sign();
 
-//        cutDown(680814);
+//        cutDown(682070);
 
     }
 
     private static void cutDown(int id) throws Exception {
-        String url = "http://api.v3.iqianggou.com/api/item/" + id + "/bargain?version=5.5.8&udid=00000000-3e10-80d2-54a3-4b1c41190761&channel=vivo&user_id=7430274&latitude=30.531995&longitude=104.095784&zone_id=5101";
+        String url = "http://api.v3.iqianggou.com/api/item/" + id + "/bargain?version=5.5.8&udid=ffffffff-ee6b-9014-89a6-645b45210397&channel=vivo&user_id=7320189&latitude=30.531995&longitude=104.095784&zone_id=5101";
 
         Header[] headers = new Header[] {
                 new BasicHeader("Cookie", "PHPSESSID=39c773f41df682db25f12ff3e9308c90; expires=Sat, 25-Aug-2018 04:10:19 GMT; Max-Age=2592000; path=/; domain=.api.v3.iqianggou.com"),
-                new BasicHeader("statId", "868602047125517"),
+                new BasicHeader("statId", "868601057121526"),
                 new BasicHeader("Accept", "application/json"),
                 new BasicHeader("lng", "104.068308"),
                 new BasicHeader("User-Agent", "iqg/5.4.0 (m3 note;Android 5.1;Scale/3.0)"),
                 new BasicHeader("version", "5.5.8"),
                 new BasicHeader("width", "1080"),
                 new BasicHeader("height", "1920"),
-                new BasicHeader("udid", "ffffffff-ee6b-9014-89a6-645b41190761"),
+                new BasicHeader("udid", "ffffffff-ee6b-9014-89a6-645b45210397"),
                 new BasicHeader("Accept", "application/json"),
                 new BasicHeader("lat", "30.548856"),
                 new BasicHeader("Host", "api.v3.iqianggou.com"),
@@ -49,11 +49,11 @@ public class IQiangGou {
                 new BasicHeader("Accept-Encoding", "gzip"),
                 new BasicHeader("Content-Type", "application/x-www-form-urlencoded")
         };
-        String requestBody = "black_box=eyJvcyI6ImFuZHJvaWQiLCJ2ZXJzaW9uIjoiMy4xLjciLCJwYWNrYWdlcyI6ImNvbS5pcWlhbmdnb3UuYW5kcm9pZComNS41LjgiLCJwcm9maWxlX3RpbWUiOjUzMjMsImludGVydmFsX3RpbWUiOjE4MzU2NSwidG9rZW5faWQiOiI0dW1wYmR1eG1GVm5lTktBNVkrMXpkTEVSUFwvbVpMa0FiQm5YV1wvdTBjb3NnMDJKTTJCdzR5M2xkMDNuUGFHS3I3aEJ3bTF3SUFpeDdiVjhjeitXcXB3PT0ifQ%3D%3D&";
+//        String requestBody = "black_box=eyJvcyI6ImFuZHJvaWQiLCJ2ZXJzaW9uIjoiMy4xLjciLCJwYWNrYWdlcyI6ImNvbS5pcWlhbmdnb3UuYW5kcm9pZComNS41LjgiLCJwcm9maWxlX3RpbWUiOjUzMjMsImludGVydmFsX3RpbWUiOjE4MzU2NSwidG9rZW5faWQiOiI0dW1wYmR1eG1GVm5lTktBNVkrMXpkTEVSUFwvbVpMa0FiQm5YV1wvdTBjb3NnMDJKTTJCdzR5M2xkMDNuUGFHS3I3aEJ3bTF3SUFpeDdiVjhjeitXcXB3PT0ifQ%3D%3D&";
 
         HttpPost httpPost = new HttpPost(url);
         httpPost.setHeaders(headers);
-        httpPost.setEntity(new StringEntity(requestBody));
+//        httpPost.setEntity(new StringEntity(requestBody));
 
         RequestConfig defaultRequestConfig = RequestConfig.custom()
                 .setSocketTimeout(5000)
