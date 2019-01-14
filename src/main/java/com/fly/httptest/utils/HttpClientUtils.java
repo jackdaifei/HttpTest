@@ -752,4 +752,40 @@ public class HttpClientUtils {
         sc.init(null, new TrustManager[]{trustManager}, null);
         return sc;
     }
+
+
+    public static JSONObject postParamWithJson(String url, String params, Header[] headers) throws Exception {
+        try {
+            HttpPost httpPost = new HttpPost(url);
+            httpPost.setHeaders(headers);
+            if (StringUtils.isNotBlank(params)) {
+                httpPost.setEntity(new StringEntity(params));
+            }
+
+            if (ArrayUtils.isNotEmpty(headers)) {
+                httpPost.setHeaders(headers);
+            }
+
+            RequestConfig defaultRequestConfig = RequestConfig.custom()
+                    .setSocketTimeout(5000)
+                    .setConnectTimeout(5000)
+                    .setConnectionRequestTimeout(5000)
+                    .setStaleConnectionCheckEnabled(true)
+                    .build();
+
+            CloseableHttpClient client = HttpClients.custom().setDefaultRequestConfig(defaultRequestConfig).build();
+            CloseableHttpResponse response = client.execute(httpPost);
+
+            String responseStr = EntityUtils.toString(response.getEntity(), "utf-8");
+            response.close();
+
+            return JSONObject.parseObject(responseStr);
+        } catch (Exception e) {
+            System.out.println();
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+
 }
