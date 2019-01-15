@@ -22,7 +22,47 @@ public class JD_Sign {
     public static void main(String[] args) throws Exception {
         String cookie = "pin=jackdaifei_m;wskey=AAFbT9AfAEAWGgHkSanFbpfjKXgOiumMdr6hsmtr2NT8oMdHMGiyza11FEh5pRhZjDKGmIvaBKfLN7WYk7n3dJOtSXVkvGPJ;whwswswws=zfKxNSJYpkuxQ2l5Cz9M6SAKwbIQBt9YIF6Fj/545EHilrLsep8ki5XL/aLuKoCgVUaOazA9eTDSkefFN3XT7Xg==;unionwsws={\"devicefinger\":\"eidA2B700114ODY4NjAyMDQ3MTI1NTE3MA==0I7u8gZRJfxuaDVhagH3uQjoCRqDZgV4oZflP8e\\/6uphn9NxD4vvpXaqrAFb0+Oog6wilp42RLPGbnAB\",\"jmafinger\":\"zfKxNSJYpkuxQ2l5Cz9M6SAKwbIQBt9YIF6Fj\\/545EHilrLsep8ki5XL\\/aLuKoCgVUaOazA9eTDSkefFN3XT7Xg==\"};";
 //        sign(cookie);
+//
+//        Thread.sleep(CommonUtils.sleepMillisecond(2000, 5000));
+//
         zhongdou(cookie);
+
+        String cookie2 = "pt_key=app_openAAFcPTyRADBROSE-J9a4TDPqYJCqgywLjxgsMcYEqx71D1wDRSwXVeCZTyoAfmQFD13Jkyd3CTA; pt_pin=jackdaifei_m; pwdt_id=jackdaifei_m; sid=f90a1981c4926c973ff732ad749b4b1w; qd_ad=-%7C-%7Cdirect%7C-%7C0; qd_sid=JQX3PKT5-NDDHLEL4M5MFGA0J4T1Z-1; qd_uid=JQX3PKT5-NDDHLEL4M5MFGA0J4T1Z; qd_sq=1; qd_fs=1547517074581; qd_ls=1547517074581; qd_ts=1547517074581; __jda=168871293.15475170748898701826.1547517075.1547517075.1547517075.1; __jdb=168871293.1.15475170748898701826|1.1547517075; __jdc=168871293; __jdv=168871293|direct|-|none|-|1547517074896; _jrda=1; _jrdb=1547517075545; __jdu=15475170748898701826";
+//        // 金融签到-钢镚
+//        sign2(cookie2);
+//        Thread.sleep(CommonUtils.sleepMillisecond(3000, 12500));
+//
+//        // 双签-京豆
+//        doubleSign(cookie2);
+//        Thread.sleep(CommonUtils.sleepMillisecond(3000, 12500));
+//
+//        // 钢镚签到
+//        gangbengSign(cookie2);
+//        Thread.sleep(CommonUtils.sleepMillisecond(3000, 12500));
+//
+//        // 随机钢镚
+//        randomGangBeng(cookie2);
+//        Thread.sleep(CommonUtils.sleepMillisecond(3000, 12500));
+//
+//        // 钢镚割线签到
+//        huaxiangangbeng(cookie2);
+//        Thread.sleep(CommonUtils.sleepMillisecond(3000, 12500));
+//
+//        // 翻牌-钢镚
+//        fanpai(cookie2);
+//        Thread.sleep(CommonUtils.sleepMillisecond(3000, 12500));
+//
+//        // 分享-钢镚
+//        shareGangbeng(cookie2);
+//        Thread.sleep(CommonUtils.sleepMillisecond(3000, 12500));
+//
+//        // 拆红包1  {"actCode":"4AEDFB9EDC"}
+//        chaiRedPackage(cookie2, "4AEDFB9EDC");
+//        Thread.sleep(CommonUtils.sleepMillisecond(3000, 12500));
+
+        // 拆红包2  {"actCode":"73362F6CE2"}
+//        chaiRedPackage(cookie2, "73362F6CE2");
+//        Thread.sleep(CommonUtils.sleepMillisecond(3000, 12500));
     }
 
     /**
@@ -53,20 +93,15 @@ public class JD_Sign {
         if (null != jsonObject) {
             String code = jsonObject.getString("code");
             if ("0".equals(code)) {
-                System.out.println();
-                System.out.println();
-                System.out.println("------------APP签到---------");
                 JSONObject data = jsonObject.getJSONObject("data");
                 JSONObject beanAward = data.getJSONObject("dailyAward");
+                System.out.print("APP签到--------->>>");
                 if (null != beanAward) {
                     System.out.println(beanAward.getString("title") + beanAward.getString("subTitle") + beanAward.getJSONObject("beanAward").getString("beanCount") + "京豆");
                 } else {
                     JSONObject continuityAward = data.getJSONObject("continuityAward");
                     System.out.println(continuityAward.getString("title") + continuityAward.getJSONObject("beanAward").getString("beanCount") + "京豆");
                 }
-                System.out.println("------------APP签到---------");
-                System.out.println();
-                System.out.println();
             }
         }
     }
@@ -81,6 +116,7 @@ public class JD_Sign {
      * @throws Exception
      */
     private static JSONObject zhongdou(String cookie) throws Exception {
+        System.out.println("------------种豆---------");
         String url = "http://api.m.jd.com/client.action?functionId=plantBeanIndex&clientVersion=7.3.4&build=64460&client=android&d_brand=vivo&d_model=vivoZ1&osVersion=8.1.0&screen=2280*1080&partner=vivo&androidId=c151521cf7c1430f&installtionId=73e5ce8937244403ae1e93dc8d3ecf69&sdkVersion=27&lang=zh_CN&uuid=868602047125517-20f77c733fa1&area=22_1930_50949_52153&networkType=wifi&wifiBssid=unknown&st=1547451951993&sign=c665c9c8abb53ca28bcd2cc24a17de12&sv=110";
         Header[] headers = new Header[]{
                 new BasicHeader("Connection", "Keep-Alive"),
@@ -98,9 +134,6 @@ public class JD_Sign {
         JSONObject jsonObject = HttpClientUtils.postParamWithJson(url, params, headers);
         if (null != jsonObject) {
             if ("0".equals(jsonObject.getString("code"))) {
-
-                StringBuilder awardString = new StringBuilder();
-
                 JSONObject data = jsonObject.getJSONObject("data");
 
                 // 任务状态
@@ -123,7 +156,7 @@ public class JD_Sign {
                 JSONArray roundList = data.getJSONArray("roundList");
                 JSONObject round = roundList.getJSONObject(0);
                 nutrients += round.getIntValue("nutrients");
-                awardString.append("可使用营养液：").append(nutrients).append("\n");
+                System.out.println("可使用营养液：" + nutrients);
 
                 String roundId = round.getString("roundId");
 
@@ -131,38 +164,33 @@ public class JD_Sign {
                 JSONObject timeNutrientsRes = data.getJSONObject("timeNutrientsRes");
                 String state = timeNutrientsRes.getString("state");
                 if ("1".equals(state)) {
-                    awardString.append("有可领取的营养液!!").append("\n");
+                    System.out.println("有可领取的营养液！！！");
+                    Thread.sleep(CommonUtils.sleepMillisecond(3000, 14500));
                     // 获取培养液, 并返回获取结果
                     boolean isSuccess = getNutrients(cookie, roundId);
                     if (!isSuccess) {
-                        awardString.append("获取营养液失败...");
+                        System.out.println("获取营养液失败...");
                     } else {
                         // 获取成功, 培养液数量+1
                         nutrients += 1;
-                        awardString.append("获取营养液成功！！！");
+                        System.out.println("获取营养液成功！！！");
                     }
                 } else {
                     String countDown = timeNutrientsRes.getString("countDown");
-                    awardString.append("剩余[").append(countDown).append("]秒");
+                    System.out.println("剩余[" + countDown + "]秒");
                 }
 
 
                 // 使用培养液
                 if (nutrients > 0) {
-                    awardString.append("\n");
+                    Thread.sleep(CommonUtils.sleepMillisecond(3500, 13600));
                     boolean useSuccess = useNutrients(cookie, roundId);
                     if (!useSuccess) {
-                        awardString.append("使用营养液失败...");
+                        System.out.println("使用营养液失败...");
                     } else {
-                        awardString.append("使用营养液成功！！！");
+                        System.out.println("使用营养液成功！！！");
                     }
                 }
-
-
-                System.out.println();
-                System.out.println();
-                System.out.println("------------种豆---------");
-                System.out.println(awardString);
                 System.out.println("------------种豆---------");
                 System.out.println();
                 System.out.println();
@@ -299,7 +327,7 @@ public class JD_Sign {
      * @param appCookie
      * @throws Exception
      */
-    private static void dubboSign(String appCookie) throws Exception {
+    private static void doubleSign(String appCookie) throws Exception {
         String url = "https://ms.jr.jd.com/newjrmactivity/base/sign1111/getSignAward.action?sid=ec7eca6b943d12a9cafbdf81f83a87fw";
         Header[] headers = new Header[]{
                 new BasicHeader("Host", "ms.jr.jd.com"),
@@ -450,7 +478,7 @@ public class JD_Sign {
                 JSONObject data = responseJson.getJSONObject("data");
                 JSONObject reward = data.getJSONObject("reward");
                 String volumn = reward.getString("volumn");
-                System.out.println("割线签到获取钢镚------->>>" + volumn);
+                System.out.println("割线签到获取钢镚--------->>>" + volumn);
             } else {
                 System.out.println("割线签到获取钢镚失败..." + responseJson);
             }
@@ -507,7 +535,7 @@ public class JD_Sign {
                         if ("1".equals(reward.getString("checked"))) {
                             String jingdou = reward.getString("jingdou");
                             if (StringUtils.isNotBlank(jingdou)) {
-                                System.out.println("翻牌获取钢镚-------->>>" + reward.getString("jingdou"));
+                                System.out.println("翻牌获取钢镚--------->>>" + reward.getString("jingdou"));
                             } else {
                                 System.out.println("翻牌获取钢镚-------->>>翻到广告了...");
                             }
@@ -553,7 +581,7 @@ public class JD_Sign {
                         JSONObject resultData = responseJson2.getJSONObject("resultData");
                         if ("0".equals(resultData.getString("code"))) {
                             JSONObject data = resultData.getJSONObject("data");
-                            System.out.println("分享得钢镚---->>>" + data.getString("amount"));
+                            System.out.println("分享得钢镚--------->>>" + data.getString("amount"));
                         }
                     }
                     else {
@@ -575,13 +603,13 @@ public class JD_Sign {
      * @throws Exception
      */
     private static void jingrongSign(String appCookie) throws Exception {
-        String url = "https://vip.m.jd.com/scoreSign/getPage.html?token=401832346&wxProgramFlag=false";
+        String url = "https://vip.m.jd.com/scoreSign/getPage.html?token=2050613628&wxProgramFlag=false";
         Header[] headers = new Header[]{
                 new BasicHeader("Host", "vip.m.jd.com"),
                 new BasicHeader("Connection", "keep-alive"),
                 new BasicHeader("Accept", "application/json, text/plain, */*"),
                 new BasicHeader("X-Requested-With", "XMLHttpRequest"),
-                new BasicHeader("User-Agent", "Mozilla/5.0 (Linux; Android 8.1; vivo Z1 Build/OPM1.171019.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044307 Mobile Safari/537.36/application=JDJR-App&clientType=android&deviceId=868602047125517&src=vivo&version=5.0.5&clientVersion=5.0.5&osVersion=8.1.0&osName=vivo Z1&isUpdate=0&HiClVersion=5.0.5&netWork=1&netWorkType=1&ip=10.12.197.183&mac=20:F7:7C:73:3F:A1&sPoint=MjAwMDIjI3hpYW9qaW5rdTQzMDM%3D%0A&*#@jdPaySDK*#@jdPayChannel=jdFinance&jdPayChannelVersion=5.0.5&jdPaySdkVersion=2.21.4.0&androidBrand=vivo&androidManufacturer=vivo&jdPayClientName=Android*#@jdPaySDK*#@"),
+                new BasicHeader("User-Agent", "Mozilla/5.0 (Linux; Android 8.1; vivo Z1 Build/OPM1.171019.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044325 Mobile Safari/537.36/application=JDJR-App&clientType=android&deviceId=868602047125517&src=vivo&version=5.0.7&clientVersion=5.0.7&osVersion=8.1.0&osName=vivo Z1&isUpdate=0&HiClVersion=5.0.7&netWork=1&netWorkType=1&ip=10.12.197.40&mac=20:F7:7C:73:3F:A1&sPoint=&*#@jdPaySDK*#@jdPayChannel=jdFinance&jdPayChannelVersion=5.0.7&jdPaySdkVersion=2.21.6.0&androidBrand=vivo&androidManufacturer=vivo&jdPayClientName=Android*#@jdPaySDK*#@"),
                 new BasicHeader("Referer", "https://vip.m.jd.com/page/signin"),
                 new BasicHeader("Accept-Encoding", "gzip, deflate"),
                 new BasicHeader("Accept-Language", "zh-CN,en-US;q=0.8"),
@@ -606,388 +634,232 @@ public class JD_Sign {
 
         response.close();
 
-        System.out.println("金融领京豆签到--------->>>" + responseStr);
+         if (StringUtils.isNotBlank(responseStr)) {
+             JSONObject responseJson = JSONObject.parseObject(responseStr);
+             if (null != responseJson) {
+                 if (responseJson.getBooleanValue("success")) {
+                     JSONObject result = responseJson.getJSONObject("result");
+                     JSONArray floorInfoList = result.getJSONArray("floorInfoList");
 
+                     for (int i = 0; i < floorInfoList.size(); i++) {
+                         JSONObject floorInfo = floorInfoList.getJSONObject(i);
+                         String code = floorInfo.getString("code");
+                         if ("M_SIGN_INFO".equals(code)) {
+                             JSONObject dataDetail = floorInfo.getJSONObject("dataDetail");
+                             System.out.println("金融领京豆签到--------->>>" + dataDetail.getString("jdnum") + "京豆");
+                             break;
+                         }
+                     }
+                 } else {
+                     System.out.println("金融领京豆签到失败..." + responseJson);
+                 }
+             }
+         }
     }
 
-    private static void redPackage(String appCookie, int index) throws Exception {
-        String url = "https://ms.jr.jd.com/gw/generic/jrm/h5/m/conOrderLottery?_=" + System.currentTimeMillis();
+    /**
+     * 拆红包
+     * @param appCookie
+     * @param actCode
+     */
+    private static void chaiRedPackage(String appCookie, String actCode) throws Exception {
+        String redPackageStatus = getRedPackageStatus(appCookie, actCode);
+        if (null == redPackageStatus) {
+            System.out.println("获取红包[" + actCode + "]状态失败...");
+            return;
+        }
+        Thread.sleep(CommonUtils.sleepMillisecond(2000, 8000));
+        boolean dakai = true;
+        if ("0_can_openRed".equals(redPackageStatus)) {
+            // 打开红包
+            dakai = dakaiRedPackage(appCookie, actCode);
+            Thread.sleep(CommonUtils.sleepMillisecond(1000, 3000));
+        }
+        // 0_can_openRed 可打开
+        // 0_unPickUp_noTime 未领取, 不能打开
+
+        if (dakai) {
+            // 获取红包奖励
+            String rewardCode = pickUpPackage(appCookie, actCode);
+            if (null != rewardCode) {
+                // 领取奖励
+                pickUpReward(appCookie, actCode, rewardCode);
+            }
+        }
+    }
+
+    /**
+     * 获取红包状态, 并返回是否可以拆红包
+     * @param appCookie
+     * @param actCode
+     * @throws Exception
+     */
+    private static String getRedPackageStatus(String appCookie, String actCode) throws Exception {
+        String url = "https://ms.jr.jd.com/gw/generic/jrm/h5/m/conOrderGetUserRewardStatus";
         Header[] headers = new Header[]{
                 new BasicHeader("Host", "ms.jr.jd.com"),
                 new BasicHeader("Connection", "keep-alive"),
-                new BasicHeader("Accept", "application/json"),
                 new BasicHeader("Origin", "https://m.jr.jd.com"),
-                new BasicHeader("User-Agent", "Mozilla/5.0 (Linux; Android 8.1; vivo Z1 Build/OPM1.171019.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044307 Mobile Safari/537.36/application=JDJR-App&clientType=android&deviceId=868602047125517&src=vivo&version=5.0.5&clientVersion=5.0.5&osVersion=8.1.0&osName=vivo Z1&isUpdate=0&HiClVersion=5.0.5&netWork=1&netWorkType=1&ip=10.12.197.183&mac=20:F7:7C:73:3F:A1&sPoint=MjAwMDIjI3hpYW9qaW5rdTQzMDM%3D%0A&*#@jdPaySDK*#@jdPayChannel=jdFinance&jdPayChannelVersion=5.0.5&jdPaySdkVersion=2.21.4.0&androidBrand=vivo&androidManufacturer=vivo&jdPayClientName=Android*#@jdPaySDK*#@"),
-                new BasicHeader("Content-Type", "application/x-www-form-urlencoded;charset=UTF-8"),
-                new BasicHeader("Referer", "https://m.jr.jd.com/zc/drawSystem/hb/index.html?contentParam=100000916&act=1&actCode=73362F6CE2&actType=1&sourece=qdb&type=jixifulishe"),
+                new BasicHeader("User-Agent", "Mozilla/5.0 (Linux; Android 8.1; vivo Z1 Build/OPM1.171019.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044325 Mobile Safari/537.36/application=JDJR-App&clientType=android&deviceId=868602047125517&src=vivo&version=5.0.7&clientVersion=5.0.7&osVersion=8.1.0&osName=vivo Z1&isUpdate=0&HiClVersion=5.0.7&netWork=1&netWorkType=1&ip=10.12.197.40&mac=20:F7:7C:73:3F:A1&sPoint=&*#@jdPaySDK*#@jdPayChannel=jdFinance&jdPayChannelVersion=5.0.7&jdPaySdkVersion=2.21.6.0&androidBrand=vivo&androidManufacturer=vivo&jdPayClientName=Android*#@jdPaySDK*#@"),
+                new BasicHeader("content-type", "application/x-www-form-urlencoded;charset=UTF-8"),
+                new BasicHeader("Accept", "*/*"),
+                new BasicHeader("Referer", "https://m.jr.jd.com/zc/drawSystem/hb/index.html?contentParam=100000691&actCode=" + actCode + "&actType=1"),
+                new BasicHeader("Accept-Encoding", "gzip, deflate"),
+                new BasicHeader("Accept-Language", "zh-CN,en-US;q=0.8"),
+                new BasicHeader("Cookie", appCookie),
+                new BasicHeader("X-Requested-With", "com.jd.jrapp"),
+
+        };
+
+        // 红包参数
+        String params = "reqData={\"actCode\":\"" + actCode + "\"}&source=app";
+
+        JSONObject responseJson = HttpClientUtils.postParamWithJson(url, params, headers);
+        if (null != responseJson) {
+            String resultCode = responseJson.getString("resultCode");
+            if ("0".equals(resultCode)) {
+                JSONObject resultData = responseJson.getJSONObject("resultData");
+                String code = resultData.getString("code");
+                if ("0_can_openRed".equals(code) || "0_unPickUp_noTime".equals(code)) { // 可以领取红包
+                    System.out.println("红包[" + actCode + "]--------->>>" + resultData.getString("msg"));
+                    return code;
+                }
+            }
+        }
+        System.out.println("红包[" + actCode + "]不可拆..." + responseJson);
+        return null;
+    }
+
+
+
+    /**
+     * 打开红包-抽奖
+     * @param appCookie
+     * @param actCode
+     * @return
+     */
+    private static boolean dakaiRedPackage(String appCookie, String actCode) throws Exception {
+        String url = "https://ms.jr.jd.com/gw/generic/jrm/h5/m/conOrderLottery?_=1547519125394";
+
+        Header[] headers = new Header[]{
+                new BasicHeader("Host", "ms.jr.jd.com"),
+                new BasicHeader("Connection", "keep-alive"),
+                new BasicHeader("Origin", "https://m.jr.jd.com"),
+                new BasicHeader("User-Agent", "Mozilla/5.0 (Linux; Android 8.1; vivo Z1 Build/OPM1.171019.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044325 Mobile Safari/537.36/application=JDJR-App&clientType=android&deviceId=868602047125517&src=vivo&version=5.0.7&clientVersion=5.0.7&osVersion=8.1.0&osName=vivo Z1&isUpdate=0&HiClVersion=5.0.7&netWork=1&netWorkType=1&ip=10.12.197.40&mac=20:F7:7C:73:3F:A1&sPoint=&*#@jdPaySDK*#@jdPayChannel=jdFinance&jdPayChannelVersion=5.0.7&jdPaySdkVersion=2.21.6.0&androidBrand=vivo&androidManufacturer=vivo&jdPayClientName=Android*#@jdPaySDK*#@"),
+                new BasicHeader("content-type", "application/x-www-form-urlencoded;charset=UTF-8"),
+                new BasicHeader("Accept", "application/json"),
+                new BasicHeader("Referer", "https://m.jr.jd.com/zc/drawSystem/hb/index.html?contentParam=100000691&actCode=" + actCode + "&actType=1"),
                 new BasicHeader("Accept-Encoding", "gzip, deflate"),
                 new BasicHeader("Accept-Language", "zh-CN,en-US;q=0.8"),
                 new BasicHeader("Cookie", appCookie),
                 new BasicHeader("X-Requested-With", "com.jd.jrapp"),
         };
 
-        HttpPost httpPost = new HttpPost(url);
-        httpPost.setHeaders(headers);
-        if (index == 0) {
-            httpPost.setEntity(new StringEntity("reqData={\"actCode\":\"73362F6CE2\",\"riskDeviceParam\":\"{\\\"deviceType\\\":\\\"vivo Z1\\\",\\\"traceIp\\\":\\\"\\\",\\\"macAddress\\\":\\\"20F77C733FA1\\\",\\\"imei\\\":\\\"868602047125517\\\",\\\"os\\\":\\\"android\\\",\\\"osVersion\\\":\\\"8.1.0\\\",\\\"fp\\\":\\\"e97f7d0c71e5d065f43fcae400a74a46\\\",\\\"ip\\\":\\\"10.12.197.183\\\",\\\"eid\\\":\\\"KWVSHNUO4MB3VTPWRM3MFPRQVSARY54O3KPOQT5W66NHNZBHJDDRC4HGJ62D6KPCDVIVY2DNZNQTJCE5IWRW5GJFYE\\\",\\\"appId\\\":\\\"com.jd.jrapp\\\",\\\"openUUID\\\":\\\"\\\",\\\"uuid\\\":\\\"868602047125517-20F77C733FA1\\\",\\\"clientVersion\\\":\\\"5.0.5\\\",\\\"resolution\\\":\\\"1080.0*2280.0\\\",\\\"channelInfo\\\":\\\"vivo#309080027\\\",\\\"networkType\\\":\\\"wifi\\\",\\\"startNo\\\":\\\"270\\\",\\\"openid\\\":\\\"\\\",\\\"token\\\":\\\"\\\",\\\"sid\\\":\\\"\\\",\\\"terminalType\\\":\\\"02\\\",\\\"longtitude\\\":\\\"104.068599\\\",\\\"latitude\\\":\\\"30.548989\\\",\\\"securityData\\\":\\\"\\\",\\\"jscContent\\\":\\\"\\\",\\\"fnHttpHead\\\":\\\"\\\",\\\"receiveRequestTime\\\":\\\"\\\",\\\"port\\\":\\\"\\\",\\\"appType\\\":3,\\\"optType\\\":\\\"\\\",\\\"idfv\\\":\\\"\\\",\\\"wifiSSID\\\":\\\"\\\",\\\"wifiMacAddress\\\":\\\"\\\",\\\"cellIpAddress\\\":\\\"\\\",\\\"wifiIpAddress\\\":\\\"\\\",\\\"sdkToken\\\":\\\"\\\"}\"}"));
-        } else {
-            httpPost.setEntity(new StringEntity("reqData={\"actCode\":\"4AEDFB9EDC\",\"riskDeviceParam\":\"{\\\"deviceType\\\":\\\"vivo Z1\\\",\\\"traceIp\\\":\\\"\\\",\\\"macAddress\\\":\\\"20F77C733FA1\\\",\\\"imei\\\":\\\"868602047125517\\\",\\\"os\\\":\\\"android\\\",\\\"osVersion\\\":\\\"8.1.0\\\",\\\"fp\\\":\\\"e97f7d0c71e5d065f43fcae400a74a46\\\",\\\"ip\\\":\\\"10.12.197.183\\\",\\\"eid\\\":\\\"KWVSHNUO4MB3VTPWRM3MFPRQVSARY54O3KPOQT5W66NHNZBHJDDRC4HGJ62D6KPCDVIVY2DNZNQTJCE5IWRW5GJFYE\\\",\\\"appId\\\":\\\"com.jd.jrapp\\\",\\\"openUUID\\\":\\\"\\\",\\\"uuid\\\":\\\"868602047125517-20F77C733FA1\\\",\\\"clientVersion\\\":\\\"5.0.5\\\",\\\"resolution\\\":\\\"1080.0*2280.0\\\",\\\"channelInfo\\\":\\\"vivo#309080027\\\",\\\"networkType\\\":\\\"wifi\\\",\\\"startNo\\\":\\\"270\\\",\\\"openid\\\":\\\"\\\",\\\"token\\\":\\\"\\\",\\\"sid\\\":\\\"\\\",\\\"terminalType\\\":\\\"02\\\",\\\"longtitude\\\":\\\"104.068599\\\",\\\"latitude\\\":\\\"30.548989\\\",\\\"securityData\\\":\\\"\\\",\\\"jscContent\\\":\\\"\\\",\\\"fnHttpHead\\\":\\\"\\\",\\\"receiveRequestTime\\\":\\\"\\\",\\\"port\\\":\\\"\\\",\\\"appType\\\":3,\\\"optType\\\":\\\"\\\",\\\"idfv\\\":\\\"\\\",\\\"wifiSSID\\\":\\\"\\\",\\\"wifiMacAddress\\\":\\\"\\\",\\\"cellIpAddress\\\":\\\"\\\",\\\"wifiIpAddress\\\":\\\"\\\",\\\"sdkToken\\\":\\\"\\\"}\"}"));
-        }
 
-        RequestConfig defaultRequestConfig = RequestConfig.custom()
-                .setSocketTimeout(5000)
-                .setConnectTimeout(5000)
-                .setConnectionRequestTimeout(5000)
-                .setStaleConnectionCheckEnabled(true)
-                .build();
+        String params = "reqData={\"actCode\":\"" + actCode + "\",\"riskDeviceParam\":\"{\\\"deviceType\\\":\\\"vivo Z1\\\",\\\"traceIp\\\":\\\"\\\",\\\"macAddress\\\":\\\"20F77C733FA1\\\",\\\"imei\\\":\\\"868602047125517\\\",\\\"os\\\":\\\"android\\\",\\\"osVersion\\\":\\\"8.1.0\\\",\\\"fp\\\":\\\"deca20c862cadcc3b02a40d2064dfb44\\\",\\\"ip\\\":\\\"10.12.197.40\\\",\\\"eid\\\":\\\"KWVSHNUO4MB3VTPWRM3MFPRQVSARY54O3KPOQT5W66NHNZBHJDDRC4HGJ62D6KPCDVIVY2DNZNQTJCE5IWRW5GJFYE\\\",\\\"appId\\\":\\\"com.jd.jrapp\\\",\\\"openUUID\\\":\\\"\\\",\\\"uuid\\\":\\\"868602047125517-20F77C733FA1\\\",\\\"clientVersion\\\":\\\"5.0.7\\\",\\\"resolution\\\":\\\"1080.0*2280.0\\\",\\\"channelInfo\\\":\\\"vivo#309080027\\\",\\\"networkType\\\":\\\"wifi\\\",\\\"startNo\\\":\\\"359\\\",\\\"openid\\\":\\\"\\\",\\\"token\\\":\\\"\\\",\\\"sid\\\":\\\"\\\",\\\"terminalType\\\":\\\"02\\\",\\\"longtitude\\\":\\\"104.068608\\\",\\\"latitude\\\":\\\"30.549035\\\",\\\"securityData\\\":\\\"\\\",\\\"jscContent\\\":\\\"\\\",\\\"fnHttpHead\\\":\\\"\\\",\\\"receiveRequestTime\\\":\\\"\\\",\\\"port\\\":\\\"\\\",\\\"appType\\\":3,\\\"optType\\\":\\\"\\\",\\\"idfv\\\":\\\"\\\",\\\"wifiSSID\\\":\\\"\\\",\\\"wifiMacAddress\\\":\\\"\\\",\\\"cellIpAddress\\\":\\\"\\\",\\\"wifiIpAddress\\\":\\\"\\\",\\\"sdkToken\\\":\\\"\\\"}\"}";
 
-        CloseableHttpClient client = HttpClients.custom().setDefaultRequestConfig(defaultRequestConfig).build();
-        CloseableHttpResponse response = client.execute(httpPost);
-
-        String responseStr = EntityUtils.toString(response.getEntity());
-
-        response.close();
-
-        System.out.println("随机领钢镚--------->>>" + responseStr);
-
-    }
-
-
-    /**
-     * 培养液活动
-     *
-     * @param appCookie
-     * @throws Exception
-     */
-    private static void peiyangye(String appCookie) throws Exception {
-        JSONObject jsonObject = checkZhongDouStatus(appCookie);
-
-        Thread.sleep(CommonUtils.sleepMillisecond(1000, 5000));
-        // 获取当前培养液数量和领取状态
-        JSONObject data = jsonObject.getJSONObject("data");
-
-        // 获取可使用培养液数量，并使用培养液
-        JSONArray roundList = data.getJSONArray("roundList");
-        for (int i = 0; i < roundList.size(); i++) {
-            JSONObject round = roundList.getJSONObject(i);
-            int nutrients = round.getIntValue("nutrients");
-            for (int n = 0; n < nutrients; n++) {
-                String roundId = round.getString("roundId");
-                if ("knleqjgrhrboeoqbns6eertieu".equals(roundId)) {
-                    usePeiYangYe(appCookie, roundId);
-                    Thread.sleep(CommonUtils.sleepMillisecond(1500, 8000));
+        JSONObject responseJson = HttpClientUtils.postParamWithJson(url, params, headers);
+        if (null != responseJson) {
+            String resultCode = responseJson.getString("resultCode");
+            if ("0".equals(resultCode)) {
+                JSONObject resultData = responseJson.getJSONObject("resultData");
+                String code = resultData.getString("code");
+                if ("00".equals(code)) {
+                    System.out.println("打开红包[" + actCode + "]成功...");
+                    return true;
                 }
             }
         }
-
-        JSONObject timeNutrientsRes = data.getJSONObject("timeNutrientsRes");
-
-        int countDown = timeNutrientsRes.getIntValue("countDown");
-        String state = timeNutrientsRes.getString("state");
-        if ("1".equals(state)) {
-            if (lingqupeiyangye(appCookie, "knleqjgrhrboeoqbns6eertieu")) { // 领取培养液后, 执行使用操作
-                Thread.sleep(CommonUtils.sleepMillisecond(1500, 8000));
-                usePeiYangYe(appCookie, "knleqjgrhrboeoqbns6eertieu");
-                Thread.sleep(CommonUtils.sleepMillisecond(1500, 8000));
-
-//                JSONArray jsonArray = data.getJSONArray("roundList");
-//                for (int i=0;i<jsonArray.size();i++) {
-//                    JSONObject round = jsonArray.getJSONObject(i);
-//                    String roundId = round.getString("roundId");
-//                    usePeiYangYe(appCookie, roundId);
-//                    Thread.sleep(sleepMillisecond(1500, 8000));
-//                }
-            }
-        } else {
-            System.out.println("没有可领取培养液, 剩余[" + countDown + "]秒...");
-//            while (true) {
-//                try {
-//                    System.out.println("剩余:" + countDown-- + "秒...");
-//                    Thread.sleep(1000);
-//                } catch (Exception e) {
-//                    e.printStackTrace();
-//                }
-//            }
-        }
+        return false;
     }
 
     /**
-     * 种豆任务
-     *
+     * 获取待领取红包
      * @param appCookie
-     * @throws Exception
-     */
-    private static void zhongdouTask(String appCookie) throws Exception {
-        // 任务列表
-        String url = "http://api.m.jd.com/client.action?functionId=shopTaskList&clientVersion=7.3.0&build=63742&client=android&d_brand=vivo&d_model=vivoZ1&osVersion=8.1.0&screen=2280*1080&partner=vivo&androidId=c151521cf7c1430f&installtionId=73e5ce8937244403ae1e93dc8d3ecf69&sdkVersion=27&lang=zh_CN&uuid=868602047125517-20f77c733fa1&area=22_1930_50949_52153&networkType=wifi&wifiBssid=f08146662bbc4ec19d958771395f263e&st=1544705272964&sign=2388da5079fbd3bd521e6a0d6be8e406&sv=102";
-
-        Header[] headers = new Header[]{
-                new BasicHeader("Connection", "Keep-Alive"),
-                new BasicHeader("Cookie", appCookie),
-                new BasicHeader("Charset", "UTF-8"),
-                new BasicHeader("Accept-Encoding", "gzip,deflate"),
-                new BasicHeader("jdc-backup", appCookie),
-                new BasicHeader("Cache-Control", "no-cache"),
-                new BasicHeader("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8"),
-                new BasicHeader("Host", "api.m.jd.com"),
-                new BasicHeader("User-Agent", "okhttp/3.6.0"),
-        };
-
-        HttpPost httpPost = new HttpPost(url);
-        httpPost.setHeaders(headers);
-        httpPost.setEntity(new StringEntity("body={}"));
-
-        RequestConfig defaultRequestConfig = RequestConfig.custom()
-                .setSocketTimeout(5000)
-                .setConnectTimeout(5000)
-                .setConnectionRequestTimeout(5000)
-                .setStaleConnectionCheckEnabled(true)
-                .build();
-
-        CloseableHttpClient client = HttpClients.custom().setDefaultRequestConfig(defaultRequestConfig).build();
-        CloseableHttpResponse response = client.execute(httpPost);
-
-        String responseStr = EntityUtils.toString(response.getEntity());
-
-        response.close();
-
-        System.out.println("种豆任务列表--------->>>" + responseStr);
-
-        JSONObject jsonObject = JSONObject.parseObject(responseStr);
-        JSONArray jsonArray = jsonObject.getJSONObject("data").getJSONArray("goodShopList");
-//        for (int i=0;i<jsonArray.size();i++) {
-//            JSONObject json = jsonArray.getJSONObject(i);
-//            String shopTaskId = json.getString("shopTaskId");
-//            String shopId = json.getString("shopId");
-//
-//        }
-
-        JSONObject json = jsonArray.getJSONObject(0);
-        String shopTaskId = json.getString("shopTaskId");
-        String shopId = json.getString("shopId");
-        Thread.sleep(CommonUtils.sleepMillisecond(300, 800));
-        watchShop(appCookie, shopTaskId, shopId);
-
-
-        Thread.sleep(CommonUtils.sleepMillisecond(300, 800));
-//        cancelWatchShop(appCookie, shopId);
-    }
-
-    /**
-     * 关注店铺
-     *
-     * @param cookie
-     * @param shopTaskId
-     * @param shopId
-     * @throws Exception
-     */
-    private static void watchShop(String cookie, String shopTaskId, String shopId) throws Exception {
-        String url = "http://api.m.jd.com/client.action?functionId=shopNutrientsTask&clientVersion=7.3.0&build=63742&client=android&d_brand=vivo&d_model=vivoZ1&osVersion=8.1.0&screen=2280*1080&partner=vivo&androidId=c151521cf7c1430f&installtionId=73e5ce8937244403ae1e93dc8d3ecf69&sdkVersion=27&lang=zh_CN&uuid=868602047125517-20f77c733fa1&area=22_1930_50949_52153&networkType=wifi&wifiBssid=f08146662bbc4ec19d958771395f263e&st=1544706742737&sign=c2e853e18be936288fca26ac8487478e&sv=120";
-        Header[] headers = new Header[]{
-                new BasicHeader("Connection", "Keep-Alive"),
-                new BasicHeader("Cookie", cookie),
-                new BasicHeader("Charset", "UTF-8"),
-                new BasicHeader("Accept-Encoding", "gzip,deflate"),
-                new BasicHeader("jdc-backup", cookie),
-                new BasicHeader("Cache-Control", "no-cache"),
-                new BasicHeader("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8"),
-                new BasicHeader("Host", "api.m.jd.com"),
-                new BasicHeader("User-Agent", "okhttp/3.6.0"),
-        };
-
-        HttpPost httpPost = new HttpPost(url);
-        httpPost.setHeaders(headers);
-        httpPost.setEntity(new StringEntity("body={\"shopId\":\"" + shopId + "\",\"shopTaskId\":\"" + shopTaskId + "\"}"));
-
-        RequestConfig defaultRequestConfig = RequestConfig.custom()
-                .setSocketTimeout(5000)
-                .setConnectTimeout(5000)
-                .setConnectionRequestTimeout(5000)
-                .setStaleConnectionCheckEnabled(true)
-                .build();
-
-        CloseableHttpClient client = HttpClients.custom().setDefaultRequestConfig(defaultRequestConfig).build();
-        CloseableHttpResponse response = client.execute(httpPost);
-
-        String responseStr = EntityUtils.toString(response.getEntity());
-
-        response.close();
-
-        System.out.println("关注店铺任务--------->>>" + responseStr);
-
-    }
-
-    /**
-     * 取消关注店铺
-     *
-     * @param cookie
-     * @param shopId
-     * @throws Exception
-     */
-    private static void cancelWatchShop(String cookie, String shopId) throws Exception {
-        String url = "http://api.m.jd.com/client.action?functionId=followShop&clientVersion=7.3.0&build=63742&client=android&d_brand=vivo&d_model=vivoZ1&osVersion=8.1.0&screen=2280*1080&partner=vivo&androidId=c151521cf7c1430f&installtionId=73e5ce8937244403ae1e93dc8d3ecf69&sdkVersion=27&lang=zh_CN&uuid=868602047125517-20f77c733fa1&area=22_1930_50949_52153&networkType=wifi&wifiBssid=f08146662bbc4ec19d958771395f263e&st=1544705481124&sign=9133b43f8b4fe78c8f93a6a35af99d89&sv=102";
-        Header[] headers = new Header[]{
-                new BasicHeader("Connection", "Keep-Alive"),
-                new BasicHeader("Cookie", cookie),
-                new BasicHeader("Charset", "UTF-8"),
-                new BasicHeader("Accept-Encoding", "gzip,deflate"),
-                new BasicHeader("jdc-backup", cookie),
-                new BasicHeader("Cache-Control", "no-cache"),
-                new BasicHeader("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8"),
-                new BasicHeader("Host", "api.m.jd.com"),
-                new BasicHeader("User-Agent", "okhttp/3.6.0"),
-        };
-
-        HttpPost httpPost = new HttpPost(url);
-        httpPost.setHeaders(headers);
-        httpPost.setEntity(new StringEntity("body={\"follow\":false,\"shopId\":\"" + shopId + "\"}"));
-
-        RequestConfig defaultRequestConfig = RequestConfig.custom()
-                .setSocketTimeout(5000)
-                .setConnectTimeout(5000)
-                .setConnectionRequestTimeout(5000)
-                .setStaleConnectionCheckEnabled(true)
-                .build();
-
-        CloseableHttpClient client = HttpClients.custom().setDefaultRequestConfig(defaultRequestConfig).build();
-        CloseableHttpResponse response = client.execute(httpPost);
-
-        String responseStr = EntityUtils.toString(response.getEntity());
-
-        response.close();
-
-        System.out.println("取消关注店铺--------->>>" + responseStr);
-
-    }
-
-
-    /**
-     * 获取种豆状态
-     *
-     * @param cookie
+     * @param actCode
      * @return
      * @throws Exception
      */
-    private static JSONObject checkZhongDouStatus(String cookie) throws Exception {
-        String status = "http://api.m.jd.com/client.action?functionId=plantBeanIndex&clientVersion=7.2.6&build=63370&client=android&d_brand=vivo&d_model=vivoZ1&osVersion=8.1.0&screen=2280*1080&partner=vivo&androidId=c151521cf7c1430f&installtionId=73e5ce8937244403ae1e93dc8d3ecf69&sdkVersion=27&lang=zh_CN&uuid=868602047125517-20f77c733fa1&area=22_1930_50949_52153&networkType=wifi&wifiBssid=unknown&st=1544516483539&sign=5e40205b9466aca6493bc11bc3359a52&sv=101";
+    private static String pickUpPackage(String appCookie, String actCode) throws Exception {
+        String url = "https://ms.jr.jd.com/gw/generic/jrm/h5/m/oneNeedUserPickUpReward";
 
         Header[] headers = new Header[]{
-                new BasicHeader("Connection", "Keep-Alive"),
-                new BasicHeader("Cookie", cookie),
-                new BasicHeader("Charset", "UTF-8"),
-                new BasicHeader("Accept-Encoding", "gzip,deflate"),
-                new BasicHeader("jdc-backup", cookie),
-                new BasicHeader("Cache-Control", "no-cache"),
-                new BasicHeader("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8"),
-                new BasicHeader("Host", "api.m.jd.com"),
-                new BasicHeader("User-Agent", "okhttp/3.6.0")
+                new BasicHeader("Host", "ms.jr.jd.com"),
+                new BasicHeader("Connection", "keep-alive"),
+                new BasicHeader("Origin", "https://m.jr.jd.com"),
+                new BasicHeader("User-Agent", "Mozilla/5.0 (Linux; Android 8.1; vivo Z1 Build/OPM1.171019.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044325 Mobile Safari/537.36/application=JDJR-App&clientType=android&deviceId=868602047125517&src=vivo&version=5.0.7&clientVersion=5.0.7&osVersion=8.1.0&osName=vivo Z1&isUpdate=0&HiClVersion=5.0.7&netWork=1&netWorkType=1&ip=10.12.197.40&mac=20:F7:7C:73:3F:A1&sPoint=&*#@jdPaySDK*#@jdPayChannel=jdFinance&jdPayChannelVersion=5.0.7&jdPaySdkVersion=2.21.6.0&androidBrand=vivo&androidManufacturer=vivo&jdPayClientName=Android*#@jdPaySDK*#@"),
+                new BasicHeader("content-type", "application/x-www-form-urlencoded;charset=UTF-8"),
+                new BasicHeader("Accept", "application/json"),
+                new BasicHeader("Referer", "https://m.jr.jd.com/zc/drawSystem/hb/index.html?contentParam=100000691&actCode=" + actCode + "&actType=1"),
+                new BasicHeader("Accept-Encoding", "gzip, deflate"),
+                new BasicHeader("Accept-Language", "zh-CN,en-US;q=0.8"),
+                new BasicHeader("Cookie", appCookie),
+                new BasicHeader("X-Requested-With", "com.jd.jrapp"),
         };
 
-        HttpPost httpPost = new HttpPost(status);
-        httpPost.setHeaders(headers);
-        httpPost.setEntity(new StringEntity("body={}"));
+        // 红包参数
+        String params = "reqData={\"actCode\":\"" + actCode + "\"}&source=app";
 
-        RequestConfig defaultRequestConfig = RequestConfig.custom()
-                .setSocketTimeout(5000)
-                .setConnectTimeout(5000)
-                .setConnectionRequestTimeout(5000)
-                .setStaleConnectionCheckEnabled(true)
-                .build();
+        JSONObject responseJson = HttpClientUtils.postParamWithJson(url, params, headers);
 
-        CloseableHttpClient client = HttpClients.custom().setDefaultRequestConfig(defaultRequestConfig).build();
-        CloseableHttpResponse response = client.execute(httpPost);
-
-        String responseStr = EntityUtils.toString(response.getEntity());
-
-        response.close();
-
-        System.out.println(responseStr);
-
-        JSONObject jsonObject = JSONObject.parseObject(responseStr);
-
-        return jsonObject;
-    }
-
-    private static boolean lingqupeiyangye(String cookie, String roundId) throws Exception {
-//        String url = "http://api.m.jd.com/client.action?functionId=receiveNutrients&clientVersion=7.3.0&build=63742&client=android&d_brand=vivo&d_model=vivoZ1&osVersion=8.1.0&screen=2280*1080&partner=vivo&androidId=c151521cf7c1430f&installtionId=73e5ce8937244403ae1e93dc8d3ecf69&sdkVersion=27&lang=zh_CN&uuid=868602047125517-20f77c733fa1&area=22_1930_50949_52153&networkType=wifi&wifiBssid=f08146662bbc4ec19d958771395f263e&st=1545023483827&sign=a54d65c8d060ad71a50da7d2d02d4f13&sv=122";
-        String url = "http://api.m.jd.com/client.action?functionId=receiveNutrients&clientVersion=7.3.2&build=64055&client=android&d_brand=vivo&d_model=vivoZ1&osVersion=8.1.0&screen=2280*1080&partner=vivo&androidId=c151521cf7c1430f&installtionId=73e5ce8937244403ae1e93dc8d3ecf69&sdkVersion=27&lang=zh_CN&uuid=868602047125517-20f77c733fa1&area=22_1930_50949_52153&networkType=wifi&wifiBssid=unknown&st=1545643040469&sign=90f45c16eb990a5008bfd59d6b021bb1&sv=111";
-
-        Header[] headers = new Header[]{
-                new BasicHeader("Connection", "Keep-Alive"),
-                new BasicHeader("Cookie", cookie),
-                new BasicHeader("Charset", "UTF-8"),
-                new BasicHeader("Accept-Encoding", "gzip,deflate"),
-                new BasicHeader("jdc-backup", cookie),
-                new BasicHeader("Cache-Control", "no-cache"),
-                new BasicHeader("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8"),
-                new BasicHeader("Host", "api.m.jd.com"),
-                new BasicHeader("User-Agent", "okhttp/3.6.0")
-        };
-
-
-        HttpPost httpPost = new HttpPost(url);
-        httpPost.setHeaders(headers);
-        httpPost.setEntity(new StringEntity("body={\"roundId\":\"" + roundId + "\"}"));
-
-        RequestConfig defaultRequestConfig = RequestConfig.custom()
-                .setSocketTimeout(5000)
-                .setConnectTimeout(5000)
-                .setConnectionRequestTimeout(5000)
-                .setStaleConnectionCheckEnabled(true)
-                .build();
-
-        CloseableHttpClient client = HttpClients.custom().setDefaultRequestConfig(defaultRequestConfig).build();
-        CloseableHttpResponse response = client.execute(httpPost);
-
-        String responseStr = EntityUtils.toString(response.getEntity());
-
-        response.close();
-
-        System.out.println("领取培养液成功--------->>>" + responseStr);
-        return true;
+        if (null != responseJson) {
+            String resultCode = responseJson.getString("resultCode");
+            if ("0".equals(resultCode)) {
+                JSONObject resultData = responseJson.getJSONObject("resultData");
+                String code = resultData.getString("code");
+                if ("00".equals(code)) {
+                    JSONArray data = resultData.getJSONArray("data");
+                    String rewardCode = data.getJSONObject(0).getString("rewardCode");
+                    System.out.println("获取待领取红包[" + actCode + "]成功...");
+                    return rewardCode;
+                }
+            }
+        }
+        System.out.println("获取待领取红包[" + actCode + "]失败...");
+        return null;
     }
 
     /**
-     * 使用培养液
-     *
-     * @param cookie
-     * @param roundId
-     * @throws Exception
+     * 领取奖励
+     * @param appCookie
+     * @param actCode
      */
-    private static void usePeiYangYe(String cookie, String roundId) throws Exception {
-        String url = "http://api.m.jd.com/client.action?functionId=cultureBean&clientVersion=7.3.2&build=64055&client=android&d_brand=vivo&d_model=vivoZ1&osVersion=8.1.0&screen=2280*1080&partner=vivo&androidId=c151521cf7c1430f&installtionId=73e5ce8937244403ae1e93dc8d3ecf69&sdkVersion=27&lang=zh_CN&uuid=868602047125517-20f77c733fa1&area=22_1930_50949_52153&networkType=wifi&wifiBssid=unknown&st=1545643181682&sign=b0ff5ead0bb0f3fd9e9119e4eb52b4c6&sv=120";
+    private static void pickUpReward(String appCookie, String actCode, String rewardCode) throws Exception {
+        String url = "https://ms.jr.jd.com/gw/generic/jrm/h5/m/pickUpReward?_=1547519665773";
+
         Header[] headers = new Header[]{
-                new BasicHeader("Connection", "Keep-Alive"),
-                new BasicHeader("Cookie", cookie),
-                new BasicHeader("Charset", "UTF-8"),
-                new BasicHeader("Accept-Encoding", "gzip,deflate"),
-                new BasicHeader("jdc-backup", cookie),
-                new BasicHeader("Cache-Control", "no-cache"),
-                new BasicHeader("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8"),
-                new BasicHeader("Host", "api.m.jd.com"),
-                new BasicHeader("User-Agent", "okhttp/3.6.0")
+                new BasicHeader("Host", "ms.jr.jd.com"),
+                new BasicHeader("Connection", "keep-alive"),
+                new BasicHeader("Origin", "https://m.jr.jd.com"),
+                new BasicHeader("User-Agent", "Mozilla/5.0 (Linux; Android 8.1; vivo Z1 Build/OPM1.171019.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/044325 Mobile Safari/537.36/application=JDJR-App&clientType=android&deviceId=868602047125517&src=vivo&version=5.0.7&clientVersion=5.0.7&osVersion=8.1.0&osName=vivo Z1&isUpdate=0&HiClVersion=5.0.7&netWork=1&netWorkType=1&ip=10.12.197.40&mac=20:F7:7C:73:3F:A1&sPoint=&*#@jdPaySDK*#@jdPayChannel=jdFinance&jdPayChannelVersion=5.0.7&jdPaySdkVersion=2.21.6.0&androidBrand=vivo&androidManufacturer=vivo&jdPayClientName=Android*#@jdPaySDK*#@"),
+                new BasicHeader("content-type", "application/x-www-form-urlencoded;charset=UTF-8"),
+                new BasicHeader("Accept", "application/json"),
+                new BasicHeader("Referer", "https://m.jr.jd.com/zc/drawSystem/hb/index.html?contentParam=100000691&actCode=" + actCode + "&actType=1"),
+                new BasicHeader("Accept-Encoding", "gzip, deflate"),
+                new BasicHeader("Accept-Language", "zh-CN,en-US;q=0.8"),
+                new BasicHeader("Cookie", appCookie),
+                new BasicHeader("X-Requested-With", "com.jd.jrapp"),
         };
 
-        HttpPost httpPost = new HttpPost(url);
-        httpPost.setHeaders(headers);
-        httpPost.setEntity(new StringEntity("body={\"roundId\":\"" + roundId + "\"}"));
+        String params = "reqData={\"actCode\":\"" + actCode + "\",\"rewardCode\":\"" + rewardCode + "\",\"riskDeviceParam\":\"{\\\"deviceType\\\":\\\"vivo Z1\\\",\\\"traceIp\\\":\\\"\\\",\\\"macAddress\\\":\\\"20F77C733FA1\\\",\\\"imei\\\":\\\"868602047125517\\\",\\\"os\\\":\\\"android\\\",\\\"osVersion\\\":\\\"8.1.0\\\",\\\"fp\\\":\\\"deca20c862cadcc3b02a40d2064dfb44\\\",\\\"ip\\\":\\\"10.12.197.40\\\",\\\"eid\\\":\\\"KWVSHNUO4MB3VTPWRM3MFPRQVSARY54O3KPOQT5W66NHNZBHJDDRC4HGJ62D6KPCDVIVY2DNZNQTJCE5IWRW5GJFYE\\\",\\\"appId\\\":\\\"com.jd.jrapp\\\",\\\"openUUID\\\":\\\"\\\",\\\"uuid\\\":\\\"868602047125517-20F77C733FA1\\\",\\\"clientVersion\\\":\\\"5.0.7\\\",\\\"resolution\\\":\\\"1080.0*2280.0\\\",\\\"channelInfo\\\":\\\"vivo#309080027\\\",\\\"networkType\\\":\\\"wifi\\\",\\\"startNo\\\":\\\"359\\\",\\\"openid\\\":\\\"\\\",\\\"token\\\":\\\"\\\",\\\"sid\\\":\\\"\\\",\\\"terminalType\\\":\\\"02\\\",\\\"longtitude\\\":\\\"104.068608\\\",\\\"latitude\\\":\\\"30.549035\\\",\\\"securityData\\\":\\\"\\\",\\\"jscContent\\\":\\\"\\\",\\\"fnHttpHead\\\":\\\"\\\",\\\"receiveRequestTime\\\":\\\"\\\",\\\"port\\\":\\\"\\\",\\\"appType\\\":3,\\\"optType\\\":\\\"\\\",\\\"idfv\\\":\\\"\\\",\\\"wifiSSID\\\":\\\"\\\",\\\"wifiMacAddress\\\":\\\"\\\",\\\"cellIpAddress\\\":\\\"\\\",\\\"wifiIpAddress\\\":\\\"\\\",\\\"sdkToken\\\":\\\"\\\"}\"}";
 
-        RequestConfig defaultRequestConfig = RequestConfig.custom()
-                .setSocketTimeout(5000)
-                .setConnectTimeout(5000)
-                .setConnectionRequestTimeout(5000)
-                .setStaleConnectionCheckEnabled(true)
-                .build();
+        JSONObject responseJson = HttpClientUtils.postParamWithJson(url, params, headers);
 
-        CloseableHttpClient client = HttpClients.custom().setDefaultRequestConfig(defaultRequestConfig).build();
-        CloseableHttpResponse response = client.execute(httpPost);
-
-        String responseStr = EntityUtils.toString(response.getEntity());
-
-        response.close();
-
-        System.out.println(roundId + "培养液使用成功--------->>>" + responseStr);
-
+        if (null != responseJson) {
+            String resultCode = responseJson.getString("resultCode");
+            if ("0".equals(resultCode)) {
+                JSONObject resultData = responseJson.getJSONObject("resultData");
+                String code = resultData.getString("code");
+                if ("00".equals(code)) {
+                    JSONObject data = resultData.getJSONObject("data");
+                    String rewardName = data.getString("rewardName");
+                    System.out.println(rewardName);
+                } else {
+                    System.out.println("领取红包失败..." + responseJson);
+                }
+            } else {
+                System.out.println("领取红包失败..." + responseJson);
+            }
+        }
     }
-
 }
